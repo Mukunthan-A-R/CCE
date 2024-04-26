@@ -26,7 +26,7 @@ const CollegeList = () => {
                 <td className="px-4 py-2 border">{item.college_name}</td>
                 <td className="px-4 py-2 border">{item.department}</td>
                 <td className="px-4 py-2 border">{item.cut_off_marks}</td>
-                <td className="px-4 py-2 border">
+                <td className="px-4 py-2 border text-center">
                   <ButtonComponent styles="bg-blue-500 px-4 py-2 rounded-md text-white hover:bg-red-500">
                     Add
                   </ButtonComponent>
