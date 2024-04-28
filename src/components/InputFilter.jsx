@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 
-const InputFilter = () => {
+const InputFilter = ({ sendDataObj }) => {
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -15,7 +15,8 @@ const InputFilter = () => {
 
   const handleSubmit = () => {
     console.log("Hello");
-    console.log(data);
+    // console.log(data);
+    // sendDataObj(data);
   };
 
   const handleDataCutOff = (value) => {
@@ -23,7 +24,6 @@ const InputFilter = () => {
       ...data,
       cutOff: value,
     }));
-    console.log(data);
   };
 
   const handleDataDept = (value) => {
@@ -31,15 +31,13 @@ const InputFilter = () => {
       ...data,
       dept: value,
     }));
-    console.log(data);
   };
 
   const handleDataClg = (value) => {
     setData((data) => ({
       ...data,
-      dept: value,
+      clgName: value,
     }));
-    console.log(data);
   };
 
   const handleDataName = (value) => {
@@ -47,7 +45,6 @@ const InputFilter = () => {
       ...data,
       name: value,
     }));
-    console.log(data);
   };
 
   const handleDataEmail = (value) => {
@@ -55,7 +52,6 @@ const InputFilter = () => {
       ...data,
       email: value,
     }));
-    console.log(data);
   };
 
   const handleDataCast = (value) => {
@@ -63,7 +59,6 @@ const InputFilter = () => {
       ...data,
       cast: value,
     }));
-    console.log(data);
   };
 
   const handleDataRegion = (value) => {
@@ -71,7 +66,6 @@ const InputFilter = () => {
       ...data,
       region: value,
     }));
-    console.log(data);
   };
 
   return (
