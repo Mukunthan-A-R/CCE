@@ -36,6 +36,18 @@ const InputFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
         <InputComponent
+          label="Cast"
+          type="text"
+          styles="w-full md:w-1/2 px-10 my-4"
+        ></InputComponent>
+      </div>
+      <div className="md:flex">
+        <InputComponent
+          label="Region"
+          type="number"
+          styles="w-full md:w-1/2 px-10 my-4"
+        ></InputComponent>
+        <InputComponent
           label="Department"
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
