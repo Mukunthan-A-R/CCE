@@ -17,6 +17,7 @@ const InputFilter = () => {
     console.log("Hello");
     console.log(data);
   };
+
   const handleDataCutOff = (value) => {
     setData((data) => ({
       ...data,
@@ -24,27 +25,84 @@ const InputFilter = () => {
     }));
     console.log(data);
   };
+
+  const handleDataDept = (value) => {
+    setData((data) => ({
+      ...data,
+      dept: value,
+    }));
+    console.log(data);
+  };
+
+  const handleDataClg = (value) => {
+    setData((data) => ({
+      ...data,
+      dept: value,
+    }));
+    console.log(data);
+  };
+
+  const handleDataName = (value) => {
+    setData((data) => ({
+      ...data,
+      name: value,
+    }));
+    console.log(data);
+  };
+
+  const handleDataEmail = (value) => {
+    setData((data) => ({
+      ...data,
+      email: value,
+    }));
+    console.log(data);
+  };
+
+  const handleDataCast = (value) => {
+    setData((data) => ({
+      ...data,
+      cast: value,
+    }));
+    console.log(data);
+  };
+
+  const handleDataRegion = (value) => {
+    setData((data) => ({
+      ...data,
+      region: value,
+    }));
+    console.log(data);
+  };
+
   return (
     <div className="my-10">
       <div className="md:flex">
         <InputComponent
+          // Name
+          sendData={handleDataName}
           label="Name"
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
         <InputComponent
+          // Email
+          sendData={handleDataEmail}
           label="Email"
-          type="text"
+          type="email"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
       </div>
       <div className="md:flex">
         <InputComponent
+          // ClgName
+          sendData={handleDataClg}
           label="College Name"
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
         <InputComponent
+          // Department
+          sendData={handleDataDept}
           label="Department"
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
@@ -52,13 +110,15 @@ const InputFilter = () => {
       </div>
       <div className="md:flex">
         <InputComponent
-          //hello changed here
+          //CutOff data
           sendData={handleDataCutOff}
           label="Cut Off"
           type="number"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
         <InputComponent
+          // Cast
+          sendData={handleDataCast}
           label="Cast"
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
@@ -66,8 +126,11 @@ const InputFilter = () => {
       </div>
       <div className="md:flex">
         <InputComponent
+          // Region
+
+          sendData={handleDataRegion}
           label="Region"
-          type="number"
+          type="text"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
         <InputComponent
