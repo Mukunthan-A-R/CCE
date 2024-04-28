@@ -14,9 +14,9 @@ const InputFilter = ({ sendDataObj }) => {
   });
 
   const handleSubmit = () => {
+    sendDataObj(data);
     console.log("Hello");
     // console.log(data);
-    // sendDataObj(data);
   };
 
   const handleDataCutOff = (value) => {
