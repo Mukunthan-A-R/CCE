@@ -50,10 +50,10 @@ const TableWithSort = ({ data }) => {
 
   return (
     <table className="min-w-full divide-y divide-gray-200">
-      <thead className="bg-gray-50">
+      <thead className="bg-blue-100">
         <tr>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("sNo")}
           >
             S.No
@@ -64,7 +64,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("region")}
           >
             Region
@@ -75,7 +75,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("collegeCode")}
           >
             College Code
@@ -86,7 +86,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("name")}
           >
             Name
@@ -97,7 +97,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("branchCode")}
           >
             Branch Code
@@ -108,7 +108,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("branchName")}
           >
             Branch Name
@@ -119,7 +119,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("oc")}
           >
             OC
@@ -130,7 +130,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("bc")}
           >
             BC
@@ -141,7 +141,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("bcm")}
           >
             BCM
@@ -152,7 +152,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("mbc")}
           >
             MBC
