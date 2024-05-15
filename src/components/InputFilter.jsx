@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
+import TableWithSort from "./TableWithSort";
+import TableValues from "../data/Data";
 
-const InputFilter = ({ sendDataObj }) => {
+const InputFilter = () => {
+  const [listValue, setListValue] = useState(TableValues);
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -14,9 +18,16 @@ const InputFilter = ({ sendDataObj }) => {
   });
 
   const handleSubmit = () => {
-    sendDataObj(data);
-    console.log("Hello");
-    // console.log(data);
+    setListValue(
+      TableValues.filter(
+        (item) =>
+          // filter with college Name
+          item.name.toLowerCase().startsWith(data.clgName.toLowerCase()) &&
+          // filter with region
+          item.region.toLowerCase().startsWith(data.region.toLowerCase())
+      )
+    );
+    console.log(listValue);
   };
 
   const handleDataCutOff = (value) => {
@@ -127,18 +138,14 @@ const InputFilter = ({ sendDataObj }) => {
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
-        <InputComponent
-          label="Department"
-          type="text"
-          styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponent>
       </div>
       <ButtonComponent
         handleClick={handleSubmit}
-        styles="text-white bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-5 py-2 mx-5 sm:mx-10 my-2 rounded-md"
+        styles="mb-10 text-white bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-5 py-2 mx-5 sm:mx-10 my-2 rounded-md"
       >
         Submit
       </ButtonComponent>
+      <TableWithSort data={listValue}></TableWithSort>
     </div>
   );
 };
