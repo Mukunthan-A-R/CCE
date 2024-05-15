@@ -3,10 +3,10 @@ import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 import TableWithSort from "./TableWithSort";
 import TableValues from "../data/Data";
+import InputComponentCast from "./InputComponentCast";
 
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
-
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -16,6 +16,7 @@ const InputFilter = () => {
     cast: "",
     region: "",
   });
+  console.log(data);
 
   const handleSubmit = () => {
     setListValue(
@@ -24,7 +25,9 @@ const InputFilter = () => {
           // filter with college Name
           item.name.toLowerCase().startsWith(data.clgName.toLowerCase()) &&
           // filter with region
-          item.region.toLowerCase().startsWith(data.region.toLowerCase())
+          item.region.toLowerCase().startsWith(data.region.toLowerCase()) &&
+          // filter with filter
+          item[data.cast] <= data.cutOff
       )
     );
     console.log(listValue);
@@ -121,13 +124,13 @@ const InputFilter = () => {
           type="number"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
-        <InputComponent
+        <InputComponentCast
           // Cast
           sendData={handleDataCast}
           label="Cast"
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponent>
+        ></InputComponentCast>
       </div>
       <div className="md:flex">
         <InputComponent
