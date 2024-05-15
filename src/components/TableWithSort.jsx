@@ -49,7 +49,7 @@ const TableWithSort = ({ data }) => {
   }, [sortConfig]);
 
   return (
-    <table className="min-w-full divide-y divide-gray-200">
+    <table className="min-w-full divide-y divide-gray-200 mx-5 sm:mx-10">
       <thead className="bg-blue-100">
         <tr>
           <th
