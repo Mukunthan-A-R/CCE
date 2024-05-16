@@ -1,5 +1,5 @@
 import React from "react";
-import { useRecoilValue } from "recoil";
+import { useRecoilState, useRecoilValue } from "recoil";
 import { resultArray } from "../data/atoms";
 import { Link } from "react-router-dom";
 import ButtonComponent from "../components/ButtonComponent";
@@ -7,7 +7,14 @@ import { MdDelete } from "react-icons/md";
 
 const ResultPage = () => {
   const value = useRecoilValue(resultArray);
+  const [resultData, setResultData] = useRecoilState(resultArray);
   console.log(value);
+
+  const handleDelete = (row) => {
+    setResultData(resultData.filter((item) => item.sNo !== row.sNo));
+
+    // resultData.filter((item) => item.id != row.sNo)
+  };
   return (
     <div>
       <Link to="/">Home Page</Link>
@@ -63,7 +70,9 @@ const ResultPage = () => {
                   <ButtonComponent
                     styles="bg-red-500 p-2 rounded-lg text-white hover:bg-green-700"
                     handleClick={() => {
+                      handleDelete(row);
                       console.log("Deleted");
+                      console.log(row);
                     }}
                   >
                     <MdDelete />

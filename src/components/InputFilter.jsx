@@ -18,6 +18,7 @@ const InputFilter = () => {
     region: "",
   });
   // console.log(data);
+  // console.log(TableValues);
 
   const handleSubmit = () => {
     setListValue(
@@ -138,7 +139,6 @@ const InputFilter = () => {
       <div className="md:flex">
         <InputComponent
           // Region
-
           sendData={handleDataRegion}
           label="Region"
           type="text"
