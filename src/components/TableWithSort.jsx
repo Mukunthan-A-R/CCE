@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+import ButtonComponent from "./ButtonComponent";
+import { useRecoilState } from "recoil";
+import resultArray from "../data/atoms";
 
 const TableWithSort = ({ data }) => {
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
+  // Atoms data
+  const [resultData, setResultData] = useRecoilState(resultArray);
 
   const requestSort = (key) => {
     let direction = "ascending";
@@ -44,16 +49,22 @@ const TableWithSort = ({ data }) => {
     }
   };
 
+  // Add data to the ResultPage
+  const handleResult = (row) => {
+    setResultData(row);
+    console.log(row);
+  };
+
   React.useEffect(() => {
     sortedDataByKey();
   }, [sortConfig]);
 
   return (
-    <table className="min-w-full divide-y divide-gray-200 mx-5 sm:mx-10">
+    <table className="min-w-full  divide-y divide-gray-200 mx-5 sm:mx-10">
       <thead className="bg-blue-100">
         <tr>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("sNo")}
           >
             S.No
@@ -64,7 +75,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("region")}
           >
             Region
@@ -75,7 +86,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("collegeCode")}
           >
             College Code
@@ -86,7 +97,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("name")}
           >
             Name
@@ -97,7 +108,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("branchCode")}
           >
             Branch Code
@@ -108,7 +119,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("branchName")}
           >
             Branch Name
@@ -119,7 +130,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("oc")}
           >
             OC
@@ -130,7 +141,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("bc")}
           >
             BC
@@ -141,7 +152,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("bcm")}
           >
             BCM
@@ -152,7 +163,7 @@ const TableWithSort = ({ data }) => {
             )}
           </th>
           <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+            className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
             onClick={() => requestSort("mbc")}
           >
             MBC
@@ -162,16 +173,30 @@ const TableWithSort = ({ data }) => {
               </span>
             )}
           </th>
+          <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
+            Add
+          </th>
         </tr>
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
         {sortedData.map((row, rowIndex) => (
           <tr key={rowIndex}>
             {Object.entries(row).map(([key, value], cellIndex) => (
-              <td key={cellIndex} className="px-6 py-4 whitespace-nowrap">
+              <td key={cellIndex} className="px-3 py-4 whitespace-nowrap">
                 {value}
               </td>
             ))}
+            <td>
+              <ButtonComponent
+                styles="bg-red-500 p-2 rounded-lg text-white hover:bg-green-700"
+                handleClick={() => {
+                  handleResult(row);
+                  // console.log(row);
+                }}
+              >
+                Add
+              </ButtonComponent>
+            </td>
           </tr>
         ))}
       </tbody>

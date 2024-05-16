@@ -4,6 +4,7 @@ import ButtonComponent from "./ButtonComponent";
 import TableWithSort from "./TableWithSort";
 import TableValues from "../data/Data";
 import InputComponentCast from "./InputComponentCast";
+import { RecoilRoot } from "recoil";
 
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
@@ -148,7 +149,9 @@ const InputFilter = () => {
       >
         Submit
       </ButtonComponent>
-      <TableWithSort data={listValue}></TableWithSort>
+      <RecoilRoot>
+        <TableWithSort data={listValue}></TableWithSort>
+      </RecoilRoot>
     </div>
   );
 };
