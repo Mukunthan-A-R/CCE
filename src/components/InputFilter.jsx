@@ -4,7 +4,6 @@ import ButtonComponent from "./ButtonComponent";
 import TableWithSort from "./TableWithSort";
 import TableValues from "../data/Data";
 import InputComponentCast from "./InputComponentCast";
-import { RecoilRoot } from "recoil";
 import { Link } from "react-router-dom";
 
 const InputFilter = () => {
@@ -151,9 +150,7 @@ const InputFilter = () => {
       >
         Submit
       </ButtonComponent>
-      <RecoilRoot>
-        <TableWithSort data={listValue}></TableWithSort>
-      </RecoilRoot>
+      <TableWithSort data={listValue}></TableWithSort>
     </div>
   );
 };
