@@ -18,7 +18,7 @@ const InputFilter = () => {
     cast: "",
     region: "",
   });
-  console.log(data);
+  // console.log(data);
 
   const handleSubmit = () => {
     setListValue(

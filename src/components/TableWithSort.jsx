@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ButtonComponent from "./ButtonComponent";
 import { useRecoilState } from "recoil";
-import resultArray from "../data/atoms";
+import { resultArray } from "../data/atoms";
 
 const TableWithSort = ({ data }) => {
   const [sortedData, setSortedData] = useState(data);
@@ -52,11 +52,10 @@ const TableWithSort = ({ data }) => {
   // Add data to the ResultPage
   const handleResult = (row) => {
     setResultData([...resultData, row]);
-    // setResultData([...resultData, ...row]);
     // atom data
-    console.log(resultData.length);
     console.log("Atom Data");
-    console.log(resultData);
+    console.log(resultData.length);
+    console.log([...resultData, row]);
   };
 
   React.useEffect(() => {

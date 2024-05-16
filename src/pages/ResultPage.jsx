@@ -1,6 +1,6 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
-import resultArray from "../data/atoms";
+import { resultArray } from "../data/atoms";
 import { Link } from "react-router-dom";
 
 const ResultPage = () => {
