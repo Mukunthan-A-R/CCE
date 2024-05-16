@@ -51,11 +51,12 @@ const TableWithSort = ({ data }) => {
 
   // Add data to the ResultPage
   const handleResult = (row) => {
-    setResultData(row);
+    setResultData([...resultData, row]);
     // setResultData([...resultData, ...row]);
     // atom data
+    console.log(resultData.length);
     console.log("Atom Data");
-    console.log(row);
+    console.log(resultData);
   };
 
   React.useEffect(() => {
