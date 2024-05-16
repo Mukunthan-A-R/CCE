@@ -5,6 +5,7 @@ import TableWithSort from "./TableWithSort";
 import TableValues from "../data/Data";
 import InputComponentCast from "./InputComponentCast";
 import { RecoilRoot } from "recoil";
+import { Link } from "react-router-dom";
 
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
@@ -85,6 +86,7 @@ const InputFilter = () => {
 
   return (
     <div className="my-10">
+      <Link to="/app">ResultPage</Link>
       <div className="md:flex">
         <InputComponent
           // Name

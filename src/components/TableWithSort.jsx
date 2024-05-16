@@ -52,6 +52,9 @@ const TableWithSort = ({ data }) => {
   // Add data to the ResultPage
   const handleResult = (row) => {
     setResultData(row);
+    // setResultData([...resultData, ...row]);
+    // atom data
+    console.log("Atom Data");
     console.log(row);
   };
 
@@ -191,7 +194,6 @@ const TableWithSort = ({ data }) => {
                 styles="bg-red-500 p-2 rounded-lg text-white hover:bg-green-700"
                 handleClick={() => {
                   handleResult(row);
-                  // console.log(row);
                 }}
               >
                 Add
