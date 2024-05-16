@@ -26,18 +26,24 @@ const InputFilter = () => {
 
   const handleSubmit = () => {
     setUserData({ ...userData, name: data.name });
-    setListValue(
-      TableValues.filter(
-        (item) =>
-          // filter with college Name
-          item.name.toLowerCase().startsWith(data.clgName.toLowerCase()) &&
-          // filter with region
-          item.region.toLowerCase().startsWith(data.region.toLowerCase()) &&
-          // filter with filter
-          item[data.cast] <= data.cutOff
-      )
+    const DataFilter = TableValues.filter(
+      (item) =>
+        // filter with college Name
+        item.name.toLowerCase().startsWith(data.clgName.toLowerCase()) &&
+        // filter with region
+        item.region.toLowerCase().startsWith(data.region.toLowerCase())
+      // filter with filter
+      // item[data.cast] <= data.cutOff
     );
-    // console.log(listValue);
+    setListValue(DataFilter);
+    // Filter by Cut Off
+    if (data.cast !== "") {
+      setListValue(
+        TableValues.filter((item) => item[data.cast] <= data.cutOff)
+      );
+    }
+    console.log(listValue);
+    console.log(DataFilter);
   };
 
   const handleDataCutOff = (value) => {
