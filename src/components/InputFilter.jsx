@@ -3,8 +3,11 @@ import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 import TableWithSort from "./TableWithSort";
 import TableValues from "../data/Data";
+import { userValue } from "../data/atoms";
 import InputComponentCast from "./InputComponentCast";
 import { Link } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { BsMenuButtonWide } from "react-icons/bs";
 
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
@@ -17,10 +20,12 @@ const InputFilter = () => {
     cast: "",
     region: "",
   });
+  const [userData, setUserData] = useRecoilState(userValue);
   // console.log(data);
   // console.log(TableValues);
 
   const handleSubmit = () => {
+    setUserData({ ...userData, name: data.name });
     setListValue(
       TableValues.filter(
         (item) =>
@@ -32,7 +37,7 @@ const InputFilter = () => {
           item[data.cast] <= data.cutOff
       )
     );
-    console.log(listValue);
+    // console.log(listValue);
   };
 
   const handleDataCutOff = (value) => {
@@ -87,7 +92,11 @@ const InputFilter = () => {
   return (
     <div className="my-10">
       <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
-      <Link to="/app">ResultPage</Link>
+      <Link to="/app">
+        <div className="mx-10 ">
+          <BsMenuButtonWide size={25} />
+        </div>
+      </Link>
       <div className="md:flex">
         <InputComponent
           // Name

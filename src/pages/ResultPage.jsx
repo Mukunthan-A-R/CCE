@@ -1,13 +1,15 @@
 import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { resultArray } from "../data/atoms";
+import { resultArray, userValue } from "../data/atoms";
 import { Link } from "react-router-dom";
 import ButtonComponent from "../components/ButtonComponent";
 import { MdDelete } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
 
 const ResultPage = () => {
   const value = useRecoilValue(resultArray);
   const [resultData, setResultData] = useRecoilState(resultArray);
+  const [userData, setUserData] = useRecoilState(userValue);
   console.log(value);
 
   const handleDelete = (row) => {
@@ -16,11 +18,15 @@ const ResultPage = () => {
     // resultData.filter((item) => item.id != row.sNo)
   };
   return (
-    <div>
-      <Link to="/">Home Page</Link>
-
+    <div className="m-5 sm:m-10">
+      <Link to="/">
+        <FaHome size={25} />
+      </Link>
+      <div className="text-center font-bold text-2xl my-5">
+        Welcome {userData.name}
+      </div>
       {value.length === 0 ? (
-        <p>No Colleges selected</p>
+        <span className="text-red-500">No Colleges selected</span>
       ) : (
         <table className="min-w-full  divide-y divide-gray-200 mx-2 sm:mx-5">
           <thead className="bg-blue-100">
