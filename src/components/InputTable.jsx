@@ -87,7 +87,6 @@ const InputTable = () => {
     <div className="container mx-auto px-4 py-4">
       <h2 className="text-xl font-semibold mb-4">Input Form and Table</h2>
       <InputForm onSubmit={handleFormSubmit} />
-      {/* <SampleTable data={tableData} /> */}
       <TableWithSort data={tableData}></TableWithSort>
     </div>
   );

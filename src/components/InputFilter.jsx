@@ -85,6 +85,7 @@ const InputFilter = () => {
 
   return (
     <div className="my-10">
+      <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
       <Link to="/app">ResultPage</Link>
       <div className="md:flex">
         <InputComponent

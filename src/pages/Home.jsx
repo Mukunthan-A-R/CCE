@@ -3,8 +3,7 @@ import InputFilter from "../components/InputFilter";
 
 const Home = () => {
   return (
-    <div className="m-5 sm:m-10">
-      <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
+    <div className="m-2 sm:m-5">
       <InputFilter></InputFilter>
     </div>
   );
