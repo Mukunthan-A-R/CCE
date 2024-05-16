@@ -7,7 +7,7 @@ import { userValue } from "../data/atoms";
 import InputComponentCast from "./InputComponentCast";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import { BsMenuButtonWide } from "react-icons/bs";
+import { FaServer } from "react-icons/fa";
 
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
@@ -100,7 +100,7 @@ const InputFilter = () => {
       <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
       <Link to="/app">
         <div className="mx-10 ">
-          <BsMenuButtonWide size={25} />
+          <FaServer size={25} />
         </div>
       </Link>
       <div className="md:flex">
