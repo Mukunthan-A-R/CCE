@@ -23,7 +23,7 @@ const ResultPage = () => {
         <FaHome size={25} />
       </Link>
       <div className="text-center font-bold text-2xl my-5">
-        Welcome {userData.name}
+        Welcome {userData.name === "" ? "User" : userData.name}
       </div>
       {value.length === 0 ? (
         <span className="text-red-500">No Colleges selected</span>

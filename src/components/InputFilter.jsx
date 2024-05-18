@@ -38,9 +38,7 @@ const InputFilter = () => {
     setListValue(DataFilter);
     // Filter by Cut Off
     if (data.cast !== "") {
-      setListValue(
-        TableValues.filter((item) => item[data.cast] <= data.cutOff)
-      );
+      setListValue(listValue.filter((item) => item[data.cast] <= data.cutOff));
     }
     console.log(listValue);
     console.log(DataFilter);
@@ -103,7 +101,7 @@ const InputFilter = () => {
           <FaServer size={25} />
         </div>
       </Link>
-      <div className="md:flex">
+      <div className="md:flex mx-10">
         <InputComponent
           // Name
           sendData={handleDataName}
@@ -119,23 +117,7 @@ const InputFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
       </div>
-      <div className="md:flex">
-        <InputComponent
-          // ClgName
-          sendData={handleDataClg}
-          label="College Name"
-          type="text"
-          styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponent>
-        <InputComponent
-          // Department
-          sendData={handleDataDept}
-          label="Department"
-          type="text"
-          styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponent>
-      </div>
-      <div className="md:flex">
+      <div className="md:flex border border-gray-500 mx-10 rounded-lg">
         <InputComponent
           //CutOff data
           sendData={handleDataCutOff}
@@ -151,15 +133,34 @@ const InputFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponentCast>
       </div>
-      <div className="md:flex">
-        <InputComponent
-          // Region
-          sendData={handleDataRegion}
-          label="Region"
-          type="text"
-          styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponent>
+      <div className="border border-gray-500 rounded-lg mx-10 my-2">
+        <div className="md:flex">
+          <InputComponent
+            // ClgName
+            sendData={handleDataClg}
+            label="College Name"
+            type="text"
+            styles="w-full md:w-1/2 px-10 my-4"
+          ></InputComponent>
+          <InputComponent
+            // Department
+            sendData={handleDataDept}
+            label="Department"
+            type="text"
+            styles="w-full md:w-1/2 px-10 my-4"
+          ></InputComponent>
+        </div>
+        <div className="md:flex">
+          <InputComponent
+            // Region
+            sendData={handleDataRegion}
+            label="Region"
+            type="text"
+            styles="w-full md:w-1/2 px-10 my-4"
+          ></InputComponent>
+        </div>
       </div>
+
       <ButtonComponent
         handleClick={handleSubmit}
         styles="mb-10 text-white bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-5 py-2 mx-5 sm:mx-10 my-2 rounded-md"
