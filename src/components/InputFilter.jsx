@@ -101,7 +101,7 @@ const InputFilter = () => {
           <FaServer size={25} />
         </div>
       </Link>
-      <div className="md:flex mx-10">
+      <div className="md:flex border border-gray-500 mx-10 rounded-lg my-5">
         <InputComponent
           // Name
           sendData={handleDataName}
@@ -117,7 +117,7 @@ const InputFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
       </div>
-      <div className="md:flex border border-gray-500 mx-10 rounded-lg">
+      <div className="md:flex border border-gray-500 mx-10 rounded-lg my-5">
         <InputComponent
           //CutOff data
           sendData={handleDataCutOff}
@@ -133,7 +133,7 @@ const InputFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponentCast>
       </div>
-      <div className="border border-gray-500 rounded-lg mx-10 my-2">
+      <div className="border border-gray-500 rounded-lg mx-10">
         <div className="md:flex">
           <InputComponent
             // ClgName
