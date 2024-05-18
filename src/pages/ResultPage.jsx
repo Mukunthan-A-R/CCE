@@ -8,6 +8,9 @@ import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { IoIosPrint } from "react-icons/io";
+import { FaDownload } from "react-icons/fa";
+import { MdDownloading } from "react-icons/md";
 
 const ResultPage = () => {
   const value = useRecoilValue(resultArray);
@@ -23,11 +26,12 @@ const ResultPage = () => {
   const [loader, setLoader] = useState(false);
 
   const downloadPDF = () => {
+    window.open;
     const capture = document.querySelector(".recipt-table");
     setLoader(true);
     html2canvas(capture).then((canvas) => {
       const imgData = canvas.toDataURL("img/png");
-      const doc = new jsPDF("p", "mm", "a4");
+      const doc = new jsPDF("l", "mm", "a4");
       const componentWidth = doc.internal.pageSize.getWidth();
       const componentHeight = doc.internal.pageSize.getHeight();
       doc.addImage(imgData, "PNG", 0, 0, componentWidth, componentHeight);
@@ -37,9 +41,35 @@ const ResultPage = () => {
   };
   return (
     <div className="m-5 sm:m-10">
-      <Link to="/">
-        <FaHome size={25} />
-      </Link>
+      <div className="flex items-center gap-10">
+        <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
+          <Link to="/">
+            <FaHome />
+          </Link>
+        </div>
+        {/* receipt action */}
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
+          onClick={() => window.print()}
+        >
+          <IoIosPrint />
+        </button>
+        <button
+          className="receipt-modal-download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
+          onClick={downloadPDF}
+          disabled={!(loader === false)}
+        >
+          {loader ? (
+            <span>
+              <MdDownloading />
+            </span>
+          ) : (
+            <span>
+              <FaDownload />
+            </span>
+          )}
+        </button>
+      </div>
       <div className="text-center font-bold text-2xl my-5">
         Welcome {userData.name === "" ? "User" : userData.name}
       </div>
@@ -109,15 +139,6 @@ const ResultPage = () => {
           </table>
         )}
       </div>
-
-      {/* receipt action */}
-      <button
-        className="receipt-modal-download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
-        onClick={downloadPDF}
-        disabled={!(loader === false)}
-      >
-        {loader ? <span>Downloading</span> : <span>Download</span>}
-      </button>
     </div>
   );
 };

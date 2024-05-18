@@ -97,8 +97,8 @@ const InputFilter = () => {
     <div className="my-10">
       <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
       <Link to="/app">
-        <div className="mx-10 ">
-          <FaServer size={25} />
+        <div className="mx-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
+          <FaServer />
         </div>
       </Link>
       <div className="md:flex border border-gray-500 mx-10 rounded-lg my-5">
