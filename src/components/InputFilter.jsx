@@ -29,7 +29,7 @@ const InputFilter = () => {
     const DataFilter = TableValues.filter(
       (item) =>
         // filter with college Name
-        item.name.toLowerCase().startsWith(data.clgName.toLowerCase()) &&
+        item.name.toLowerCase().includes(data.clgName.toLowerCase()) &&
         // filter with region
         item.region.toLowerCase().startsWith(data.region.toLowerCase())
       // filter with filter
@@ -38,7 +38,9 @@ const InputFilter = () => {
     setListValue(DataFilter);
     // Filter by Cut Off
     if (data.cast !== "") {
-      setListValue(listValue.filter((item) => item[data.cast] <= data.cutOff));
+      setListValue(
+        TableValues.filter((item) => item[data.cast] <= data.cutOff)
+      );
     }
     console.log(listValue);
     console.log(DataFilter);

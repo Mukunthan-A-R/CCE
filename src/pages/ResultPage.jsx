@@ -42,11 +42,11 @@ const ResultPage = () => {
   return (
     <div className="m-5 sm:m-10">
       <div className="flex items-center gap-10">
-        <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
-          <Link to="/">
+        <Link to="/">
+          <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
             <FaHome />
-          </Link>
-        </div>
+          </div>
+        </Link>
         {/* receipt action */}
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
