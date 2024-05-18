@@ -185,7 +185,7 @@ const TableWithSort = ({ data }) => {
         {sortedData.map((row, rowIndex) => (
           <tr
             key={rowIndex}
-            className=" hover:bg-blue-200 focus:bg-red-500 active:bg-green-500 transition-colors duration-300 ease-in-out cursor-pointer"
+            className=" hover:bg-blue-200 focus:bg-red-500 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
           >
             {Object.entries(row).map(([key, value], cellIndex) => (
               <td key={cellIndex} className="px-3 py-4 whitespace-nowrap">
@@ -194,7 +194,7 @@ const TableWithSort = ({ data }) => {
             ))}
             <td>
               <ButtonComponent
-                styles="bg-red-500 p-2 rounded-lg text-white hover:bg-blue-600 active:bg-green-500 transition-colors duration-300 ease-in-out cursor-pointer"
+                styles="bg-blue-600 p-2 rounded-lg text-white hover:bg-green-400 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
                 handleClick={() => {
                   handleResult(row);
                 }}

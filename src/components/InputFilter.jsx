@@ -163,7 +163,7 @@ const InputFilter = () => {
 
       <ButtonComponent
         handleClick={handleSubmit}
-        styles="mb-10 text-white bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-5 py-2 mx-5 sm:mx-10 my-2 rounded-md"
+        styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-2 rounded-md"
       >
         Submit
       </ButtonComponent>

@@ -79,7 +79,7 @@ const ResultPage = () => {
         ) : (
           <table className="min-w-full  divide-y divide-gray-200 mx-2 sm:mx-5 m-10">
             <thead className="bg-blue-100">
-              <tr>
+              <tr className="">
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   S.No
                 </th>
@@ -115,7 +115,10 @@ const ResultPage = () => {
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {value.map((row, rowIndex) => (
-                <tr key={rowIndex}>
+                <tr
+                  key={rowIndex}
+                  className=" hover:bg-blue-200 focus:bg-red-500 active:bg-blue-500 transition-colors duration-100 ease-in-out cursor-pointer"
+                >
                   {Object.entries(row).map(([key, value], cellIndex) => (
                     <td key={cellIndex} className="px-3 py-4 whitespace-nowrap">
                       {value}
@@ -123,14 +126,14 @@ const ResultPage = () => {
                   ))}
                   <td>
                     <ButtonComponent
-                      styles="bg-red-500 p-2 rounded-lg text-white hover:bg-green-700"
+                      styles="p-2 rounded-lg text-red-500 hover:bg-blue-100"
                       handleClick={() => {
                         handleDelete(row);
                         console.log("Deleted");
                         console.log(row);
                       }}
                     >
-                      <MdDelete />
+                      <MdDelete size={20} />
                     </ButtonComponent>
                   </td>
                 </tr>
