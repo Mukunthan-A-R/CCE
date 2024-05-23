@@ -101,7 +101,7 @@ const ResultPage = () => {
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   OC
                 </th>
-                <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
+                {/* <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   BC
                 </th>
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
@@ -109,7 +109,7 @@ const ResultPage = () => {
                 </th>
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   MBC
-                </th>
+                </th> */}
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   Drop
                 </th>
@@ -121,11 +121,34 @@ const ResultPage = () => {
                   key={rowIndex}
                   className=" hover:bg-blue-200 focus:bg-red-500 active:bg-blue-500 transition-colors duration-100 ease-in-out cursor-pointer"
                 >
-                  {Object.entries(row).map(([key, value], cellIndex) => (
+                  {
+                    <>
+                      <td className="px-3 py-4 whitespace-nowrap">{row.sNo}</td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {row.region}
+                      </td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {row.collegeCode}
+                      </td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {row.name}
+                      </td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {row.branchCode}
+                      </td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {row.branchName}
+                      </td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {row["oc"]}
+                      </td>
+                    </>
+                  }
+                  {/* {Object.entries(row).map(([key, value], cellIndex) => (
                     <td key={cellIndex} className="px-3 py-4 whitespace-nowrap">
                       {value}
                     </td>
-                  ))}
+                  ))} */}
                   <td>
                     <ButtonComponent
                       styles="p-2 rounded-lg text-red-500 hover:bg-blue-100"
