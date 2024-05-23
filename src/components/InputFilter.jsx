@@ -122,13 +122,6 @@ const InputFilter = () => {
         ></InputComponent>
       </div>
       <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
-        <InputComponent
-          //CutOff data
-          sendData={handleDataCutOff}
-          label="Cut Off"
-          type="number"
-          styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponent>
         <InputComponentCast
           // Cast
           sendData={handleDataCast}
@@ -136,6 +129,13 @@ const InputFilter = () => {
           type="text"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponentCast>
+        <InputComponent
+          //CutOff data
+          sendData={handleDataCutOff}
+          label="Cut Off"
+          type="number"
+          styles="w-full md:w-1/2 px-10 my-4 "
+        ></InputComponent>
       </div>
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
         <div className="md:flex">

@@ -76,7 +76,7 @@ const TableWithSort = ({ data }) => {
     // Close the popup after 3 seconds
     const timeoutId = setTimeout(() => {
       handleClosePopup();
-    }, 4000);
+    }, 1000);
 
     // Cleanup the timeout when component unmounts or when showPopup changes
     return () => {
