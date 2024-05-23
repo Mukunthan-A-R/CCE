@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 import TableWithSort from "./TableWithSort";
@@ -8,9 +8,11 @@ import InputComponentCast from "./InputComponentCast";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { FaServer } from "react-icons/fa";
+import DataSubmitted from "./DataSubmitted";
 
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
+  const [showPopup, setShowPopup] = useState(false);
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -47,6 +49,7 @@ const InputFilter = () => {
     }
     // console.log(listValue);
     // console.log(DataFilter);
+    setShowPopup(true);
     console.log(data);
   };
 
@@ -99,8 +102,29 @@ const InputFilter = () => {
     }));
   };
 
+  // Function to handle closing the popup
+  const handleClosePopup = () => {
+    // Set showPopup to false to hide the popup
+    setShowPopup(false);
+  };
+
+  useEffect(() => {
+    // Close the popup after 3 seconds
+    const timeoutId = setTimeout(() => {
+      handleClosePopup();
+    }, 1000);
+
+    // Cleanup the timeout when component unmounts or when showPopup changes
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [showPopup]);
+
   return (
     <div className="my-10">
+      {showPopup && (
+        <DataSubmitted handleClick={handleClosePopup}></DataSubmitted>
+      )}
       <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
       <Link to="/app">
         <div className="mx-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
