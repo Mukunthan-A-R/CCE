@@ -19,7 +19,7 @@ function Component() {
     // Close the popup after 3 seconds
     const timeoutId = setTimeout(() => {
       handleClosePopup();
-    }, 3000);
+    }, 1000);
 
     // Cleanup the timeout when component unmounts or when showPopup changes
     return () => {

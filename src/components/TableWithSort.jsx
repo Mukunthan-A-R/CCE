@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ButtonComponent from "./ButtonComponent";
 import { useRecoilState } from "recoil";
 import { resultArray } from "../data/atoms";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
+import SuccessfullyAdded from "./SuccessfullyAdded";
 
 const TableWithSort = ({ data }) => {
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
   // Atoms data
   const [resultData, setResultData] = useRecoilState(resultArray);
 
@@ -64,8 +66,29 @@ const TableWithSort = ({ data }) => {
     sortedDataByKey();
   }, [sortConfig]);
 
+  // Function to handle closing the popup
+  const handleClosePopup = () => {
+    // Set showPopup to false to hide the popup
+    setShowPopup(false);
+  };
+
+  useEffect(() => {
+    // Close the popup after 3 seconds
+    const timeoutId = setTimeout(() => {
+      handleClosePopup();
+    }, 4000);
+
+    // Cleanup the timeout when component unmounts or when showPopup changes
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [showPopup]);
+
   return (
     <div className="flex justify-center">
+      {showPopup && (
+        <SuccessfullyAdded handleClick={handleClosePopup}></SuccessfullyAdded>
+      )}
       <table className="min-w-full  divide-y divide-gray-200 mx-2 sm:mx-3">
         <thead className="bg-blue-100">
           <tr>
@@ -256,6 +279,7 @@ const TableWithSort = ({ data }) => {
                   styles="bg-blue-600 p-2 rounded-lg text-white hover:bg-green-400 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
                   handleClick={() => {
                     handleResult(row);
+                    setShowPopup(true);
                   }}
                 >
                   Add
