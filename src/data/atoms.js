@@ -12,3 +12,10 @@ export const userValue = atom({
     email: "",
   },
 });
+
+export const userCommunity = atom({
+  key: "userCommunity",
+  default: {
+    community: "oc",
+  },
+});

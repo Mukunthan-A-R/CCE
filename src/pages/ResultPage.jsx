@@ -1,6 +1,6 @@
 import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { resultArray, userValue } from "../data/atoms";
+import { resultArray, userValue, userCommunity } from "../data/atoms";
 import { Link } from "react-router-dom";
 import ButtonComponent from "../components/ButtonComponent";
 import { MdDelete } from "react-icons/md";
@@ -13,6 +13,8 @@ import { FaDownload } from "react-icons/fa";
 import { MdDownloading } from "react-icons/md";
 
 const ResultPage = () => {
+  console.log(userCommunity);
+  const community = useRecoilValue(userCommunity);
   const value = useRecoilValue(resultArray);
   const [resultData, setResultData] = useRecoilState(resultArray);
   const [userData, setUserData] = useRecoilState(userValue);
@@ -99,7 +101,7 @@ const ResultPage = () => {
                   Branch Name
                 </th>
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
-                  OC
+                  {community.community}
                 </th>
                 {/* <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   BC
@@ -140,7 +142,7 @@ const ResultPage = () => {
                         {row.branchName}
                       </td>
                       <td className="px-3 py-4 whitespace-nowrap">
-                        {row["oc"]}
+                        {row[community.community]}
                       </td>
                     </>
                   }

@@ -3,7 +3,7 @@ import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 import TableWithSort from "./TableWithSort";
 import TableValues from "../data/Data";
-import { userValue } from "../data/atoms";
+import { userValue, userCommunity } from "../data/atoms";
 import InputComponentCast from "./InputComponentCast";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
@@ -21,11 +21,13 @@ const InputFilter = () => {
     region: "",
   });
   const [userData, setUserData] = useRecoilState(userValue);
+  const [userCast, setUserCast] = useRecoilState(userCommunity);
   // console.log(data);
   // console.log(TableValues);
 
   const handleSubmit = () => {
     setUserData({ ...userData, name: data.name });
+    setUserCast({ community: data.cast });
     const DataFilter = TableValues.filter(
       (item) =>
         // filter with college Name
