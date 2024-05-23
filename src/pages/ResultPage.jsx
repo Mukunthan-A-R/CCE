@@ -11,11 +11,13 @@ import jsPDF from "jspdf";
 import { IoIosPrint } from "react-icons/io";
 import { FaDownload } from "react-icons/fa";
 import { MdDownloading } from "react-icons/md";
+import AlertPopup from "../components/AlertPopup";
 
 const ResultPage = () => {
-  console.log(userCommunity);
   const community = useRecoilValue(userCommunity);
   const value = useRecoilValue(resultArray);
+  const [showPopup, setShowPopup] = useState(false);
+  const [holdData, setHoldData] = useState([]);
   const [resultData, setResultData] = useRecoilState(resultArray);
   const [userData, setUserData] = useRecoilState(userValue);
   console.log(value);
@@ -43,6 +45,15 @@ const ResultPage = () => {
   };
   return (
     <div className="m-5 sm:m-10">
+      {showPopup && (
+        <AlertPopup
+          onCancel={() => setShowPopup(false)}
+          onAccept={() => {
+            handleDelete(holdData);
+            setShowPopup(false);
+          }}
+        ></AlertPopup>
+      )}
       <div className="flex items-center gap-10">
         <Link to="/">
           <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
@@ -155,9 +166,9 @@ const ResultPage = () => {
                     <ButtonComponent
                       styles="p-2 rounded-lg text-red-500 hover:bg-blue-100"
                       handleClick={() => {
-                        handleDelete(row);
-                        console.log("Deleted");
-                        console.log(row);
+                        setShowPopup(true);
+                        setHoldData(row);
+                        // handleDelete(row);
                       }}
                     >
                       <MdDelete size={20} />
