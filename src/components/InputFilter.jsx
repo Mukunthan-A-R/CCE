@@ -33,19 +33,21 @@ const InputFilter = () => {
         // filter with college Name
         item.name.toLowerCase().includes(data.clgName.toLowerCase()) &&
         // filter with region
-        item.region.toLowerCase().startsWith(data.region.toLowerCase())
+        item.region.toLowerCase().startsWith(data.region.toLowerCase()) &&
+        // filter with department
+        item.branchName.toLowerCase().includes(data.dept.toLowerCase())
       // filter with filter
       // item[data.cast] <= data.cutOff
     );
+    const finalData = DataFilter;
     setListValue(DataFilter);
     // Filter by Cut Off
     if (data.cast !== "") {
-      setListValue(
-        TableValues.filter((item) => item[data.cast] <= data.cutOff)
-      );
+      setListValue(finalData.filter((item) => item[data.cast] <= data.cutOff));
     }
-    console.log(listValue);
-    console.log(DataFilter);
+    // console.log(listValue);
+    // console.log(DataFilter);
+    console.log(data);
   };
 
   const handleDataCutOff = (value) => {
@@ -121,23 +123,24 @@ const InputFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
       </div>
-      <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
-        <InputComponentCast
-          // Cast
-          sendData={handleDataCast}
-          label="Cast"
-          type="text"
-          styles="w-full md:w-1/2 px-10 my-4"
-        ></InputComponentCast>
-        <InputComponent
-          //CutOff data
-          sendData={handleDataCutOff}
-          label="Cut Off"
-          type="number"
-          styles="w-full md:w-1/2 px-10 my-4 "
-        ></InputComponent>
-      </div>
+      {/* <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg"></div> */}
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
+        <div className="md:flex">
+          <InputComponentCast
+            // Cast
+            sendData={handleDataCast}
+            label="Cast"
+            type="text"
+            styles="w-full md:w-1/2 px-10 my-4"
+          ></InputComponentCast>
+          <InputComponent
+            //CutOff data
+            sendData={handleDataCutOff}
+            label="Cut Off"
+            type="number"
+            styles="w-full md:w-1/2 px-10 my-4 "
+          ></InputComponent>
+        </div>
         <div className="md:flex">
           <InputComponent
             // ClgName
