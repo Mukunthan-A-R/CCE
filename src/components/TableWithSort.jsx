@@ -89,7 +89,7 @@ const TableWithSort = ({ data }) => {
       {showPopup && (
         <SuccessfullyAdded handleClick={handleClosePopup}></SuccessfullyAdded>
       )}
-      <table className="min-w-full  divide-y divide-gray-200 mx-2 sm:mx-3">
+      <table className="min-w-full  divide-y divide-gray-200  sm:mx-3 mx-auto">
         <thead className="bg-blue-100">
           <tr>
             <th

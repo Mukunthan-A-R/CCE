@@ -92,7 +92,7 @@ const ResultPage = () => {
         ) : (
           <table className="min-w-full  divide-y divide-gray-200 mx-2 sm:mx-5 m-10">
             <thead className="bg-blue-100">
-              <tr className="">
+              <tr>
                 <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                   S.No
                 </th>
