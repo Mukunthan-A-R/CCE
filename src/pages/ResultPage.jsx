@@ -136,7 +136,9 @@ const ResultPage = () => {
                 >
                   {
                     <>
-                      <td className="px-3 py-4 whitespace-nowrap">{row.sNo}</td>
+                      <td className="px-3 py-4 whitespace-nowrap">
+                        {rowIndex + 1}
+                      </td>
                       <td className="px-3 py-4 whitespace-nowrap">
                         {row.region}
                       </td>
