@@ -20,9 +20,17 @@ const Analytics = () => {
       </div>
       <div className="m-5">
         <p className="font-medium">College Data</p>
-        {TableData.map((item) => {
-          <p>{item.name}</p>;
-        })}
+        {TableData.map((item) => (
+          <div className="m-5">
+            {"{"}
+            <p> SNo :{item.sNo}</p>
+            <p> Clg Name :{item.name}</p>
+            <p> Clg Code :{item.collegeCode}</p>
+            <p>Branch Name: {item.branchName}</p>
+            <p> Branch Code : {item.branchCode}</p>
+            {"},"}
+          </div>
+        ))}
       </div>
     </div>
   );
