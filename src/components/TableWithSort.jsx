@@ -6,7 +6,8 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
 
-const TableWithSort = ({ data }) => {
+const TableWithSort = ({ data, community }) => {
+  const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
@@ -194,7 +195,11 @@ const TableWithSort = ({ data }) => {
               className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("oc")}
             >
-              <div className="flex items-center">
+              <div
+                className={`flex items-center ${
+                  communityColor === "oc" ? "bg-green-200" : " "
+                }`}
+              >
                 OC
                 {sortConfig && sortConfig.key === "oc" && (
                   <span className="ml-1">

@@ -198,7 +198,7 @@ const InputFilter = () => {
       >
         Submit
       </ButtonComponent>
-      <TableWithSort data={listValue}></TableWithSort>
+      <TableWithSort data={listValue} community={data.cast}></TableWithSort>
     </div>
   );
 };
