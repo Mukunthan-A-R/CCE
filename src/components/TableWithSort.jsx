@@ -64,7 +64,7 @@ const TableWithSort = ({ data }) => {
 
   React.useEffect(() => {
     sortedDataByKey();
-  }, [sortConfig]);
+  }, [sortConfig, data]);
 
   // Function to handle closing the popup
   const handleClosePopup = () => {
