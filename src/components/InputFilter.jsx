@@ -18,7 +18,7 @@ const InputFilter = () => {
     email: "",
     clgName: "",
     dept: "",
-    cutOff: 0,
+    cutOff: 200,
     cast: "",
     region: "",
   });
