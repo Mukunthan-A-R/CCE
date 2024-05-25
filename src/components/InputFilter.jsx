@@ -153,7 +153,7 @@ const InputFilter = () => {
           <InputComponentCast
             // Cast
             sendData={handleDataCast}
-            label="Cast"
+            label="Community"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponentCast>
