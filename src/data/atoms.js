@@ -10,6 +10,7 @@ export const userValue = atom({
   default: {
     name: "",
     email: "",
+    cutOff: 0,
   },
 });
 

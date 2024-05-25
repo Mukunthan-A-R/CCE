@@ -28,7 +28,12 @@ const InputFilter = () => {
   // console.log(TableValues);
 
   const handleSubmit = () => {
-    setUserData({ ...userData, name: data.name, email: data.email });
+    setUserData({
+      ...userData,
+      name: data.name,
+      email: data.email,
+      cutOff: data.cutOff,
+    });
     setUserCast({ community: data.cast });
     const DataFilter = TableValues.filter(
       (item) =>
