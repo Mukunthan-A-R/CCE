@@ -267,6 +267,63 @@ const TableWithSort = ({ data, community }) => {
                 )}
               </div>
             </th>
+            <th
+              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+                communityColor === "sc" ? "bg-green-200" : " "
+              }`}
+              onClick={() => requestSort("sc")}
+            >
+              <div className="flex items-center">
+                SC
+                {sortConfig && sortConfig.key === "sc" && (
+                  <span className="ml-1">
+                    {sortConfig.direction === "ascending" ? (
+                      <FaArrowCircleUp size={15} />
+                    ) : (
+                      <FaArrowCircleDown size={15} />
+                    )}
+                  </span>
+                )}
+              </div>
+            </th>
+            <th
+              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+                communityColor === "sca" ? "bg-green-200" : " "
+              }`}
+              onClick={() => requestSort("sca")}
+            >
+              <div className="flex items-center">
+                SCA
+                {sortConfig && sortConfig.key === "sca" && (
+                  <span className="ml-1">
+                    {sortConfig.direction === "ascending" ? (
+                      <FaArrowCircleUp size={15} />
+                    ) : (
+                      <FaArrowCircleDown size={15} />
+                    )}
+                  </span>
+                )}
+              </div>
+            </th>
+            <th
+              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+                communityColor === "st" ? "bg-green-200" : " "
+              }`}
+              onClick={() => requestSort("st")}
+            >
+              <div className="flex items-center">
+                ST
+                {sortConfig && sortConfig.key === "st" && (
+                  <span className="ml-1">
+                    {sortConfig.direction === "ascending" ? (
+                      <FaArrowCircleUp size={15} />
+                    ) : (
+                      <FaArrowCircleDown size={15} />
+                    )}
+                  </span>
+                )}
+              </div>
+            </th>
             <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
               Add
             </th>
@@ -276,7 +333,7 @@ const TableWithSort = ({ data, community }) => {
           {sortedData.map((row, rowIndex) => (
             <tr
               key={rowIndex}
-              className=" hover:bg-blue-200 focus:bg-red-500 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
+              className="text-xs hover:bg-blue-200 focus:bg-red-500 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
             >
               {Object.entries(row).map(([key, value], cellIndex) => (
                 <td
