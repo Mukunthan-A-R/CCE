@@ -342,7 +342,10 @@ const TableWithSort = ({ data, community }) => {
                     (communityColor === "oc" && cellIndex == 6) ||
                     (communityColor === "bc" && cellIndex == 7) ||
                     (communityColor === "bcm" && cellIndex == 8) ||
-                    (communityColor === "mbc" && cellIndex == 9)
+                    (communityColor === "mbc" && cellIndex == 9) ||
+                    (communityColor === "sc" && cellIndex == 10) ||
+                    (communityColor === "sca" && cellIndex == 11) ||
+                    (communityColor === "st" && cellIndex == 12)
                       ? "bg-green-200"
                       : " "
                   }`}

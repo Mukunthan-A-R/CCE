@@ -22,6 +22,9 @@ const InputComponentCast = ({ label, type = "text", styles, sendData }) => {
         <option value="bc">BC</option>
         <option value="mbc">MBC</option>
         <option value="bcm">BCM</option>
+        <option value="sc">SC</option>
+        <option value="sca">SCA</option>
+        <option value="st">ST</option>
       </select>
     </div>
   );
