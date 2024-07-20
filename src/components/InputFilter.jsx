@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { FaServer } from "react-icons/fa";
 import DataSubmitted from "./DataSubmitted";
-
+import Banner from "../assets/Banner.jpg"
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
   const [showPopup, setShowPopup] = useState(false);
@@ -127,16 +127,31 @@ const InputFilter = () => {
   }, [showPopup]);
 
   return (
-    <div className="my-10">
+    <div className="my-0">
       {showPopup && (
         <DataSubmitted handleClick={handleClosePopup}></DataSubmitted>
       )}
-      <h2 className="text-center font-bold text-xl my-5">TNEA Choice Order </h2>
-      <Link to="/app">
-        <div className="mx-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
+<div>
+      <div className="bg-primary-bg flex items-center ">
+        
+        <div className="mx-10 bg-blue-500 border border-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
+          <Link to='/app'>
           <FaServer />
+          </Link>
+         
         </div>
-      </Link>
+        <h2 className="text-center font-bold text-xl my-5 w-full ">TNEA Choice Order </h2>
+      
+      </div>
+      <div className="relative">
+        <img src={Banner} className="w-full" />
+        
+        <h2 className="absolute inset-0 flex items-center justify-center text-white font-bold text-sm sm:text-xl">Your Future Starts Here: Choose Wisely, Succeed Greatly.</h2>
+      </div>
+      </div>
+       
+
+      
       <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
         <InputComponent
           // Name
@@ -187,7 +202,7 @@ const InputFilter = () => {
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
         </div>
-        <div className="md:flex">
+        <div className="md:flex ">
           <InputComponent
             // Region
             sendData={handleDataRegion}
@@ -197,14 +212,16 @@ const InputFilter = () => {
           ></InputComponent>
         </div>
       </div>
-
-      <ButtonComponent
+<div className="flex w-full justify-center">
+<ButtonComponent
         handleClick={handleSubmit}
-        styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md"
+        styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center " 
       >
         Submit
       </ButtonComponent>
-      <TableWithSort data={listValue} community={data.cast}></TableWithSort>
+  
+</div>
+          <TableWithSort data={listValue} community={data.cast}></TableWithSort>
     </div>
   );
 };

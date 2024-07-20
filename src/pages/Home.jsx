@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="m-2 sm:m-5">
+    <div className="m-0 sm:m-0">
       <InputFilter></InputFilter>
       <Link to="/data">.</Link>
     </div>
