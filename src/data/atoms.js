@@ -13,6 +13,10 @@ export const userValue = atom({
     cutOff: 0,
   },
 });
+export const sno = atom({
+  key:'SNO',
+  default:1,
+})
 
 export const userCommunity = atom({
   key: "userCommunity",
