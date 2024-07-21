@@ -90,11 +90,11 @@ const TableWithSort = ({ data, community }) => {
       {showPopup && (
         <SuccessfullyAdded handleClick={handleClosePopup}></SuccessfullyAdded>
       )}
-      <table className="min-w-full  divide-y divide-gray-200  sm:mx-3 mx-auto">
+      <table className="min-w-full  divide-y divide-gray-200  mx-2">
         <thead className="bg-blue-100">
           <tr>
             <th
-              className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("sNo")}
             >
               <div className="flex justify-center">
@@ -111,7 +111,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("region")}
             >
               <div className="flex justify-center">
@@ -128,10 +128,10 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
               onClick={() => requestSort("collegeCode")}
             >
-              College Code
+              Clg Code
               {sortConfig && sortConfig.key === "collegeCode" && (
                 <span className="ml-1">
                   {sortConfig.direction === "ascending" ? (
@@ -143,7 +143,7 @@ const TableWithSort = ({ data, community }) => {
               )}
             </th>
             <th
-              className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("name")}
             >
               <div className="flex items-center">
@@ -160,7 +160,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className=" px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer "
+              className=" px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer "
               onClick={() => requestSort("branchCode")}
             >
               <div className="flex items-center">
@@ -177,7 +177,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
               onClick={() => requestSort("branchName")}
             >
               Branch Name
@@ -192,7 +192,7 @@ const TableWithSort = ({ data, community }) => {
               )}
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "oc" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("oc")}
@@ -211,7 +211,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "bc" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("bc")}
@@ -230,7 +230,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "bcm" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("bcm")}
@@ -249,7 +249,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "mbc" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("mbc")}
@@ -268,7 +268,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "sc" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("sc")}
@@ -287,7 +287,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "sca" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("sca")}
@@ -306,7 +306,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className={`px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+              className={`px-auto py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "st" ? "bg-green-200" : " "
               }`}
               onClick={() => requestSort("st")}
@@ -324,7 +324,7 @@ const TableWithSort = ({ data, community }) => {
                 )}
               </div>
             </th>
-            <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
+            <th className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
               Add
             </th>
           </tr>
@@ -338,7 +338,7 @@ const TableWithSort = ({ data, community }) => {
               {Object.entries(row).map(([key, value], cellIndex) => (
                 <td
                   key={cellIndex}
-                  className={`px-3 py-4 whitespace-nowrap ${
+                  className={`px-auto py-4 whitespace-nowrap pl-2  ${
                     (communityColor === "oc" && cellIndex == 6) ||
                     (communityColor === "bc" && cellIndex == 7) ||
                     (communityColor === "bcm" && cellIndex == 8) ||
