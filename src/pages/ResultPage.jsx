@@ -12,6 +12,7 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd'; // Im
 
 const ResultPage = () => {
   const community = useRecoilValue(userCommunity);
+  
   const [resultData, setResultData] = useRecoilState(resultDataAtom); // State managed by Recoil
   const userData = useRecoilValue(userDataAtom);
   const [showPopup, setShowPopup] = useState(false);
@@ -19,12 +20,14 @@ const ResultPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const [loader, setLoader] = useState(false);
-
+ 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = resultData.slice(indexOfFirstItem, indexOfLastItem);
+  
 
   const totalPages = Math.ceil(resultData.length / itemsPerPage);
+  
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -63,6 +66,27 @@ const ResultPage = () => {
     });
   };
 
+
+  // display selected Community with cutoff
+const selectedComumunityCutOff = (row)=>
+{
+  if(community.community === 'bc') 
+    return row.bc
+  else  if(community.community === 'sc') 
+    return row.sc
+
+ else if(community.community === 'sca')
+    return row.sca
+ else if(community.community === 'mbc')
+    return row.mbc
+ else if(community.community === 'oc')
+    return row.oc
+ else if(community.community === 'bcm')
+    return row.bcm
+else  if(community.community === 'st')
+    return row.st
+  
+}
   const onDragEnd = (result) => {
     if (!result.destination) return;
 
@@ -70,7 +94,17 @@ const ResultPage = () => {
     const [movedItem] = reorderedResultData.splice(result.source.index, 1);
     reorderedResultData.splice(result.destination.index, 0, movedItem);
 
-    setResultData(reorderedResultData);
+
+    // Rearranging the serial number after drag and drop
+
+
+    const modifiedData = reorderedResultData.map((data,index)=> ({
+      ...data,
+      sNo: index+1,
+
+      }))
+      console.log(resultData)
+    setResultData(modifiedData);
   };
 
   return (
@@ -170,7 +204,7 @@ const ResultPage = () => {
                             <td className="px-3 py-4 whitespace-nowrap">{row.name}</td>
                             <td className="px-3 py-4 whitespace-nowrap">{row.branchCode}</td>
                             <td className="px-3 py-4 whitespace-nowrap">{row.branchName}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row.community}</td>
+                            <td className="px-3 py-4 whitespace-nowrap">{selectedComumunityCutOff(row)}</td>
                             <td className="px-3 py-4 whitespace-nowrap">
                               <MdDelete
                                 onClick={() => handleDelete(row)}

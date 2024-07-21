@@ -22,6 +22,7 @@ const InputFilter = () => {
     cutOff: 200,
     cast: "",
     region: "",
+  
   });
   const [userData, setUserData] = useRecoilState(userValue);
   const [userCast, setUserCast] = useRecoilState(userCommunity);
@@ -211,6 +212,7 @@ const InputFilter = () => {
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
         </div>
+       
       </div>
 <div className="flex w-full justify-center">
 <ButtonComponent

@@ -5,12 +5,13 @@ import { resultArray } from "../data/atoms";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
-
+import {sno} from "../data/atoms"
 const TableWithSort = ({ data, community }) => {
   const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [InitialNo, SetInitialNo] = useRecoilState(sno);
   // Atoms data
   const [resultData, setResultData] = useRecoilState(resultArray);
 
@@ -56,11 +57,27 @@ const TableWithSort = ({ data, community }) => {
 
   // Add data to the ResultPage
   const handleResult = (row) => {
-    setResultData([...resultData, row]);
-    // atom data
+   
+
+    // Setting new serial number for selected data
+    const modifyRow = {...row,sNo:InitialNo};
+    // atom data  
+    console.log("modifyRow",modifyRow);
+
+    
+    
+    setResultData([...resultData, modifyRow]);
+    console.log([...resultData,modifyRow])
+    SetInitialNo((prev)=> {
+      const modifiedNo = prev+1;
+     
+      return modifiedNo
+    });
     console.log("Atom Data");
     console.log(resultData.length);
+    console.log([...resultData,row])
     console.log([...resultData, row]);
+    console.log(resultData)
   };
 
   React.useEffect(() => {
