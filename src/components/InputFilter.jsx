@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
-import TableWithSort from "./TableWithSort";
 // import TableValues from "../data/Data";
 import TableValues from "../data/DataChennai";
 import { userValue, userCommunity } from "../data/atoms";
 import InputComponentCast from "./InputComponentCast";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import { FaServer } from "react-icons/fa";
+// import { FaServer } from "react-icons/fa";
 import DataSubmitted from "./DataSubmitted";
-import Banner from "../assets/Banner.jpg"
+import Banner from "../assets/Banner.jpg";
+import { useNavigate } from "react-router-dom";
+
 const InputFilter = () => {
   const [listValue, setListValue] = useState(TableValues);
   const [showPopup, setShowPopup] = useState(false);
@@ -22,12 +23,10 @@ const InputFilter = () => {
     cutOff: 200,
     cast: "",
     region: "",
-  
   });
   const [userData, setUserData] = useRecoilState(userValue);
-  const [userCast, setUserCast] = useRecoilState(userCommunity);
-  // console.log(data);
-  // console.log(TableValues);
+  const [userCaste, setUserCaste] = useRecoilState(userCommunity);
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     setUserData({
@@ -36,7 +35,7 @@ const InputFilter = () => {
       email: data.email,
       cutOff: data.cutOff,
     });
-    setUserCast({ community: data.cast });
+    setUserCaste({ community: data.cast });
     const DataFilter = TableValues.filter(
       (item) =>
         // filter with college Name
@@ -54,8 +53,7 @@ const InputFilter = () => {
     if (data.cast !== "") {
       setListValue(finalData.filter((item) => item[data.cast] <= data.cutOff));
     }
-    // console.log(listValue);
-    // console.log(DataFilter);
+    navigate("/home");
     setShowPopup(true);
     console.log(data);
   };
@@ -132,27 +130,13 @@ const InputFilter = () => {
       {showPopup && (
         <DataSubmitted handleClick={handleClosePopup}></DataSubmitted>
       )}
-<div>
-      <div className="bg-primary-bg flex items-center ">
-        
-        <div className="mx-10 bg-blue-500 border border-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
-          <Link to='/app'>
-          <FaServer />
-          </Link>
-         
-        </div>
-        <h2 className="text-center font-bold text-xl my-5 w-full ">TNEA Choice Order </h2>
-      
-      </div>
+    
       <div className="relative">
-        <img src={Banner} className="w-full" />
-        
-        <h2 className="absolute inset-0 flex items-center justify-center text-white font-bold text-sm sm:text-xl">Your Future Starts Here: Choose Wisely, Succeed Greatly.</h2>
+        <img src={Banner} className="w-full h-24 object-cover" />
+        <h2 className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">TNEA CHOICE FILLING</h2>
       </div>
-      </div>
+    
        
-
-      
       <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
         <InputComponent
           // Name
@@ -212,18 +196,18 @@ const InputFilter = () => {
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
         </div>
-       
+      
       </div>
-<div className="flex w-full justify-center">
-<ButtonComponent
-        handleClick={handleSubmit}
-        styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center " 
-      >
-        Submit
-      </ButtonComponent>
+      <div className="flex w-full justify-center">
+        <ButtonComponent
+          handleClick={handleSubmit}
+          styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center " 
+        >
+          Submit
+        </ButtonComponent>
   
-</div>
-          <TableWithSort data={listValue} community={data.cast}></TableWithSort>
+      </div>
+        
     </div>
   );
 };

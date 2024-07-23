@@ -10,7 +10,7 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd'; // Importing from @hello-pangea/dnd
 
-const ResultPage = () => {
+const Result = () => {
   const community = useRecoilValue(userCommunity);
   
   const [resultData, setResultData] = useRecoilState(resultDataAtom); // State managed by Recoil
@@ -227,4 +227,4 @@ else  if(community.community === 'st')
   );
 };
 
-export default ResultPage;
+export default Result;

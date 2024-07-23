@@ -5,7 +5,8 @@ import { resultArray } from "../data/atoms";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
-import {sno} from "../data/atoms"
+import {sno} from "../data/atoms";
+
 const TableWithSort = ({ data, community }) => {
   const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
