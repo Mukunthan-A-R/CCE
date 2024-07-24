@@ -1,15 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
-import InputFilter from "../components/InputFilter";
-import ResultPage from "../pages/ResultPage";
-import Home from "../pages/Home";
-import Test from "../pages/Test";
-import Analytics from "../pages/Analytics";
+import { Register, Home, Result, Test, Analytics } from "../pages";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
+  { 
+    path: "/", 
+    element: <Register /> 
+  },
+  { 
+    path: "/home", 
+    element: <Home /> 
+  },
   {
-    path: "/app",
-    element: <ResultPage />,
+    path: "/result",
+    element: <Result />,
   },
   {
     path: "/data",
