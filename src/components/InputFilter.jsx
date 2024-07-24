@@ -24,6 +24,7 @@ const InputFilter = () => {
     region: "",
   
   });
+ 
   const [userData, setUserData] = useRecoilState(userValue);
   const [userCast, setUserCast] = useRecoilState(userCommunity);
   // console.log(data);

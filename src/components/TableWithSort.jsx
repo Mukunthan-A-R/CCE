@@ -5,7 +5,9 @@ import { resultArray } from "../data/atoms";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
+import {MdDelete} from "react-icons/md"
 import {sno} from "../data/atoms"
+import {userValue} from "../data/atoms"
 const TableWithSort = ({ data, community }) => {
   const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
@@ -13,8 +15,9 @@ const TableWithSort = ({ data, community }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   // Atoms data
+  const [userCutoff,SetuUserCutoff]  = useRecoilState(userValue);
   const [resultData, setResultData] = useRecoilState(resultArray);
-
+  let check;
   const requestSort = (key) => {
     let direction = "ascending";
     if (
@@ -26,7 +29,7 @@ const TableWithSort = ({ data, community }) => {
     }
     setSortConfig({ key, direction });
   };
-
+ 
   const sortedDataByKey = () => {
     if (sortConfig !== null) {
       const sorted = [...data].sort((a, b) => {
@@ -60,23 +63,47 @@ const TableWithSort = ({ data, community }) => {
    
 
     // Setting new serial number for selected data
-    const modifyRow = {...row,sNo:InitialNo};
+    const modifyRow = {...row,sNo:InitialNo,id:row.sNo};
     // atom data  
     console.log("modifyRow",modifyRow);
-
+    let flag =0;
+    setResultData((prev)=> {
+      const list = [...prev];
+      const find = list.findIndex((items) => items.id === row.sNo);
+      if(find === -1)
+      {
+        list.push(modifyRow)
+        flag=1;
+      }
+      else
+      {
+        list.splice(find,1);
+        flag=0;
+      }
+      console.log(list)
+      const modified = list.map((data,index)=> ({
+        ...data,
+        sNo:index+1
+      }))
+      return modified
+    })
     
-    
-    setResultData([...resultData, modifyRow]);
-    console.log([...resultData,modifyRow])
-    SetInitialNo((prev)=> {
-      const modifiedNo = prev+1;
-     
-      return modifiedNo
-    });
+    /* setResultData([...resultData, modifyRow]);
+    console.log([...resultData,modifyRow]) */
+   if(flag === 1)
+   {
+    SetInitialNo((prev)=> 
+      prev+1
+    );
+   }
+   else
+   {
+    SetInitialNo((prev)=> prev+1);
+   }
     console.log("Atom Data");
     console.log(resultData.length);
-    console.log([...resultData,row])
-    console.log([...resultData, row]);
+    /* console.log([...resultData,row])
+    console.log([...resultData, row]); */
     console.log(resultData)
   };
 
@@ -85,6 +112,10 @@ const TableWithSort = ({ data, community }) => {
   }, [sortConfig, data]);
 
   // Function to handle closing the popup
+  const handleCommunity  = ()=>
+  {
+    const usersCommunity = community.community;
+  }
   const handleClosePopup = () => {
     // Set showPopup to false to hide the popup
     setShowPopup(false);
@@ -378,7 +409,9 @@ const TableWithSort = ({ data, community }) => {
                     setShowPopup(true);
                   }}
                 >
-                  Add
+                  {check = resultData.find((val)=> val.id === row.sNo) ? <button><MdDelete
+                 className="text-red-500 cursor-pointer"
+                  /></button> : "Add"}
                 </ButtonComponent>
               </td>
             </tr>

@@ -41,11 +41,24 @@ const ResultPage = () => {
 
   const confirmDelete = () => {
     if (holdData) {
-      setResultData(resultData.filter((item) => item.sNo !== holdData.sNo));
-      setShowPopup(false);
-      setHoldData(null);
+        setResultData((prevResultData) => {
+            
+            const filteredData = prevResultData.filter((item) => item.sNo !== holdData.sNo);
+
+            // Reassigning serial numbers after deletion
+            const modifiedData = filteredData.map((data, index) => ({
+                ...data,
+                sNo: index + 1
+            }));
+
+            return modifiedData;
+        });
+
+        setShowPopup(false);
+        setHoldData(null);
     }
-  };
+};
+
 
   const cancelDelete = () => {
     setShowPopup(false);
@@ -95,7 +108,7 @@ else  if(community.community === 'st')
     reorderedResultData.splice(result.destination.index, 0, movedItem);
 
 
-    // Rearranging the serial number after drag and drop
+    // Reassigning the serial number after drag and drop
 
 
     const modifiedData = reorderedResultData.map((data,index)=> ({
