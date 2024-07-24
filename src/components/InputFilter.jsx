@@ -9,7 +9,7 @@ import InputComponentCast from "./InputComponentCast";
 `import { useRecoilState } from "recoil";`
 // import { FaServer } from "react-icons/fa";
 import DataSubmitted from "./DataSubmitted";
-// import Banner from "../assets/Banner.jpg";
+import Banner from "../assets/Banner.jpg";
 import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 
@@ -74,33 +74,33 @@ const InputFilter = () => {
     }));
   };
 
-  // const handleDataClg = (value) => {
-  //   setData((data) => ({
-  //     ...data,
-  //     clgName: value,
-  //   }));
-  // };
+  const handleDataClg = (value) => {
+    setData((data) => ({
+      ...data,
+      clgName: value,
+    }));
+  };
 
-  // const handleDataName = (value) => {
-  //   setData((data) => ({
-  //     ...data,
-  //     name: value,
-  //   }));
-  // };
+  const handleDataName = (value) => {
+    setData((data) => ({
+      ...data,
+      name: value,
+    }));
+  };
 
-  // const handleDataEmail = (value) => {
-  //   setData((data) => ({
-  //     ...data,
-  //     email: value,
-  //   }));
-  // };
+  const handleDataEmail = (value) => {
+    setData((data) => ({
+      ...data,
+      email: value,
+    }));
+  };
 
-  // const handleDataCast = (value) => {
-  //   setData((data) => ({
-  //     ...data,
-  //     cast: value,
-  //   }));
-  // };
+  const handleDataCast = (value) => {
+    setData((data) => ({
+      ...data,
+      cast: value,
+    }));
+  };
 
   const handleDataRegion = (value) => {
     setData((data) => ({
@@ -132,14 +132,14 @@ const InputFilter = () => {
       {showPopup && (
         <DataSubmitted handleClick={handleClosePopup}></DataSubmitted>
       )}
-{/*     
+    
       <div className="relative">
         <img src={Banner} className="w-full h-24 object-cover" />
         <h2 className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">TNEA CHOICE FILLING</h2>
       </div>
-     */}
+    
        
-      {/* <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
+      <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
         <InputComponent
           // Name
           sendData={handleDataName}
@@ -154,10 +154,10 @@ const InputFilter = () => {
           type="email"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
-      </div> */}
+      </div>
       {/* <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg"></div> */}
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
-        {/* <div className="md:flex">
+        <div className="md:flex">
           <InputComponentCast
             // Cast
             sendData={handleDataCast}
@@ -165,7 +165,7 @@ const InputFilter = () => {
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponentCast>
-        </div> */}
+        </div>
         <div className="md:flex">
           <InputComponent
             //CutOff data
@@ -182,13 +182,13 @@ const InputFilter = () => {
             styles="w-full md:w-1/2 px-10 my-4 "
           ></InputComponent>
         </div>
-          {/* <InputComponent
+          <InputComponent
             // ClgName
             sendData={handleDataClg}
             label="College Name"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
-          ></InputComponent> */}
+          ></InputComponent>
         <div className="md:flex">
           <InputComponent
             // Department
