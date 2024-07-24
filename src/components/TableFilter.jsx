@@ -11,7 +11,7 @@ import InputRegion from './InputRegion';
 
 const TableFilter = () => {
   const [data,setData] = useState([...TableValues]); 
-
+  
   // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
   const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
   
@@ -61,7 +61,7 @@ const TableFilter = () => {
  
   return (
     <div className="my-0">
-      <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
+      <div className=" border border-gray-200 rounded-lg mx-10 shadow-lg">
         
         <div className="md:flex">
           <InputComponent
@@ -127,6 +127,5 @@ const TableFilter = () => {
       <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>
     </div>
   )
-}
 
 export default TableFilter
