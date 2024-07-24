@@ -3,18 +3,23 @@ import TableValues from '../data/DataChennai';
 import InputComponent from './InputComponent';
 import ButtonComponent from './ButtonComponent';
 import { useRecoilState } from 'recoil';
-import { userCommunity, userValue } from '../data/atoms';
+import { resultArray, userCommunity, userValue } from '../data/atoms';
 import DataSubmitted from './DataSubmitted';
 import { useNavigate } from 'react-router-dom';
 import TableWithSort from './TableWithSort';
+import InputRegion from './InputRegion';
 
 const TableFilter = () => {
-    const [filter,setFilter] = useState({
+  const [data,setData] = useState(TableValues); 
+  
+  const [filter,setFilter] = useState({
         cutOffStart: 200,
         cutOffEnd: 0,
+        collegeCode: 0,
         region: "",
         dept:"",
     })
+
 
     const handleDataCutOffSt = (value) => {
         setFilter({...filter ,cutOffStart: value})
@@ -26,8 +31,21 @@ const TableFilter = () => {
         console.log(filter);
     }
 
+    const handleDataCollegeCode = (value) => {
+        setFilter({...filter ,collegeCode: value})
+        console.log(filter);
+    }
+
+    const handleDataRegion = (e) => {
+        setFilter({...filter ,region: e.target.value})
+        console.log(filter);
+    }
+
     const handleSubmit = () => {
         console.log(filter);
+        const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd && value.collegeCode === filter.collegeCode && value.region === filter.region)
+        setData(FilterData)
+
 
     }
  
@@ -50,6 +68,21 @@ const TableFilter = () => {
             type="number"
             styles="w-full md:w-1/2 px-10 my-4 "
           ></InputComponent>
+        </div>
+
+        <div className="md:flex">
+          <InputComponent
+            //College Code
+            sendData={handleDataCollegeCode}
+            label="College Code"
+            type="number"
+            styles="w-full md:w-1/2 px-10 my-4 "
+          ></InputComponent>
+          <InputRegion
+          label="Region"
+          styles="w-full md:w-1/2 px-10 my-4 "
+          sendData={handleDataRegion}
+          ></InputRegion>
         </div>
          
         {/* <div className="md:flex">
@@ -81,7 +114,8 @@ const TableFilter = () => {
         </ButtonComponent>
   
       </div>
-      <TableWithSort tableWithSort data={TableValues} community={"oc"}></TableWithSort>
+      {/* <TableWithSort tableWithSort data={TableValues} community={"oc"}></TableWithSort> */}
+      <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>
     </div>
   )
 }

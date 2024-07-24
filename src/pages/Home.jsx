@@ -5,6 +5,7 @@ import { useRecoilState } from "recoil";
 import { userCommunity } from "../data/atoms";
 import TableFilter from "../components/TableFilter";
 import HomeUi from "../components/HomeUi";
+import InputFilter from "../components/InputFilter";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
     <div className="m-0 sm:m-0">
       <HomeUi></HomeUi>
       <TableFilter></TableFilter>
+      {/* <InputFilter></InputFilter> */}
     </div>
   );
 };
