@@ -21,7 +21,7 @@ const InputRegion = ({styles,label,sendData}) => {
       <option value="Tanjore">Tanjore zone</option>
       <option value="Madurai">Madurai zone</option>
       <option value="Trichy">Trichy zone</option>
-      <option value="others">others</option>
+      <option value="">others</option>
     </select>
     </label>
   </div>

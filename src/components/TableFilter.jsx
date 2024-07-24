@@ -10,7 +10,10 @@ import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
 
 const TableFilter = () => {
-  const [data,setData] = useState(TableValues); 
+  const [data,setData] = useState([...TableValues]); 
+
+  // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
+  const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
   
   const [filter,setFilter] = useState({
         cutOffStart: 200,
@@ -22,18 +25,28 @@ const TableFilter = () => {
 
 
     const handleDataCutOffSt = (value) => {
-        setFilter({...filter ,cutOffStart: value})
+        setFilter({...filter ,cutOffStart: parseInt(value)})
         console.log(filter);
+        if(value === ""){
+          setFilter({...filter ,cutOffStart: 200})
+        }
     }
     
     const handleDataCutOffEnd = (value) => {
-        setFilter({...filter ,cutOffEnd: value})
+        setFilter({...filter ,cutOffEnd: parseInt(value)})
         console.log(filter);
+        if(value === ""){
+          setFilter({...filter ,cutOffEnd: 0})
+        }
     }
 
     const handleDataCollegeCode = (value) => {
-        setFilter({...filter ,collegeCode: value})
+        setFilter({...filter ,collegeCode: parseInt(value)})
         console.log(filter);
+        if(value === ""){
+          setFilter({...filter , collegeCode: 0})
+        }
+      
     }
 
     const handleDataRegion = (e) => {
@@ -42,12 +55,21 @@ const TableFilter = () => {
     }
 
     const handleSubmit = () => {
-        console.log(filter);
-        const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd && value.collegeCode === filter.collegeCode && value.region === filter.region)
+        console.log("HELLO");
+        const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd   &&
+          (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
+        )
         setData(FilterData)
+        if(filter.collegeCode !== 0){
+          setData(FilterData.filter(value =>  filter.collegeCode === parseInt(value.collegeCode) ))
+        }
+        console.log(filter);
+      }
 
+      // &&       (filter.collegeCode !== 0 && value.collegeCode === filter.collegeCode)
 
-    }
+      // {const FinalData = FilterData.filter(value => value.collegeCode === filter.collegeCode)}
+      // && value.collegeCode === filter.collegeCode 
  
   return (
     <div className="my-0">
@@ -112,7 +134,6 @@ const TableFilter = () => {
         >
           Submit
         </ButtonComponent>
-  
       </div>
       {/* <TableWithSort tableWithSort data={TableValues} community={"oc"}></TableWithSort> */}
       <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>

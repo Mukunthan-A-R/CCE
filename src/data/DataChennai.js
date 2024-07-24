@@ -1,7 +1,7 @@
 const TableValues = [
   {
     sNo: 1,
-    region: "Chennai",
+    region: "Madurai",
     collegeCode: "1",
     name: "University Departments of Anna University Chennai - CEG Campus",
     branchCode: "BY",
@@ -16,7 +16,7 @@ const TableValues = [
   },
   {
     sNo: 2,
-    region: "Chennai",
+    region: "Tanjore",
     collegeCode: "1",
     name: "University Departments of Anna University Chennai - CEG Campus",
     branchCode: "CE",
@@ -31,7 +31,7 @@ const TableValues = [
   },
   {
     sNo: 3,
-    region: "Chennai",
+    region: "Coimbatore",
     collegeCode: "1",
     name: "University Departments of Anna University Chennai - CEG Campus",
     branchCode: "CM",
