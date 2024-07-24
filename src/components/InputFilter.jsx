@@ -73,33 +73,33 @@ const InputFilter = () => {
     }));
   };
 
-  const handleDataClg = (value) => {
-    setData((data) => ({
-      ...data,
-      clgName: value,
-    }));
-  };
+  // const handleDataClg = (value) => {
+  //   setData((data) => ({
+  //     ...data,
+  //     clgName: value,
+  //   }));
+  // };
 
-  const handleDataName = (value) => {
-    setData((data) => ({
-      ...data,
-      name: value,
-    }));
-  };
+  // const handleDataName = (value) => {
+  //   setData((data) => ({
+  //     ...data,
+  //     name: value,
+  //   }));
+  // };
 
-  const handleDataEmail = (value) => {
-    setData((data) => ({
-      ...data,
-      email: value,
-    }));
-  };
+  // const handleDataEmail = (value) => {
+  //   setData((data) => ({
+  //     ...data,
+  //     email: value,
+  //   }));
+  // };
 
-  const handleDataCast = (value) => {
-    setData((data) => ({
-      ...data,
-      cast: value,
-    }));
-  };
+  // const handleDataCast = (value) => {
+  //   setData((data) => ({
+  //     ...data,
+  //     cast: value,
+  //   }));
+  // };
 
   const handleDataRegion = (value) => {
     setData((data) => ({
@@ -138,7 +138,7 @@ const InputFilter = () => {
       </div>
      */}
        
-      <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
+      {/* <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
         <InputComponent
           // Name
           sendData={handleDataName}
@@ -153,10 +153,10 @@ const InputFilter = () => {
           type="email"
           styles="w-full md:w-1/2 px-10 my-4"
         ></InputComponent>
-      </div>
+      </div> */}
       {/* <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg"></div> */}
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
-        <div className="md:flex">
+        {/* <div className="md:flex">
           <InputComponentCast
             // Cast
             sendData={handleDataCast}
@@ -164,22 +164,31 @@ const InputFilter = () => {
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponentCast>
+        </div> */}
+        <div className="md:flex">
           <InputComponent
             //CutOff data
             sendData={handleDataCutOff}
-            label="Cut Off"
+            label="Cut Off Starting"
+            type="number"
+            styles="w-full md:w-1/2 px-10 my-4 "
+          ></InputComponent>
+          <InputComponent
+            //CutOff data
+            sendData={handleDataCutOff}
+            label="Cut Off Ending"
             type="number"
             styles="w-full md:w-1/2 px-10 my-4 "
           ></InputComponent>
         </div>
-        <div className="md:flex">
-          <InputComponent
+          {/* <InputComponent
             // ClgName
             sendData={handleDataClg}
             label="College Name"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
-          ></InputComponent>
+          ></InputComponent> */}
+        <div className="md:flex">
           <InputComponent
             // Department
             sendData={handleDataDept}
@@ -187,8 +196,6 @@ const InputFilter = () => {
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
-        </div>
-        <div className="md:flex ">
           <InputComponent
             // Region
             sendData={handleDataRegion}
@@ -196,6 +203,8 @@ const InputFilter = () => {
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
+        </div>
+        <div className="md:flex ">
         </div>
       
       </div>

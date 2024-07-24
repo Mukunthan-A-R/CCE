@@ -410,9 +410,7 @@ const TableWithSort = ({ data, community }) => {
                     setShowPopup(true);
                   }}
                 >
-                  {check = resultData.find((val)=> val.id === row.sNo) ? <button><MdDelete
-                 className="text-red-500 cursor-pointer"
-                  /></button> : "Add"}
+                  {check = resultData.find((val)=> val.id === row.sNo) ? "Delete" : "Add"}
                 </ButtonComponent>
               </td>
             </tr>
