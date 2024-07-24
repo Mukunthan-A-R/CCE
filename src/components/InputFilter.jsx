@@ -9,7 +9,7 @@ import InputComponentCast from "./InputComponentCast";
 import { useRecoilState } from "recoil";
 // import { FaServer } from "react-icons/fa";
 import DataSubmitted from "./DataSubmitted";
-import Banner from "../assets/Banner.jpg";
+// import Banner from "../assets/Banner.jpg";
 import { useNavigate } from "react-router-dom";
 
 const InputFilter = () => {
@@ -130,12 +130,12 @@ const InputFilter = () => {
       {showPopup && (
         <DataSubmitted handleClick={handleClosePopup}></DataSubmitted>
       )}
-    
+{/*     
       <div className="relative">
         <img src={Banner} className="w-full h-24 object-cover" />
         <h2 className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">TNEA CHOICE FILLING</h2>
       </div>
-    
+     */}
        
       <div className="md:flex border border-gray-200 mx-10 rounded-lg my-5 shadow-lg">
         <InputComponent
