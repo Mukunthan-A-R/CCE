@@ -7,6 +7,7 @@ import { userCommunity, userValue } from '../data/atoms';
 import DataSubmitted from './DataSubmitted';
 import { useNavigate } from 'react-router-dom';
 import TableWithSort from './TableWithSort';
+import InputRegion from './InputRegion';
 
 const TableFilter = () => {
     const [filter,setFilter] = useState({
@@ -17,14 +18,26 @@ const TableFilter = () => {
     })
 
     const handleDataCutOffSt = (value) => {
+      
         setFilter({...filter ,cutOffStart: value})
         console.log(filter);
     }
     
     const handleDataCutOffEnd = (value) => {
-        setFilter({...filter ,cutOffEnd: value})
+      if(filter.cutOffStart >= value)
+      {
+        console.log("the end cutoff value should be greater than start cut off value ")
+      }
+        else if(filter.cutOffStart < value)
+        {
+          setFilter({...filter ,cutOffEnd: value})
         console.log(filter);
+        }
     }
+    const handleDept = (event) => {
+        setFilter({...filter,region:event.target.value});
+        console.log(event.target.value);
+      };
 
     const handleSubmit = () => {
         console.log(filter);
@@ -52,24 +65,24 @@ const TableFilter = () => {
           ></InputComponent>
         </div>
          
-        {/* <div className="md:flex">
+        <div className="md:flex">
           <InputComponent
             // Department
-            sendData={handleDataDept}
+            sendData={handleDept}
             label="Department"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
-          <InputComponent
+          <InputRegion
             // Region
-            sendData={handleDataRegion}
+           /*  sendData={handleDataRegion} */
             label="Region"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
-          ></InputComponent>
+          ></InputRegion>
         </div>
         <div className="md:flex ">
-        </div> */}
+        </div>
       
       </div>
       <div className="flex w-full justify-center">
