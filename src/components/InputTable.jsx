@@ -80,7 +80,9 @@ const InputTable = () => {
   const [tableData, setTableData] = useState([]);
 
   const handleFormSubmit = (formData) => {
+    console.log(tableData);
     setTableData([...tableData, formData]);
+    console.log(tableData);
   };
 
   return (
