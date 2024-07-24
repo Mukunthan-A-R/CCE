@@ -6,7 +6,7 @@ import TableValues from "../data/DataChennai";
 import { userValue, userCommunity } from "../data/atoms";
 import InputComponentCast from "./InputComponentCast";
 // import { Link } from "react-router-dom";
-import { useRecoilState } from "recoil";
+`import { useRecoilState } from "recoil";`
 // import { FaServer } from "react-icons/fa";
 import DataSubmitted from "./DataSubmitted";
 // import Banner from "../assets/Banner.jpg";
@@ -47,7 +47,7 @@ const InputFilter = () => {
         item.branchName.toLowerCase().includes(data.dept.toLowerCase())
       // filter with filter
       // item[data.cast] <= data.cutOff
-    );
+    ); 
     const finalData = DataFilter;
     setListValue(DataFilter);
     // Filter by Cut Off
