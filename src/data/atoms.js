@@ -5,22 +5,18 @@ export const resultArray = atom({
   default: [],
 });
 
-export const userValue = atom({
-  key: "userValue",
+export const userData = atom({
+  key: "userData",
   default: {
     name: "",
     email: "",
-    cutOff: 0,
+    phoneNo: "",
+    cutOff: "",
+    community: ""
   },
 });
+
 export const sno = atom({
   key:'SNO',
-  default:1,
+  default: 1,
 })
-
-export const userCommunity = atom({
-  key: "userCommunity",
-  default: {
-    community: "oc",
-  },
-});

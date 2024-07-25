@@ -3,7 +3,7 @@ import TableValues from '../data/DataChennai';
 import InputComponent from './InputComponent';
 import ButtonComponent from './ButtonComponent';
 import { useRecoilState } from 'recoil';
-import { resultArray, userCommunity, userValue } from '../data/atoms';
+import { resultArray, userData } from '../data/atoms';
 import DataSubmitted from './DataSubmitted';
 import { useNavigate } from 'react-router-dom';
 import TableWithSort from './TableWithSort';

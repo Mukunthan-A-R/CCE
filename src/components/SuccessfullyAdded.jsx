@@ -13,7 +13,7 @@ const SuccessfullyAdded = ({ handleClick,content,remove }) => {
         </div>
         <p class="text-gray-600 text-xs">
           {content}
-          {/* The selected item has been added to the list successsfully */}
+          {/* The selected item has been added to the list successfully */}
         </p>
       </div>
     </div>
