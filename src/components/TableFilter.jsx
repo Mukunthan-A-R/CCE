@@ -2,86 +2,158 @@ import React, { useEffect, useState } from 'react';
 import TableValues from '../data/DataChennai';
 import InputComponent from './InputComponent';
 import ButtonComponent from './ButtonComponent';
+import { useRecoilState } from 'recoil';
+import { resultArray, userData } from '../data/atoms';
+import DataSubmitted from './DataSubmitted';
+import { useNavigate } from 'react-router-dom';
+import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
 import InputDept from './InputDept';
 import TableWithSort from './TableWithSort';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 
 const TableFilter = () => {
-  const [data, setData] = useState([...TableValues]);
-  const [filter, setFilter] = useState({
-    cutOffStart: 200,
-    cutOffEnd: 0,
-    collegeCode: 0,
-    region: "",
-    dept: [],
-  });
-  const [errors, SetErrors] = useState({});
-  const [currentPage, setCurrentPage] = useState(1);
-  const [pageWindowStart, setPageWindowStart] = useState(1); // New state for pagination window
-  const pageSize = 50;
+  const [data,setData] = useState([...TableValues]); 
 
-  // Filter logic
-  const handleSubmit = () => {
-    const hasErrors = Object.values(errors).some(error => error.trim() !== '');
-    if (hasErrors) {
-      console.log('Form Contains errors');
-      return;
-    }
+  // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
+  const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
+  
+  const [filter,setFilter] = useState({
+        cutOffStart: 200,
+        cutOffEnd: 0,
+        collegeCode: 0,
+        region: "",
+        dept:[],
+    })
 
-    const FilterData = TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd &&
-      (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
-    );
+    const [errors,SetErrors] = useState({})
 
-    let filteredData = FilterData;
-    if (filter.collegeCode !== 0) {
-      filteredData = filteredData.filter(value => filter.collegeCode === parseInt(value.collegeCode));
-    }
-    if (filter.dept.length !== 0) {
-      filteredData = filteredData.filter(value => filter.dept.includes(value.branchCode));
-    }
-    setData(filteredData);
-    setCurrentPage(1); // Reset to the first page after filtering
-    setPageWindowStart(1); // Reset the pagination window start
-  };
+    const handleDataCutOffSt = (value) => {
+      let newErrors = {};
 
-  // Pagination logic
-  const totalPages = Math.ceil(data.length / pageSize);
-  const startIndex = (currentPage - 1) * pageSize;
-  const paginatedData = data.slice(startIndex, startIndex + pageSize);
-
-  const handlePageChange = (page) => {
-    if (page >= 1 && page <= totalPages) {
-      setCurrentPage(page);
-    }
-  };
-
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-      if (currentPage >= pageWindowStart + 2) {
-        setPageWindowStart(pageWindowStart + 3);
+      if(value > 0 && value <= 200)
+      {
+        setFilter({...filter ,cutOffStart: parseInt(value)})
+        console.log(filter);
+        newErrors.cutOffStart=''
       }
+        
+        if(value === ""){
+          setFilter({...filter ,cutOffStart: 200})
+        }
+        if(value > 200 )
+        {
+          newErrors.cutOffStart = "Cut off value starting should be between 1 and 200";
+          
+        }
+        if(value < 0)
+        {
+          newErrors.cutOffStart = "Cut off value should not less than 0";
+        }
+        SetErrors((prev)=> ({...prev,...newErrors}))
     }
-  };
+    
+    const handleDataCutOffEnd = (value) => {
+      let newErrors = {};
+      const intValue = parseInt(value)
+      if(value > 200)
+        {
+          newErrors.cutOffEnd = "the cut off value should be between 1 and 200"
+        
+        }
+        if(value < 0)
+        {
+          newErrors.cutOffEnd = "the cut off value should be greater than 0"
+        }
+        if(value > 0 && value <=200)
+        {
+          setFilter({...filter ,cutOffEnd: parseInt(value)})
+          console.log(filter);
+          newErrors.cutOffEnd= '';
+        }
+       
+        if(value === ""){
+          setFilter({...filter ,cutOffEnd: 0})
+        }
+        SetErrors((prev)=> ({...prev,...newErrors}))
+    }
 
-  const handlePreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-      if (currentPage <= pageWindowStart) {
-        setPageWindowStart(pageWindowStart - 3);
+    const handleDataCollegeCode = (value) => {
+      const intValue = parseInt(value);
+      let newErrors = {};
+    
+      if (value === "") {
+        
+        setFilter(prevFilter => ({
+          ...prevFilter,
+          collegeCode: 0,
+        }));
+        newErrors.collegeCode = ''; 
+      } else if (isNaN(intValue)) {
+        newErrors.collegeCode = 'College Code must be a number';
+      } else if (intValue <= 0 || intValue > 3000) {
+        newErrors.collegeCode = 'The college code should be between 1 and 3000';
+      } else {
+        // Valid value
+        setFilter(prevFilter => ({
+          ...prevFilter,
+          collegeCode: intValue,
+        }));
+        newErrors.collegeCode = ''; 
       }
-    }
-  };
+    
+     
+      SetErrors(prevErrors => ({
+        ...prevErrors,
+        ...newErrors,
+      }));
+    };
+    
 
-  const getPageNumbers = () => {
-    const pageNumbers = [];
-    for (let i = pageWindowStart; i < pageWindowStart + 3 && i <= totalPages; i++) {
-      pageNumbers.push(i);
+    const handleDataRegion = (e) => {
+        setFilter({...filter ,region: e.target.value})
+        console.log(filter);
     }
-    return pageNumbers;
-  };
+    const handleDataDept = (selectedValues) => {
+      console.log("Selected values in handleDataDept:", selectedValues); // Log selected values for debugging
+      setFilter((prevFilter) => ({ ...prevFilter, dept: selectedValues }));
+    };
+  
+    
+    useEffect(() => {
+      console.log("Updated filter state:", filter);
+    }, [filter]);
 
+    const handleSubmit = () => {
+     
+      const hasErrors = Object.values(errors).some(error => error.trim() !== '');
+    
+      if (hasErrors) {
+          console.log(errors);
+          console.log('Form Contains errors');
+          return;
+      }
+        console.log("HELLO");
+        const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd   &&
+          (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
+        )
+        setData(FilterData)
+        if(filter.collegeCode !== 0){
+          setData(FilterData.filter(value =>  filter.collegeCode === parseInt(value.collegeCode) ))
+        }
+        console.log(filter);
+        if(filter.dept.length !== 0){
+          setData(FilterData.filter(value => filter.dept.includes(value.branchCode)))
+        }
+      }
+
+      // &&       (filter.collegeCode !== 0 && value.collegeCode === filter.collegeCode)
+
+      // {const FinalData = FilterData.filter(value => value.collegeCode === filter.collegeCode)}
+      // && value.collegeCode === filter.collegeCode 
+
+
+ 
   return (
     <div className="my-0">
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
@@ -129,32 +201,10 @@ const TableFilter = () => {
           Submit
         </ButtonComponent>
       </div>
-      <TableWithSort tableWithSort data={paginatedData} community={"oc"} />
-      <div className="flex items-center justify-center my-4">
-        <button
-          onClick={handlePreviousPage}
-          disabled={currentPage === 1}
-          className={`mx-1 p-2 rounded ${currentPage === 1 ? 'bg-gray-200 text-gray-400' : 'bg-gray-200 text-black'}`}
-        >
-          <ChevronLeftIcon className="w-6 h-6" />
-        </button>
-        {getPageNumbers().map(page => (
-          <button
-            key={page}
-            onClick={() => handlePageChange(page)}
-            className={`mx-1 px-3 py-1 rounded ${currentPage === page ? 'bg-blue-700 text-white' : 'bg-gray-200 text-black'}`}
-          >
-            {page}
-          </button>
-        ))}
-        <button
-          onClick={handleNextPage}
-          disabled={currentPage === totalPages}
-          className={`mx-1 p-2 rounded ${currentPage === totalPages ? 'bg-gray-200 text-gray-400' : 'bg-gray-200 text-black'}`}
-        >
-          <ChevronRightIcon className="w-6 h-6" />
-        </button>
-      </div>
+     
+      {/* <TableWithSort tableWithSort data={TableValues} community={"oc"}></TableWithSort> */}
+      <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>
+      
     </div>
   );
 };

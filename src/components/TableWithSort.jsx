@@ -14,7 +14,7 @@ const TableWithSort = ({ data, community }) => {
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
-  const [remove,Setremove] = useState(false)
+  const [remove, Setremove] = useState(false)
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   // Atoms data
   const [userCutoff,setUserCutoff]  = useRecoilState(userData);
@@ -143,6 +143,7 @@ const TableWithSort = ({ data, community }) => {
         <SuccessfullyAdded handleClick={handleClosePopup} content={content} remove={remove}></SuccessfullyAdded>
       )}
       <table className="min-w-full  divide-y divide-gray-200  mx-2">
+      <h1>hi</h1>
         <thead className="bg-blue-100">
           <tr>
             <th
