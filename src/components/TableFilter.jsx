@@ -9,9 +9,11 @@ import { useNavigate } from 'react-router-dom';
 import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
 import InputDept from './InputDept';
+import {toast,ToastContainer} from "react-toastify"
 
 const TableFilter = () => {
-  const [data,setData] = useState([...TableValues]); 
+  const [data,setData] = useState([...TableValues]);
+ 
 
   // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
   const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
@@ -26,10 +28,23 @@ const TableFilter = () => {
 
 
     const handleDataCutOffSt = (value) => {
+      if(value > 0 && value <= 200)
+      {
         setFilter({...filter ,cutOffStart: parseInt(value)})
         console.log(filter);
+      }
+        
         if(value === ""){
           setFilter({...filter ,cutOffStart: 200})
+        }
+        else if(value > 200)
+        {
+           /*  toast.error("The cut off value should less than or eqaul to 200")
+            toast.error("Success Notification !", {
+              position: toast.POSITION.TOP_CENTER,
+            }); */
+            /* SetError(true);
+            SetErrorStatement("The cut off value should be between 1 to 200") */
         }
     }
     
@@ -80,9 +95,12 @@ const TableFilter = () => {
 
       // {const FinalData = FilterData.filter(value => value.collegeCode === filter.collegeCode)}
       // && value.collegeCode === filter.collegeCode 
+
+
  
   return (
     <div className="my-0">
+      
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
         
         <div className="md:flex">
@@ -90,9 +108,12 @@ const TableFilter = () => {
             //CutOff data
             sendData={handleDataCutOffSt}
             label="Cut Off Starting"
+
+
             type="number"
             styles="w-full md:w-1/2 px-10 my-4 "
           ></InputComponent>
+          
           <InputComponent
             //CutOff data
             sendData={handleDataCutOffEnd}
@@ -151,9 +172,12 @@ const TableFilter = () => {
           Submit
         </ButtonComponent>
       </div>
+     
       {/* <TableWithSort tableWithSort data={TableValues} community={"oc"}></TableWithSort> */}
       <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>
+      
     </div>
+    
   )
 }
 

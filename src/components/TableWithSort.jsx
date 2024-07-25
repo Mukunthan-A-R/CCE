@@ -14,11 +14,13 @@ const TableWithSort = ({ data, community }) => {
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [remove,Setremove] = useState(false)
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   // Atoms data
   const [userCutoff,SetuUserCutoff]  = useRecoilState(userValue);
   const [resultData, setResultData] = useRecoilState(resultArray);
-  
+  const [content,SetContent] = useState("")
+ 
   let check;
   const requestSort = (key) => {
     let direction = "ascending";
@@ -138,7 +140,7 @@ const TableWithSort = ({ data, community }) => {
   return (
     <div className="flex justify-center">
       {showPopup && (
-        <SuccessfullyAdded handleClick={handleClosePopup}></SuccessfullyAdded>
+        <SuccessfullyAdded handleClick={handleClosePopup} content={content} remove={remove}></SuccessfullyAdded>
       )}
       <table className="min-w-full  divide-y divide-gray-200  mx-2">
         <thead className="bg-blue-100">
@@ -408,10 +410,17 @@ const TableWithSort = ({ data, community }) => {
                   styles="p-2 rounded-lg text-white hover:bg-green-400 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
                   handleClick={() => {
                     handleResult(row);
-                    setShowPopup(true);
+                    
+                    
                   }}
                 >
-                  {check = resultData.find((val)=> val.id === row.sNo) ? <button style={{color:"red",fontSize:"20px",textAlign:"center",padding:"4px"}}><MdDelete /></button> : <button style={{backgroundColor:"#1E88E5",padding:"7px", borderRadius:"3px"}}>Add</button>}
+                  {check = resultData.find((val)=> val.id === row.sNo) ? <button style={{color:"red",fontSize:"20px",textAlign:"center",padding:"4px"}} onClick={() => {setShowPopup(true); SetContent(" The selected item has been removed to the list successsfully");Setremove(true)
+
+                  } }><MdDelete /></button> : <button style={{backgroundColor:"#1E88E5",padding:"7px", borderRadius:"3px"}}
+                    onClick={()=> {
+                      setShowPopup(true); SetContent(" The selected item has been added to the list successsfully"); Setremove(false)
+                    }}
+                  >Add</button>}
                 </ButtonComponent>
               </td>
             </tr>
