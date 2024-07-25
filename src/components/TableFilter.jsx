@@ -8,6 +8,7 @@ import DataSubmitted from './DataSubmitted';
 import { useNavigate } from 'react-router-dom';
 import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
+import InputDept from './InputDept';
 
 const TableFilter = () => {
   const [data, setData] = useState([...TableValues]); 
@@ -20,7 +21,7 @@ const TableFilter = () => {
         cutOffEnd: 0,
         collegeCode: 0,
         region: "",
-        dept:"",
+        dept:[],
     })
 
 
@@ -53,6 +54,15 @@ const TableFilter = () => {
         setFilter({...filter ,region: e.target.value})
         console.log(filter);
     }
+    const handleDataDept = (selectedValues) => {
+      console.log("Selected values in handleDataDept:", selectedValues); // Log selected values for debugging
+      setFilter((prevFilter) => ({ ...prevFilter, dept: selectedValues }));
+    };
+  
+    
+    useEffect(() => {
+      console.log("Updated filter state:", filter);
+    }, [filter]);
 
     const handleSubmit = () => {
         console.log("HELLO");
@@ -105,7 +115,13 @@ const TableFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4 "
           sendData={handleDataRegion}
           ></InputRegion>
+          
         </div>
+        <InputDept
+          label="Department"
+          styles="w-full md:w-1/2 px-10 my-4"
+          sendData={handleDataDept}
+          />
          
         {/* <div className="md:flex">
           <InputComponent
