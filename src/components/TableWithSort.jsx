@@ -10,7 +10,8 @@ import {sno} from "../data/atoms";
 import {userData} from "../data/atoms";
 
 const TableWithSort = ({ data, community }) => {
-  console.log("com", community); 
+    
+  // console.log("😂", JSON.stringify(data[0]));
   let displayedCommunities;
   if(community == "oc") {
     displayedCommunities = ["oc"]; 
@@ -155,7 +156,6 @@ const TableWithSort = ({ data, community }) => {
         ></SuccessfullyAdded>
       )}
       <table className="min-w-full  divide-y divide-gray-200  mx-2">
-        <h1>hi</h1>
         <thead className="bg-blue-100">
           <tr>
             <th
@@ -256,7 +256,7 @@ const TableWithSort = ({ data, community }) => {
                 </span>
               )}
             </th>
-            {/* by default */}
+            {/* display only the req communities */}
             {displayedCommunities.map((community) => (
               <th
                 key={community}
@@ -280,120 +280,6 @@ const TableWithSort = ({ data, community }) => {
               </th>
             ))}
 
-            {/* <th
-              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "bc" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("bc")}
-            >
-              <div className="flex items-center">
-                BC
-                {sortConfig && sortConfig.key === "bc" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th>
-            <th
-              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "bcm" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("bcm")}
-            >
-              <div className="flex items-center">
-                BCM
-                {sortConfig && sortConfig.key === "bcm" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th>
-            <th
-              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "mbc" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("mbc")}
-            >
-              <div className="flex items-center">
-                MBC
-                {sortConfig && sortConfig.key === "mbc" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th>
-            <th
-              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "sc" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("sc")}
-            >
-              <div className="flex items-center">
-                SC
-                {sortConfig && sortConfig.key === "sc" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th>
-            <th
-              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "sca" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("sca")}
-            >
-              <div className="flex items-center">
-                SCA
-                {sortConfig && sortConfig.key === "sca" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th>
-            <th
-              className={`px-auto py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "st" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("st")}
-            >
-              <div className="flex items-center">
-                ST
-                {sortConfig && sortConfig.key === "st" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th> */}
             <th className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
               Add
             </th>

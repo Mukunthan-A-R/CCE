@@ -12,8 +12,9 @@ import { useRecoilValue } from 'recoil';
 const TableFilter = () => {
   const { community }= useRecoilValue(userData);
   // console.log("com", community);  
-
+  
   const [data, setData] = useState([...TableValues]);
+  console.log("--->", data[0]);
   const [filter, setFilter] = useState({
     cutOffStart: 200,
     cutOffEnd: 0,
@@ -26,6 +27,7 @@ const TableFilter = () => {
   const [pageWindowStart, setPageWindowStart] = useState(1); // New state for pagination window
   const pageSize = 50;
 
+
   // Filter logic
   const handleSubmit = () => {
     const hasErrors = Object.values(errors).some(error => error.trim() !== '');
@@ -34,14 +36,16 @@ const TableFilter = () => {
       return;
     }
 
-    const FilterData = TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd &&
+    let filteredData = data.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd &&
       (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
     );
-
-    let filteredData = FilterData;
+    
+    // college code
     if (filter.collegeCode !== 0) {
       filteredData = filteredData.filter(value => filter.collegeCode === parseInt(value.collegeCode));
     }
+
+    // departments
     if (filter.dept.length !== 0) {
       filteredData = filteredData.filter(value => filter.dept.includes(value.branchCode));
     }
@@ -50,6 +54,34 @@ const TableFilter = () => {
     setCurrentPage(1); // Reset to the first page after filtering
     setPageWindowStart(1); // Reset the pagination window start
   };
+
+  useEffect(() => {
+    let communityFilteredData;
+    if (community == "oc") {
+      communityFilteredData = data.map((data) => ({
+        sNo: data.sNo,
+        region: data.region,
+        collegeCode: data.collegeCode,
+        name: data.name,
+        branchCode: data.branchCode,
+        branchName: data.branchName,
+        oc: data.oc
+      }));
+    } else {
+      communityFilteredData = data.map((data) => ({
+        sNo: data.sNo,
+        region: data.region,
+        collegeCode: data.collegeCode,
+        name: data.name,
+        branchCode: data.branchCode,
+        branchName: data.branchName,
+        oc: data.oc,  
+        [community]: data[community], // Dynamic key based on the community
+      }));
+    }
+    setData(communityFilteredData);
+    console.log("data", communityFilteredData[0]);
+  }, []);
 
   // Pagination logic
   const totalPages = Math.ceil(data.length / pageSize);
