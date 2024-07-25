@@ -111,13 +111,13 @@
                 onChange={handleSelect}
                 className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${selected ? "text-black" : "text-gray-400"}`}>
                   <option value="">Community</option>
-                  <option value="OC">OC</option>
-                  <option value="BC">BC</option>
-                  <option value="BCM">BCM</option>
-                  <option value="MBC">MBC</option>
-                  <option value="SC">SC</option>
-                  <option value="SCA">SCA</option>
-                  <option value="ST">ST</option>
+                  <option value="oc">OC</option>
+                  <option value="bc">BC</option>
+                  <option value="bcm">BCM</option>
+                  <option value="mbc">MBC</option>
+                  <option value="sc">SC</option>
+                  <option value="sca">SCA</option>
+                  <option value="st">ST</option>
               </select>
 
             <button

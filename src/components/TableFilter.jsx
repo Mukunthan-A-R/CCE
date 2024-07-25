@@ -6,8 +6,13 @@ import InputRegion from './InputRegion';
 import InputDept from './InputDept';
 import TableWithSort from './TableWithSort';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
+import { userData } from "../data/atoms";
+import { useRecoilValue } from 'recoil';
 
 const TableFilter = () => {
+  const { community }= useRecoilValue(userData);
+  // console.log("com", community);  
+
   const [data, setData] = useState([...TableValues]);
   const [filter, setFilter] = useState({
     cutOffStart: 200,
@@ -40,6 +45,7 @@ const TableFilter = () => {
     if (filter.dept.length !== 0) {
       filteredData = filteredData.filter(value => filter.dept.includes(value.branchCode));
     }
+
     setData(filteredData);
     setCurrentPage(1); // Reset to the first page after filtering
     setPageWindowStart(1); // Reset the pagination window start
@@ -129,7 +135,7 @@ const TableFilter = () => {
           Submit
         </ButtonComponent>
       </div>
-      <TableWithSort tableWithSort data={paginatedData} community={"oc"} />
+      <TableWithSort data={paginatedData} community={community} />
       <div className="flex items-center justify-center my-4">
         <button
           onClick={handlePreviousPage}

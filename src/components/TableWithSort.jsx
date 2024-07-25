@@ -10,6 +10,14 @@ import {sno} from "../data/atoms";
 import {userData} from "../data/atoms";
 
 const TableWithSort = ({ data, community }) => {
+  console.log("com", community); 
+  let displayedCommunities;
+  if(community == "oc") {
+    displayedCommunities = ["oc"]; 
+  } else {
+    displayedCommunities = ["oc", community];
+  }
+  
   const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
@@ -140,10 +148,14 @@ const TableWithSort = ({ data, community }) => {
   return (
     <div className="flex justify-center">
       {showPopup && (
-        <SuccessfullyAdded handleClick={handleClosePopup} content={content} remove={remove}></SuccessfullyAdded>
+        <SuccessfullyAdded
+          handleClick={handleClosePopup}
+          content={content}
+          remove={remove}
+        ></SuccessfullyAdded>
       )}
       <table className="min-w-full  divide-y divide-gray-200  mx-2">
-      <h1>hi</h1>
+        <h1>hi</h1>
         <thead className="bg-blue-100">
           <tr>
             <th
@@ -244,26 +256,31 @@ const TableWithSort = ({ data, community }) => {
                 </span>
               )}
             </th>
-            <th
-              className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                communityColor === "oc" ? "bg-green-200" : " "
-              }`}
-              onClick={() => requestSort("oc")}
-            >
-              <div className="flex items-center">
-                OC
-                {sortConfig && sortConfig.key === "oc" && (
-                  <span className="ml-1">
-                    {sortConfig.direction === "ascending" ? (
-                      <FaArrowCircleUp size={15} />
-                    ) : (
-                      <FaArrowCircleDown size={15} />
-                    )}
-                  </span>
-                )}
-              </div>
-            </th>
-            <th
+            {/* by default */}
+            {displayedCommunities.map((community) => (
+              <th
+                key={community}
+                className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
+                  communityColor === community ? "bg-green-200" : ""
+                }`}
+                onClick={() => requestSort(community)}
+              >
+                <div className="flex items-center">
+                  {community.toUpperCase()}
+                  {sortConfig && sortConfig.key === community && (
+                    <span className="ml-1">
+                      {sortConfig.direction === "ascending" ? (
+                        <FaArrowCircleUp size={15} />
+                      ) : (
+                        <FaArrowCircleDown size={15} />
+                      )}
+                    </span>
+                  )}
+                </div>
+              </th>
+            ))}
+
+            {/* <th
               className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                 communityColor === "bc" ? "bg-green-200" : " "
               }`}
@@ -376,7 +393,7 @@ const TableWithSort = ({ data, community }) => {
                   </span>
                 )}
               </div>
-            </th>
+            </th> */}
             <th className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
               Add
             </th>
@@ -411,17 +428,49 @@ const TableWithSort = ({ data, community }) => {
                   styles=" p-2 rounded-lg text-white  /* transition-colors duration-100 ease-in-out */ cursor-pointer"
                   handleClick={() => {
                     handleResult(row);
-                    
-                    
                   }}
                 >
-                  {check = resultData.find((val)=> val.id === row.sNo) ? <button style={{color:"red",marginLeft:"4px",fontSize:"20px",display:"flex",alignItems:"center",justifyContent:"center",padding:"0px"}} onClick={() => {setShowPopup(true); SetContent(" The selected item has been removed to the list successsfully");Setremove(true)
-
-                  } }><MdDelete /></button> : <button style={{backgroundColor:"#1E88E5",padding:"7px", borderRadius:"3px"}}
-                    onClick={()=> {
-                      setShowPopup(true); SetContent(" The selected item has been added to the list successsfully"); Setremove(false)
-                    }}
-                  >Add</button>}
+                  {
+                    (check = resultData.find((val) => val.id === row.sNo) ? (
+                      <button
+                        style={{
+                          color: "red",
+                          marginLeft: "4px",
+                          fontSize: "20px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          padding: "0px",
+                        }}
+                        onClick={() => {
+                          setShowPopup(true);
+                          SetContent(
+                            " The selected item has been removed to the list successsfully"
+                          );
+                          Setremove(true);
+                        }}
+                      >
+                        <MdDelete />
+                      </button>
+                    ) : (
+                      <button
+                        style={{
+                          backgroundColor: "#1E88E5",
+                          padding: "7px",
+                          borderRadius: "3px",
+                        }}
+                        onClick={() => {
+                          setShowPopup(true);
+                          SetContent(
+                            " The selected item has been added to the list successsfully"
+                          );
+                          Setremove(false);
+                        }}
+                      >
+                        Add
+                      </button>
+                    ))
+                  }
                 </ButtonComponent>
               </td>
             </tr>
