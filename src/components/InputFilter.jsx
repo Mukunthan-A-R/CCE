@@ -3,7 +3,7 @@ import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 // import TableValues from "../data/Data";
 import TableValues from "../data/DataChennai";
-import { userValue, userCommunity } from "../data/atoms";
+import { userData } from "../data/atoms";
 import InputComponentCast from "./InputComponentCast";
 // import { Link } from "react-router-dom";
 `import { useRecoilState } from "recoil";`

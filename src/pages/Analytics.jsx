@@ -1,5 +1,5 @@
 import React from "react";
-import { resultArray, userValue, userCommunity } from "../data/atoms";
+import { resultArray } from "../data/atoms";
 import { useRecoilValue } from "recoil";
 import { Link } from "react-router-dom";
 

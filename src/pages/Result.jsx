@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { resultArray as resultDataAtom, userValue as userDataAtom, userCommunity } from '../data/atoms'; // Update the paths as per your project structure
+import { resultArray as resultDataAtom, userData } from '../data/atoms'; // Update the paths as per your project structure
 import { Link } from 'react-router-dom';
 import { IoIosPrint } from 'react-icons/io';
 import { FaDownload, FaHome } from 'react-icons/fa';

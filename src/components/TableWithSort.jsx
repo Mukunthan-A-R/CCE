@@ -7,7 +7,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
 import {MdDelete} from "react-icons/md"
 import {sno} from "../data/atoms";
-import {userValue} from "../data/atoms";
+import {userData} from "../data/atoms";
 
 const TableWithSort = ({ data, community }) => {
   const communityColor = community;
@@ -17,7 +17,7 @@ const TableWithSort = ({ data, community }) => {
   const [remove,Setremove] = useState(false)
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   // Atoms data
-  const [userCutoff,SetuUserCutoff]  = useRecoilState(userValue);
+  const [userCutoff,setUserCutoff]  = useRecoilState(userData);
   const [resultData, setResultData] = useRecoilState(resultArray);
   const [content,SetContent] = useState("")
  
