@@ -49,8 +49,30 @@ const Register = () => {
     setSelected(true);
   }
 
-  const onSubmit = (formData) => {
+  const onSubmit = async (formData,e) => {
     console.log(formData);
+    const {name,email,phoneNo,cutOff,community} = formData;
+    e.preventDefault();
+    const options = {
+      method : 'POST',
+      headers: {
+        'Content-type': ' application/json'
+      },
+      body: JSON.stringify({
+        name,email,phoneNo,cutOff,community 
+      })
+    }
+    const res = await fetch(
+      'https://tnea-9a87e-default-rtdb.firebaseio.com/UserData.json',
+      options
+    )
+    console.log(res);
+    if(res){
+      alert("message Sent");
+    }
+    else{
+      alert("error");
+    }
     navigate("/home");
   } 
 
