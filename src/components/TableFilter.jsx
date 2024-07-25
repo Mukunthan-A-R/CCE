@@ -34,6 +34,7 @@ const TableFilter = () => {
       {
         setFilter({...filter ,cutOffStart: parseInt(value)})
         console.log(filter);
+        newErrors.cutOffStart=''
       }
         
         if(value === ""){
@@ -53,7 +54,7 @@ const TableFilter = () => {
     
     const handleDataCutOffEnd = (value) => {
       let newErrors = {};
-
+      const intValue = parseInt(value)
       if(value > 200)
         {
           newErrors.cutOffEnd = "the cut off value should be between 1 and 200"
@@ -67,6 +68,7 @@ const TableFilter = () => {
         {
           setFilter({...filter ,cutOffEnd: parseInt(value)})
           console.log(filter);
+          newErrors.cutOffEnd= '';
         }
        
         if(value === ""){
@@ -76,23 +78,36 @@ const TableFilter = () => {
     }
 
     const handleDataCollegeCode = (value) => {
-       let newErrors = {}
-        if(value === ""){
-          setFilter({...filter , collegeCode: 0})
-        }
-        if(value > 0 && value <= 3000)
-        {
-          setFilter({...filter ,collegeCode: parseInt(value)})
+      const intValue = parseInt(value);
+      let newErrors = {};
+    
+      if (value === "") {
         
-        console.log(filter);
-        }
-        if(value < 0 || value > 3000)
-        {
-            newErrors.collegeCode = "The college code should be between 1 and 3000"
-        }
-        SetErrors((prev)=> ({...prev,...newErrors}))
-      
-    }
+        setFilter(prevFilter => ({
+          ...prevFilter,
+          collegeCode: 0,
+        }));
+        newErrors.collegeCode = ''; 
+      } else if (isNaN(intValue)) {
+        newErrors.collegeCode = 'College Code must be a number';
+      } else if (intValue <= 0 || intValue > 3000) {
+        newErrors.collegeCode = 'The college code should be between 1 and 3000';
+      } else {
+        // Valid value
+        setFilter(prevFilter => ({
+          ...prevFilter,
+          collegeCode: intValue,
+        }));
+        newErrors.collegeCode = ''; 
+      }
+    
+     
+      SetErrors(prevErrors => ({
+        ...prevErrors,
+        ...newErrors,
+      }));
+    };
+    
 
     const handleDataRegion = (e) => {
         setFilter({...filter ,region: e.target.value})
@@ -109,10 +124,13 @@ const TableFilter = () => {
     }, [filter]);
 
     const handleSubmit = () => {
-      if(Object.keys(errors).length > 0)
-      {
-        console.log('Form Contains errors');
-        return;
+     
+      const hasErrors = Object.values(errors).some(error => error.trim() !== '');
+    
+      if (hasErrors) {
+          console.log(errors);
+          console.log('Form Contains errors');
+          return;
       }
         console.log("HELLO");
         const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd   &&

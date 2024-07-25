@@ -407,14 +407,14 @@ const TableWithSort = ({ data, community }) => {
               ))}
               <td>
                 <ButtonComponent
-                  styles="p-2 rounded-lg text-white hover:bg-green-400 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
+                  styles=" p-2 rounded-lg text-white  /* transition-colors duration-100 ease-in-out */ cursor-pointer"
                   handleClick={() => {
                     handleResult(row);
                     
                     
                   }}
                 >
-                  {check = resultData.find((val)=> val.id === row.sNo) ? <button style={{color:"red",fontSize:"20px",textAlign:"center",padding:"4px"}} onClick={() => {setShowPopup(true); SetContent(" The selected item has been removed to the list successsfully");Setremove(true)
+                  {check = resultData.find((val)=> val.id === row.sNo) ? <button style={{color:"red",marginLeft:"4px",fontSize:"20px",display:"flex",alignItems:"center",justifyContent:"center",padding:"0px"}} onClick={() => {setShowPopup(true); SetContent(" The selected item has been removed to the list successsfully");Setremove(true)
 
                   } }><MdDelete /></button> : <button style={{backgroundColor:"#1E88E5",padding:"7px", borderRadius:"3px"}}
                     onClick={()=> {
