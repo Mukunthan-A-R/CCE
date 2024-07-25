@@ -25,8 +25,11 @@ const TableFilter = () => {
         dept:[],
     })
 
+    const [errors,SetErrors] = useState({})
 
     const handleDataCutOffSt = (value) => {
+      let newErrors = {};
+
       if(value > 0 && value <= 200)
       {
         setFilter({...filter ,cutOffStart: parseInt(value)})
@@ -36,31 +39,58 @@ const TableFilter = () => {
         if(value === ""){
           setFilter({...filter ,cutOffStart: 200})
         }
-        else if(value > 200)
+        if(value > 200 )
         {
-           /*  toast.error("The cut off value should less than or eqaul to 200")
-            toast.error("Success Notification !", {
-              position: toast.POSITION.TOP_CENTER,
-            }); */
-            /* SetError(true);
-            SetErrorStatement("The cut off value should be between 1 to 200") */
+          newErrors.cutOffStart = "Cut off value starting should be between 1 and 200";
+          
         }
+        if(value < 0)
+        {
+          newErrors.cutOffStart = "Cut off value should not less than 0";
+        }
+        SetErrors((prev)=> ({...prev,...newErrors}))
     }
     
     const handleDataCutOffEnd = (value) => {
-        setFilter({...filter ,cutOffEnd: parseInt(value)})
-        console.log(filter);
+      let newErrors = {};
+
+      if(value > 200)
+        {
+          newErrors.cutOffEnd = "the cut off value should be between 1 and 200"
+        
+        }
+        if(value < 0)
+        {
+          newErrors.cutOffEnd = "the cut off value should be greater than 0"
+        }
+        if(value > 0 && value <=200)
+        {
+          setFilter({...filter ,cutOffEnd: parseInt(value)})
+          console.log(filter);
+        }
+       
         if(value === ""){
           setFilter({...filter ,cutOffEnd: 0})
         }
+        SetErrors((prev)=> ({...prev,...newErrors}))
     }
 
     const handleDataCollegeCode = (value) => {
-        setFilter({...filter ,collegeCode: parseInt(value)})
-        console.log(filter);
+       let newErrors = {}
         if(value === ""){
           setFilter({...filter , collegeCode: 0})
         }
+        if(value > 0 && value <= 3000)
+        {
+          setFilter({...filter ,collegeCode: parseInt(value)})
+        
+        console.log(filter);
+        }
+        if(value < 0 || value > 3000)
+        {
+            newErrors.collegeCode = "The college code should be between 1 and 3000"
+        }
+        SetErrors((prev)=> ({...prev,...newErrors}))
       
     }
 
@@ -79,6 +109,11 @@ const TableFilter = () => {
     }, [filter]);
 
     const handleSubmit = () => {
+      if(Object.keys(errors).length > 0)
+      {
+        console.log('Form Contains errors');
+        return;
+      }
         console.log("HELLO");
         const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd   &&
           (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
@@ -107,7 +142,7 @@ const TableFilter = () => {
             //CutOff data
             sendData={handleDataCutOffSt}
             label="Cut Off Starting"
-
+            error = {errors.cutOffStart}
 
             type="number"
             styles="w-full md:w-1/2 px-10 my-4 "
@@ -119,6 +154,7 @@ const TableFilter = () => {
             label="Cut Off Ending"
             type="number"
             styles="w-full md:w-1/2 px-10 my-4 "
+            error={errors.cutOffEnd}
           ></InputComponent>
         </div>
 
@@ -127,6 +163,7 @@ const TableFilter = () => {
             //College Code
             sendData={handleDataCollegeCode}
             label="College Code"
+            error={errors.collegeCode}
             type="number"
             styles="w-full md:w-1/2 px-10 my-4 "
           ></InputComponent>
