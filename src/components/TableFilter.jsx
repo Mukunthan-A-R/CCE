@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TableValues from '../data/DataChennai';
 import InputComponent from './InputComponent';
 import ButtonComponent from './ButtonComponent';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { resultArray, userData } from '../data/atoms';
 import DataSubmitted from './DataSubmitted';
 import { useNavigate } from 'react-router-dom';
@@ -12,7 +12,11 @@ import InputDept from './InputDept';
 import {toast,ToastContainer} from "react-toastify"
 
 const TableFilter = () => {
+  const { community } = useRecoilValue(userData);
+  // console.log("community", community);
   const [data,setData] = useState([...TableValues]); 
+
+  const requiredCommunities = ["oc", community];
 
   // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
   const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
@@ -33,7 +37,7 @@ const TableFilter = () => {
       if(value > 0 && value <= 200)
       {
         setFilter({...filter ,cutOffStart: parseInt(value)})
-        console.log(filter);
+        // console.log(filter);
         newErrors.cutOffStart=''
       }
         
@@ -67,7 +71,7 @@ const TableFilter = () => {
         if(value > 0 && value <=200)
         {
           setFilter({...filter ,cutOffEnd: parseInt(value)})
-          console.log(filter);
+          // console.log(filter);
           newErrors.cutOffEnd= '';
         }
        
@@ -111,16 +115,17 @@ const TableFilter = () => {
 
     const handleDataRegion = (e) => {
         setFilter({...filter ,region: e.target.value})
-        console.log(filter);
+        // console.log(filter);
     }
+
     const handleDataDept = (selectedValues) => {
-      console.log("Selected values in handleDataDept:", selectedValues); // Log selected values for debugging
+      // console.log("Selected values in handleDataDept:", selectedValues); // Log selected values for debugging
       setFilter((prevFilter) => ({ ...prevFilter, dept: selectedValues }));
     };
   
     
     useEffect(() => {
-      console.log("Updated filter state:", filter);
+      // console.log("Updated filter state:", filter);
     }, [filter]);
 
     const handleSubmit = () => {
@@ -132,26 +137,31 @@ const TableFilter = () => {
           console.log('Form Contains errors');
           return;
       }
-        console.log("HELLO");
-        const FilterData =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd   &&
+        // console.log("HELLO");
+        let filteredList =  TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd   &&
           (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
-        )
-        setData(FilterData)
+        );
+        
+        // filtering the community
+        filteredList = filteredList.map((data) => ({
+          sNo: data.sNo,
+          name: data.name,
+          region: data.region,
+          branchCode: data.branchCode,
+          oc: data.oc,
+          [community]: data[community], // Dynamic key based on the community
+        }));
+        
+        console.log(filteredList);
+        setData(filteredList);
         if(filter.collegeCode !== 0){
-          setData(FilterData.filter(value =>  filter.collegeCode === parseInt(value.collegeCode) ))
+          setData(filteredList.filter(value =>  filter.collegeCode === parseInt(value.collegeCode) ))
         }
         console.log(filter);
         if(filter.dept.length !== 0){
           setData(FilterData.filter(value => filter.dept.includes(value.branchCode)))
         }
       }
-
-      // &&       (filter.collegeCode !== 0 && value.collegeCode === filter.collegeCode)
-
-      // {const FinalData = FilterData.filter(value => value.collegeCode === filter.collegeCode)}
-      // && value.collegeCode === filter.collegeCode 
-
-
  
   return (
     <div className="my-0">
@@ -231,7 +241,7 @@ const TableFilter = () => {
       </div>
      
       {/* <TableWithSort tableWithSort data={TableValues} community={"oc"}></TableWithSort> */}
-      <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>
+      <TableWithSort tableWithSort data={data} community={community}></TableWithSort>
       
     </div>
     
