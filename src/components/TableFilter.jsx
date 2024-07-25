@@ -8,10 +8,11 @@ import DataSubmitted from './DataSubmitted';
 import { useNavigate } from 'react-router-dom';
 import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
+import InputDept from './InputDept';
 
 const TableFilter = () => {
   const [data,setData] = useState([...TableValues]); 
-  
+
   // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
   const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
   
@@ -20,12 +21,12 @@ const TableFilter = () => {
         cutOffEnd: 0,
         collegeCode: 0,
         region: "",
-        dept:"",
+        dept:[],
     })
 
 
     const handleDataCutOffSt = (value) => {
-        setFilter({...filter ,cutOffStart: value})
+        setFilter({...filter ,cutOffStart: parseInt(value)})
         console.log(filter);
         if(value === ""){
           setFilter({...filter ,cutOffStart: 200})
@@ -33,14 +34,35 @@ const TableFilter = () => {
     }
     
     const handleDataCutOffEnd = (value) => {
-        setFilter({...filter ,cutOffEnd: value})
+        setFilter({...filter ,cutOffEnd: parseInt(value)})
         console.log(filter);
+        if(value === ""){
+          setFilter({...filter ,cutOffEnd: 0})
         }
     }
-    const handleDept = (event) => {
-        setFilter({...filter,region:event.target.value});
-        console.log(event.target.value);
-      };
+
+    const handleDataCollegeCode = (value) => {
+        setFilter({...filter ,collegeCode: parseInt(value)})
+        console.log(filter);
+        if(value === ""){
+          setFilter({...filter , collegeCode: 0})
+        }
+      
+    }
+
+    const handleDataRegion = (e) => {
+        setFilter({...filter ,region: e.target.value})
+        console.log(filter);
+    }
+    const handleDataDept = (selectedValues) => {
+      console.log("Selected values in handleDataDept:", selectedValues); // Log selected values for debugging
+      setFilter((prevFilter) => ({ ...prevFilter, dept: selectedValues }));
+    };
+  
+    
+    useEffect(() => {
+      console.log("Updated filter state:", filter);
+    }, [filter]);
 
     const handleSubmit = () => {
         console.log("HELLO");
@@ -61,7 +83,7 @@ const TableFilter = () => {
  
   return (
     <div className="my-0">
-      <div className=" border border-gray-200 rounded-lg mx-10 shadow-lg">
+      <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
         
         <div className="md:flex">
           <InputComponent
@@ -93,26 +115,32 @@ const TableFilter = () => {
           styles="w-full md:w-1/2 px-10 my-4 "
           sendData={handleDataRegion}
           ></InputRegion>
+          
         </div>
+        <InputDept
+          label="Department"
+          styles="w-full md:w-1/2 px-10 my-4"
+          sendData={handleDataDept}
+          />
          
-        <div className="md:flex">
+        {/* <div className="md:flex">
           <InputComponent
             // Department
-            sendData={handleDept}
+            sendData={handleDataDept}
             label="Department"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
           ></InputComponent>
-          <InputRegion
+          <InputComponent
             // Region
-           /*  sendData={handleDataRegion} */
+            sendData={handleDataRegion}
             label="Region"
             type="text"
             styles="w-full md:w-1/2 px-10 my-4"
-          ></InputRegion>
+          ></InputComponent>
         </div>
         <div className="md:flex ">
-        </div>
+        </div> */}
       
       </div>
       <div className="flex w-full justify-center">
@@ -127,5 +155,6 @@ const TableFilter = () => {
       <TableWithSort tableWithSort data={data} community={"oc"}></TableWithSort>
     </div>
   )
+}
 
 export default TableFilter

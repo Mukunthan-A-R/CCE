@@ -405,13 +405,13 @@ const TableWithSort = ({ data, community }) => {
               ))}
               <td>
                 <ButtonComponent
-                  styles="bg-blue-600 p-2 rounded-lg text-white hover:bg-green-400 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
+                  styles="p-2 rounded-lg text-white hover:bg-green-400 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
                   handleClick={() => {
                     handleResult(row);
                     setShowPopup(true);
                   }}
                 >
-                  {check = resultData.find((val)=> val.id === row.sNo) ? "Delete" : "Add"}
+                  {check = resultData.find((val)=> val.id === row.sNo) ? <button style={{color:"red",fontSize:"20px",textAlign:"center",padding:"4px"}}><MdDelete /></button> : <button style={{backgroundColor:"#1E88E5",padding:"7px", borderRadius:"3px"}}>Add</button>}
                 </ButtonComponent>
               </td>
             </tr>
