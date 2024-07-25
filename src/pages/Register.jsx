@@ -10,6 +10,8 @@
   import { useSetRecoilState } from "recoil";
 
   const Register = () => {
+    const apiUrl = import.meta.env.VITE_API_URL;
+    console.log(apiUrl);
     const [selected, setSelected] = useState(false);
     const navigate = useNavigate();
     const setUserData = useSetRecoilState(userData);

@@ -9,7 +9,6 @@ import { userData } from "../data/atoms";
 import { useRecoilValue } from "recoil";
 const Home = () => {
   const data = useRecoilValue(userData);
-  console.log("-->", data);
   
   return (  
     <div className="m-0 sm:m-0">
