@@ -10,7 +10,7 @@ import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
 
 const TableFilter = () => {
-  const [data,setData] = useState([...TableValues]); 
+  const [data, setData] = useState([...TableValues]); 
 
   // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
   const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
