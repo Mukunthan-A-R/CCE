@@ -11,10 +11,10 @@ import jsPDF from 'jspdf';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd'; // Importing from @hello-pangea/dnd
 
 const Result = () => {
-  const community = useRecoilValue(userCommunity);
+  const User = useRecoilValue(userData);
   
   const [resultData, setResultData] = useRecoilState(resultDataAtom); // State managed by Recoil
-  const userData = useRecoilValue(userDataAtom);
+  // const userData = useRecoilValue(userDataAtom);
   const [showPopup, setShowPopup] = useState(false);
   const [holdData, setHoldData] = useState(null); // State to hold data for deletion confirmation
   const [currentPage, setCurrentPage] = useState(1);
@@ -83,20 +83,20 @@ const Result = () => {
   // display selected Community with cutoff
 const selectedComumunityCutOff = (row)=>
 {
-  if(community.community === 'bc') 
+  if(User.community === 'bc') 
     return row.bc
-  else  if(community.community === 'sc') 
+  else  if(User.community === 'sc') 
     return row.sc
 
- else if(community.community === 'sca')
+ else if(User.community === 'sca')
     return row.sca
- else if(community.community === 'mbc')
+ else if(User.community === 'mbc')
     return row.mbc
- else if(community.community === 'oc')
+ else if(User.community === 'oc')
     return row.oc
- else if(community.community === 'bcm')
+ else if(User.community === 'bcm')
     return row.bcm
-else  if(community.community === 'st')
+else  if(User.community === 'st')
     return row.st
   
 }
@@ -157,7 +157,7 @@ else  if(community.community === 'st')
         </button>
       </div>
       <div className="text-center font-bold text-2xl my-5">
-        Welcome {userData.name || 'User'}
+        Welcome {User.name || 'User'}
       </div>
       <div className="receipt-table">
         {resultData.length === 0 ? (
@@ -192,7 +192,7 @@ else  if(community.community === 'st')
                         Branch Name
                       </th>
                       <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
-                        {community.community}
+                        {User.community}
                       </th>
                       <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                         Drop
