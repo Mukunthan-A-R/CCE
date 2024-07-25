@@ -8,30 +8,33 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const [community, setCommunity] = useState("OC");
+  const [selected, setSelected] = useState(false);
   const navigate = useNavigate();
 
   const schema = yup.object().shape({
     name: yup
       .string()
-      .min(4, "Name must be at least 4 characters long")
-      .max(32, "Name cannot be more than 32 characters long")
-      .required("Name is required"),
+      .min(4, "* Name must be at least 4 characters long")
+      .max(32, "* Name cannot be more than 32 characters long")
+      .required("* Name is required"),
     email: yup
       .string()
-      .email("Invalid email format")
-      .required("Email is required"),
+      .email("* Invalid email format")
+      .required("* Email is required"),
     phoneNo: yup
       .string()
-      .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits")
-      .required("Phone number is required"),
+      .matches(/^[0-9]{10}$/, "* Phone number must be exactly 10 digits")
+      .required("* Phone number is required"),
     cutOff: yup
       .number()
       .nullable() // Allow null values
-      .typeError("Cut off is required") // Ensure it's a number
-      .min(0, "Cut off must be at least 0")
-      .max(200, "Cut off must be at most 200") // Updated message
-      .required("Cut off is required"),
+      .typeError("* Cut off is required") // Ensure it's a number
+      .min(0, "* Cut off must be at least 0")
+      .max(200, "* Cut off must be at most 200") // Updated message
+      .required("* Cut off is required"),
+    community: yup
+      .string()
+      .required("* Community is required")
   });
 
   const {
@@ -39,10 +42,37 @@ const Register = () => {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    resolver: yupResolver(schema),
+    resolver: yupResolver(schema),  
   });
  
-  const onSubmit = (formData) => {
+  const handleSelect = () => {
+    setSelected(true);
+  }
+
+  const onSubmit = async (formData,e) => {
+    console.log(formData);
+    const {name,email,phoneNo,cutOff,community} = formData;
+    e.preventDefault();
+    const options = {
+      method : 'POST',
+      headers: {
+        'Content-type': ' application/json'
+      },
+      body: JSON.stringify({
+        name,email,phoneNo,cutOff,community 
+      })
+    }
+    const res = await fetch(
+      'https://tnea-9a87e-default-rtdb.firebaseio.com/UserData.json',
+      options
+    )
+    console.log(res);
+    if(res){
+      alert("message Sent");
+    }
+    else{
+      alert("error");
+    }
     navigate("/home");
   } 
 
@@ -72,7 +102,9 @@ const Register = () => {
             <Input {...register("cutOff")} type="number" placeholder="Cut-off Score" />
 
             {errors.community && <p className="text-red-500">{errors.community.message}</p>}
-            <select {...register("community")} className="bg-blue-100 text-blue-500 px-2 py-1.5 rounded-md outline-none">
+            <select {...register("community")} 
+              onChange={handleSelect}
+              className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${selected ? "text-black" : "text-gray-400"}`}>
                 <option value="">Community</option>
                 <option value="OC">OC</option>
                 <option value="BC">BC</option>
@@ -82,7 +114,6 @@ const Register = () => {
                 <option value="SCA">SCA</option>
                 <option value="ST">ST</option>
             </select>
-
 
           <button
             type="submit"

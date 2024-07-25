@@ -12,8 +12,7 @@ import InputDept from './InputDept';
 import {toast,ToastContainer} from "react-toastify"
 
 const TableFilter = () => {
-  const [data,setData] = useState([...TableValues]);
- 
+  const [data,setData] = useState([...TableValues]); 
 
   // COPY VALUE TO MAKE RESTORE TO ORIGINAL STATE
   const [TableValuesCopy,setTableValuesCopy] = useState([...TableValues]);
