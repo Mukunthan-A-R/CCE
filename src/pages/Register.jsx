@@ -29,7 +29,7 @@
         .matches(/^[0-9]{10}$/, "* Phone number must be exactly 10 digits")
         .required("* Phone number is required"),
       cutOff: yup
-        .number()
+        .number() 
         .nullable() // Allow null values
         .typeError("* Cut off is required") // Ensure it's a number
         .min(0, "* Cut off must be at least 0")
@@ -102,7 +102,7 @@
               <Input {...register("phoneNo")} type="tel" placeholder="Phone Number" />
 
               {errors.cutOff && <p className="text-red-500">{errors.cutOff.message}</p>}
-              <Input {...register("cutOff")} type="number" placeholder="Cut-off Score" />
+              <Input {...register("cutOff")} step="any" type="number" placeholder="Cut-off Score" />
 
               {errors.community && <p className="text-red-500">{errors.community.message}</p>}
               <select {...register("community")} 
