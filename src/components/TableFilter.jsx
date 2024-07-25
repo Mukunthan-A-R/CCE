@@ -141,6 +141,9 @@ const TableFilter = () => {
           setData(FilterData.filter(value =>  filter.collegeCode === parseInt(value.collegeCode) ))
         }
         console.log(filter);
+        if(filter.dept.length !== 0){
+          setData(FilterData.filter(value => filter.dept.includes(value.branchCode)))
+        }
       }
 
       // &&       (filter.collegeCode !== 0 && value.collegeCode === filter.collegeCode)
