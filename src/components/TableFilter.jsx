@@ -2,16 +2,14 @@ import React, { useEffect, useState } from 'react';
 import TableValues from '../data/DataChennai';
 import InputComponent from './InputComponent';
 import ButtonComponent from './ButtonComponent';
-import { useRecoilState } from 'recoil';
-import { resultArray, userData } from '../data/atoms';
-import DataSubmitted from './DataSubmitted';
-import { useNavigate } from 'react-router-dom';
+import { userData } from '../data/atoms';
 import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
 import InputDept from './InputDept';
-import { toast, ToastContainer } from "react-toastify";
+import { useRecoilValue } from 'recoil';
 
 const TableFilter = () => {
+  const { community } = useRecoilValue(userData);
   const [data, setData] = useState([...TableValues]);
   const [TableValuesCopy, setTableValuesCopy] = useState([...TableValues]);
   const [filter, setFilter] = useState({
@@ -21,6 +19,8 @@ const TableFilter = () => {
     region: "",
     dept: [],
   });
+
+  console.log(JSON.stringify(data[0]));
   const [errors, SetErrors] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 50;
@@ -181,7 +181,7 @@ const TableFilter = () => {
           Submit
         </ButtonComponent>
       </div>
-      <TableWithSort tableWithSort data={paginatedData} community={"oc"}></TableWithSort>
+      <TableWithSort tableWithSort data={paginatedData} community={community}></TableWithSort>
       <div className="flex justify-center my-4">
         <button
           onClick={handlePrevPage}
