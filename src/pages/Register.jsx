@@ -105,85 +105,93 @@
             </div>
           </div>
         </div>
-        <div className="w-1/2 pt-20 sm:pt-48">
-          <h1 className="text-blue-400 text-2xl font-bold text-center">
-            Enter Your Details
-          </h1>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col max-w-96 mx-auto pt-7"
-          >
-            {errors.name && (
-              <p className="text-red-500">{errors.name.message}</p>
-            )}
-            <Input {...register("name")} type="text" placeholder="Name" />
-
-            {errors.email && (
-              <p className="text-red-500">{errors.email.message}</p>
-            )}
-            <Input {...register("email")} type="email" placeholder="Email ID" />
-
-            {errors.phoneNo && (
-              <p className="text-red-500">{errors.phoneNo.message}</p>
-            )}
-            <Input
-              {...register("phoneNo")}
-              type="tel"
-              placeholder="Phone Number"
-            />
-
-            {errors.cutOff && (
-              <p className="text-red-500">{errors.cutOff.message}</p>
-            )}
-            <Input
-              {...register("cutOff")}
-              step="any"
-              type="number"
-              placeholder="Cut-off Score"
-            />
-
-            {errors.community && (
-              <p className="text-red-500">{errors.community.message}</p>
-            )}
-            <select
-              {...register("community")}
-              onChange={handleSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
-                selected ? "text-black" : "text-gray-400"
-              }`}
+        <div className="w-1/2 flex justify-center items-center">
+          <div className="w-full">
+            <h1 className="text-blue-400 text-2xl font-bold text-center">
+              Enter Your Details
+            </h1>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="flex flex-col max-w-96 mx-auto pt-7"
             >
-              <option value="">Community</option>
-              <option value="oc">OC</option>
-              <option value="bc">BC</option>
-              <option value="bcm">BCM</option>
-              <option value="mbc">MBC</option>
-              <option value="sc">SC</option>
-              <option value="sca">SCA</option>
-              <option value="st">ST</option>
-            </select>
+              {errors.name && (
+                <p className="text-red-500">{errors.name.message}</p>
+              )}
+              <Input {...register("name")} type="text" placeholder="Name" />
 
-            {errors.community && (
-              <p className="text-red-500">{errors.expertPermission.message}</p>
-            )}
-            <select
-              {...register("expertPermission")}
-              onChange={handleExpertSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${
-                selected ? "text-black" : "text-gray-400"
-              }`}
-            >
-              <option value="">Want to talk with Experts?</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+              {errors.email && (
+                <p className="text-red-500">{errors.email.message}</p>
+              )}
+              <Input
+                {...register("email")}
+                type="email"
+                placeholder="Email ID"
+              />
 
-            <button
-              type="submit"
-              className="block bg-blue-400 text-white font-semibold py-2 mt-3 rounded-md"
-            >
-              Submit
-            </button>
-          </form>
+              {errors.phoneNo && (
+                <p className="text-red-500">{errors.phoneNo.message}</p>
+              )}
+              <Input
+                {...register("phoneNo")}
+                type="tel"
+                placeholder="Phone Number"
+              />
+
+              {errors.cutOff && (
+                <p className="text-red-500">{errors.cutOff.message}</p>
+              )}
+              <Input
+                {...register("cutOff")}
+                step="any"
+                type="number"
+                placeholder="Cut-off Score"
+              />
+
+              {errors.community && (
+                <p className="text-red-500">{errors.community.message}</p>
+              )}
+              <select
+                {...register("community")}
+                onClick={handleSelect}
+                className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
+                  selected ? "text-black" : "text-gray-400"
+                }`}
+              >
+                <option value="">Community</option>
+                <option value="oc">OC</option>
+                <option value="bc">BC</option>
+                <option value="bcm">BCM</option>
+                <option value="mbc">MBC</option>
+                <option value="sc">SC</option>
+                <option value="sca">SCA</option>
+                <option value="st">ST</option>
+              </select>
+
+              {errors.community && (
+                <p className="text-red-500">
+                  {errors.expertPermission.message}
+                </p>
+              )}
+              <select
+                {...register("expertPermission")}
+                onClick={handleExpertSelect}
+                className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${
+                  expertSelected ? "text-black" : "text-gray-400"
+                }`}
+              >
+                <option value="">Want to talk with Experts?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+
+              <button
+                type="submit"
+                className="block bg-blue-400 text-white font-semibold py-2 mt-3 rounded-md"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     );
