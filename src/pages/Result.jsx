@@ -1,6 +1,6 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { resultArray as resultDataAtom, userData } from '../data/atoms'; // Update the paths as per your project structure
+import { resultArray as resultDataAtom, userData } from '../data/atoms';
 import { Link } from 'react-router-dom';
 import { IoIosPrint } from 'react-icons/io';
 import { FaDownload, FaHome } from 'react-icons/fa';
@@ -8,57 +8,34 @@ import { MdDelete, MdDownloading } from 'react-icons/md';
 import AlertPopup from '../components/AlertPopup';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd'; // Importing from @hello-pangea/dnd
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 const Result = () => {
   const User = useRecoilValue(userData);
-  
-  const [resultData, setResultData] = useRecoilState(resultDataAtom); // State managed by Recoil
-  // const userData = useRecoilValue(userDataAtom);
+  const [resultData, setResultData] = useRecoilState(resultDataAtom);
   const [showPopup, setShowPopup] = useState(false);
-  const [holdData, setHoldData] = useState(null); // State to hold data for deletion confirmation
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(10);
+  const [holdData, setHoldData] = useState(null);
   const [loader, setLoader] = useState(false);
- 
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = resultData.slice(indexOfFirstItem, indexOfLastItem);
-  
-
-  const totalPages = Math.ceil(resultData.length / itemsPerPage);
-  
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
 
   const handleDelete = (row) => {
-    // Show confirmation popup or directly delete
     setShowPopup(true);
     setHoldData(row);
   };
 
   const confirmDelete = () => {
     if (holdData) {
-        setResultData((prevResultData) => {
-            
-            const filteredData = prevResultData.filter((item) => item.sNo !== holdData.sNo);
-
-            // Reassigning serial numbers after deletion
-            const modifiedData = filteredData.map((data, index) => ({
-                ...data,
-                sNo: index + 1
-            }));
-
-            return modifiedData;
-        });
-
-        setShowPopup(false);
-        setHoldData(null);
+      setResultData((prevResultData) => {
+        const filteredData = prevResultData.filter((item) => item.sNo !== holdData.sNo);
+        const modifiedData = filteredData.map((data, index) => ({
+          ...data,
+          sNo: index + 1
+        }));
+        return modifiedData;
+      });
+      setShowPopup(false);
+      setHoldData(null);
     }
-};
-
+  };
 
   const cancelDelete = () => {
     setShowPopup(false);
@@ -79,44 +56,28 @@ const Result = () => {
     });
   };
 
+  const selectedComumunityCutOff = (row) => {
+    switch (User.community) {
+      case 'bc': return row.bc;
+      case 'sc': return row.sc;
+      case 'sca': return row.sca;
+      case 'mbc': return row.mbc;
+      case 'oc': return row.oc;
+      case 'bcm': return row.bcm;
+      case 'st': return row.st;
+      default: return '';
+    }
+  };
 
-  // display selected Community with cutoff
-const selectedComumunityCutOff = (row)=>
-{
-  if(User.community === 'bc') 
-    return row.bc
-  else  if(User.community === 'sc') 
-    return row.sc
-
- else if(User.community === 'sca')
-    return row.sca
- else if(User.community === 'mbc')
-    return row.mbc
- else if(User.community === 'oc')
-    return row.oc
- else if(User.community === 'bcm')
-    return row.bcm
-else  if(User.community === 'st')
-    return row.st
-  
-}
   const onDragEnd = (result) => {
     if (!result.destination) return;
-
     const reorderedResultData = Array.from(resultData);
     const [movedItem] = reorderedResultData.splice(result.source.index, 1);
     reorderedResultData.splice(result.destination.index, 0, movedItem);
-
-
-    // Reassigning the serial number after drag and drop
-
-
-    const modifiedData = reorderedResultData.map((data,index)=> ({
+    const modifiedData = reorderedResultData.map((data, index) => ({
       ...data,
-      sNo: index+1,
-
-      }))
-      console.log(resultData)
+      sNo: index + 1
+    }));
     setResultData(modifiedData);
   };
 
@@ -146,13 +107,9 @@ else  if(User.community === 'st')
           disabled={loader}
         >
           {loader ? (
-            <span>
-              <MdDownloading />
-            </span>
+            <span><MdDownloading /></span>
           ) : (
-            <span>
-              <FaDownload />
-            </span>
+            <span><FaDownload /></span>
           )}
         </button>
       </div>
@@ -200,7 +157,7 @@ else  if(User.community === 'st')
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {currentItems.map((row, index) => (
+                    {resultData.map((row, index) => (
                       <Draggable key={row.sNo} draggableId={`${row.sNo}`} index={index}>
                         {(provided, snapshot) => (
                           <tr
