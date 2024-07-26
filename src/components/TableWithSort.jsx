@@ -12,12 +12,7 @@ import {userData} from "../data/atoms";
 const TableWithSort = ({ data, community }) => {
     
   // console.log("😂", JSON.stringify(data[0]));
-  let displayedCommunities;
-  if(community == "oc") {
-    displayedCommunities = ["oc"]; 
-  } else {
-    displayedCommunities = ["oc", community];
-  }
+  let displayedCommunities = ["oc", "bc", "bcm", "mbc", "sc", "sca", "st"];
   
   const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
