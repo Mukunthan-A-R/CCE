@@ -21,8 +21,7 @@ const InputRegion = ({styles,label,sendData}) => {
       <option value="Thanjavur">Tanjore zone</option>
       <option value="Madurai">Madurai zone</option>
       <option value="Erode">Erode</option>
-      <option value="Tiruchirappalli">Tiruchirappalli</option>
-      <option value="Tiruchirappalli">Trichy zone</option>
+      <option value="Trichy">Trichy zone</option>
       <option value="">others</option>
     </select>
     </label>

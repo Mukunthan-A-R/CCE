@@ -21336,7 +21336,7 @@ const TableValues = [
 },
 {
     "sNo": "1378",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3465",
     "name": "Government College of Engineering",
     "branchCode": "CE",
@@ -21351,7 +21351,7 @@ const TableValues = [
 },
 {
     "sNo": "1379",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3465",
     "name": "Government College of Engineering",
     "branchCode": "CS",
@@ -21366,7 +21366,7 @@ const TableValues = [
 },
 {
     "sNo": "1380",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3465",
     "name": "Government College of Engineering",
     "branchCode": "EC",
@@ -21381,7 +21381,7 @@ const TableValues = [
 },
 {
     "sNo": "1381",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3465",
     "name": "Government College of Engineering",
     "branchCode": "EE",
@@ -21396,7 +21396,7 @@ const TableValues = [
 },
 {
     "sNo": "1382",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3465",
     "name": "Government College of Engineering",
     "branchCode": "ME",
@@ -21411,7 +21411,7 @@ const TableValues = [
 },
 {
     "sNo": "1383",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "AU",
@@ -21426,7 +21426,7 @@ const TableValues = [
 },
 {
     "sNo": "1384",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "BT",
@@ -21441,7 +21441,7 @@ const TableValues = [
 },
 {
     "sNo": "1385",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "CE",
@@ -21456,7 +21456,7 @@ const TableValues = [
 },
 {
     "sNo": "1386",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "CS",
@@ -21471,7 +21471,7 @@ const TableValues = [
 },
 {
     "sNo": "1387",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "EC",
@@ -21486,7 +21486,7 @@ const TableValues = [
 },
 {
     "sNo": "1388",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "EE",
@@ -21501,7 +21501,7 @@ const TableValues = [
 },
 {
     "sNo": "1389",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "IT",
@@ -21516,7 +21516,7 @@ const TableValues = [
 },
 {
     "sNo": "1390",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "ME",
@@ -21531,7 +21531,7 @@ const TableValues = [
 },
 {
     "sNo": "1391",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "PC",
@@ -21546,7 +21546,7 @@ const TableValues = [
 },
 {
     "sNo": "1392",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "PH",
@@ -21561,7 +21561,7 @@ const TableValues = [
 },
 {
     "sNo": "1393",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "XC",
@@ -21576,7 +21576,7 @@ const TableValues = [
 },
 {
     "sNo": "1394",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3011",
     "name": "University College of Engineering",
     "branchCode": "XM",
@@ -21591,7 +21591,7 @@ const TableValues = [
 },
 {
     "sNo": "1395",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "AD",
@@ -21606,7 +21606,7 @@ const TableValues = [
 },
 {
     "sNo": "1396",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "AG",
@@ -21621,7 +21621,7 @@ const TableValues = [
 },
 {
     "sNo": "1397",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "BM",
@@ -21636,7 +21636,7 @@ const TableValues = [
 },
 {
     "sNo": "1398",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "CE",
@@ -21651,7 +21651,7 @@ const TableValues = [
 },
 {
     "sNo": "1399",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "CS",
@@ -21666,7 +21666,7 @@ const TableValues = [
 },
 {
     "sNo": "1400",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "EC",
@@ -21681,7 +21681,7 @@ const TableValues = [
 },
 {
     "sNo": "1401",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "EE",
@@ -21696,7 +21696,7 @@ const TableValues = [
 },
 {
     "sNo": "1402",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "EI",
@@ -21711,7 +21711,7 @@ const TableValues = [
 },
 {
     "sNo": "1403",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "FD",
@@ -21726,7 +21726,7 @@ const TableValues = [
 },
 {
     "sNo": "1404",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "IT",
@@ -21741,7 +21741,7 @@ const TableValues = [
 },
 {
     "sNo": "1405",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3810",
     "name": "M.A.M. College of Engineering",
     "branchCode": "ME",
@@ -21756,7 +21756,7 @@ const TableValues = [
 },
 {
     "sNo": "1406",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "AD",
@@ -21771,7 +21771,7 @@ const TableValues = [
 },
 {
     "sNo": "1407",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "AM",
@@ -21786,7 +21786,7 @@ const TableValues = [
 },
 {
     "sNo": "1408",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "CB",
@@ -21801,7 +21801,7 @@ const TableValues = [
 },
 {
     "sNo": "1409",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "CE",
@@ -21816,7 +21816,7 @@ const TableValues = [
 },
 {
     "sNo": "1410",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "CS",
@@ -21831,7 +21831,7 @@ const TableValues = [
 },
 {
     "sNo": "1411",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "EC",
@@ -21846,7 +21846,7 @@ const TableValues = [
 },
 {
     "sNo": "1412",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "EE",
@@ -21861,7 +21861,7 @@ const TableValues = [
 },
 {
     "sNo": "1413",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "IC",
@@ -21876,7 +21876,7 @@ const TableValues = [
 },
 {
     "sNo": "1414",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "IT",
@@ -21891,7 +21891,7 @@ const TableValues = [
 },
 {
     "sNo": "1415",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3819",
     "name": "Saranathan College of Engineering",
     "branchCode": "ME",
@@ -21906,7 +21906,7 @@ const TableValues = [
 },
 {
     "sNo": "1416",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "AD",
@@ -21921,7 +21921,7 @@ const TableValues = [
 },
 {
     "sNo": "1417",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "BM",
@@ -21936,7 +21936,7 @@ const TableValues = [
 },
 {
     "sNo": "1418",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "BT",
@@ -21951,7 +21951,7 @@ const TableValues = [
 },
 {
     "sNo": "1419",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "CS",
@@ -21966,7 +21966,7 @@ const TableValues = [
 },
 {
     "sNo": "1420",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "EC",
@@ -21981,7 +21981,7 @@ const TableValues = [
 },
 {
     "sNo": "1421",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "EE",
@@ -21996,7 +21996,7 @@ const TableValues = [
 },
 {
     "sNo": "1422",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "IT",
@@ -22011,7 +22011,7 @@ const TableValues = [
 },
 {
     "sNo": "1423",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "ME",
@@ -22026,7 +22026,7 @@ const TableValues = [
 },
 {
     "sNo": "1424",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3815",
     "name": "Pavendar Bharathidasan College of Engineering and Technology",
     "branchCode": "TX",
@@ -44331,7 +44331,7 @@ const TableValues = [
 },
 {
     "sNo": "2911",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3460",
     "name": "Surya College of Engineering",
     "branchCode": "CE",
@@ -44346,7 +44346,7 @@ const TableValues = [
 },
 {
     "sNo": "2912",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3460",
     "name": "Surya College of Engineering",
     "branchCode": "CS",
@@ -44361,7 +44361,7 @@ const TableValues = [
 },
 {
     "sNo": "2913",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3460",
     "name": "Surya College of Engineering",
     "branchCode": "EE",
@@ -44376,7 +44376,7 @@ const TableValues = [
 },
 {
     "sNo": "2914",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3460",
     "name": "Surya College of Engineering",
     "branchCode": "ME",
@@ -44391,7 +44391,7 @@ const TableValues = [
 },
 {
     "sNo": "2915",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "AD",
@@ -44406,7 +44406,7 @@ const TableValues = [
 },
 {
     "sNo": "2916",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "AM",
@@ -44421,7 +44421,7 @@ const TableValues = [
 },
 {
     "sNo": "2917",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "CE",
@@ -44436,7 +44436,7 @@ const TableValues = [
 },
 {
     "sNo": "2918",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "CS",
@@ -44451,7 +44451,7 @@ const TableValues = [
 },
 {
     "sNo": "2919",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "EC",
@@ -44466,7 +44466,7 @@ const TableValues = [
 },
 {
     "sNo": "2920",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "EE",
@@ -44481,7 +44481,7 @@ const TableValues = [
 },
 {
     "sNo": "2921",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "IT",
@@ -44496,7 +44496,7 @@ const TableValues = [
 },
 {
     "sNo": "2922",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3701",
     "name": "K Ramakrishnan College of Technology (Autonomous)",
     "branchCode": "ME",
@@ -44511,7 +44511,7 @@ const TableValues = [
 },
 {
     "sNo": "2923",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "AD",
@@ -44526,7 +44526,7 @@ const TableValues = [
 },
 {
     "sNo": "2924",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "CB",
@@ -44541,7 +44541,7 @@ const TableValues = [
 },
 {
     "sNo": "2925",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "CS",
@@ -44556,7 +44556,7 @@ const TableValues = [
 },
 {
     "sNo": "2926",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "EC",
@@ -44571,7 +44571,7 @@ const TableValues = [
 },
 {
     "sNo": "2927",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "EE",
@@ -44586,7 +44586,7 @@ const TableValues = [
 },
 {
     "sNo": "2928",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "IT",
@@ -44601,7 +44601,7 @@ const TableValues = [
 },
 {
     "sNo": "2929",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3782",
     "name": "OASYS Institute of Technology",
     "branchCode": "ME",
@@ -44616,7 +44616,7 @@ const TableValues = [
 },
 {
     "sNo": "2930",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "AD",
@@ -44631,7 +44631,7 @@ const TableValues = [
 },
 {
     "sNo": "2931",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "AE",
@@ -44646,7 +44646,7 @@ const TableValues = [
 },
 {
     "sNo": "2932",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "BM",
@@ -44661,7 +44661,7 @@ const TableValues = [
 },
 {
     "sNo": "2933",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "CS",
@@ -44676,7 +44676,7 @@ const TableValues = [
 },
 {
     "sNo": "2934",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "EC",
@@ -44691,7 +44691,7 @@ const TableValues = [
 },
 {
     "sNo": "2935",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "EE",
@@ -44706,7 +44706,7 @@ const TableValues = [
 },
 {
     "sNo": "2936",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "ME",
@@ -44721,7 +44721,7 @@ const TableValues = [
 },
 {
     "sNo": "2937",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3786",
     "name": "M.A.M. School of Engineering",
     "branchCode": "MZ",
@@ -44736,7 +44736,7 @@ const TableValues = [
 },
 {
     "sNo": "2938",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3795",
     "name": "SRM TRP Engineering College",
     "branchCode": "AD",
@@ -44751,7 +44751,7 @@ const TableValues = [
 },
 {
     "sNo": "2939",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3795",
     "name": "SRM TRP Engineering College",
     "branchCode": "CE",
@@ -44766,7 +44766,7 @@ const TableValues = [
 },
 {
     "sNo": "2940",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3795",
     "name": "SRM TRP Engineering College",
     "branchCode": "CS",
@@ -44781,7 +44781,7 @@ const TableValues = [
 },
 {
     "sNo": "2941",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3795",
     "name": "SRM TRP Engineering College",
     "branchCode": "EC",
@@ -44796,7 +44796,7 @@ const TableValues = [
 },
 {
     "sNo": "2942",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3795",
     "name": "SRM TRP Engineering College",
     "branchCode": "EE",
@@ -44811,7 +44811,7 @@ const TableValues = [
 },
 {
     "sNo": "2943",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3795",
     "name": "SRM TRP Engineering College",
     "branchCode": "ME",
@@ -44826,7 +44826,7 @@ const TableValues = [
 },
 {
     "sNo": "2944",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "AD",
@@ -44841,7 +44841,7 @@ const TableValues = [
 },
 {
     "sNo": "2945",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "BM",
@@ -44856,7 +44856,7 @@ const TableValues = [
 },
 {
     "sNo": "2946",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "CE",
@@ -44871,7 +44871,7 @@ const TableValues = [
 },
 {
     "sNo": "2947",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "CS",
@@ -44886,7 +44886,7 @@ const TableValues = [
 },
 {
     "sNo": "2948",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "EC",
@@ -44901,7 +44901,7 @@ const TableValues = [
 },
 {
     "sNo": "2949",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "EE",
@@ -44916,7 +44916,7 @@ const TableValues = [
 },
 {
     "sNo": "2950",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "IT",
@@ -44931,7 +44931,7 @@ const TableValues = [
 },
 {
     "sNo": "2951",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3811",
     "name": "M I E T Engineering College",
     "branchCode": "ME",
@@ -44946,7 +44946,7 @@ const TableValues = [
 },
 {
     "sNo": "2952",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "AD",
@@ -44961,7 +44961,7 @@ const TableValues = [
 },
 {
     "sNo": "2953",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "AM",
@@ -44976,7 +44976,7 @@ const TableValues = [
 },
 {
     "sNo": "2954",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "CE",
@@ -44991,7 +44991,7 @@ const TableValues = [
 },
 {
     "sNo": "2955",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "CS",
@@ -45006,7 +45006,7 @@ const TableValues = [
 },
 {
     "sNo": "2956",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "EC",
@@ -45021,7 +45021,7 @@ const TableValues = [
 },
 {
     "sNo": "2957",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "EE",
@@ -45036,7 +45036,7 @@ const TableValues = [
 },
 {
     "sNo": "2958",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "MC",
@@ -45051,7 +45051,7 @@ const TableValues = [
 },
 {
     "sNo": "2959",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3820",
     "name": "Trichy Engineering College",
     "branchCode": "ME",
@@ -45066,7 +45066,7 @@ const TableValues = [
 },
 {
     "sNo": "2960",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "AD",
@@ -45081,7 +45081,7 @@ const TableValues = [
 },
 {
     "sNo": "2961",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "AG",
@@ -45096,7 +45096,7 @@ const TableValues = [
 },
 {
     "sNo": "2962",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "BM",
@@ -45111,7 +45111,7 @@ const TableValues = [
 },
 {
     "sNo": "2963",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "CE",
@@ -45126,7 +45126,7 @@ const TableValues = [
 },
 {
     "sNo": "2964",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "CS",
@@ -45141,7 +45141,7 @@ const TableValues = [
 },
 {
     "sNo": "2965",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "EC",
@@ -45156,7 +45156,7 @@ const TableValues = [
 },
 {
     "sNo": "2966",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "EE",
@@ -45171,7 +45171,7 @@ const TableValues = [
 },
 {
     "sNo": "2967",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "IT",
@@ -45186,7 +45186,7 @@ const TableValues = [
 },
 {
     "sNo": "2968",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3826",
     "name": "Kongunadu College of Engineering and Technology (Autonomous)",
     "branchCode": "ME",
@@ -45201,7 +45201,7 @@ const TableValues = [
 },
 {
     "sNo": "2969",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "AD",
@@ -45216,7 +45216,7 @@ const TableValues = [
 },
 {
     "sNo": "2970",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "CE",
@@ -45231,7 +45231,7 @@ const TableValues = [
 },
 {
     "sNo": "2971",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "CS",
@@ -45246,7 +45246,7 @@ const TableValues = [
 },
 {
     "sNo": "2972",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "EC",
@@ -45261,7 +45261,7 @@ const TableValues = [
 },
 {
     "sNo": "2973",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "EE",
@@ -45276,7 +45276,7 @@ const TableValues = [
 },
 {
     "sNo": "2974",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "IT",
@@ -45291,7 +45291,7 @@ const TableValues = [
 },
 {
     "sNo": "2975",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3829",
     "name": "M.A.M. College of Engineering and Technology",
     "branchCode": "ME",
@@ -45306,7 +45306,7 @@ const TableValues = [
 },
 {
     "sNo": "2976",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "AD",
@@ -45321,7 +45321,7 @@ const TableValues = [
 },
 {
     "sNo": "2977",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "AM",
@@ -45336,7 +45336,7 @@ const TableValues = [
 },
 {
     "sNo": "2978",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "CB",
@@ -45351,7 +45351,7 @@ const TableValues = [
 },
 {
     "sNo": "2979",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "CS",
@@ -45366,7 +45366,7 @@ const TableValues = [
 },
 {
     "sNo": "2980",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "EC",
@@ -45381,7 +45381,7 @@ const TableValues = [
 },
 {
     "sNo": "2981",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "EE",
@@ -45396,7 +45396,7 @@ const TableValues = [
 },
 {
     "sNo": "2982",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "IT",
@@ -45411,7 +45411,7 @@ const TableValues = [
 },
 {
     "sNo": "2983",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3830",
     "name": "K Ramakrishnan College of Engineering (Autonomous)",
     "branchCode": "ME",
@@ -45426,7 +45426,7 @@ const TableValues = [
 },
 {
     "sNo": "2984",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "AD",
@@ -45441,7 +45441,7 @@ const TableValues = [
 },
 {
     "sNo": "2985",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "AG",
@@ -45456,7 +45456,7 @@ const TableValues = [
 },
 {
     "sNo": "2986",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "BM",
@@ -45471,7 +45471,7 @@ const TableValues = [
 },
 {
     "sNo": "2987",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "CS",
@@ -45486,7 +45486,7 @@ const TableValues = [
 },
 {
     "sNo": "2988",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "EC",
@@ -45501,7 +45501,7 @@ const TableValues = [
 },
 {
     "sNo": "2989",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "EE",
@@ -45516,7 +45516,7 @@ const TableValues = [
 },
 {
     "sNo": "2990",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "IT",
@@ -45531,7 +45531,7 @@ const TableValues = [
 },
 {
     "sNo": "2991",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3831",
     "name": "Indra Ganesan College of Engineering",
     "branchCode": "ME",
@@ -45546,7 +45546,7 @@ const TableValues = [
 },
 {
     "sNo": "2992",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3841",
     "name": "CARE College of Engineering",
     "branchCode": "AD",
@@ -45561,7 +45561,7 @@ const TableValues = [
 },
 {
     "sNo": "2993",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3841",
     "name": "CARE College of Engineering",
     "branchCode": "CE",
@@ -45576,7 +45576,7 @@ const TableValues = [
 },
 {
     "sNo": "2994",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3841",
     "name": "CARE College of Engineering",
     "branchCode": "CS",
@@ -45591,7 +45591,7 @@ const TableValues = [
 },
 {
     "sNo": "2995",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3841",
     "name": "CARE College of Engineering",
     "branchCode": "EC",
@@ -45606,7 +45606,7 @@ const TableValues = [
 },
 {
     "sNo": "2996",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3841",
     "name": "CARE College of Engineering",
     "branchCode": "ME",
@@ -45621,7 +45621,7 @@ const TableValues = [
 },
 {
     "sNo": "2997",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "AD",
@@ -45636,7 +45636,7 @@ const TableValues = [
 },
 {
     "sNo": "2998",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "BM",
@@ -45651,7 +45651,7 @@ const TableValues = [
 },
 {
     "sNo": "2999",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "CS",
@@ -45666,7 +45666,7 @@ const TableValues = [
 },
 {
     "sNo": "3000",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "EC",
@@ -45681,7 +45681,7 @@ const TableValues = [
 },
 {
     "sNo": "3001",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "EE",
@@ -45696,7 +45696,7 @@ const TableValues = [
 },
 {
     "sNo": "3002",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "ME",
@@ -45711,7 +45711,7 @@ const TableValues = [
 },
 {
     "sNo": "3003",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3844",
     "name": "Shivani Engineering College Dindigal",
     "branchCode": "SC",
@@ -45726,7 +45726,7 @@ const TableValues = [
 },
 {
     "sNo": "3004",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "AD",
@@ -45741,7 +45741,7 @@ const TableValues = [
 },
 {
     "sNo": "3005",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "AM",
@@ -45756,7 +45756,7 @@ const TableValues = [
 },
 {
     "sNo": "3006",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "CS",
@@ -45771,7 +45771,7 @@ const TableValues = [
 },
 {
     "sNo": "3007",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "EC",
@@ -45786,7 +45786,7 @@ const TableValues = [
 },
 {
     "sNo": "3008",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "EE",
@@ -45801,7 +45801,7 @@ const TableValues = [
 },
 {
     "sNo": "3009",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "ME",
@@ -45816,7 +45816,7 @@ const TableValues = [
 },
 {
     "sNo": "3010",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3845",
     "name": "Imayam College of Engineering Kannanur",
     "branchCode": "SC",
@@ -45831,7 +45831,7 @@ const TableValues = [
 },
 {
     "sNo": "3011",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3850",
     "name": "Vetri Vinayaha College of Engineering and Technology",
     "branchCode": "AD",
@@ -45846,7 +45846,7 @@ const TableValues = [
 },
 {
     "sNo": "3012",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3850",
     "name": "Vetri Vinayaha College of Engineering and Technology",
     "branchCode": "CS",
@@ -45861,7 +45861,7 @@ const TableValues = [
 },
 {
     "sNo": "3013",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3850",
     "name": "Vetri Vinayaha College of Engineering and Technology",
     "branchCode": "EC",
@@ -45876,7 +45876,7 @@ const TableValues = [
 },
 {
     "sNo": "3014",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3850",
     "name": "Vetri Vinayaha College of Engineering and Technology",
     "branchCode": "EE",
@@ -45891,7 +45891,7 @@ const TableValues = [
 },
 {
     "sNo": "3015",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3850",
     "name": "Vetri Vinayaha College of Engineering and Technology",
     "branchCode": "IT",
@@ -45906,7 +45906,7 @@ const TableValues = [
 },
 {
     "sNo": "3016",
-    "region": "Tiruchirappalli",
+    "region": "Trichy",
     "collegeCode": "3850",
     "name": "Vetri Vinayaha College of Engineering and Technology",
     "branchCode": "ME",
