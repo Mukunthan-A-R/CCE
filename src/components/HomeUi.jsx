@@ -2,8 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Banner from "../assets/Banner.jpg";
 import { FaServer } from "react-icons/fa";
-
+import { useRecoilValue } from 'recoil';
+import { userData } from '../data/atoms';
 const HomeUi = () => {
+  const {cutOff,name,email} = useRecoilValue(userData)
   return (
     <>
         <div className="bg-blue-200 w-full h-14 px-10 flex items-center">
@@ -15,9 +17,12 @@ const HomeUi = () => {
         <h1 className="w-full text-center font-bold">ADD YOUR COLLEGES</h1>
       </div>
       <div className="relative">
-        <img src={Banner} className="w-full mb-10 object-cover" />
-        <h2 className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">TNEA CHOICE FILLING</h2>
-      </div>
+  <img src={Banner} className="w-full mb-10 object-cover" />
+        <h2 className="absolute inset-0 top-1/6 flex items-center justify-center text-white font-bold text-3xl">Welcome {name}</h2>
+        <h2 className="absolute inset-0 top-1/4 flex items-center justify-center text-white font-semibold text-2xl">Cut off: {cutOff}</h2>
+        
+</div>
+
     </>
   )
 }
