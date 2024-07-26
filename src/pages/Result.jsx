@@ -101,7 +101,7 @@ const Result = () => {
         >
           <IoIosPrint />
         </button>
-        <button
+        {/* <button
           className="receipt-modal-download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
           onClick={downloadPDF}
           disabled={loader}
@@ -111,7 +111,7 @@ const Result = () => {
           ) : (
             <span><FaDownload /></span>
           )}
-        </button>
+        </button> */}
       </div>
       <div className="text-center font-bold text-2xl my-5">
         Welcome {User.name || 'User'}

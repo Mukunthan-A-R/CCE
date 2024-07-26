@@ -82,7 +82,14 @@
     } 
 
     return (
-      <div className="w-full h-screen flex">
+      <div className="w-full h-screen flex relative">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <h2 className="text-2xl font-bold text-center">TNEA Choice List</h2>
+        </div>
+        <div className="absolute top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <h2 className="text-xl font-bold text-center">Make Your Own Choice List for Building Your Future</h2>
+        </div>
+        
         <div className="bg-blue-500 w-1/2 flex justify-center items-center">
           <img src={registerImg} alt="" className="w-[400px] h-auto" />
         </div>
