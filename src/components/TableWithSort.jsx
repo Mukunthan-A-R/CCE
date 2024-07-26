@@ -175,7 +175,7 @@ const TableWithSort = ({ data, community }) => {
               onClick={() => requestSort("region")}
             >
               <div className="flex justify-center">
-                Region
+                Zone
                 {sortConfig && sortConfig.key === "region" && (
                   <span className="ml-1">
                     {sortConfig.direction === "ascending" ? (
