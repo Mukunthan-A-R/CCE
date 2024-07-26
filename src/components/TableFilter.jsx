@@ -83,9 +83,9 @@ const TableFilter = () => {
     setFilter((prevFilter) => ({ ...prevFilter, dept: selectedValues }));
   };
 
-  useEffect(() => {
-    console.log("Updated filter state:", filter);
-  }, [filter]);
+  // useEffect(() => {
+  //   console.log("Updated filter state:", filter);
+  // }, [filter]);
 
   const handleSubmit = () => {
     const hasErrors = Object.values(errors).some(error => error.trim() !== '');
@@ -94,7 +94,7 @@ const TableFilter = () => {
       return;
     }
 
-    const FilterData = TableValues.filter(value => value.oc <= filter.cutOffStart && value.oc >= filter.cutOffEnd &&
+    const FilterData = TableValues.filter(value => value[community] <= filter.cutOffStart && value[community] >= filter.cutOffEnd &&
       (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
     );
 
