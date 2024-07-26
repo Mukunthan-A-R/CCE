@@ -28,7 +28,7 @@ const TableFilter = () => {
   const handleDataCutOffSt = (value) => {
     let newErrors = {};
     if (value > 0 && value <= 200) {
-      setFilter({ ...filter, cutOffStart: parseInt(value) });
+      setFilter({ ...filter, cutOffStart: parseFloat(value) });
       newErrors.cutOffStart = '';
     } else if (value === "") {
       setFilter({ ...filter, cutOffStart: 200 });
@@ -41,7 +41,7 @@ const TableFilter = () => {
   const handleDataCutOffEnd = (value) => {
     let newErrors = {};
     if (value > 0 && value <= 200) {
-      setFilter({ ...filter, cutOffEnd: parseInt(value) });
+      setFilter({ ...filter, cutOffEnd: parseFloat(value) });
       newErrors.cutOffEnd = '';
     } else {
       newErrors.cutOffEnd = "the cut off value should be between 1 and 200";
