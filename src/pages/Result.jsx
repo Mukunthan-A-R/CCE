@@ -170,7 +170,7 @@ const Result = () => {
                           >
                             <td className="px-3 py-4 whitespace-nowrap">{row.sNo}</td>
                             <td className="px-3 py-4 whitespace-nowrap">{row.region}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row.collegecode}</td>
+                            <td className="px-3 py-4 whitespace-nowrap">{row.collegeCode}</td>
                             <td className="px-3 py-4 whitespace-nowrap">{row.name}</td>
                             <td className="px-3 py-4 whitespace-nowrap">{row.branchCode}</td>
                             <td className="px-3 py-4 whitespace-nowrap">{row["Branch Name"]}</td>

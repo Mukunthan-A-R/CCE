@@ -2,7 +2,7 @@ const TableValues = [
   {
     "sNo": "1",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "BY",
     "branchName": "BIO MEDICAL ENGINEERING (SS)",
@@ -17,7 +17,7 @@ const TableValues = [
 {
     "sNo": "2",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "CE",
     "Branch Name": "CIVIL ENGINEERING",
@@ -32,7 +32,7 @@ const TableValues = [
 {
     "sNo": "3",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "CM",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING (SS)",
@@ -47,7 +47,7 @@ const TableValues = [
 {
     "sNo": "4",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -62,7 +62,7 @@ const TableValues = [
 {
     "sNo": "5",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -77,7 +77,7 @@ const TableValues = [
 {
     "sNo": "6",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -92,7 +92,7 @@ const TableValues = [
 {
     "sNo": "7",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "EM",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING (SS)",
@@ -107,7 +107,7 @@ const TableValues = [
 {
     "sNo": "8",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "GI",
     "Branch Name": "GEO INFORMATICS",
@@ -122,7 +122,7 @@ const TableValues = [
 {
     "sNo": "9",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "IE",
     "Branch Name": "INDUstRIAL ENGINEERING",
@@ -137,7 +137,7 @@ const TableValues = [
 {
     "sNo": "10",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "IM",
     "Branch Name": "INFORMATION TECHNOLOGY (SS)",
@@ -152,7 +152,7 @@ const TableValues = [
 {
     "sNo": "11",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "MA",
     "Branch Name": "MATERIAL scIENCE AND ENGINEERING (SS)",
@@ -167,7 +167,7 @@ const TableValues = [
 {
     "sNo": "12",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -182,7 +182,7 @@ const TableValues = [
 {
     "sNo": "13",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "MI",
     "Branch Name": "MINING ENGINEERING",
@@ -197,7 +197,7 @@ const TableValues = [
 {
     "sNo": "14",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "MN",
     "Branch Name": "MANUFACTURING ENGINEERING",
@@ -212,7 +212,7 @@ const TableValues = [
 {
     "sNo": "15",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "PT",
     "Branch Name": "PRINTING AND PACKING TECHNOLOGY",
@@ -227,7 +227,7 @@ const TableValues = [
 {
     "sNo": "16",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "XC",
     "Branch Name": "CIVIL ENGINEERING (TAMIL MEDIUM)",
@@ -242,7 +242,7 @@ const TableValues = [
 {
     "sNo": "17",
     "region": "Chennai",
-    "collegecode": "1",
+    "collegeCode": "1",
     "name": "University Departments of Anna University Chennai - CEG Campus",
     "branchCode": "XM",
     "Branch Name": "MECHANICAL ENGINEERING (TAMIL MEDIUM)",
@@ -257,7 +257,7 @@ const TableValues = [
 {
     "sNo": "18",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "AE",
     "Branch Name": "AERONAUTICAL ENGINEERING",
@@ -272,7 +272,7 @@ const TableValues = [
 {
     "sNo": "19",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "AT",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE (SS)",
@@ -287,7 +287,7 @@ const TableValues = [
 {
     "sNo": "20",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "AU",
     "Branch Name": "AUTOMOBILE ENGINEERING",
@@ -302,7 +302,7 @@ const TableValues = [
 {
     "sNo": "21",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "CM",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING (SS)",
@@ -317,7 +317,7 @@ const TableValues = [
 {
     "sNo": "22",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -332,7 +332,7 @@ const TableValues = [
 {
     "sNo": "23",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -347,7 +347,7 @@ const TableValues = [
 {
     "sNo": "24",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "EI",
     "Branch Name": "ELECTRONICS AND INstRUMENTATION ENGINEERING",
@@ -362,7 +362,7 @@ const TableValues = [
 {
     "sNo": "25",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "EM",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING (SS)",
@@ -377,7 +377,7 @@ const TableValues = [
 {
     "sNo": "26",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "IM",
     "Branch Name": "INFORMATION TECHNOLOGY (SS)",
@@ -392,7 +392,7 @@ const TableValues = [
 {
     "sNo": "27",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "PR",
     "Branch Name": "PRODUCTION ENGINEERING",
@@ -407,7 +407,7 @@ const TableValues = [
 {
     "sNo": "28",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "RA",
     "Branch Name": "ROBOTICS AND AUTOMATION (SS)",
@@ -422,7 +422,7 @@ const TableValues = [
 {
     "sNo": "29",
     "region": "Chengalpattu",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus Chrompet",
     "branchCode": "RP",
     "Branch Name": "RUBBER AND PLAstIC TECHNOLOGY",
@@ -437,7 +437,7 @@ const TableValues = [
 {
     "sNo": "30",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "AE",
     "Branch Name": "AERONAUTICAL ENGINEERING",
@@ -452,7 +452,7 @@ const TableValues = [
 {
     "sNo": "31",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "AT",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE (SS)",
@@ -467,7 +467,7 @@ const TableValues = [
 {
     "sNo": "32",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "AU",
     "Branch Name": "AUTOMOBILE ENGINEERING",
@@ -482,7 +482,7 @@ const TableValues = [
 {
     "sNo": "33",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "CM",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING (SS)",
@@ -497,7 +497,7 @@ const TableValues = [
 {
     "sNo": "34",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -512,7 +512,7 @@ const TableValues = [
 {
     "sNo": "35",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -527,7 +527,7 @@ const TableValues = [
 {
     "sNo": "36",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "EI",
     "Branch Name": "ELECTRONICS AND INstRUMENTATION ENGINEERING",
@@ -542,7 +542,7 @@ const TableValues = [
 {
     "sNo": "37",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "EM",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING (SS)",
@@ -557,7 +557,7 @@ const TableValues = [
 {
     "sNo": "38",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "IM",
     "Branch Name": "INFORMATION TECHNOLOGY (SS)",
@@ -572,7 +572,7 @@ const TableValues = [
 {
     "sNo": "39",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "PR",
     "Branch Name": "PRODUCTION ENGINEERING",
@@ -587,7 +587,7 @@ const TableValues = [
 {
     "sNo": "40",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "RA",
     "Branch Name": "ROBOTICS AND AUTOMATION (SS)",
@@ -602,7 +602,7 @@ const TableValues = [
 {
     "sNo": "41",
     "region": "Chennai",
-    "collegecode": "4",
+    "collegeCode": "4",
     "name": "University Departments of Anna University Chennai - MIT Campus",
     "branchCode": "RP",
     "Branch Name": "RUBBER AND PLAstIC TECHNOLOGY",
@@ -617,7 +617,7 @@ const TableValues = [
 {
     "sNo": "42",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "BM",
     "Branch Name": "BIO MEDICAL ENGINEERING",
@@ -632,7 +632,7 @@ const TableValues = [
 {
     "sNo": "43",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "CE",
     "Branch Name": "CIVIL ENGINEERING",
@@ -647,7 +647,7 @@ const TableValues = [
 {
     "sNo": "44",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "CH",
     "Branch Name": "CHEMICAL ENGINEERING",
@@ -662,7 +662,7 @@ const TableValues = [
 {
     "sNo": "45",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "CJ",
     "Branch Name": "M.Tech. Computer science and Engineering (Integrated 5 years)",
@@ -677,7 +677,7 @@ const TableValues = [
 {
     "sNo": "46",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -692,7 +692,7 @@ const TableValues = [
 {
     "sNo": "47",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -707,7 +707,7 @@ const TableValues = [
 {
     "sNo": "48",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -722,7 +722,7 @@ const TableValues = [
 {
     "sNo": "49",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -737,7 +737,7 @@ const TableValues = [
 {
     "sNo": "50",
     "region": "Chengalpattu",
-    "collegecode": "1315",
+    "collegeCode": "1315",
     "name": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) Kalavakkam",
     "branchCode": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -752,7 +752,7 @@ const TableValues = [
 {
     "sNo": "51",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "AP",
     "Branch Name": "APPAREL TECHNOLOGY (SS)",
@@ -767,7 +767,7 @@ const TableValues = [
 {
     "sNo": "52",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "CH",
     "Branch Name": "CHEMICAL ENGINEERING",
@@ -782,7 +782,7 @@ const TableValues = [
 {
     "sNo": "53",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "CL",
     "Branch Name": "CHEMICAL ENGINEERING (SS)",
@@ -797,7 +797,7 @@ const TableValues = [
 {
     "sNo": "54",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "CR",
     "Branch Name": "CERAMIC TECHNOLOGY (SS)",
@@ -812,7 +812,7 @@ const TableValues = [
 {
     "sNo": "55",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "FS",
     "Branch Name": "FOOD TECHNOLOGY (SS)",
@@ -827,7 +827,7 @@ const TableValues = [
 {
     "sNo": "56",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "IB",
     "Branch Name": "INDUstRIAL BIO TECHNOLOGY",
@@ -842,7 +842,7 @@ const TableValues = [
 {
     "sNo": "57",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "IS",
     "Branch Name": "INDUstRIAL BIO TECHNOLOGY (SS)",
@@ -857,7 +857,7 @@ const TableValues = [
 {
     "sNo": "58",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "LE",
     "Branch Name": "LEATHER TECHNOLOGY",
@@ -872,7 +872,7 @@ const TableValues = [
 {
     "sNo": "59",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "PM",
     "Branch Name": "PHARMACEUTICAL TECHNOLOGY (SS)",
@@ -887,7 +887,7 @@ const TableValues = [
 {
     "sNo": "60",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "PP",
     "Branch Name": "PETROLEUM ENGINEERING AND TECHNOLOGY (SS)",
@@ -902,7 +902,7 @@ const TableValues = [
 {
     "sNo": "61",
     "region": "Chennai",
-    "collegecode": "2",
+    "collegeCode": "2",
     "name": "University Departments of Anna University Chennai - ACT Campus",
     "branchCode": "TX",
     "Branch Name": "TEXTILE TECHNOLOGY",
@@ -917,7 +917,7 @@ const TableValues = [
 {
     "sNo": "62",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE",
@@ -932,7 +932,7 @@ const TableValues = [
 {
     "sNo": "63",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "AU",
     "Branch Name": "AUTOMOBILE ENGINEERING",
@@ -947,7 +947,7 @@ const TableValues = [
 {
     "sNo": "64",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "BT",
     "Branch Name": "BIO TECHNOLOGY",
@@ -962,7 +962,7 @@ const TableValues = [
 {
     "sNo": "65",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "CE",
     "Branch Name": "CIVIL ENGINEERING",
@@ -977,7 +977,7 @@ const TableValues = [
 {
     "sNo": "66",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "CH",
     "Branch Name": "CHEMICAL ENGINEERING",
@@ -992,7 +992,7 @@ const TableValues = [
 {
     "sNo": "67",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -1007,7 +1007,7 @@ const TableValues = [
 {
     "sNo": "68",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -1022,7 +1022,7 @@ const TableValues = [
 {
     "sNo": "69",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -1037,7 +1037,7 @@ const TableValues = [
 {
     "sNo": "70",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -1052,7 +1052,7 @@ const TableValues = [
 {
     "sNo": "71",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -1067,7 +1067,7 @@ const TableValues = [
 {
     "sNo": "72",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "MR",
     "Branch Name": "MARINE ENGINEERING",
@@ -1082,7 +1082,7 @@ const TableValues = [
 {
     "sNo": "73",
     "region": "Chennai",
-    "collegecode": "1219",
+    "collegeCode": "1219",
     "name": "Sri Venkateswara College of Engineering (Autonomous) Pennalur Irungattukottai",
     "branchCode": "MU",
     "Branch Name": "MECHANICAL AND AUTOMATION ENGINEERING",
@@ -1097,7 +1097,7 @@ const TableValues = [
 {
     "sNo": "74",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE",
@@ -1112,7 +1112,7 @@ const TableValues = [
 {
     "sNo": "75",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "AM",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
@@ -1127,7 +1127,7 @@ const TableValues = [
 {
     "sNo": "76",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "CB",
     "Branch Name": "COMPUTER scIENCE AND BUSSINESS SYstEM",
@@ -1142,7 +1142,7 @@ const TableValues = [
 {
     "sNo": "77",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "CE",
     "Branch Name": "CIVIL ENGINEERING",
@@ -1157,7 +1157,7 @@ const TableValues = [
 {
     "sNo": "78",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "CI",
     "Branch Name": "Computer science and Engineering (Internet of Things)",
@@ -1172,7 +1172,7 @@ const TableValues = [
 {
     "sNo": "79",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "CJ",
     "Branch Name": "M.Tech. Computer science and Engineering (Integrated 5 years)",
@@ -1187,7 +1187,7 @@ const TableValues = [
 {
     "sNo": "80",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -1202,7 +1202,7 @@ const TableValues = [
 {
     "sNo": "81",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -1217,7 +1217,7 @@ const TableValues = [
 {
     "sNo": "82",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -1232,7 +1232,7 @@ const TableValues = [
 {
     "sNo": "83",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "EI",
     "Branch Name": "ELECTRONICS AND INstRUMENTATION ENGINEERING",
@@ -1247,7 +1247,7 @@ const TableValues = [
 {
     "sNo": "84",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "IX",
     "Branch Name": "ELECTRONIC INstRUMENTATION AND CONTROL ENGINEERING",
@@ -1262,7 +1262,7 @@ const TableValues = [
 {
     "sNo": "85",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -1277,7 +1277,7 @@ const TableValues = [
 {
     "sNo": "86",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -1292,7 +1292,7 @@ const TableValues = [
 {
     "sNo": "87",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "MU",
     "Branch Name": "MECHANICAL AND AUTOMATION ENGINEERING",
@@ -1307,7 +1307,7 @@ const TableValues = [
 {
     "sNo": "88",
     "region": "Chennai",
-    "collegecode": "1419",
+    "collegeCode": "1419",
     "name": "Sri Sai Ram Enginering College (Autonomous)",
     "branchCode": "sc",
     "Branch Name": "Computer science and Engineering (Cyber Security)",
@@ -1322,7 +1322,7 @@ const TableValues = [
 {
     "sNo": "89",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE",
@@ -1337,7 +1337,7 @@ const TableValues = [
 {
     "sNo": "90",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "CO",
     "Branch Name": "COMPUTER AND COMMUNICATION ENGINEERING",
@@ -1352,7 +1352,7 @@ const TableValues = [
 {
     "sNo": "91",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -1367,7 +1367,7 @@ const TableValues = [
 {
     "sNo": "92",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -1382,7 +1382,7 @@ const TableValues = [
 {
     "sNo": "93",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -1397,7 +1397,7 @@ const TableValues = [
 {
     "sNo": "94",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -1412,7 +1412,7 @@ const TableValues = [
 {
     "sNo": "95",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -1427,7 +1427,7 @@ const TableValues = [
 {
     "sNo": "96",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "sc",
     "Branch Name": "Computer science and Engineering (Cyber Security)",
@@ -1442,7 +1442,7 @@ const TableValues = [
 {
     "sNo": "97",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "AM",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
@@ -1457,7 +1457,7 @@ const TableValues = [
 {
     "sNo": "98",
     "region": "Chennai",
-    "collegecode": "1324",
+    "collegeCode": "1324",
     "name": "Sri Sai Ram Institute of Technology (Autonomous)",
     "branchCode": "CI",
     "Branch Name": "Computer science and Engineering (Internet of Things)",
@@ -1472,7 +1472,7 @@ const TableValues = [
 {
     "sNo": "99",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE",
@@ -1487,7 +1487,7 @@ const TableValues = [
 {
     "sNo": "100",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "AE",
     "Branch Name": "AERONAUTICAL ENGINEERING",
@@ -1502,7 +1502,7 @@ const TableValues = [
 {
     "sNo": "101",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "AL",
     "Branch Name": "Artificial Intelligence and Machine Learning",
@@ -1517,7 +1517,7 @@ const TableValues = [
 {
     "sNo": "102",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "AU",
     "Branch Name": "AUTOMOBILE ENGINEERING",
@@ -1532,7 +1532,7 @@ const TableValues = [
 {
     "sNo": "103",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "BM",
     "Branch Name": "BIO MEDICAL ENGINEERING",
@@ -1547,7 +1547,7 @@ const TableValues = [
 {
     "sNo": "104",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "BT",
     "Branch Name": "BIO TECHNOLOGY",
@@ -1562,7 +1562,7 @@ const TableValues = [
 {
     "sNo": "105",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "CB",
     "Branch Name": "COMPUTER scIENCE AND BUSSINESS SYstEM",
@@ -1577,7 +1577,7 @@ const TableValues = [
 {
     "sNo": "106",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "CD",
     "Branch Name": "COMPUTER scIENCE AND DESIGN",
@@ -1592,7 +1592,7 @@ const TableValues = [
 {
     "sNo": "107",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "CE",
     "Branch Name": "CIVIL ENGINEERING",
@@ -1607,7 +1607,7 @@ const TableValues = [
 {
     "sNo": "108",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "CH",
     "Branch Name": "CHEMICAL ENGINEERING",
@@ -1622,12 +1622,12 @@ const TableValues = [
 {
     "sNo": "109",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
     "oc": "191.5",
-    "bc": "187.3333333",
+    "bc": "187.33",
     "bcm": "185.5",
     "mbc": "169.5",
     "sc": "146.5",
@@ -1637,7 +1637,7 @@ const TableValues = [
 {
     "sNo": "110",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -1652,7 +1652,7 @@ const TableValues = [
 {
     "sNo": "111",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -1667,7 +1667,7 @@ const TableValues = [
 {
     "sNo": "112",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "FD",
     "Branch Name": "FOOD TECHNOLOGY",
@@ -1682,7 +1682,7 @@ const TableValues = [
 {
     "sNo": "113",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -1697,7 +1697,7 @@ const TableValues = [
 {
     "sNo": "114",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -1712,7 +1712,7 @@ const TableValues = [
 {
     "sNo": "115",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "MZ",
     "Branch Name": "Mechatronics Engineering",
@@ -1727,7 +1727,7 @@ const TableValues = [
 {
     "sNo": "116",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "RM",
     "Branch Name": "ROBOTICS AND AUTOMATION",
@@ -1742,7 +1742,7 @@ const TableValues = [
 {
     "sNo": "117",
     "region": "Chennai",
-    "collegecode": "1211",
+    "collegeCode": "1211",
     "name": "Rajalakshmi Engineering College (Autonomous) Thandalam",
     "branchCode": "sc",
     "Branch Name": "Computer science and Engineering (Cyber Security)",
@@ -1757,7 +1757,7 @@ const TableValues = [
 {
     "sNo": "118",
     "region": "Chennai",
-    "collegecode": "1450",
+    "collegeCode": "1450",
     "name": "Loyola ICAM College of Engineering and Technology Loyola College Campus Nungambakkam",
 
     "branchCode": "CS",
@@ -1773,7 +1773,7 @@ const TableValues = [
 {
     "sNo": "119",
     "region": "Chennai",
-    "collegecode": "1450",
+    "collegeCode": "1450",
     "name": "Loyola ICAM College of Engineering and Technology Loyola College Campus Nungambakkam",
 
     "branchCode": "EC",
@@ -1789,7 +1789,7 @@ const TableValues = [
 {
     "sNo": "120",
     "region": "Chennai",
-    "collegecode": "1450",
+    "collegeCode": "1450",
     "name": "Loyola ICAM College of Engineering and Technology Loyola College Campus Nungambakkam",
 
     "branchCode": "EE",
@@ -1805,7 +1805,7 @@ const TableValues = [
 {
     "sNo": "121",
     "region": "Chennai",
-    "collegecode": "1450",
+    "collegeCode": "1450",
     "name": "Loyola ICAM College of Engineering and Technology Loyola College Campus Nungambakkam",
 
     "branchCode": "IT",
@@ -1821,7 +1821,7 @@ const TableValues = [
 {
     "sNo": "122",
     "region": "Chennai",
-    "collegecode": "1450",
+    "collegeCode": "1450",
     "name": "Loyola ICAM College of Engineering and Technology Loyola College Campus Nungambakkam",
 
     "branchCode": "ME",
@@ -1837,7 +1837,7 @@ const TableValues = [
 {
     "sNo": "123",
     "region": "Chennai",
-    "collegecode": "1450",
+    "collegeCode": "1450",
     "name": "Loyola ICAM College of Engineering and Technology Loyola College Campus Nungambakkam",
 
     "branchCode": "",
@@ -1853,7 +1853,7 @@ const TableValues = [
 {
     "sNo": "124",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "AD",
@@ -1869,7 +1869,7 @@ const TableValues = [
 {
     "sNo": "125",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "AM",
@@ -1885,7 +1885,7 @@ const TableValues = [
 {
     "sNo": "126",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "AU",
@@ -1901,7 +1901,7 @@ const TableValues = [
 {
     "sNo": "127",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "BM",
@@ -1917,7 +1917,7 @@ const TableValues = [
 {
     "sNo": "128",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "CE",
@@ -1933,7 +1933,7 @@ const TableValues = [
 {
     "sNo": "129",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "CS",
@@ -1949,7 +1949,7 @@ const TableValues = [
 {
     "sNo": "130",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "EC",
@@ -1965,7 +1965,7 @@ const TableValues = [
 {
     "sNo": "131",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "EE",
@@ -1981,7 +1981,7 @@ const TableValues = [
 {
     "sNo": "132",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "IT",
@@ -1997,7 +1997,7 @@ const TableValues = [
 {
     "sNo": "133",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "ME",
@@ -2013,7 +2013,7 @@ const TableValues = [
 {
     "sNo": "134",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "RM",
@@ -2029,7 +2029,7 @@ const TableValues = [
 {
     "sNo": "135",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "sc",
@@ -2045,7 +2045,7 @@ const TableValues = [
 {
     "sNo": "136",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "CB",
@@ -2061,7 +2061,7 @@ const TableValues = [
 {
     "sNo": "137",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "CD",
@@ -2077,7 +2077,7 @@ const TableValues = [
 {
     "sNo": "138",
     "region": "Chennai",
-    "collegecode": "1304",
+    "collegeCode": "1304",
     "name": "Easwari Engineering College (Autonomous) Ramapuram",
 
     "branchCode": "BT",
@@ -2093,7 +2093,7 @@ const TableValues = [
 {
     "sNo": "139",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "AD",
@@ -2109,7 +2109,7 @@ const TableValues = [
 {
     "sNo": "140",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "AL",
@@ -2125,7 +2125,7 @@ const TableValues = [
 {
     "sNo": "141",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "BT",
@@ -2141,7 +2141,7 @@ const TableValues = [
 {
     "sNo": "142",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "CH",
@@ -2157,7 +2157,7 @@ const TableValues = [
 {
     "sNo": "143",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "CS",
@@ -2173,7 +2173,7 @@ const TableValues = [
 {
     "sNo": "144",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "EC",
@@ -2189,7 +2189,7 @@ const TableValues = [
 {
     "sNo": "145",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "EE",
@@ -2205,7 +2205,7 @@ const TableValues = [
 {
     "sNo": "146",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "IT",
@@ -2221,7 +2221,7 @@ const TableValues = [
 {
     "sNo": "147",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "ME",
@@ -2237,7 +2237,7 @@ const TableValues = [
 {
     "sNo": "148",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "MZ",
@@ -2253,7 +2253,7 @@ const TableValues = [
 {
     "sNo": "149",
     "region": "Chennai",
-    "collegecode": "1317",
+    "collegeCode": "1317",
     "name": "st. Joseph's College of Engineering (Autonomous) (OMR)",
 
     "branchCode": "sc",
@@ -2269,7 +2269,7 @@ const TableValues = [
 {
     "sNo": "150",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "AD",
@@ -2285,7 +2285,7 @@ const TableValues = [
 {
     "sNo": "151",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "CB",
@@ -2301,7 +2301,7 @@ const TableValues = [
 {
     "sNo": "152",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "CD",
@@ -2317,7 +2317,7 @@ const TableValues = [
 {
     "sNo": "153",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "CE",
@@ -2333,7 +2333,7 @@ const TableValues = [
 {
     "sNo": "154",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "CS",
@@ -2349,7 +2349,7 @@ const TableValues = [
 {
     "sNo": "155",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "EA",
@@ -2365,7 +2365,7 @@ const TableValues = [
 {
     "sNo": "156",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "EC",
@@ -2381,7 +2381,7 @@ const TableValues = [
 {
     "sNo": "157",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "EE",
@@ -2397,7 +2397,7 @@ const TableValues = [
 {
     "sNo": "158",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "EV",
@@ -2413,7 +2413,7 @@ const TableValues = [
 {
     "sNo": "159",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "IT",
@@ -2429,7 +2429,7 @@ const TableValues = [
 {
     "sNo": "160",
     "region": "Thiruvallur",
-    "collegecode": "1113",
+    "collegeCode": "1113",
     "name": "R M K Engineering College (Autonomous)",
 
     "branchCode": "ME",
@@ -2445,7 +2445,7 @@ const TableValues = [
 {
     "sNo": "161",
     "region": "Thiruvallur",
-    "collegecode": "1112",
+    "collegeCode": "1112",
     "name": "R M D Engineering College (Autonomous)",
 
     "branchCode": "AL",
@@ -2461,7 +2461,7 @@ const TableValues = [
 {
     "sNo": "162",
     "region": "Thiruvallur",
-    "collegecode": "1112",
+    "collegeCode": "1112",
     "name": "R M D Engineering College (Autonomous)",
 
     "branchCode": "CB",
@@ -2477,7 +2477,7 @@ const TableValues = [
 {
     "sNo": "163",
     "region": "Thiruvallur",
-    "collegecode": "1112",
+    "collegeCode": "1112",
     "name": "R M D Engineering College (Autonomous)",
 
     "branchCode": "CS",
@@ -2493,7 +2493,7 @@ const TableValues = [
 {
     "sNo": "164",
     "region": "Thiruvallur",
-    "collegecode": "1112",
+    "collegeCode": "1112",
     "name": "R M D Engineering College (Autonomous)",
 
     "branchCode": "EC",
@@ -2509,7 +2509,7 @@ const TableValues = [
 {
     "sNo": "165",
     "region": "Thiruvallur",
-    "collegecode": "1112",
+    "collegeCode": "1112",
     "name": "R M D Engineering College (Autonomous)",
 
     "branchCode": "IT",
@@ -2525,7 +2525,7 @@ const TableValues = [
 {
     "sNo": "166",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "AD",
@@ -2541,7 +2541,7 @@ const TableValues = [
 {
     "sNo": "167",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "AM",
@@ -2557,7 +2557,7 @@ const TableValues = [
 {
     "sNo": "168",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "CB",
@@ -2573,7 +2573,7 @@ const TableValues = [
 {
     "sNo": "169",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "CO",
@@ -2589,7 +2589,7 @@ const TableValues = [
 {
     "sNo": "170",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "CS",
@@ -2605,7 +2605,7 @@ const TableValues = [
 {
     "sNo": "171",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "EC",
@@ -2621,7 +2621,7 @@ const TableValues = [
 {
     "sNo": "172",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "ME",
@@ -2637,7 +2637,7 @@ const TableValues = [
 {
     "sNo": "173",
     "region": "Chennai",
-    "collegecode": "1432",
+    "collegeCode": "1432",
     "name": "Rajalakshmi Institute of Technology (Autonomous)",
 
     "branchCode": "EV",
@@ -2653,7 +2653,7 @@ const TableValues = [
 {
     "sNo": "174",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "AD",
@@ -2669,7 +2669,7 @@ const TableValues = [
 {
     "sNo": "175",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "AG",
@@ -2685,7 +2685,7 @@ const TableValues = [
 {
     "sNo": "176",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "CE",
@@ -2701,7 +2701,7 @@ const TableValues = [
 {
     "sNo": "177",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "CS",
@@ -2717,7 +2717,7 @@ const TableValues = [
 {
     "sNo": "178",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "CY",
@@ -2733,7 +2733,7 @@ const TableValues = [
 {
     "sNo": "179",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "EC",
@@ -2749,7 +2749,7 @@ const TableValues = [
 {
     "sNo": "180",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "EE",
@@ -2765,7 +2765,7 @@ const TableValues = [
 {
     "sNo": "181",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "EI",
@@ -2781,7 +2781,7 @@ const TableValues = [
 {
     "sNo": "182",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "IT",
@@ -2797,7 +2797,7 @@ const TableValues = [
 {
     "sNo": "183",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "MD",
@@ -2813,7 +2813,7 @@ const TableValues = [
 {
     "sNo": "184",
     "region": "Chennai",
-    "collegecode": "1422",
+    "collegeCode": "1422",
     "name": "SRM Valliammai Engineering College (Autonomous) Kattankulathur",
 
     "branchCode": "ME",
@@ -2829,7 +2829,7 @@ const TableValues = [
 {
     "sNo": "185",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "AD",
@@ -2845,7 +2845,7 @@ const TableValues = [
 {
     "sNo": "186",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "AG",
@@ -2861,7 +2861,7 @@ const TableValues = [
 {
     "sNo": "187",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "AL",
@@ -2877,7 +2877,7 @@ const TableValues = [
 {
     "sNo": "188",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "BM",
@@ -2893,7 +2893,7 @@ const TableValues = [
 {
     "sNo": "189",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "CE",
@@ -2909,7 +2909,7 @@ const TableValues = [
 {
     "sNo": "190",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "CH",
@@ -2925,7 +2925,7 @@ const TableValues = [
 {
     "sNo": "191",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "CI",
@@ -2941,7 +2941,7 @@ const TableValues = [
 {
     "sNo": "192",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "CS",
@@ -2957,7 +2957,7 @@ const TableValues = [
 {
     "sNo": "193",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "EC",
@@ -2973,7 +2973,7 @@ const TableValues = [
 {
     "sNo": "194",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "EE",
@@ -2989,7 +2989,7 @@ const TableValues = [
 {
     "sNo": "195",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "IT",
@@ -3005,7 +3005,7 @@ const TableValues = [
 {
     "sNo": "196",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "ME",
@@ -3021,7 +3021,7 @@ const TableValues = [
 {
     "sNo": "197",
     "region": "Chennai",
-    "collegecode": "1216",
+    "collegeCode": "1216",
     "name": "Saveetha Engineering College (Autonomous) Thandalam",
 
     "branchCode": "sc",
@@ -3037,7 +3037,7 @@ const TableValues = [
 {
     "sNo": "198",
     "region": "Chennai",
-    "collegecode": "1442",
+    "collegeCode": "1442",
     "name": "Prince Dr. K Vasudevan College of Engineering and Technology Ponmar",
 
     "branchCode": "AD",
@@ -3053,7 +3053,7 @@ const TableValues = [
 {
     "sNo": "199",
     "region": "Chennai",
-    "collegecode": "1442",
+    "collegeCode": "1442",
     "name": "Prince Dr. K Vasudevan College of Engineering and Technology Ponmar",
 
     "branchCode": "BM",
@@ -3069,7 +3069,7 @@ const TableValues = [
 {
     "sNo": "200",
     "region": "Chennai",
-    "collegecode": "1442",
+    "collegeCode": "1442",
     "name": "Prince Dr. K Vasudevan College of Engineering and Technology Ponmar",
 
     "branchCode": "CS",
@@ -3085,7 +3085,7 @@ const TableValues = [
 {
     "sNo": "201",
     "region": "Chennai",
-    "collegecode": "1442",
+    "collegeCode": "1442",
     "name": "Prince Dr. K Vasudevan College of Engineering and Technology Ponmar",
 
     "branchCode": "sc",
@@ -3101,7 +3101,7 @@ const TableValues = [
 {
     "sNo": "202",
     "region": "Chennai",
-    "collegecode": "1414",
+    "collegeCode": "1414",
     "name": "Prince Shri Venkateshwara Padmavathy Engineering College (Autonomous) Ponmar",
 
     "branchCode": "CE",
@@ -3117,7 +3117,7 @@ const TableValues = [
 {
     "sNo": "203",
     "region": "Chennai",
-    "collegecode": "1414",
+    "collegeCode": "1414",
     "name": "Prince Shri Venkateshwara Padmavathy Engineering College (Autonomous) Ponmar",
 
     "branchCode": "CS",
@@ -3133,7 +3133,7 @@ const TableValues = [
 {
     "sNo": "204",
     "region": "Chennai",
-    "collegecode": "1414",
+    "collegeCode": "1414",
     "name": "Prince Shri Venkateshwara Padmavathy Engineering College (Autonomous) Ponmar",
 
     "branchCode": "EC",
@@ -3149,7 +3149,7 @@ const TableValues = [
 {
     "sNo": "205",
     "region": "Chennai",
-    "collegecode": "1414",
+    "collegeCode": "1414",
     "name": "Prince Shri Venkateshwara Padmavathy Engineering College (Autonomous) Ponmar",
 
     "branchCode": "EE",
@@ -3165,7 +3165,7 @@ const TableValues = [
 {
     "sNo": "206",
     "region": "Chennai",
-    "collegecode": "1414",
+    "collegeCode": "1414",
     "name": "Prince Shri Venkateshwara Padmavathy Engineering College (Autonomous) Ponmar",
 
     "branchCode": "IT",
@@ -3181,7 +3181,7 @@ const TableValues = [
 {
     "sNo": "207",
     "region": "Chennai",
-    "collegecode": "1414",
+    "collegeCode": "1414",
     "name": "Prince Shri Venkateshwara Padmavathy Engineering College (Autonomous) Ponmar",
 
     "branchCode": "ME",
@@ -3197,7 +3197,7 @@ const TableValues = [
 {
     "sNo": "208",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "AD",
@@ -3213,7 +3213,7 @@ const TableValues = [
 {
     "sNo": "209",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "CS",
@@ -3229,7 +3229,7 @@ const TableValues = [
 {
     "sNo": "210",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "EC",
@@ -3245,7 +3245,7 @@ const TableValues = [
 {
     "sNo": "211",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "EE",
@@ -3261,7 +3261,7 @@ const TableValues = [
 {
     "sNo": "212",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "IT",
@@ -3277,7 +3277,7 @@ const TableValues = [
 {
     "sNo": "213",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "ME",
@@ -3293,7 +3293,7 @@ const TableValues = [
 {
     "sNo": "214",
     "region": "Chennai",
-    "collegecode": "1149",
+    "collegeCode": "1149",
     "name": "st. Joseph's Institute of Technology (Autonomous) (OMR)",
 
     "branchCode": "sc",
@@ -3309,7 +3309,7 @@ const TableValues = [
 {
     "sNo": "215",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "AD",
@@ -3325,7 +3325,7 @@ const TableValues = [
 {
     "sNo": "216",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "AL",
@@ -3341,7 +3341,7 @@ const TableValues = [
 {
     "sNo": "217",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "CB",
@@ -3357,7 +3357,7 @@ const TableValues = [
 {
     "sNo": "218",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "CS",
@@ -3373,7 +3373,7 @@ const TableValues = [
 {
     "sNo": "219",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "EC",
@@ -3389,7 +3389,7 @@ const TableValues = [
 {
     "sNo": "220",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "EE",
@@ -3405,7 +3405,7 @@ const TableValues = [
 {
     "sNo": "221",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "IT",
@@ -3421,7 +3421,7 @@ const TableValues = [
 {
     "sNo": "222",
     "region": "Chennai",
-    "collegecode": "1210",
+    "collegeCode": "1210",
     "name": "Panimalar Engineering College (Autonomous) Poonamallee",
 
     "branchCode": "ME",
@@ -3437,7 +3437,7 @@ const TableValues = [
 {
     "sNo": "223",
     "region": "Thiruvallur",
-    "collegecode": "1128",
+    "collegeCode": "1128",
     "name": "R M K College of Engineering and Technology (Autonomous)",
 
     "branchCode": "AD",
@@ -3453,7 +3453,7 @@ const TableValues = [
 {
     "sNo": "224",
     "region": "Thiruvallur",
-    "collegecode": "1128",
+    "collegeCode": "1128",
     "name": "R M K College of Engineering and Technology (Autonomous)",
 
     "branchCode": "CS",
@@ -3469,7 +3469,7 @@ const TableValues = [
 {
     "sNo": "225",
     "region": "Thiruvallur",
-    "collegecode": "1128",
+    "collegeCode": "1128",
     "name": "R M K College of Engineering and Technology (Autonomous)",
 
     "branchCode": "EC",
@@ -3485,7 +3485,7 @@ const TableValues = [
 {
     "sNo": "226",
     "region": "Thiruvallur",
-    "collegecode": "1128",
+    "collegeCode": "1128",
     "name": "R M K College of Engineering and Technology (Autonomous)",
 
     "branchCode": "sc",
@@ -3501,7 +3501,7 @@ const TableValues = [
 {
     "sNo": "227",
     "region": "Thiruvallur",
-    "collegecode": "1128",
+    "collegeCode": "1128",
     "name": "R M K College of Engineering and Technology (Autonomous)",
 
     "branchCode": "EV",
@@ -3517,7 +3517,7 @@ const TableValues = [
 {
     "sNo": "228",
     "region": "Chennai",
-    "collegecode": "1026",
+    "collegeCode": "1026",
     "name": "University College of Engineering Chennai",
 
     "branchCode": "CS",
@@ -3533,7 +3533,7 @@ const TableValues = [
 {
     "sNo": "229",
     "region": "Chennai",
-    "collegecode": "1026",
+    "collegeCode": "1026",
     "name": "University College of Engineering Chennai",
 
     "branchCode": "EC",
@@ -3549,7 +3549,7 @@ const TableValues = [
 {
     "sNo": "230",
     "region": "Chennai",
-    "collegecode": "1026",
+    "collegeCode": "1026",
     "name": "University College of Engineering Chennai",
 
     "branchCode": "EE",
@@ -3565,7 +3565,7 @@ const TableValues = [
 {
     "sNo": "231",
     "region": "Chennai",
-    "collegecode": "1026",
+    "collegeCode": "1026",
     "name": "University College of Engineering Chennai",
 
     "branchCode": "ME",
@@ -3581,7 +3581,7 @@ const TableValues = [
 {
     "sNo": "232",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "AD",
@@ -3597,7 +3597,7 @@ const TableValues = [
 {
     "sNo": "233",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "AU",
@@ -3613,7 +3613,7 @@ const TableValues = [
 {
     "sNo": "234",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "CE",
@@ -3629,7 +3629,7 @@ const TableValues = [
 {
     "sNo": "235",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "CS",
@@ -3645,7 +3645,7 @@ const TableValues = [
 {
     "sNo": "236",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "EC",
@@ -3661,7 +3661,7 @@ const TableValues = [
 {
     "sNo": "237",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "EE",
@@ -3677,7 +3677,7 @@ const TableValues = [
 {
     "sNo": "238",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "EI",
@@ -3693,7 +3693,7 @@ const TableValues = [
 {
     "sNo": "239",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "IT",
@@ -3709,7 +3709,7 @@ const TableValues = [
 {
     "sNo": "240",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "ME",
@@ -3725,7 +3725,7 @@ const TableValues = [
 {
     "sNo": "241",
     "region": "Chennai",
-    "collegecode": "1120",
+    "collegeCode": "1120",
     "name": "Velammal Engineering College (Autonomous) Ambattur",
 
     "branchCode": "sc",
@@ -3741,7 +3741,7 @@ const TableValues = [
 {
     "sNo": "242",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "AD",
@@ -3757,7 +3757,7 @@ const TableValues = [
 {
     "sNo": "243",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "CE",
@@ -3773,7 +3773,7 @@ const TableValues = [
 {
     "sNo": "244",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "CS",
@@ -3789,7 +3789,7 @@ const TableValues = [
 {
     "sNo": "245",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "EC",
@@ -3805,7 +3805,7 @@ const TableValues = [
 {
     "sNo": "246",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "EE",
@@ -3821,7 +3821,7 @@ const TableValues = [
 {
     "sNo": "247",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "IT",
@@ -3837,7 +3837,7 @@ const TableValues = [
 {
     "sNo": "248",
     "region": "Chennai",
-    "collegecode": "1309",
+    "collegeCode": "1309",
     "name": "Meenakshi Sundararajan Engineering College Kodambakkam",
 
     "branchCode": "ME",
@@ -3853,7 +3853,7 @@ const TableValues = [
 {
     "sNo": "249",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "AD",
@@ -3869,7 +3869,7 @@ const TableValues = [
 {
     "sNo": "250",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "AE",
@@ -3885,7 +3885,7 @@ const TableValues = [
 {
     "sNo": "251",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "AO",
@@ -3901,7 +3901,7 @@ const TableValues = [
 {
     "sNo": "252",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "AU",
@@ -3917,7 +3917,7 @@ const TableValues = [
 {
     "sNo": "253",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "CE",
@@ -3933,7 +3933,7 @@ const TableValues = [
 {
     "sNo": "254",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "CS",
@@ -3949,7 +3949,7 @@ const TableValues = [
 {
     "sNo": "255",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "EC",
@@ -3965,7 +3965,7 @@ const TableValues = [
 {
     "sNo": "256",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "EE",
@@ -3981,7 +3981,7 @@ const TableValues = [
 {
     "sNo": "257",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "FT",
@@ -3997,7 +3997,7 @@ const TableValues = [
 {
     "sNo": "258",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "IT",
@@ -4013,7 +4013,7 @@ const TableValues = [
 {
     "sNo": "259",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "ME",
@@ -4029,7 +4029,7 @@ const TableValues = [
 {
     "sNo": "260",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "MZ",
@@ -4045,7 +4045,7 @@ const TableValues = [
 {
     "sNo": "261",
     "region": "Chennai",
-    "collegecode": "1311",
+    "collegeCode": "1311",
     "name": "K C G College of Technology (Autonomous) Karappakkam",
 
     "branchCode": "sc",
@@ -4061,7 +4061,7 @@ const TableValues = [
 {
     "sNo": "262",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "AD",
@@ -4077,7 +4077,7 @@ const TableValues = [
 {
     "sNo": "263",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "AM",
@@ -4093,7 +4093,7 @@ const TableValues = [
 {
     "sNo": "264",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "CE",
@@ -4109,7 +4109,7 @@ const TableValues = [
 {
     "sNo": "265",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "CS",
@@ -4125,7 +4125,7 @@ const TableValues = [
 {
     "sNo": "266",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "EC",
@@ -4141,7 +4141,7 @@ const TableValues = [
 {
     "sNo": "267",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "EE",
@@ -4157,7 +4157,7 @@ const TableValues = [
 {
     "sNo": "268",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "IT",
@@ -4173,7 +4173,7 @@ const TableValues = [
 {
     "sNo": "269",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "ME",
@@ -4189,7 +4189,7 @@ const TableValues = [
 {
     "sNo": "270",
     "region": "Thiruvallur",
-    "collegecode": "1116",
+    "collegeCode": "1116",
     "name": "Sri Venkateswara College of Engineering and Technology",
 
     "branchCode": "sc",
@@ -4205,7 +4205,7 @@ const TableValues = [
 {
     "sNo": "271",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "AD",
@@ -4221,7 +4221,7 @@ const TableValues = [
 {
     "sNo": "272",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "AM",
@@ -4237,7 +4237,7 @@ const TableValues = [
 {
     "sNo": "273",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "CB",
@@ -4253,7 +4253,7 @@ const TableValues = [
 {
     "sNo": "274",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "CE",
@@ -4269,7 +4269,7 @@ const TableValues = [
 {
     "sNo": "275",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "CS",
@@ -4285,7 +4285,7 @@ const TableValues = [
 {
     "sNo": "276",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "EC",
@@ -4301,7 +4301,7 @@ const TableValues = [
 {
     "sNo": "277",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "EE",
@@ -4317,7 +4317,7 @@ const TableValues = [
 {
     "sNo": "278",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "EV",
@@ -4333,7 +4333,7 @@ const TableValues = [
 {
     "sNo": "279",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "IT",
@@ -4349,7 +4349,7 @@ const TableValues = [
 {
     "sNo": "280",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "ME",
@@ -4365,7 +4365,7 @@ const TableValues = [
 {
     "sNo": "281",
     "region": "Chennai",
-    "collegecode": "1114",
+    "collegeCode": "1114",
     "name": "S A Engineering College (Autonomous)",
 
     "branchCode": "sc",
@@ -4381,7 +4381,7 @@ const TableValues = [
 {
     "sNo": "282",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "AD",
@@ -4397,7 +4397,7 @@ const TableValues = [
 {
     "sNo": "283",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "CS",
@@ -4413,7 +4413,7 @@ const TableValues = [
 {
     "sNo": "284",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "EC",
@@ -4429,7 +4429,7 @@ const TableValues = [
 {
     "sNo": "285",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "EE",
@@ -4445,7 +4445,7 @@ const TableValues = [
 {
     "sNo": "286",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "IT",
@@ -4461,7 +4461,7 @@ const TableValues = [
 {
     "sNo": "287",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "ME",
@@ -4477,7 +4477,7 @@ const TableValues = [
 {
     "sNo": "288",
     "region": "Thiruvallur",
-    "collegecode": "1237",
+    "collegeCode": "1237",
     "name": "Velammal Institute of Technology",
 
     "branchCode": "MZ",
@@ -4493,7 +4493,7 @@ const TableValues = [
 {
     "sNo": "289",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "AD",
@@ -4509,7 +4509,7 @@ const TableValues = [
 {
     "sNo": "290",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "AE",
@@ -4525,7 +4525,7 @@ const TableValues = [
 {
     "sNo": "291",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "BM",
@@ -4541,7 +4541,7 @@ const TableValues = [
 {
     "sNo": "292",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "BT",
@@ -4557,7 +4557,7 @@ const TableValues = [
 {
     "sNo": "293",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "CB",
@@ -4573,7 +4573,7 @@ const TableValues = [
 {
     "sNo": "294",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "CE",
@@ -4589,7 +4589,7 @@ const TableValues = [
 {
     "sNo": "295",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "CS",
@@ -4605,7 +4605,7 @@ const TableValues = [
 {
     "sNo": "296",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "EC",
@@ -4621,7 +4621,7 @@ const TableValues = [
 {
     "sNo": "297",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "EE",
@@ -4637,7 +4637,7 @@ const TableValues = [
 {
     "sNo": "298",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "IT",
@@ -4653,7 +4653,7 @@ const TableValues = [
 {
     "sNo": "299",
     "region": "Chennai",
-    "collegecode": "1411",
+    "collegeCode": "1411",
     "name": "Madha Engineering College Kundrathur",
 
     "branchCode": "ME",
@@ -4669,7 +4669,7 @@ const TableValues = [
 {
     "sNo": "300",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "AD",
@@ -4685,7 +4685,7 @@ const TableValues = [
 {
     "sNo": "301",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "AG",
@@ -4701,7 +4701,7 @@ const TableValues = [
 {
     "sNo": "302",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "BM",
@@ -4717,7 +4717,7 @@ const TableValues = [
 {
     "sNo": "303",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "CS",
@@ -4733,7 +4733,7 @@ const TableValues = [
 {
     "sNo": "304",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "EC",
@@ -4749,7 +4749,7 @@ const TableValues = [
 {
     "sNo": "305",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "EV",
@@ -4765,7 +4765,7 @@ const TableValues = [
 {
     "sNo": "306",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "RM",
@@ -4781,7 +4781,7 @@ const TableValues = [
 {
     "sNo": "307",
     "region": "Thiruvallur",
-    "collegecode": "1126",
+    "collegeCode": "1126",
     "name": "J N N Institute of Engineering",
 
     "branchCode": "sc",
@@ -4797,7 +4797,7 @@ const TableValues = [
 {
     "sNo": "308",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "AD",
@@ -4813,7 +4813,7 @@ const TableValues = [
 {
     "sNo": "309",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "BM",
@@ -4829,7 +4829,7 @@ const TableValues = [
 {
     "sNo": "310",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "CB",
@@ -4845,7 +4845,7 @@ const TableValues = [
 {
     "sNo": "311",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "CS",
@@ -4861,7 +4861,7 @@ const TableValues = [
 {
     "sNo": "312",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "EC",
@@ -4877,7 +4877,7 @@ const TableValues = [
 {
     "sNo": "313",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "EE",
@@ -4893,7 +4893,7 @@ const TableValues = [
 {
     "sNo": "314",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "IT",
@@ -4909,7 +4909,7 @@ const TableValues = [
 {
     "sNo": "315",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "ME",
@@ -4925,7 +4925,7 @@ const TableValues = [
 {
     "sNo": "316",
     "region": "Chennai",
-    "collegecode": "1118",
+    "collegeCode": "1118",
     "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "sc",
@@ -4941,7 +4941,7 @@ const TableValues = [
 {
     "sNo": "317",
     "region": "Chennai",
-    "collegecode": "1321",
+    "collegeCode": "1321",
     "name": "Central Institute of Petrochemicals Engineering and Technology",
 
     "branchCode": "MN",
@@ -4957,7 +4957,7 @@ const TableValues = [
 {
     "sNo": "318",
     "region": "Chennai",
-    "collegecode": "1321",
+    "collegeCode": "1321",
     "name": "Central Institute of Petrochemicals Engineering and Technology",
 
     "branchCode": "PA",
@@ -4973,7 +4973,7 @@ const TableValues = [
 {
     "sNo": "319",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "AD",
@@ -4989,7 +4989,7 @@ const TableValues = [
 {
     "sNo": "320",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "AM",
@@ -5005,7 +5005,7 @@ const TableValues = [
 {
     "sNo": "321",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "BT",
@@ -5021,7 +5021,7 @@ const TableValues = [
 {
     "sNo": "322",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "CE",
@@ -5037,7 +5037,7 @@ const TableValues = [
 {
     "sNo": "323",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "CH",
@@ -5053,7 +5053,7 @@ const TableValues = [
 {
     "sNo": "324",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "CS",
@@ -5069,7 +5069,7 @@ const TableValues = [
 {
     "sNo": "325",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "EC",
@@ -5085,7 +5085,7 @@ const TableValues = [
 {
     "sNo": "326",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "IT",
@@ -5101,7 +5101,7 @@ const TableValues = [
 {
     "sNo": "327",
     "region": "Chennai",
-    "collegecode": "1122",
+    "collegeCode": "1122",
     "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous) Avadi",
 
     "branchCode": "ME",
@@ -5117,7 +5117,7 @@ const TableValues = [
 {
     "sNo": "328",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "AD",
@@ -5133,7 +5133,7 @@ const TableValues = [
 {
     "sNo": "329",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "AM",
@@ -5149,7 +5149,7 @@ const TableValues = [
 {
     "sNo": "330",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "BM",
@@ -5165,7 +5165,7 @@ const TableValues = [
 {
     "sNo": "331",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "CB",
@@ -5181,7 +5181,7 @@ const TableValues = [
 {
     "sNo": "332",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "CS",
@@ -5197,7 +5197,7 @@ const TableValues = [
 {
     "sNo": "333",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "EC",
@@ -5213,7 +5213,7 @@ const TableValues = [
 {
     "sNo": "334",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "EE",
@@ -5229,7 +5229,7 @@ const TableValues = [
 {
     "sNo": "335",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "IT",
@@ -5245,7 +5245,7 @@ const TableValues = [
 {
     "sNo": "336",
     "region": "Chennai",
-    "collegecode": "1307",
+    "collegeCode": "1307",
     "name": "Jerusalem College of Engineering (Autonomous) Pallikaranai",
 
     "branchCode": "sc",
@@ -5261,7 +5261,7 @@ const TableValues = [
 {
     "sNo": "337",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "AD",
@@ -5277,7 +5277,7 @@ const TableValues = [
 {
     "sNo": "338",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "CS",
@@ -5293,7 +5293,7 @@ const TableValues = [
 {
     "sNo": "339",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "EC",
@@ -5309,7 +5309,7 @@ const TableValues = [
 {
     "sNo": "340",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "EE",
@@ -5325,7 +5325,7 @@ const TableValues = [
 {
     "sNo": "341",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "IT",
@@ -5341,7 +5341,7 @@ const TableValues = [
 {
     "sNo": "342",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "ME",
@@ -5357,7 +5357,7 @@ const TableValues = [
 {
     "sNo": "343",
     "region": "Chennai",
-    "collegecode": "1225",
+    "collegeCode": "1225",
     "name": "Loyola Institute of Technology Mevaloorkuppam",
 
     "branchCode": "sc",
@@ -5373,7 +5373,7 @@ const TableValues = [
 {
     "sNo": "344",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "AD",
@@ -5389,7 +5389,7 @@ const TableValues = [
 {
     "sNo": "345",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "CB",
@@ -5405,7 +5405,7 @@ const TableValues = [
 {
     "sNo": "346",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "CE",
@@ -5421,7 +5421,7 @@ const TableValues = [
 {
     "sNo": "347",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "CS",
@@ -5437,7 +5437,7 @@ const TableValues = [
 {
     "sNo": "348",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "EC",
@@ -5453,7 +5453,7 @@ const TableValues = [
 {
     "sNo": "349",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "EE",
@@ -5469,7 +5469,7 @@ const TableValues = [
 {
     "sNo": "350",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "IT",
@@ -5485,7 +5485,7 @@ const TableValues = [
 {
     "sNo": "351",
     "region": "Chennai",
-    "collegecode": "1310",
+    "collegeCode": "1310",
     "name": "Misrimal Navajee Munoth Jain Engineering College Rajiv Gandhi Salai (OMR) Thorappakkam",
 
     "branchCode": "ME",
@@ -5501,7 +5501,7 @@ const TableValues = [
 {
     "sNo": "352",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "AD",
@@ -5517,7 +5517,7 @@ const TableValues = [
 {
     "sNo": "353",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "CB",
@@ -5533,7 +5533,7 @@ const TableValues = [
 {
     "sNo": "354",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "CE",
@@ -5549,7 +5549,7 @@ const TableValues = [
 {
     "sNo": "355",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "CS",
@@ -5565,7 +5565,7 @@ const TableValues = [
 {
     "sNo": "356",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "EC",
@@ -5581,7 +5581,7 @@ const TableValues = [
 {
     "sNo": "357",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "EE",
@@ -5597,7 +5597,7 @@ const TableValues = [
 {
     "sNo": "358",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "IT",
@@ -5613,7 +5613,7 @@ const TableValues = [
 {
     "sNo": "359",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "ME",
@@ -5629,7 +5629,7 @@ const TableValues = [
 {
     "sNo": "360",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "sc",
@@ -5645,7 +5645,7 @@ const TableValues = [
 {
     "sNo": "361",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "",
@@ -5661,7 +5661,7 @@ const TableValues = [
 {
     "sNo": "362",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "AM",
@@ -5677,7 +5677,7 @@ const TableValues = [
 {
     "sNo": "363",
     "region": "Chengalpattu",
-    "collegecode": "1301",
+    "collegeCode": "1301",
     "name": "Mohammed Sathak A J College of Engineering (OMR)",
 
     "branchCode": "",
@@ -5693,7 +5693,7 @@ const TableValues = [
 {
     "sNo": "364",
     "region": "Chennai",
-    "collegecode": "1140",
+    "collegeCode": "1140",
     "name": "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Chennai",
 
     "branchCode": "AD",
@@ -5709,7 +5709,7 @@ const TableValues = [
 {
     "sNo": "365",
     "region": "Chennai",
-    "collegecode": "1140",
+    "collegeCode": "1140",
     "name": "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Chennai",
 
     "branchCode": "CB",
@@ -5725,7 +5725,7 @@ const TableValues = [
 {
     "sNo": "366",
     "region": "Chennai",
-    "collegecode": "1140",
+    "collegeCode": "1140",
     "name": "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Chennai",
 
     "branchCode": "CS",
@@ -5741,7 +5741,7 @@ const TableValues = [
 {
     "sNo": "367",
     "region": "Chennai",
-    "collegecode": "1140",
+    "collegeCode": "1140",
     "name": "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Chennai",
 
     "branchCode": "EC",
@@ -5757,7 +5757,7 @@ const TableValues = [
 {
     "sNo": "368",
     "region": "Chennai",
-    "collegecode": "1140",
+    "collegeCode": "1140",
     "name": "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Chennai",
 
     "branchCode": "IT",
@@ -5773,7 +5773,7 @@ const TableValues = [
 {
     "sNo": "369",
     "region": "Chennai",
-    "collegecode": "1140",
+    "collegeCode": "1140",
     "name": "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Chennai",
 
     "branchCode": "ME",
@@ -5789,7 +5789,7 @@ const TableValues = [
 {
     "sNo": "370",
     "region": "Chennai",
-    "collegecode": "1226",
+    "collegeCode": "1226",
     "name": "P T Lee Chengalvaraya Naicker College of Engineering and Technology Oovery Veliyur Post Chennai",
 
     "branchCode": "AD",
@@ -5805,7 +5805,7 @@ const TableValues = [
 {
     "sNo": "371",
     "region": "Chennai",
-    "collegecode": "1226",
+    "collegeCode": "1226",
     "name": "P T Lee Chengalvaraya Naicker College of Engineering and Technology Oovery Veliyur Post Chennai",
 
     "branchCode": "CS",
@@ -5821,7 +5821,7 @@ const TableValues = [
 {
     "sNo": "372",
     "region": "Chennai",
-    "collegecode": "1226",
+    "collegeCode": "1226",
     "name": "P T Lee Chengalvaraya Naicker College of Engineering and Technology Oovery Veliyur Post Chennai",
 
     "branchCode": "EC",
@@ -5837,7 +5837,7 @@ const TableValues = [
 {
     "sNo": "373",
     "region": "Chennai",
-    "collegecode": "1226",
+    "collegeCode": "1226",
     "name": "P T Lee Chengalvaraya Naicker College of Engineering and Technology Oovery Veliyur Post Chennai",
 
     "branchCode": "EE",
@@ -5853,7 +5853,7 @@ const TableValues = [
 {
     "sNo": "374",
     "region": "Chennai",
-    "collegecode": "1226",
+    "collegeCode": "1226",
     "name": "P T Lee Chengalvaraya Naicker College of Engineering and Technology Oovery Veliyur Post Chennai",
 
     "branchCode": "IT",
@@ -5869,7 +5869,7 @@ const TableValues = [
 {
     "sNo": "375",
     "region": "Chennai",
-    "collegecode": "1226",
+    "collegeCode": "1226",
     "name": "P T Lee Chengalvaraya Naicker College of Engineering and Technology Oovery Veliyur Post Chennai",
 
     "branchCode": "ME",
@@ -5885,7 +5885,7 @@ const TableValues = [
 {
     "sNo": "376",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "AD",
@@ -5901,7 +5901,7 @@ const TableValues = [
 {
     "sNo": "377",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "AM",
@@ -5917,7 +5917,7 @@ const TableValues = [
 {
     "sNo": "378",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "BM",
@@ -5933,7 +5933,7 @@ const TableValues = [
 {
     "sNo": "379",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "CS",
@@ -5949,7 +5949,7 @@ const TableValues = [
 {
     "sNo": "380",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "EC",
@@ -5965,7 +5965,7 @@ const TableValues = [
 {
     "sNo": "381",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "IT",
@@ -5981,7 +5981,7 @@ const TableValues = [
 {
     "sNo": "382",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "ME",
@@ -5997,7 +5997,7 @@ const TableValues = [
 {
     "sNo": "383",
     "region": "Chennai",
-    "collegecode": "1207",
+    "collegeCode": "1207",
     "name": "Kings Engineering College Sriperumpudur Taluk Chennai",
 
     "branchCode": "RM",
@@ -6013,7 +6013,7 @@ const TableValues = [
 {
     "sNo": "384",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "AD",
@@ -6029,7 +6029,7 @@ const TableValues = [
 {
     "sNo": "385",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "AM",
@@ -6045,7 +6045,7 @@ const TableValues = [
 {
     "sNo": "386",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "CE",
@@ -6061,7 +6061,7 @@ const TableValues = [
 {
     "sNo": "387",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "CS",
@@ -6077,7 +6077,7 @@ const TableValues = [
 {
     "sNo": "388",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "EC",
@@ -6093,7 +6093,7 @@ const TableValues = [
 {
     "sNo": "389",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "EE",
@@ -6109,7 +6109,7 @@ const TableValues = [
 {
     "sNo": "390",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "EI",
@@ -6125,7 +6125,7 @@ const TableValues = [
 {
     "sNo": "391",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "IT",
@@ -6141,7 +6141,7 @@ const TableValues = [
 {
     "sNo": "392",
     "region": "Chennai",
-    "collegecode": "1509",
+    "collegeCode": "1509",
     "name": "Meenakshi College of Engineering K K Nagar",
 
     "branchCode": "ME",
@@ -6157,7 +6157,7 @@ const TableValues = [
 {
     "sNo": "393",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "AD",
@@ -6173,7 +6173,7 @@ const TableValues = [
 {
     "sNo": "394",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "AM",
@@ -6189,7 +6189,7 @@ const TableValues = [
 {
     "sNo": "395",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "CS",
@@ -6205,7 +6205,7 @@ const TableValues = [
 {
     "sNo": "396",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "EC",
@@ -6221,7 +6221,7 @@ const TableValues = [
 {
     "sNo": "397",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "EE",
@@ -6237,7 +6237,7 @@ const TableValues = [
 {
     "sNo": "398",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "IT",
@@ -6253,7 +6253,7 @@ const TableValues = [
 {
     "sNo": "399",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "ME",
@@ -6269,7 +6269,7 @@ const TableValues = [
 {
     "sNo": "400",
     "region": "Chennai",
-    "collegecode": "1202",
+    "collegeCode": "1202",
     "name": "D M I College of Engineering Palanchoor Nazrethpet",
 
     "branchCode": "CE",
@@ -6285,8 +6285,8 @@ const TableValues = [
 {
     "sNo": "401",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE",
@@ -6301,8 +6301,8 @@ const TableValues = [
 {
     "sNo": "402",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "AM",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
@@ -6317,8 +6317,8 @@ const TableValues = [
 {
     "sNo": "403",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "BT",
     "Branch Name": "BIO TECHNOLOGY",
@@ -6333,8 +6333,8 @@ const TableValues = [
 {
     "sNo": "404",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -6349,8 +6349,8 @@ const TableValues = [
 {
     "sNo": "405",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -6365,8 +6365,8 @@ const TableValues = [
 {
     "sNo": "406",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -6381,8 +6381,8 @@ const TableValues = [
 {
     "sNo": "407",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -6397,8 +6397,8 @@ const TableValues = [
 {
     "sNo": "408",
     "region": "Thiruvallur",
-    "collegecode": "1110",
-    "name": "Prathyusha Engineering collegecode (Autonomous)",
+    "collegeCode": "1110",
+    "name": "Prathyusha Engineering collegeCode (Autonomous)",
 
     "branchCode": "sc",
     "Branch Name": "Computer science and Engineering (Cyber Security)",
@@ -6413,7 +6413,7 @@ const TableValues = [
 {
     "sNo": "409",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "AD",
@@ -6429,7 +6429,7 @@ const TableValues = [
 {
     "sNo": "410",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "AE",
@@ -6445,7 +6445,7 @@ const TableValues = [
 {
     "sNo": "411",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "CS",
@@ -6461,7 +6461,7 @@ const TableValues = [
 {
     "sNo": "412",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "EC",
@@ -6477,7 +6477,7 @@ const TableValues = [
 {
     "sNo": "413",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "IT",
@@ -6493,7 +6493,7 @@ const TableValues = [
 {
     "sNo": "414",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "ME",
@@ -6509,7 +6509,7 @@ const TableValues = [
 {
     "sNo": "415",
     "region": "Chennai",
-    "collegecode": "1420",
+    "collegeCode": "1420",
     "name": "Tagore Engineering College Rathnamangalam Vandalur",
 
     "branchCode": "sc",
@@ -6525,7 +6525,7 @@ const TableValues = [
 {
     "sNo": "416",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "AD",
@@ -6541,7 +6541,7 @@ const TableValues = [
 {
     "sNo": "417",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "BM",
@@ -6557,7 +6557,7 @@ const TableValues = [
 {
     "sNo": "418",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "CE",
@@ -6573,7 +6573,7 @@ const TableValues = [
 {
     "sNo": "419",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "CH",
@@ -6589,7 +6589,7 @@ const TableValues = [
 {
     "sNo": "420",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "CS",
@@ -6605,7 +6605,7 @@ const TableValues = [
 {
     "sNo": "421",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "EC",
@@ -6621,7 +6621,7 @@ const TableValues = [
 {
     "sNo": "422",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "EE",
@@ -6637,7 +6637,7 @@ const TableValues = [
 {
     "sNo": "423",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "IT",
@@ -6653,7 +6653,7 @@ const TableValues = [
 {
     "sNo": "424",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "ME",
@@ -6669,7 +6669,7 @@ const TableValues = [
 {
     "sNo": "425",
     "region": "Chengalpattu",
-    "collegecode": "1316",
+    "collegeCode": "1316",
     "name": "Agni College of Technology OMR",
 
     "branchCode": "MZ",
@@ -6685,7 +6685,7 @@ const TableValues = [
 {
     "sNo": "426",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "AD",
@@ -6701,7 +6701,7 @@ const TableValues = [
 {
     "sNo": "427",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "CS",
@@ -6717,7 +6717,7 @@ const TableValues = [
 {
     "sNo": "428",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "EC",
@@ -6733,7 +6733,7 @@ const TableValues = [
 {
     "sNo": "429",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "EE",
@@ -6749,7 +6749,7 @@ const TableValues = [
 {
     "sNo": "430",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "ME",
@@ -6765,7 +6765,7 @@ const TableValues = [
 {
     "sNo": "431",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "sc",
@@ -6781,7 +6781,7 @@ const TableValues = [
 {
     "sNo": "432",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "AM",
@@ -6797,7 +6797,7 @@ const TableValues = [
 {
     "sNo": "433",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "CB",
@@ -6813,7 +6813,7 @@ const TableValues = [
 {
     "sNo": "434",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "CD",
@@ -6829,7 +6829,7 @@ const TableValues = [
 {
     "sNo": "435",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "EV",
@@ -6845,7 +6845,7 @@ const TableValues = [
 {
     "sNo": "436",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "EA",
@@ -6861,7 +6861,7 @@ const TableValues = [
 {
     "sNo": "437",
     "region": "Chennai",
-    "collegecode": "1413",
+    "collegeCode": "1413",
     "name": "Sri Venkateswaraa College of Technology Sriperumbudur",
 
     "branchCode": "IT",
@@ -6877,7 +6877,7 @@ const TableValues = [
 {
     "sNo": "438",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "AD",
@@ -6893,7 +6893,7 @@ const TableValues = [
 {
     "sNo": "439",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "AU",
@@ -6909,7 +6909,7 @@ const TableValues = [
 {
     "sNo": "440",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "BM",
@@ -6925,7 +6925,7 @@ const TableValues = [
 {
     "sNo": "441",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "BT",
@@ -6941,7 +6941,7 @@ const TableValues = [
 {
     "sNo": "442",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "CE",
@@ -6957,7 +6957,7 @@ const TableValues = [
 {
     "sNo": "443",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "CS",
@@ -6973,7 +6973,7 @@ const TableValues = [
 {
     "sNo": "444",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "EC",
@@ -6989,7 +6989,7 @@ const TableValues = [
 {
     "sNo": "445",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "EE",
@@ -7005,7 +7005,7 @@ const TableValues = [
 {
     "sNo": "446",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "ME",
@@ -7021,7 +7021,7 @@ const TableValues = [
 {
     "sNo": "447",
     "region": "Chengalpattu",
-    "collegecode": "1409",
+    "collegeCode": "1409",
     "name": "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
     "branchCode": "RM",
@@ -7037,7 +7037,7 @@ const TableValues = [
 {
     "sNo": "448",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "AD",
@@ -7053,7 +7053,7 @@ const TableValues = [
 {
     "sNo": "449",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "BM",
@@ -7069,7 +7069,7 @@ const TableValues = [
 {
     "sNo": "450",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "CS",
@@ -7085,7 +7085,7 @@ const TableValues = [
 {
     "sNo": "451",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "EC",
@@ -7101,7 +7101,7 @@ const TableValues = [
 {
     "sNo": "452",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "EE",
@@ -7117,7 +7117,7 @@ const TableValues = [
 {
     "sNo": "453",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "ME",
@@ -7133,7 +7133,7 @@ const TableValues = [
 {
     "sNo": "454",
     "region": "Thiruvallur",
-    "collegecode": "1238",
+    "collegeCode": "1238",
     "name": "G R T Institute of Engineering and Technology",
 
     "branchCode": "IT",
@@ -7149,7 +7149,7 @@ const TableValues = [
 {
     "sNo": "455",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "AM",
@@ -7165,7 +7165,7 @@ const TableValues = [
 {
     "sNo": "456",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "CE",
@@ -7181,7 +7181,7 @@ const TableValues = [
 {
     "sNo": "457",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "CH",
@@ -7197,7 +7197,7 @@ const TableValues = [
 {
     "sNo": "458",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "CS",
@@ -7213,7 +7213,7 @@ const TableValues = [
 {
     "sNo": "459",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "EC",
@@ -7229,7 +7229,7 @@ const TableValues = [
 {
     "sNo": "460",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "EE",
@@ -7245,7 +7245,7 @@ const TableValues = [
 {
     "sNo": "461",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "IT",
@@ -7261,7 +7261,7 @@ const TableValues = [
 {
     "sNo": "462",
     "region": "Chengalpattu",
-    "collegecode": "1401",
+    "collegeCode": "1401",
     "name": "Adhiparasakthi Engineering College Melmaruvathur",
 
     "branchCode": "ME",
@@ -7277,7 +7277,7 @@ const TableValues = [
 {
     "sNo": "463",
     "region": "Chennai",
-    "collegecode": "1233",
+    "collegeCode": "1233",
     "name": "Adhi College of Engineering and Technology Pazhayaseevaram Madura Sankarapuram Village Chennai",
 
     "branchCode": "AD",
@@ -7293,7 +7293,7 @@ const TableValues = [
 {
     "sNo": "464",
     "region": "Chennai",
-    "collegecode": "1233",
+    "collegeCode": "1233",
     "name": "Adhi College of Engineering and Technology Pazhayaseevaram Madura Sankarapuram Village Chennai",
 
     "branchCode": "CS",
@@ -7309,7 +7309,7 @@ const TableValues = [
 {
     "sNo": "465",
     "region": "Chennai",
-    "collegecode": "1233",
+    "collegeCode": "1233",
     "name": "Adhi College of Engineering and Technology Pazhayaseevaram Madura Sankarapuram Village Chennai",
 
     "branchCode": "EC",
@@ -7325,7 +7325,7 @@ const TableValues = [
 {
     "sNo": "466",
     "region": "Chennai",
-    "collegecode": "1233",
+    "collegeCode": "1233",
     "name": "Adhi College of Engineering and Technology Pazhayaseevaram Madura Sankarapuram Village Chennai",
 
     "branchCode": "EE",
@@ -7341,7 +7341,7 @@ const TableValues = [
 {
     "sNo": "467",
     "region": "Chennai",
-    "collegecode": "1233",
+    "collegeCode": "1233",
     "name": "Adhi College of Engineering and Technology Pazhayaseevaram Madura Sankarapuram Village Chennai",
 
     "branchCode": "IT",
@@ -7357,7 +7357,7 @@ const TableValues = [
 {
     "sNo": "468",
     "region": "Chennai",
-    "collegecode": "1233",
+    "collegeCode": "1233",
     "name": "Adhi College of Engineering and Technology Pazhayaseevaram Madura Sankarapuram Village Chennai",
 
     "branchCode": "ME",
@@ -7373,7 +7373,7 @@ const TableValues = [
 {
     "sNo": "469",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "AD",
@@ -7389,7 +7389,7 @@ const TableValues = [
 {
     "sNo": "470",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "AG",
@@ -7405,7 +7405,7 @@ const TableValues = [
 {
     "sNo": "471",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "BT",
@@ -7421,7 +7421,7 @@ const TableValues = [
 {
     "sNo": "472",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "CB",
@@ -7437,7 +7437,7 @@ const TableValues = [
 {
     "sNo": "473",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "CS",
@@ -7453,7 +7453,7 @@ const TableValues = [
 {
     "sNo": "474",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "EC",
@@ -7469,7 +7469,7 @@ const TableValues = [
 {
     "sNo": "475",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "EE",
@@ -7485,7 +7485,7 @@ const TableValues = [
 {
     "sNo": "476",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "IT",
@@ -7501,7 +7501,7 @@ const TableValues = [
 {
     "sNo": "477",
     "region": "Chengalpattu",
-    "collegecode": "1303",
+    "collegeCode": "1303",
     "name": "Anand Institute of Higher Technology OMR",
 
     "branchCode": "ME",
@@ -7517,7 +7517,7 @@ const TableValues = [
 {
     "sNo": "478",
     "region": "Chennai",
-    "collegecode": "1325",
+    "collegeCode": "1325",
     "name": "st. Joseph College of Engineering Trinity Campus",
 
     "branchCode": "AD",
@@ -7533,7 +7533,7 @@ const TableValues = [
 {
     "sNo": "479",
     "region": "Chennai",
-    "collegecode": "1325",
+    "collegeCode": "1325",
     "name": "st. Joseph College of Engineering Trinity Campus",
 
     "branchCode": "CS",
@@ -7549,7 +7549,7 @@ const TableValues = [
 {
     "sNo": "480",
     "region": "Chennai",
-    "collegecode": "1325",
+    "collegeCode": "1325",
     "name": "st. Joseph College of Engineering Trinity Campus",
 
     "branchCode": "EC",
@@ -7565,7 +7565,7 @@ const TableValues = [
 {
     "sNo": "481",
     "region": "Chennai",
-    "collegecode": "1325",
+    "collegeCode": "1325",
     "name": "st. Joseph College of Engineering Trinity Campus",
 
     "branchCode": "IT",
@@ -7581,7 +7581,7 @@ const TableValues = [
 {
     "sNo": "482",
     "region": "Chennai",
-    "collegecode": "1325",
+    "collegeCode": "1325",
     "name": "st. Joseph College of Engineering Trinity Campus",
 
     "branchCode": "ME",
@@ -7597,7 +7597,7 @@ const TableValues = [
 {
     "sNo": "483",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "AD",
@@ -7613,7 +7613,7 @@ const TableValues = [
 {
     "sNo": "484",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "CS",
@@ -7629,7 +7629,7 @@ const TableValues = [
 {
     "sNo": "485",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "EC",
@@ -7645,7 +7645,7 @@ const TableValues = [
 {
     "sNo": "486",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "EE",
@@ -7661,7 +7661,7 @@ const TableValues = [
 {
     "sNo": "487",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "IT",
@@ -7677,7 +7677,7 @@ const TableValues = [
 {
     "sNo": "488",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "ME",
@@ -7693,7 +7693,7 @@ const TableValues = [
 {
     "sNo": "489",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "sc",
@@ -7709,7 +7709,7 @@ const TableValues = [
 {
     "sNo": "490",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "CB",
@@ -7725,7 +7725,7 @@ const TableValues = [
 {
     "sNo": "491",
     "region": "Chennai",
-    "collegecode": "1101",
+    "collegeCode": "1101",
     "name": "Aalim Muhammed Salegh College of Engineering",
 
     "branchCode": "AM",
@@ -7741,7 +7741,7 @@ const TableValues = [
 {
     "sNo": "492",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "AD",
@@ -7757,7 +7757,7 @@ const TableValues = [
 {
     "sNo": "493",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "CS",
@@ -7773,7 +7773,7 @@ const TableValues = [
 {
     "sNo": "494",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "EC",
@@ -7789,7 +7789,7 @@ const TableValues = [
 {
     "sNo": "495",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "EE",
@@ -7805,7 +7805,7 @@ const TableValues = [
 {
     "sNo": "496",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "ME",
@@ -7821,7 +7821,7 @@ const TableValues = [
 {
     "sNo": "497",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "sc",
@@ -7837,7 +7837,7 @@ const TableValues = [
 {
     "sNo": "498",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "IT",
@@ -7853,7 +7853,7 @@ const TableValues = [
 {
     "sNo": "499",
     "region": "Chennai",
-    "collegecode": "1405",
+    "collegeCode": "1405",
     "name": "Dhanalakshmi College of Engineering Manimangalam",
 
     "branchCode": "AM",
@@ -7869,7 +7869,7 @@ const TableValues = [
 {
     "sNo": "500",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "AD",
@@ -7885,7 +7885,7 @@ const TableValues = [
 {
     "sNo": "501",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "CE",
@@ -7901,7 +7901,7 @@ const TableValues = [
 {
     "sNo": "502",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "CS",
@@ -7917,7 +7917,7 @@ const TableValues = [
 {
     "sNo": "503",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "EC",
@@ -7933,7 +7933,7 @@ const TableValues = [
 {
     "sNo": "504",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "EE",
@@ -7949,7 +7949,7 @@ const TableValues = [
 {
     "sNo": "505",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "IT",
@@ -7965,7 +7965,7 @@ const TableValues = [
 {
     "sNo": "506",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "ME",
@@ -7981,7 +7981,7 @@ const TableValues = [
 {
     "sNo": "507",
     "region": "Chennai",
-    "collegecode": "1431",
+    "collegeCode": "1431",
     "name": "New Prince Shri Bhavani College of Engineering and Technology (Autonomous) Gowrivakkam",
 
     "branchCode": "sc",
@@ -7997,7 +7997,7 @@ const TableValues = [
 {
     "sNo": "508",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "AD",
@@ -8013,7 +8013,7 @@ const TableValues = [
 {
     "sNo": "509",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "BT",
@@ -8029,7 +8029,7 @@ const TableValues = [
 {
     "sNo": "510",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "CE",
@@ -8045,7 +8045,7 @@ const TableValues = [
 {
     "sNo": "511",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "CH",
@@ -8061,7 +8061,7 @@ const TableValues = [
 {
     "sNo": "512",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "CS",
@@ -8077,7 +8077,7 @@ const TableValues = [
 {
     "sNo": "513",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "EC",
@@ -8093,7 +8093,7 @@ const TableValues = [
 {
     "sNo": "514",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "EE",
@@ -8109,7 +8109,7 @@ const TableValues = [
 {
     "sNo": "515",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "IT",
@@ -8125,7 +8125,7 @@ const TableValues = [
 {
     "sNo": "516",
     "region": "Chennai",
-    "collegecode": "1127",
+    "collegeCode": "1127",
     "name": "st. Peters College of Engineering and Technology College Road Avadi",
 
     "branchCode": "ME",
@@ -8141,7 +8141,7 @@ const TableValues = [
 {
     "sNo": "517",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "AD",
@@ -8157,7 +8157,7 @@ const TableValues = [
 {
     "sNo": "518",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "AM",
@@ -8173,7 +8173,7 @@ const TableValues = [
 {
     "sNo": "519",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "AU",
@@ -8189,7 +8189,7 @@ const TableValues = [
 {
     "sNo": "520",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "BM",
@@ -8205,7 +8205,7 @@ const TableValues = [
 {
     "sNo": "521",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "BT",
@@ -8221,7 +8221,7 @@ const TableValues = [
 {
     "sNo": "522",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "CB",
@@ -8237,7 +8237,7 @@ const TableValues = [
 {
     "sNo": "523",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "CE",
@@ -8253,7 +8253,7 @@ const TableValues = [
 {
     "sNo": "524",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "CS",
@@ -8269,7 +8269,7 @@ const TableValues = [
 {
     "sNo": "525",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "EC",
@@ -8285,7 +8285,7 @@ const TableValues = [
 {
     "sNo": "526",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "EE",
@@ -8301,7 +8301,7 @@ const TableValues = [
 {
     "sNo": "527",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "FD",
@@ -8317,7 +8317,7 @@ const TableValues = [
 {
     "sNo": "528",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "IT",
@@ -8333,7 +8333,7 @@ const TableValues = [
 {
     "sNo": "529",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "MU",
@@ -8349,7 +8349,7 @@ const TableValues = [
 {
     "sNo": "530",
     "region": "Chennai",
-    "collegecode": "1217",
+    "collegeCode": "1217",
     "name": "Sree Sastha Institute of Engineering and Technology Chembarambakkam",
 
     "branchCode": "sc",
@@ -8365,7 +8365,7 @@ const TableValues = [
 {
     "sNo": "531",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "AD",
@@ -8381,7 +8381,7 @@ const TableValues = [
 {
     "sNo": "532",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "CB",
@@ -8397,7 +8397,7 @@ const TableValues = [
 {
     "sNo": "533",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "CS",
@@ -8413,7 +8413,7 @@ const TableValues = [
 {
     "sNo": "534",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "EC",
@@ -8429,7 +8429,7 @@ const TableValues = [
 {
     "sNo": "535",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "EE",
@@ -8445,7 +8445,7 @@ const TableValues = [
 {
     "sNo": "536",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "ME",
@@ -8461,7 +8461,7 @@ const TableValues = [
 {
     "sNo": "537",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "PE",
@@ -8477,7 +8477,7 @@ const TableValues = [
 {
     "sNo": "538",
     "region": "Chennai",
-    "collegecode": "1424",
+    "collegeCode": "1424",
     "name": "Dhaanish Ahmed College of Engineering Padappai",
 
     "branchCode": "RM",
@@ -8493,7 +8493,7 @@ const TableValues = [
 {
     "sNo": "539",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "AD",
@@ -8509,7 +8509,7 @@ const TableValues = [
 {
     "sNo": "540",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "CS",
@@ -8525,7 +8525,7 @@ const TableValues = [
 {
     "sNo": "541",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "EC",
@@ -8541,7 +8541,7 @@ const TableValues = [
 {
     "sNo": "542",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "EE",
@@ -8557,7 +8557,7 @@ const TableValues = [
 {
     "sNo": "543",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "ME",
@@ -8573,7 +8573,7 @@ const TableValues = [
 {
     "sNo": "544",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "AM",
@@ -8589,7 +8589,7 @@ const TableValues = [
 {
     "sNo": "545",
     "region": "Thiruvallur",
-    "collegecode": "1241",
+    "collegeCode": "1241",
     "name": "T J S Engineering College",
 
     "branchCode": "IT",
@@ -8605,7 +8605,7 @@ const TableValues = [
 {
     "sNo": "546",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "AE",
@@ -8621,7 +8621,7 @@ const TableValues = [
 {
     "sNo": "547",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "CB",
@@ -8637,7 +8637,7 @@ const TableValues = [
 {
     "sNo": "548",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "CE",
@@ -8653,7 +8653,7 @@ const TableValues = [
 {
     "sNo": "549",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "CS",
@@ -8669,7 +8669,7 @@ const TableValues = [
 {
     "sNo": "550",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "EC",
@@ -8685,7 +8685,7 @@ const TableValues = [
 {
     "sNo": "551",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "EE",
@@ -8701,7 +8701,7 @@ const TableValues = [
 {
     "sNo": "552",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "EI",
@@ -8717,7 +8717,7 @@ const TableValues = [
 {
     "sNo": "553",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "IT",
@@ -8733,7 +8733,7 @@ const TableValues = [
 {
     "sNo": "554",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "ME",
@@ -8749,7 +8749,7 @@ const TableValues = [
 {
     "sNo": "555",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "TX",
@@ -8765,7 +8765,7 @@ const TableValues = [
 {
     "sNo": "556",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "AM",
@@ -8781,7 +8781,7 @@ const TableValues = [
 {
     "sNo": "557",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "CO",
@@ -8797,7 +8797,7 @@ const TableValues = [
 {
     "sNo": "558",
     "region": "Chennai",
-    "collegecode": "1106",
+    "collegeCode": "1106",
     "name": "Jaya Engineering College",
 
     "branchCode": "RM",
@@ -8813,7 +8813,7 @@ const TableValues = [
 {
     "sNo": "559",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "AD",
@@ -8829,7 +8829,7 @@ const TableValues = [
 {
     "sNo": "560",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "AE",
@@ -8845,7 +8845,7 @@ const TableValues = [
 {
     "sNo": "561",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "AG",
@@ -8861,7 +8861,7 @@ const TableValues = [
 {
     "sNo": "562",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "BM",
@@ -8877,7 +8877,7 @@ const TableValues = [
 {
     "sNo": "563",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "CE",
@@ -8893,7 +8893,7 @@ const TableValues = [
 {
     "sNo": "564",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "CS",
@@ -8909,7 +8909,7 @@ const TableValues = [
 {
     "sNo": "565",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "EC",
@@ -8925,7 +8925,7 @@ const TableValues = [
 {
     "sNo": "566",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "EE",
@@ -8941,7 +8941,7 @@ const TableValues = [
 {
     "sNo": "567",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "FD",
@@ -8957,7 +8957,7 @@ const TableValues = [
 {
     "sNo": "568",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "IT",
@@ -8973,7 +8973,7 @@ const TableValues = [
 {
     "sNo": "569",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "ME",
@@ -8989,7 +8989,7 @@ const TableValues = [
 {
     "sNo": "570",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "sc",
@@ -9005,7 +9005,7 @@ const TableValues = [
 {
     "sNo": "571",
     "region": "Chennai",
-    "collegecode": "1322",
+    "collegeCode": "1322",
     "name": "Dhanalakshmi Srinivasan College of Engineering and Technology Poonjeri",
 
     "branchCode": "AM",
@@ -9021,7 +9021,7 @@ const TableValues = [
 {
     "sNo": "572",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "AD",
@@ -9037,7 +9037,7 @@ const TableValues = [
 {
     "sNo": "573",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "AU",
@@ -9053,7 +9053,7 @@ const TableValues = [
 {
     "sNo": "574",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "CE",
@@ -9069,7 +9069,7 @@ const TableValues = [
 {
     "sNo": "575",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "CS",
@@ -9085,7 +9085,7 @@ const TableValues = [
 {
     "sNo": "576",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "EC",
@@ -9101,7 +9101,7 @@ const TableValues = [
 {
     "sNo": "577",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "EE",
@@ -9117,7 +9117,7 @@ const TableValues = [
 {
     "sNo": "578",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "IT",
@@ -9133,7 +9133,7 @@ const TableValues = [
 {
     "sNo": "579",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "ME",
@@ -9149,7 +9149,7 @@ const TableValues = [
 {
     "sNo": "580",
     "region": "Chennai",
-    "collegecode": "1437",
+    "collegeCode": "1437",
     "name": "Rrase College of Engineering Padappai Chennai",
 
     "branchCode": "sc",
@@ -9165,7 +9165,7 @@ const TableValues = [
 {
     "sNo": "581",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "AD",
@@ -9181,7 +9181,7 @@ const TableValues = [
 {
     "sNo": "582",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "AE",
@@ -9197,7 +9197,7 @@ const TableValues = [
 {
     "sNo": "583",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "AM",
@@ -9213,7 +9213,7 @@ const TableValues = [
 {
     "sNo": "584",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "CB",
@@ -9229,7 +9229,7 @@ const TableValues = [
 {
     "sNo": "585",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "CO",
@@ -9245,7 +9245,7 @@ const TableValues = [
 {
     "sNo": "586",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "CS",
@@ -9261,7 +9261,7 @@ const TableValues = [
 {
     "sNo": "587",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "EC",
@@ -9277,7 +9277,7 @@ const TableValues = [
 {
     "sNo": "588",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "IT",
@@ -9293,7 +9293,7 @@ const TableValues = [
 {
     "sNo": "589",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "MD",
@@ -9309,7 +9309,7 @@ const TableValues = [
 {
     "sNo": "590",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "MU",
@@ -9325,7 +9325,7 @@ const TableValues = [
 {
     "sNo": "591",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "PH",
@@ -9341,7 +9341,7 @@ const TableValues = [
 {
     "sNo": "592",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "sc",
@@ -9357,7 +9357,7 @@ const TableValues = [
 {
     "sNo": "593",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "BT",
@@ -9373,7 +9373,7 @@ const TableValues = [
 {
     "sNo": "594",
     "region": "Chennai",
-    "collegecode": "1123",
+    "collegeCode": "1123",
     "name": "Gojan school of Business and Technology Alamathi",
 
     "branchCode": "RM",
@@ -9389,7 +9389,7 @@ const TableValues = [
 {
     "sNo": "595",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "AD",
@@ -9405,7 +9405,7 @@ const TableValues = [
 {
     "sNo": "596",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "CS",
@@ -9421,7 +9421,7 @@ const TableValues = [
 {
     "sNo": "597",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "EC",
@@ -9437,7 +9437,7 @@ const TableValues = [
 {
     "sNo": "598",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "IT",
@@ -9453,7 +9453,7 @@ const TableValues = [
 {
     "sNo": "599",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "ME",
@@ -9469,7 +9469,7 @@ const TableValues = [
 {
     "sNo": "600",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "EE",
@@ -9485,7 +9485,7 @@ const TableValues = [
 {
     "sNo": "601",
     "region": "Chengalpattu",
-    "collegecode": "1423",
+    "collegeCode": "1423",
     "name": "Asan Memorial College of Engineering and Technology Chengalpattu",
 
     "branchCode": "sc",
@@ -9501,7 +9501,7 @@ const TableValues = [
 {
     "sNo": "602",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "AD",
@@ -9517,7 +9517,7 @@ const TableValues = [
 {
     "sNo": "603",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "AM",
@@ -9533,7 +9533,7 @@ const TableValues = [
 {
     "sNo": "604",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "sc",
@@ -9549,7 +9549,7 @@ const TableValues = [
 {
     "sNo": "605",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "CB",
@@ -9565,7 +9565,7 @@ const TableValues = [
 {
     "sNo": "606",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "CE",
@@ -9581,7 +9581,7 @@ const TableValues = [
 {
     "sNo": "607",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "CS",
@@ -9597,7 +9597,7 @@ const TableValues = [
 {
     "sNo": "608",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "EC",
@@ -9613,7 +9613,7 @@ const TableValues = [
 {
     "sNo": "609",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "EE",
@@ -9629,7 +9629,7 @@ const TableValues = [
 {
     "sNo": "610",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "IT",
@@ -9645,7 +9645,7 @@ const TableValues = [
 {
     "sNo": "611",
     "region": "Chennai",
-    "collegecode": "1452",
+    "collegeCode": "1452",
     "name": "PERI Institute of Technology Mannivakkam",
 
     "branchCode": "ME",
@@ -9661,7 +9661,7 @@ const TableValues = [
 {
     "sNo": "612",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "AD",
@@ -9677,7 +9677,7 @@ const TableValues = [
 {
     "sNo": "613",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "BM",
@@ -9693,7 +9693,7 @@ const TableValues = [
 {
     "sNo": "614",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "CS",
@@ -9709,7 +9709,7 @@ const TableValues = [
 {
     "sNo": "615",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "EC",
@@ -9725,7 +9725,7 @@ const TableValues = [
 {
     "sNo": "616",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "IT",
@@ -9741,7 +9741,7 @@ const TableValues = [
 {
     "sNo": "617",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "ME",
@@ -9757,7 +9757,7 @@ const TableValues = [
 {
     "sNo": "618",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "sc",
@@ -9773,7 +9773,7 @@ const TableValues = [
 {
     "sNo": "619",
     "region": "Chennai",
-    "collegecode": "1228",
+    "collegeCode": "1228",
     "name": "Alpha College of Engineering Poonamallee",
 
     "branchCode": "RM",
@@ -9789,7 +9789,7 @@ const TableValues = [
 {
     "sNo": "620",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "AD",
@@ -9805,7 +9805,7 @@ const TableValues = [
 {
     "sNo": "621",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "AU",
@@ -9821,7 +9821,7 @@ const TableValues = [
 {
     "sNo": "622",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "BM",
@@ -9837,7 +9837,7 @@ const TableValues = [
 {
     "sNo": "623",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "CE",
@@ -9853,7 +9853,7 @@ const TableValues = [
 {
     "sNo": "624",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "CS",
@@ -9869,7 +9869,7 @@ const TableValues = [
 {
     "sNo": "625",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "EC",
@@ -9885,7 +9885,7 @@ const TableValues = [
 {
     "sNo": "626",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "EE",
@@ -9901,7 +9901,7 @@ const TableValues = [
 {
     "sNo": "627",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "IT",
@@ -9917,7 +9917,7 @@ const TableValues = [
 {
     "sNo": "628",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "ME",
@@ -9933,7 +9933,7 @@ const TableValues = [
 {
     "sNo": "629",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "MR",
@@ -9949,7 +9949,7 @@ const TableValues = [
 {
     "sNo": "630",
     "region": "Chennai",
-    "collegecode": "1407",
+    "collegeCode": "1407",
     "name": "G K M College of Engineering and Technology",
 
     "branchCode": "sc",
@@ -9965,7 +9965,7 @@ const TableValues = [
 {
     "sNo": "631",
     "region": "Chennai",
-    "collegecode": "1133",
+    "collegeCode": "1133",
     "name": "Annai Veilankannis College of Engineering Gandhi Road Nedungundram",
 
     "branchCode": "AD",
@@ -9981,7 +9981,7 @@ const TableValues = [
 {
     "sNo": "632",
     "region": "Chennai",
-    "collegecode": "1133",
+    "collegeCode": "1133",
     "name": "Annai Veilankannis College of Engineering Gandhi Road Nedungundram",
 
     "branchCode": "CE",
@@ -9997,7 +9997,7 @@ const TableValues = [
 {
     "sNo": "633",
     "region": "Chennai",
-    "collegecode": "1133",
+    "collegeCode": "1133",
     "name": "Annai Veilankannis College of Engineering Gandhi Road Nedungundram",
 
     "branchCode": "CS",
@@ -10013,7 +10013,7 @@ const TableValues = [
 {
     "sNo": "634",
     "region": "Chennai",
-    "collegecode": "1133",
+    "collegeCode": "1133",
     "name": "Annai Veilankannis College of Engineering Gandhi Road Nedungundram",
 
     "branchCode": "EC",
@@ -10029,7 +10029,7 @@ const TableValues = [
 {
     "sNo": "635",
     "region": "Chennai",
-    "collegecode": "1133",
+    "collegeCode": "1133",
     "name": "Annai Veilankannis College of Engineering Gandhi Road Nedungundram",
 
     "branchCode": "ME",
@@ -10045,7 +10045,7 @@ const TableValues = [
 {
     "sNo": "636",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "AD",
@@ -10061,7 +10061,7 @@ const TableValues = [
 {
     "sNo": "637",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "AE",
@@ -10077,7 +10077,7 @@ const TableValues = [
 {
     "sNo": "638",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "CB",
@@ -10093,7 +10093,7 @@ const TableValues = [
 {
     "sNo": "639",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "CS",
@@ -10109,7 +10109,7 @@ const TableValues = [
 {
     "sNo": "640",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "EC",
@@ -10125,7 +10125,7 @@ const TableValues = [
 {
     "sNo": "641",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "EE",
@@ -10141,7 +10141,7 @@ const TableValues = [
 {
     "sNo": "642",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "ME",
@@ -10157,7 +10157,7 @@ const TableValues = [
 {
     "sNo": "643",
     "region": "Chennai",
-    "collegecode": "1230",
+    "collegeCode": "1230",
     "name": "Apollo Engineering College Mevaloorkuppam Valarpuram Post Sriperumpudur Chennai",
 
     "branchCode": "sc",
@@ -10173,7 +10173,7 @@ const TableValues = [
 {
     "sNo": "644",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "AD",
@@ -10189,7 +10189,7 @@ const TableValues = [
 {
     "sNo": "645",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "CE",
@@ -10205,7 +10205,7 @@ const TableValues = [
 {
     "sNo": "646",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "CS",
@@ -10221,7 +10221,7 @@ const TableValues = [
 {
     "sNo": "647",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "EC",
@@ -10237,7 +10237,7 @@ const TableValues = [
 {
     "sNo": "648",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "EE",
@@ -10253,7 +10253,7 @@ const TableValues = [
 {
     "sNo": "649",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "EI",
@@ -10269,7 +10269,7 @@ const TableValues = [
 {
     "sNo": "650",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "IT",
@@ -10285,7 +10285,7 @@ const TableValues = [
 {
     "sNo": "651",
     "region": "Chennai",
-    "collegecode": "1319",
+    "collegeCode": "1319",
     "name": "Thangavelu Engineering College Karappakkam",
 
     "branchCode": "ME",
@@ -10301,7 +10301,7 @@ const TableValues = [
 {
     "sNo": "652",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "AD",
@@ -10317,7 +10317,7 @@ const TableValues = [
 {
     "sNo": "653",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "AE",
@@ -10333,7 +10333,7 @@ const TableValues = [
 {
     "sNo": "654",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "AU",
@@ -10349,7 +10349,7 @@ const TableValues = [
 {
     "sNo": "655",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "CE",
@@ -10365,7 +10365,7 @@ const TableValues = [
 {
     "sNo": "656",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "CS",
@@ -10381,7 +10381,7 @@ const TableValues = [
 {
     "sNo": "657",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "EC",
@@ -10397,7 +10397,7 @@ const TableValues = [
 {
     "sNo": "658",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "EE",
@@ -10413,7 +10413,7 @@ const TableValues = [
 {
     "sNo": "659",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "IT",
@@ -10429,7 +10429,7 @@ const TableValues = [
 {
     "sNo": "660",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "ME",
@@ -10445,7 +10445,7 @@ const TableValues = [
 {
     "sNo": "661",
     "region": "Chennai",
-    "collegecode": "1222",
+    "collegeCode": "1222",
     "name": "P B College of Engineering Irungkattukottai Sriperumpudur",
 
     "branchCode": "sc",
@@ -10461,7 +10461,7 @@ const TableValues = [
 {
     "sNo": "662",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "AD",
@@ -10477,7 +10477,7 @@ const TableValues = [
 {
     "sNo": "663",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "BM",
@@ -10493,7 +10493,7 @@ const TableValues = [
 {
     "sNo": "664",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "CS",
@@ -10509,7 +10509,7 @@ const TableValues = [
 {
     "sNo": "665",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "ME",
@@ -10525,7 +10525,7 @@ const TableValues = [
 {
     "sNo": "666",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "PH",
@@ -10541,7 +10541,7 @@ const TableValues = [
 {
     "sNo": "667",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "sc",
@@ -10557,7 +10557,7 @@ const TableValues = [
 {
     "sNo": "668",
     "region": "Chennai",
-    "collegecode": "1416",
+    "collegeCode": "1416",
     "name": "Jaya Sakthi Engineering College Thirunindravur",
 
     "branchCode": "BT",
@@ -10573,7 +10573,7 @@ const TableValues = [
 {
     "sNo": "669",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "AU",
@@ -10589,7 +10589,7 @@ const TableValues = [
 {
     "sNo": "670",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "BM",
@@ -10605,7 +10605,7 @@ const TableValues = [
 {
     "sNo": "671",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "CS",
@@ -10621,7 +10621,7 @@ const TableValues = [
 {
     "sNo": "672",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "EC",
@@ -10637,7 +10637,7 @@ const TableValues = [
 {
     "sNo": "673",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "EE",
@@ -10653,7 +10653,7 @@ const TableValues = [
 {
     "sNo": "674",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "ME",
@@ -10669,7 +10669,7 @@ const TableValues = [
 {
     "sNo": "675",
     "region": "Chennai",
-    "collegecode": "1212",
+    "collegeCode": "1212",
     "name": "Rajiv Gandhi College of Engineering Nemili Sriperumpudur Taluk",
 
     "branchCode": "PE",
@@ -10685,7 +10685,7 @@ const TableValues = [
 {
     "sNo": "676",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "AD",
@@ -10701,7 +10701,7 @@ const TableValues = [
 {
     "sNo": "677",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "BM",
@@ -10717,7 +10717,7 @@ const TableValues = [
 {
     "sNo": "678",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "CE",
@@ -10733,7 +10733,7 @@ const TableValues = [
 {
     "sNo": "679",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "CS",
@@ -10749,7 +10749,7 @@ const TableValues = [
 {
     "sNo": "680",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "EC",
@@ -10765,7 +10765,7 @@ const TableValues = [
 {
     "sNo": "681",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "EE",
@@ -10781,7 +10781,7 @@ const TableValues = [
 {
     "sNo": "682",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "IT",
@@ -10797,7 +10797,7 @@ const TableValues = [
 {
     "sNo": "683",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "ME",
@@ -10813,7 +10813,7 @@ const TableValues = [
 {
     "sNo": "684",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "MZ",
@@ -10829,7 +10829,7 @@ const TableValues = [
 {
     "sNo": "685",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "PH",
@@ -10845,7 +10845,7 @@ const TableValues = [
 {
     "sNo": "686",
     "region": "Chennai",
-    "collegecode": "1218",
+    "collegeCode": "1218",
     "name": "Sri Muthukumaran Institute of Technology Mangadu",
 
     "branchCode": "RM",
@@ -10861,7 +10861,7 @@ const TableValues = [
 {
     "sNo": "687",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "AD",
@@ -10877,7 +10877,7 @@ const TableValues = [
 {
     "sNo": "688",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "CE",
@@ -10893,7 +10893,7 @@ const TableValues = [
 {
     "sNo": "689",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "CS",
@@ -10909,7 +10909,7 @@ const TableValues = [
 {
     "sNo": "690",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "EC",
@@ -10925,7 +10925,7 @@ const TableValues = [
 {
     "sNo": "691",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "EE",
@@ -10941,7 +10941,7 @@ const TableValues = [
 {
     "sNo": "692",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "ME",
@@ -10957,7 +10957,7 @@ const TableValues = [
 {
     "sNo": "693",
     "region": "Thiruvallur",
-    "collegecode": "1121",
+    "collegeCode": "1121",
     "name": "Sri Venkateswara Institute of science and Technology",
 
     "branchCode": "sc",
@@ -10973,7 +10973,7 @@ const TableValues = [
 {
     "sNo": "694",
     "region": "Chennai",
-    "collegecode": "1213",
+    "collegeCode": "1213",
     "name": "S K R Engineering College Poonamallee",
 
     "branchCode": "BM",
@@ -10989,7 +10989,7 @@ const TableValues = [
 {
     "sNo": "695",
     "region": "Chennai",
-    "collegecode": "1213",
+    "collegeCode": "1213",
     "name": "S K R Engineering College Poonamallee",
 
     "branchCode": "CB",
@@ -11005,7 +11005,7 @@ const TableValues = [
 {
     "sNo": "696",
     "region": "Chennai",
-    "collegecode": "1213",
+    "collegeCode": "1213",
     "name": "S K R Engineering College Poonamallee",
 
     "branchCode": "CS",
@@ -11021,7 +11021,7 @@ const TableValues = [
 {
     "sNo": "697",
     "region": "Chennai",
-    "collegecode": "1213",
+    "collegeCode": "1213",
     "name": "S K R Engineering College Poonamallee",
 
     "branchCode": "EC",
@@ -11037,7 +11037,7 @@ const TableValues = [
 {
     "sNo": "698",
     "region": "Chennai",
-    "collegecode": "1213",
+    "collegeCode": "1213",
     "name": "S K R Engineering College Poonamallee",
 
     "branchCode": "EE",
@@ -11053,7 +11053,7 @@ const TableValues = [
 {
     "sNo": "699",
     "region": "Chennai",
-    "collegecode": "1213",
+    "collegeCode": "1213",
     "name": "S K R Engineering College Poonamallee",
 
     "branchCode": "IT",
@@ -11069,7 +11069,7 @@ const TableValues = [
 {
     "sNo": "700",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "AD",
@@ -11085,7 +11085,7 @@ const TableValues = [
 {
     "sNo": "701",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "CS",
@@ -11101,7 +11101,7 @@ const TableValues = [
 {
     "sNo": "702",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "EC",
@@ -11117,7 +11117,7 @@ const TableValues = [
 {
     "sNo": "703",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "EE",
@@ -11133,7 +11133,7 @@ const TableValues = [
 {
     "sNo": "704",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "IT",
@@ -11149,7 +11149,7 @@ const TableValues = [
 {
     "sNo": "705",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "ME",
@@ -11165,7 +11165,7 @@ const TableValues = [
 {
     "sNo": "706",
     "region": "Chennai",
-    "collegecode": "1426",
+    "collegeCode": "1426",
     "name": "Sri Ramanujar Engineering College Vandalur Kolappakkam",
 
     "branchCode": "CB",
@@ -11181,7 +11181,7 @@ const TableValues = [
 {
     "sNo": "707",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "AD",
@@ -11197,7 +11197,7 @@ const TableValues = [
 {
     "sNo": "708",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "AM",
@@ -11213,7 +11213,7 @@ const TableValues = [
 {
     "sNo": "709",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "CE",
@@ -11229,7 +11229,7 @@ const TableValues = [
 {
     "sNo": "710",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "CS",
@@ -11245,7 +11245,7 @@ const TableValues = [
 {
     "sNo": "711",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "EC",
@@ -11261,7 +11261,7 @@ const TableValues = [
 {
     "sNo": "712",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "EE",
@@ -11277,7 +11277,7 @@ const TableValues = [
 {
     "sNo": "713",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "IT",
@@ -11293,7 +11293,7 @@ const TableValues = [
 {
     "sNo": "714",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "ME",
@@ -11309,7 +11309,7 @@ const TableValues = [
 {
     "sNo": "715",
     "region": "Chennai",
-    "collegecode": "1318",
+    "collegeCode": "1318",
     "name": "T.J Institute of Technology Karapakkam",
 
     "branchCode": "sc",
@@ -11325,7 +11325,7 @@ const TableValues = [
 {
     "sNo": "716",
     "region": "Chengalpattu",
-    "collegecode": "1444",
+    "collegeCode": "1444",
     "name": "Chendu College of Engineering and Technology Madurantakam",
 
     "branchCode": "CE",
@@ -11341,7 +11341,7 @@ const TableValues = [
 {
     "sNo": "717",
     "region": "Chengalpattu",
-    "collegecode": "1444",
+    "collegeCode": "1444",
     "name": "Chendu College of Engineering and Technology Madurantakam",
 
     "branchCode": "CS",
@@ -11357,7 +11357,7 @@ const TableValues = [
 {
     "sNo": "718",
     "region": "Chengalpattu",
-    "collegecode": "1444",
+    "collegeCode": "1444",
     "name": "Chendu College of Engineering and Technology Madurantakam",
 
     "branchCode": "EC",
@@ -11373,7 +11373,7 @@ const TableValues = [
 {
     "sNo": "719",
     "region": "Chengalpattu",
-    "collegecode": "1444",
+    "collegeCode": "1444",
     "name": "Chendu College of Engineering and Technology Madurantakam",
 
     "branchCode": "ME",
@@ -11389,7 +11389,7 @@ const TableValues = [
 {
     "sNo": "720",
     "region": "Chengalpattu",
-    "collegecode": "1444",
+    "collegeCode": "1444",
     "name": "Chendu College of Engineering and Technology Madurantakam",
 
     "branchCode": "AD",
@@ -11405,7 +11405,7 @@ const TableValues = [
 {
     "sNo": "721",
     "region": "Chengalpattu",
-    "collegecode": "1444",
+    "collegeCode": "1444",
     "name": "Chendu College of Engineering and Technology Madurantakam",
 
     "branchCode": "sc",
@@ -11421,7 +11421,7 @@ const TableValues = [
 {
     "sNo": "722",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "AD",
@@ -11437,7 +11437,7 @@ const TableValues = [
 {
     "sNo": "723",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "AE",
@@ -11453,7 +11453,7 @@ const TableValues = [
 {
     "sNo": "724",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "CE",
@@ -11469,7 +11469,7 @@ const TableValues = [
 {
     "sNo": "725",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "CS",
@@ -11485,7 +11485,7 @@ const TableValues = [
 {
     "sNo": "726",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "EC",
@@ -11501,7 +11501,7 @@ const TableValues = [
 {
     "sNo": "727",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "EE",
@@ -11517,7 +11517,7 @@ const TableValues = [
 {
     "sNo": "728",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "ME",
@@ -11533,7 +11533,7 @@ const TableValues = [
 {
     "sNo": "729",
     "region": "Chennai",
-    "collegecode": "1125",
+    "collegeCode": "1125",
     "name": "PMR Engineering College Adayalampattu",
 
     "branchCode": "sc",
@@ -11549,7 +11549,7 @@ const TableValues = [
 {
     "sNo": "730",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "AD",
@@ -11565,7 +11565,7 @@ const TableValues = [
 {
     "sNo": "731",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "CE",
@@ -11581,7 +11581,7 @@ const TableValues = [
 {
     "sNo": "732",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "CS",
@@ -11597,7 +11597,7 @@ const TableValues = [
 {
     "sNo": "733",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "EC",
@@ -11613,7 +11613,7 @@ const TableValues = [
 {
     "sNo": "734",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "EE",
@@ -11629,7 +11629,7 @@ const TableValues = [
 {
     "sNo": "735",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "IT",
@@ -11645,7 +11645,7 @@ const TableValues = [
 {
     "sNo": "736",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "ME",
@@ -11661,7 +11661,7 @@ const TableValues = [
 {
     "sNo": "737",
     "region": "Chennai",
-    "collegecode": "1243",
+    "collegeCode": "1243",
     "name": "Madha Institute of Engineering and Technology Thandalam",
 
     "branchCode": "sc",
@@ -11677,7 +11677,7 @@ const TableValues = [
 {
     "sNo": "738",
     "region": "Chennai",
-    "collegecode": "1335",
+    "collegeCode": "1335",
     "name": "Sri Krishna Institute of Technology Panapakkam",
 
     "branchCode": "AM",
@@ -11693,7 +11693,7 @@ const TableValues = [
 {
     "sNo": "739",
     "region": "Chennai",
-    "collegecode": "1335",
+    "collegeCode": "1335",
     "name": "Sri Krishna Institute of Technology Panapakkam",
 
     "branchCode": "CE",
@@ -11709,7 +11709,7 @@ const TableValues = [
 {
     "sNo": "740",
     "region": "Chennai",
-    "collegecode": "1335",
+    "collegeCode": "1335",
     "name": "Sri Krishna Institute of Technology Panapakkam",
 
     "branchCode": "EC",
@@ -11725,7 +11725,7 @@ const TableValues = [
 {
     "sNo": "741",
     "region": "Chennai",
-    "collegecode": "1335",
+    "collegeCode": "1335",
     "name": "Sri Krishna Institute of Technology Panapakkam",
 
     "branchCode": "EE",
@@ -11741,7 +11741,7 @@ const TableValues = [
 {
     "sNo": "742",
     "region": "Chennai",
-    "collegecode": "1335",
+    "collegeCode": "1335",
     "name": "Sri Krishna Institute of Technology Panapakkam",
 
     "branchCode": "ME",
@@ -11757,7 +11757,7 @@ const TableValues = [
 {
     "sNo": "743",
     "region": "Chennai",
-    "collegecode": "1335",
+    "collegeCode": "1335",
     "name": "Sri Krishna Institute of Technology Panapakkam",
 
     "branchCode": "sc",
@@ -11773,7 +11773,7 @@ const TableValues = [
 {
     "sNo": "744",
     "region": "Chennai",
-    "collegecode": "1427",
+    "collegeCode": "1427",
     "name": "Sri Krishna Engineering College Panappakkam Padappai",
 
     "branchCode": "AD",
@@ -11789,7 +11789,7 @@ const TableValues = [
 {
     "sNo": "745",
     "region": "Chennai",
-    "collegecode": "1427",
+    "collegeCode": "1427",
     "name": "Sri Krishna Engineering College Panappakkam Padappai",
 
     "branchCode": "CS",
@@ -11805,7 +11805,7 @@ const TableValues = [
 {
     "sNo": "746",
     "region": "Chennai",
-    "collegecode": "1427",
+    "collegeCode": "1427",
     "name": "Sri Krishna Engineering College Panappakkam Padappai",
 
     "branchCode": "EC",
@@ -11821,7 +11821,7 @@ const TableValues = [
 {
     "sNo": "747",
     "region": "Chennai",
-    "collegecode": "1427",
+    "collegeCode": "1427",
     "name": "Sri Krishna Engineering College Panappakkam Padappai",
 
     "branchCode": "EE",
@@ -11837,7 +11837,7 @@ const TableValues = [
 {
     "sNo": "748",
     "region": "Chennai",
-    "collegecode": "1427",
+    "collegeCode": "1427",
     "name": "Sri Krishna Engineering College Panappakkam Padappai",
 
     "branchCode": "FT",
@@ -11853,7 +11853,7 @@ const TableValues = [
 {
     "sNo": "749",
     "region": "Chennai",
-    "collegecode": "1427",
+    "collegeCode": "1427",
     "name": "Sri Krishna Engineering College Panappakkam Padappai",
 
     "branchCode": "IT",
@@ -11869,7 +11869,7 @@ const TableValues = [
 {
     "sNo": "750",
     "region": "Chennai",
-    "collegecode": "1209",
+    "collegeCode": "1209",
     "name": "Pallavan College of Engineering Thimmasamudram Chennai",
 
     "branchCode": "CE",
@@ -11885,7 +11885,7 @@ const TableValues = [
 {
     "sNo": "751",
     "region": "Chennai",
-    "collegecode": "1209",
+    "collegeCode": "1209",
     "name": "Pallavan College of Engineering Thimmasamudram Chennai",
 
     "branchCode": "CS",
@@ -11901,7 +11901,7 @@ const TableValues = [
 {
     "sNo": "752",
     "region": "Chennai",
-    "collegecode": "1209",
+    "collegeCode": "1209",
     "name": "Pallavan College of Engineering Thimmasamudram Chennai",
 
     "branchCode": "EC",
@@ -11917,7 +11917,7 @@ const TableValues = [
 {
     "sNo": "753",
     "region": "Chennai",
-    "collegecode": "1209",
+    "collegeCode": "1209",
     "name": "Pallavan College of Engineering Thimmasamudram Chennai",
 
     "branchCode": "EE",
@@ -11933,7 +11933,7 @@ const TableValues = [
 {
     "sNo": "754",
     "region": "Chennai",
-    "collegecode": "1209",
+    "collegeCode": "1209",
     "name": "Pallavan College of Engineering Thimmasamudram Chennai",
 
     "branchCode": "IT",
@@ -11949,7 +11949,7 @@ const TableValues = [
 {
     "sNo": "755",
     "region": "Chennai",
-    "collegecode": "1209",
+    "collegeCode": "1209",
     "name": "Pallavan College of Engineering Thimmasamudram Chennai",
 
     "branchCode": "ME",
@@ -11965,7 +11965,7 @@ const TableValues = [
 {
     "sNo": "756",
     "region": "Chennai",
-    "collegecode": "1235",
+    "collegeCode": "1235",
     "name": "Jei Mathaajee College of Engineering Vishaandikuppam Karappettai (via) Siruvakkam Chennai",
 
     "branchCode": "CE",
@@ -11981,7 +11981,7 @@ const TableValues = [
 {
     "sNo": "757",
     "region": "Chennai",
-    "collegecode": "1235",
+    "collegeCode": "1235",
     "name": "Jei Mathaajee College of Engineering Vishaandikuppam Karappettai (via) Siruvakkam Chennai",
 
     "branchCode": "CS",
@@ -11997,7 +11997,7 @@ const TableValues = [
 {
     "sNo": "758",
     "region": "Chennai",
-    "collegecode": "1235",
+    "collegeCode": "1235",
     "name": "Jei Mathaajee College of Engineering Vishaandikuppam Karappettai (via) Siruvakkam Chennai",
 
     "branchCode": "EC",
@@ -12013,7 +12013,7 @@ const TableValues = [
 {
     "sNo": "759",
     "region": "Chennai",
-    "collegecode": "1235",
+    "collegeCode": "1235",
     "name": "Jei Mathaajee College of Engineering Vishaandikuppam Karappettai (via) Siruvakkam Chennai",
 
     "branchCode": "EE",
@@ -12029,7 +12029,7 @@ const TableValues = [
 {
     "sNo": "760",
     "region": "Chennai",
-    "collegecode": "1235",
+    "collegeCode": "1235",
     "name": "Jei Mathaajee College of Engineering Vishaandikuppam Karappettai (via) Siruvakkam Chennai",
 
     "branchCode": "IT",
@@ -12045,7 +12045,7 @@ const TableValues = [
 {
     "sNo": "761",
     "region": "Chennai",
-    "collegecode": "1235",
+    "collegeCode": "1235",
     "name": "Jei Mathaajee College of Engineering Vishaandikuppam Karappettai (via) Siruvakkam Chennai",
 
     "branchCode": "ME",
@@ -12061,7 +12061,7 @@ const TableValues = [
 {
     "sNo": "762",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "AD",
@@ -12077,7 +12077,7 @@ const TableValues = [
 {
     "sNo": "763",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "CE",
@@ -12093,7 +12093,7 @@ const TableValues = [
 {
     "sNo": "764",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "CS",
@@ -12109,7 +12109,7 @@ const TableValues = [
 {
     "sNo": "765",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "EC",
@@ -12125,7 +12125,7 @@ const TableValues = [
 {
     "sNo": "766",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "EE",
@@ -12141,7 +12141,7 @@ const TableValues = [
 {
     "sNo": "767",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "IT",
@@ -12157,7 +12157,7 @@ const TableValues = [
 {
     "sNo": "768",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "ME",
@@ -12173,7 +12173,7 @@ const TableValues = [
 {
     "sNo": "769",
     "region": "Chennai",
-    "collegecode": "1517",
+    "collegeCode": "1517",
     "name": "Thirumalai Engineering College Kilambi Chennai",
 
     "branchCode": "AG",
@@ -12189,7 +12189,7 @@ const TableValues = [
 {
     "sNo": "770",
     "region": "Thiruvallur",
-    "collegecode": "1107",
+    "collegeCode": "1107",
     "name": "Jaya Institute of Technology",
 
     "branchCode": "CS",
@@ -12205,7 +12205,7 @@ const TableValues = [
 {
     "sNo": "771",
     "region": "Thiruvallur",
-    "collegecode": "1107",
+    "collegeCode": "1107",
     "name": "Jaya Institute of Technology",
 
     "branchCode": "EC",
@@ -12221,7 +12221,7 @@ const TableValues = [
 {
     "sNo": "772",
     "region": "Thiruvallur",
-    "collegecode": "1107",
+    "collegeCode": "1107",
     "name": "Jaya Institute of Technology",
 
     "branchCode": "EE",
@@ -12237,7 +12237,7 @@ const TableValues = [
 {
     "sNo": "773",
     "region": "Thiruvallur",
-    "collegecode": "1107",
+    "collegeCode": "1107",
     "name": "Jaya Institute of Technology",
 
     "branchCode": "FD",
@@ -12253,7 +12253,7 @@ const TableValues = [
 {
     "sNo": "774",
     "region": "Thiruvallur",
-    "collegecode": "1107",
+    "collegeCode": "1107",
     "name": "Jaya Institute of Technology",
 
     "branchCode": "ME",
@@ -12269,7 +12269,7 @@ const TableValues = [
 {
     "sNo": "775",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "AD",
@@ -12285,7 +12285,7 @@ const TableValues = [
 {
     "sNo": "776",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "AE",
@@ -12301,7 +12301,7 @@ const TableValues = [
 {
     "sNo": "777",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "AM",
@@ -12317,7 +12317,7 @@ const TableValues = [
 {
     "sNo": "778",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "CO",
@@ -12333,7 +12333,7 @@ const TableValues = [
 {
     "sNo": "779",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "CS",
@@ -12349,7 +12349,7 @@ const TableValues = [
 {
     "sNo": "780",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "ME",
@@ -12365,7 +12365,7 @@ const TableValues = [
 {
     "sNo": "781",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "MR",
@@ -12381,7 +12381,7 @@ const TableValues = [
 {
     "sNo": "782",
     "region": "Thiruvallur",
-    "collegecode": "1124",
+    "collegeCode": "1124",
     "name": "SAMS College of Engineering and Technology Panappakkam",
 
     "branchCode": "sc",
@@ -12397,7 +12397,7 @@ const TableValues = [
 {
     "sNo": "783",
     "region": "Thiruvallur",
-    "collegecode": "1150",
+    "collegeCode": "1150",
     "name": "Sri Jayaram Institute of Engineering and Technology",
 
     "branchCode": "AD",
@@ -12413,7 +12413,7 @@ const TableValues = [
 {
     "sNo": "784",
     "region": "Thiruvallur",
-    "collegecode": "1150",
+    "collegeCode": "1150",
     "name": "Sri Jayaram Institute of Engineering and Technology",
 
     "branchCode": "AG",
@@ -12429,7 +12429,7 @@ const TableValues = [
 {
     "sNo": "785",
     "region": "Thiruvallur",
-    "collegecode": "1150",
+    "collegeCode": "1150",
     "name": "Sri Jayaram Institute of Engineering and Technology",
 
     "branchCode": "BM",
@@ -12445,7 +12445,7 @@ const TableValues = [
 {
     "sNo": "786",
     "region": "Thiruvallur",
-    "collegecode": "1150",
+    "collegeCode": "1150",
     "name": "Sri Jayaram Institute of Engineering and Technology",
 
     "branchCode": "CS",
@@ -12461,7 +12461,7 @@ const TableValues = [
 {
     "sNo": "787",
     "region": "Thiruvallur",
-    "collegecode": "1150",
+    "collegeCode": "1150",
     "name": "Sri Jayaram Institute of Engineering and Technology",
 
     "branchCode": "ME",
@@ -12477,7 +12477,7 @@ const TableValues = [
 {
     "sNo": "788",
     "region": "Thiruvallur",
-    "collegecode": "1229",
+    "collegeCode": "1229",
     "name": "Indira Institute of Engineering and Technology",
 
     "branchCode": "AD",
@@ -12493,7 +12493,7 @@ const TableValues = [
 {
     "sNo": "789",
     "region": "Thiruvallur",
-    "collegecode": "1229",
+    "collegeCode": "1229",
     "name": "Indira Institute of Engineering and Technology",
 
     "branchCode": "CE",
@@ -12509,7 +12509,7 @@ const TableValues = [
 {
     "sNo": "790",
     "region": "Thiruvallur",
-    "collegecode": "1229",
+    "collegeCode": "1229",
     "name": "Indira Institute of Engineering and Technology",
 
     "branchCode": "CS",
@@ -12525,7 +12525,7 @@ const TableValues = [
 {
     "sNo": "791",
     "region": "Thiruvallur",
-    "collegecode": "1229",
+    "collegeCode": "1229",
     "name": "Indira Institute of Engineering and Technology",
 
     "branchCode": "EC",
@@ -12541,7 +12541,7 @@ const TableValues = [
 {
     "sNo": "792",
     "region": "Thiruvallur",
-    "collegecode": "1229",
+    "collegeCode": "1229",
     "name": "Indira Institute of Engineering and Technology",
 
     "branchCode": "EE",
@@ -12557,7 +12557,7 @@ const TableValues = [
 {
     "sNo": "793",
     "region": "Thiruvallur",
-    "collegecode": "1229",
+    "collegeCode": "1229",
     "name": "Indira Institute of Engineering and Technology",
 
     "branchCode": "ME",
@@ -12573,7 +12573,7 @@ const TableValues = [
 {
     "sNo": "794",
     "region": "VILLUPURAM",
-    "collegecode": "1428",
+    "collegeCode": "1428",
     "name": "E S COLLEGE OF ENGINEERING AND TECHNOLOGY Villupuram",
 
     "branchCode": "AD",
@@ -12589,7 +12589,7 @@ const TableValues = [
 {
     "sNo": "795",
     "region": "VILLUPURAM",
-    "collegecode": "1428",
+    "collegeCode": "1428",
     "name": "E S COLLEGE OF ENGINEERING AND TECHNOLOGY Villupuram",
 
     "branchCode": "CS",
@@ -12605,7 +12605,7 @@ const TableValues = [
 {
     "sNo": "796",
     "region": "VILLUPURAM",
-    "collegecode": "1428",
+    "collegeCode": "1428",
     "name": "E S COLLEGE OF ENGINEERING AND TECHNOLOGY Villupuram",
 
     "branchCode": "EC",
@@ -12621,7 +12621,7 @@ const TableValues = [
 {
     "sNo": "797",
     "region": "VILLUPURAM",
-    "collegecode": "1428",
+    "collegeCode": "1428",
     "name": "E S COLLEGE OF ENGINEERING AND TECHNOLOGY Villupuram",
 
     "branchCode": "IT",
