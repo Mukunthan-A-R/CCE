@@ -6,7 +6,7 @@ import router from "./routes/routes.jsx";
 import { RecoilRoot } from "recoil";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-9LSP8TEJB9");
+ReactGA.initialize("G-W2BWVZSF8H");
 ReactGA.send({ hitType: "pageview", page: "window.location.pathname" });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
