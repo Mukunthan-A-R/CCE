@@ -7,6 +7,7 @@ import TableWithSort from './TableWithSort';
 import InputRegion from './InputRegion';
 import InputDept from './InputDept';
 import { useRecoilValue } from 'recoil';
+import { Link } from 'react-router-dom'
 
 const TableFilter = () => {
   const { community } = useRecoilValue(userData);
@@ -180,6 +181,14 @@ const TableFilter = () => {
         >
           Submit
         </ButtonComponent>
+        <Link to="/result">
+        <ButtonComponent
+          // handleClick={handleSubmit}
+          styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center"
+        >
+          Confirm Choices
+        </ButtonComponent>
+        </Link>
       </div>
       <TableWithSort tableWithSort data={paginatedData} community={community}></TableWithSort>
       <div className="flex justify-center my-4">
