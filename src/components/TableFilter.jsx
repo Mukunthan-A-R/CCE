@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import TableValues from '../data/DataChennai';
-import InputComponent from './InputComponent';
-import ButtonComponent from './ButtonComponent';
-import { userData } from '../data/atoms';
-import TableWithSort from './TableWithSort';
-import InputRegion from './InputRegion';
-import InputDept from './InputDept';
-import { useRecoilValue } from 'recoil';
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import TableValues from "../data/DataChennai";
+import InputComponent from "./InputComponent";
+import ButtonComponent from "./ButtonComponent";
+import { userData } from "../data/atoms";
+import TableWithSort from "./TableWithSort";
+import InputRegion from "./InputRegion";
+import InputDept from "./InputDept";
+import { useRecoilValue } from "recoil";
+import { Link } from "react-router-dom";
 
 const TableFilter = () => {
   const { community } = useRecoilValue(userData);
@@ -30,11 +30,12 @@ const TableFilter = () => {
     let newErrors = {};
     if (value > 0 && value <= 200) {
       setFilter({ ...filter, cutOffStart: parseFloat(value) });
-      newErrors.cutOffStart = '';
+      newErrors.cutOffStart = "";
     } else if (value === "") {
       setFilter({ ...filter, cutOffStart: 200 });
     } else {
-      newErrors.cutOffStart = "Cut off value starting should be between 1 and 200";
+      newErrors.cutOffStart =
+        "Cut off value starting should be between 1 and 200";
     }
     SetErrors((prev) => ({ ...prev, ...newErrors }));
   };
@@ -43,7 +44,7 @@ const TableFilter = () => {
     let newErrors = {};
     if (value > 0 && value <= 200) {
       setFilter({ ...filter, cutOffEnd: parseFloat(value) });
-      newErrors.cutOffEnd = '';
+      newErrors.cutOffEnd = "";
     } else {
       newErrors.cutOffEnd = "the cut off value should be between 1 and 200";
     }
@@ -54,23 +55,23 @@ const TableFilter = () => {
     const intValue = parseInt(value);
     let newErrors = {};
     if (value === "") {
-      setFilter(prevFilter => ({
+      setFilter((prevFilter) => ({
         ...prevFilter,
         collegeCode: 0,
       }));
-      newErrors.collegeCode = '';
+      newErrors.collegeCode = "";
     } else if (isNaN(intValue)) {
-      newErrors.collegeCode = 'College Code must be a number';
+      newErrors.collegeCode = "College Code must be a number";
     } else if (intValue <= 0 || intValue > 3000) {
-      newErrors.collegeCode = 'The college code should be between 1 and 3000';
+      newErrors.collegeCode = "The college code should be between 1 and 3000";
     } else {
-      setFilter(prevFilter => ({
+      setFilter((prevFilter) => ({
         ...prevFilter,
         collegeCode: intValue,
       }));
-      newErrors.collegeCode = '';
+      newErrors.collegeCode = "";
     }
-    SetErrors(prevErrors => ({
+    SetErrors((prevErrors) => ({
       ...prevErrors,
       ...newErrors,
     }));
@@ -89,22 +90,32 @@ const TableFilter = () => {
   // }, [filter]);
 
   const handleSubmit = () => {
-    const hasErrors = Object.values(errors).some(error => error.trim() !== '');
+    const hasErrors = Object.values(errors).some(
+      (error) => error.trim() !== ""
+    );
     if (hasErrors) {
-      console.log('Form Contains errors');
+      console.log("Form Contains errors");
       return;
     }
 
-    const FilterData = TableValues.filter(value => value[community] <= filter.cutOffStart && value[community] >= filter.cutOffEnd &&
-      (filter.region === "" || value.region.toLowerCase() === filter.region.toLowerCase())
+    const FilterData = TableValues.filter(
+      (value) =>
+        value[community] <= filter.cutOffStart &&
+        value[community] >= filter.cutOffEnd &&
+        (filter.region === "" ||
+          value.region.toLowerCase() === filter.region.toLowerCase())
     );
 
     let filteredData = FilterData;
     if (filter.collegeCode !== 0) {
-      filteredData = filteredData.filter(value => filter.collegeCode === parseInt(value.collegeCode));
+      filteredData = filteredData.filter(
+        (value) => filter.collegeCode === parseInt(value.collegeCode)
+      );
     }
     if (filter.dept.length !== 0) {
-      filteredData = filteredData.filter(value => filter.dept.includes(value.branchCode));
+      filteredData = filteredData.filter((value) =>
+        filter.dept.includes(value.branchCode)
+      );
     }
     setData(filteredData);
     setCurrentPage(1); // Reset to the first page after filtering
@@ -129,7 +140,7 @@ const TableFilter = () => {
       setCurrentPage(currentPage - 1);
     }
   };
-   console.log(data.length)
+  console.log(data.length);
   const totalPages = Math.ceil(data.length / pageSize);
   const paginationGroup = Math.ceil(currentPage / 3);
   const startPage = (paginationGroup - 1) * 3 + 1;
@@ -138,7 +149,7 @@ const TableFilter = () => {
   return (
     <div className="my-0">
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
-        <div className="md:flex">
+        {/* <div className="md:flex">
           <InputComponent
             sendData={handleDataCutOffSt}
             label="Cut Off Starting"
@@ -153,7 +164,7 @@ const TableFilter = () => {
             styles="w-full md:w-1/2 px-10 my-4"
             error={errors.cutOffEnd}
           ></InputComponent>
-        </div>
+        </div> */}
         <div className="md:flex">
           <InputComponent
             sendData={handleDataCollegeCode}
@@ -182,19 +193,27 @@ const TableFilter = () => {
           Submit
         </ButtonComponent>
         <Link to="/result">
-        <ButtonComponent
-          // handleClick={handleSubmit}
-          styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center"
-        >
-          Confirm Choices
-        </ButtonComponent>
+          <ButtonComponent
+            // handleClick={handleSubmit}
+            styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center"
+          >
+            Confirm Choices
+          </ButtonComponent>
         </Link>
       </div>
-      <TableWithSort tableWithSort data={paginatedData} community={community}></TableWithSort>
+      <TableWithSort
+        tableWithSort
+        data={paginatedData}
+        community={community}
+      ></TableWithSort>
       <div className="flex justify-center my-4">
         <button
           onClick={handlePrevPage}
-          className={`mx-1 px-3 py-1 rounded ${currentPage === 1 ? 'bg-gray-200 text-gray-400' : 'bg-blue-700 text-white'}`}
+          className={`mx-1 px-3 py-1 rounded ${
+            currentPage === 1
+              ? "bg-gray-200 text-gray-400"
+              : "bg-blue-700 text-white"
+          }`}
           disabled={currentPage === 1}
         >
           Previous
@@ -203,14 +222,22 @@ const TableFilter = () => {
           <button
             key={startPage + index}
             onClick={() => handlePageChange(startPage + index)}
-            className={`mx-1 px-3 py-1 rounded ${currentPage === startPage + index ? 'bg-blue-700 text-white' : 'bg-gray-200 text-black'}`}
+            className={`mx-1 px-3 py-1 rounded ${
+              currentPage === startPage + index
+                ? "bg-blue-700 text-white"
+                : "bg-gray-200 text-black"
+            }`}
           >
             {startPage + index}
           </button>
         ))}
         <button
           onClick={handleNextPage}
-          className={`mx-1 px-3 py-1 rounded ${currentPage === totalPages ? 'bg-gray-200 text-gray-400' : 'bg-blue-700 text-white'}`}
+          className={`mx-1 px-3 py-1 rounded ${
+            currentPage === totalPages
+              ? "bg-gray-200 text-gray-400"
+              : "bg-blue-700 text-white"
+          }`}
           disabled={currentPage === totalPages}
         >
           Next

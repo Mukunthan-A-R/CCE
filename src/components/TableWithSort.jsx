@@ -5,26 +5,25 @@ import { resultArray } from "../data/atoms";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
-import {MdDelete} from "react-icons/md"
-import {sno} from "../data/atoms";
-import {userData} from "../data/atoms";
+import { MdDelete } from "react-icons/md";
+import { sno } from "../data/atoms";
+import { userData } from "../data/atoms";
 
 const TableWithSort = ({ data, community }) => {
-    
   // console.log("😂", JSON.stringify(data[0]));
   let displayedCommunities = ["oc", "bc", "bcm", "mbc", "sc", "sca", "st"];
-  
+
   const communityColor = community;
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
-  const [remove, Setremove] = useState(false)
+  const [remove, Setremove] = useState(false);
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   // Atoms data
-  const [userCutoff,setUserCutoff]  = useRecoilState(userData);
+  const [userCutoff, setUserCutoff] = useRecoilState(userData);
   const [resultData, setResultData] = useRecoilState(resultArray);
-  const [content,SetContent] = useState("")
- 
+  const [content, SetContent] = useState("");
+
   let check;
   const requestSort = (key) => {
     let direction = "ascending";
@@ -37,7 +36,7 @@ const TableWithSort = ({ data, community }) => {
     }
     setSortConfig({ key, direction });
   };
- 
+
   const sortedDataByKey = () => {
     if (sortConfig !== null) {
       const sorted = [...data].sort((a, b) => {
@@ -68,51 +67,41 @@ const TableWithSort = ({ data, community }) => {
 
   // Add data to the ResultPage
   const handleResult = (row) => {
-   
-
     // Setting new serial number for selected data
-    const modifyRow = {...row,sNo:InitialNo,id:row.sNo};
-    // atom data  
-    console.log("modifyRow",modifyRow);
-    let flag =0;
-    setResultData((prev)=> {
+    const modifyRow = { ...row, sNo: InitialNo, id: row.sNo };
+    // atom data
+    console.log("modifyRow", modifyRow);
+    let flag = 0;
+    setResultData((prev) => {
       const list = [...prev];
       const find = list.findIndex((items) => items.id === row.sNo);
-      if(find === -1)
-      {
-        list.push(modifyRow)
-        flag=1;
+      if (find === -1) {
+        list.push(modifyRow);
+        flag = 1;
+      } else {
+        list.splice(find, 1);
+        flag = 0;
       }
-      else
-      {
-        list.splice(find,1);
-        flag=0;
-      }
-      console.log(list)
-      const modified = list.map((data,index)=> ({
+      console.log(list);
+      const modified = list.map((data, index) => ({
         ...data,
-        sNo:index+1
-      }))
-      return modified
-    })
-    
+        sNo: index + 1,
+      }));
+      return modified;
+    });
+
     /* setResultData([...resultData, modifyRow]);
     console.log([...resultData,modifyRow]) */
-   if(flag === 1)
-   {
-    SetInitialNo((prev)=> 
-      prev+1
-    );
-   }
-   else
-   {
-    SetInitialNo((prev)=> prev+1);
-   }
+    if (flag === 1) {
+      SetInitialNo((prev) => prev + 1);
+    } else {
+      SetInitialNo((prev) => prev + 1);
+    }
     console.log("Atom Data");
     console.log(resultData.length);
     /* console.log([...resultData,row])
     console.log([...resultData, row]); */
-    console.log(resultData)
+    console.log(resultData);
   };
 
   React.useEffect(() => {
@@ -120,10 +109,9 @@ const TableWithSort = ({ data, community }) => {
   }, [sortConfig, data]);
 
   // Function to handle closing the popup
-  const handleCommunity  = ()=>
-  {
+  const handleCommunity = () => {
     const usersCommunity = community.community;
-  }
+  };
   const handleClosePopup = () => {
     // Set showPopup to false to hide the popup
     setShowPopup(false);
@@ -238,10 +226,10 @@ const TableWithSort = ({ data, community }) => {
             </th>
             <th
               className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
-              onClick={() => requestSort("branchName")}
+              onClick={() => requestSort("Branch Name")}
             >
               Branch Name
-              {sortConfig && sortConfig.key === "branchName" && (
+              {sortConfig && sortConfig.key === "Branch Name" && (
                 <span className="ml-1">
                   {sortConfig.direction === "ascending" ? (
                     <FaArrowCircleUp size={15} />
@@ -258,7 +246,7 @@ const TableWithSort = ({ data, community }) => {
                 className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                   communityColor === community ? "bg-green-200" : ""
                 }`}
-                onClick={() => requestSort(community)}
+                // onClick={() => requestSort(community)}
               >
                 <div className="flex items-center">
                   {community.toUpperCase()}
