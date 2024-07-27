@@ -24,13 +24,16 @@ const HomeUi = () => {
 
   return (
     <>
-      <div className="bg-blue-200 w-full h-14 px-10 flex items-center">
+      <div className="bg-blue-500 w-full h-14 px-10 flex items-center">
         <Link to="/result" className="">
-          <div className="bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+          <div className="bg-blue-700  hover:bg-blue-900 text-white font-bold py-2 px-4 rounded inline-flex items-center">
             <FaServer />
           </div>
         </Link>
-        <h1 className="w-full text-center font-bold">ADD YOUR COLLEGES</h1>
+        <h1 className="w-full text-white text-center text-lg font-medium">
+          Step into Tomorrow: Select Your Ideal College and Begin Your TNEA
+          Counseling Journey!
+        </h1>
       </div>
       <div className="relative">
         <img src={Banner} className="w-full mb-10 object-cover" />

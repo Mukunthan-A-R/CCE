@@ -84,9 +84,9 @@ const Register = () => {
     );
     console.log(res);
     if (res) {
-      alert("message Sent");
+      alert("Data Submitted !");
     } else {
-      alert("error");
+      alert("Error Occured !");
     }
     navigate("/home");
   };
