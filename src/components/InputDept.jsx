@@ -35,6 +35,7 @@ const InputDept = ({ label, styles, sendData }) => {
         <br />
       </label>
       <MultiSelect
+        className='multi-select'
         options={options}
         value={selected}
         onChange={handleChange}

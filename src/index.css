@@ -9,3 +9,15 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.multi-select .dropdown-heading {
+  color: black;
+  background-color: #dbeafe;
+  border-radius: 3.7px;
+}
+
+.multi-select .dropdown-heading .gray {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
