@@ -616,7 +616,7 @@ const TableValues = [
   },
   {
     sNo: "42",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "BM",
@@ -631,7 +631,7 @@ const TableValues = [
   },
   {
     sNo: "43",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "CE",
@@ -646,7 +646,7 @@ const TableValues = [
   },
   {
     sNo: "44",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "CH",
@@ -661,7 +661,7 @@ const TableValues = [
   },
   {
     sNo: "45",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "CJ",
@@ -677,7 +677,7 @@ const TableValues = [
   },
   {
     sNo: "46",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "CS",
@@ -692,7 +692,7 @@ const TableValues = [
   },
   {
     sNo: "47",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "EC",
@@ -707,7 +707,7 @@ const TableValues = [
   },
   {
     sNo: "48",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "EE",
@@ -722,7 +722,7 @@ const TableValues = [
   },
   {
     sNo: "49",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "IT",
@@ -737,7 +737,7 @@ const TableValues = [
   },
   {
     sNo: "50",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1315",
     name: "Sri Sivasubramaniya Nadar College of Engineering (Autonomous) ",
     branchCode: "ME",
@@ -2270,7 +2270,7 @@ const TableValues = [
   },
   {
     sNo: "150",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2286,7 +2286,7 @@ const TableValues = [
   },
   {
     sNo: "151",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2302,7 +2302,7 @@ const TableValues = [
   },
   {
     sNo: "152",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2318,7 +2318,7 @@ const TableValues = [
   },
   {
     sNo: "153",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2334,7 +2334,7 @@ const TableValues = [
   },
   {
     sNo: "154",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2350,7 +2350,7 @@ const TableValues = [
   },
   {
     sNo: "155",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2367,7 +2367,7 @@ const TableValues = [
   },
   {
     sNo: "156",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2383,7 +2383,7 @@ const TableValues = [
   },
   {
     sNo: "157",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2399,7 +2399,7 @@ const TableValues = [
   },
   {
     sNo: "158",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2415,7 +2415,7 @@ const TableValues = [
   },
   {
     sNo: "159",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2431,7 +2431,7 @@ const TableValues = [
   },
   {
     sNo: "160",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1113",
     name: "R M K Engineering College (Autonomous)",
 
@@ -2447,7 +2447,7 @@ const TableValues = [
   },
   {
     sNo: "161",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1112",
     name: "R M D Engineering College (Autonomous)",
 
@@ -2463,7 +2463,7 @@ const TableValues = [
   },
   {
     sNo: "162",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1112",
     name: "R M D Engineering College (Autonomous)",
 
@@ -2479,7 +2479,7 @@ const TableValues = [
   },
   {
     sNo: "163",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1112",
     name: "R M D Engineering College (Autonomous)",
 
@@ -2495,7 +2495,7 @@ const TableValues = [
   },
   {
     sNo: "164",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1112",
     name: "R M D Engineering College (Autonomous)",
 
@@ -2511,7 +2511,7 @@ const TableValues = [
   },
   {
     sNo: "165",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1112",
     name: "R M D Engineering College (Autonomous)",
 
@@ -3439,7 +3439,7 @@ const TableValues = [
   },
   {
     sNo: "223",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1128",
     name: "R M K College of Engineering and Technology (Autonomous)",
 
@@ -3455,7 +3455,7 @@ const TableValues = [
   },
   {
     sNo: "224",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1128",
     name: "R M K College of Engineering and Technology (Autonomous)",
 
@@ -3471,7 +3471,7 @@ const TableValues = [
   },
   {
     sNo: "225",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1128",
     name: "R M K College of Engineering and Technology (Autonomous)",
 
@@ -3487,7 +3487,7 @@ const TableValues = [
   },
   {
     sNo: "226",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1128",
     name: "R M K College of Engineering and Technology (Autonomous)",
 
@@ -3503,7 +3503,7 @@ const TableValues = [
   },
   {
     sNo: "227",
-    region: "Thiruvallur",
+    region: "Chennai",
     collegeCode: "1128",
     name: "R M K College of Engineering and Technology (Autonomous)",
 
@@ -5503,7 +5503,7 @@ const TableValues = [
   },
   {
     sNo: "352",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5519,7 +5519,7 @@ const TableValues = [
   },
   {
     sNo: "353",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5535,7 +5535,7 @@ const TableValues = [
   },
   {
     sNo: "354",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5551,7 +5551,7 @@ const TableValues = [
   },
   {
     sNo: "355",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5567,7 +5567,7 @@ const TableValues = [
   },
   {
     sNo: "356",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5583,7 +5583,7 @@ const TableValues = [
   },
   {
     sNo: "357",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5599,7 +5599,7 @@ const TableValues = [
   },
   {
     sNo: "358",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5615,7 +5615,7 @@ const TableValues = [
   },
   {
     sNo: "359",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5631,7 +5631,7 @@ const TableValues = [
   },
   {
     sNo: "360",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5647,7 +5647,7 @@ const TableValues = [
   },
   {
     sNo: "361",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5663,7 +5663,7 @@ const TableValues = [
   },
   {
     sNo: "362",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5679,7 +5679,7 @@ const TableValues = [
   },
   {
     sNo: "363",
-    region: "Chengalpattu",
+    region: "chennai",
     collegeCode: "1301",
     name: "Mohammed Sathak A J College of Engineering (OMR)",
 
@@ -5794,7 +5794,7 @@ const TableValues = [
     sNo: "370",
     region: "Chennai",
     collegeCode: "1226",
-    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Veliyur Post Chennai",
+    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology",
 
     branchCode: "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA scIENCE",
@@ -5810,7 +5810,7 @@ const TableValues = [
     sNo: "371",
     region: "Chennai",
     collegeCode: "1226",
-    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Veliyur Post Chennai",
+    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology",
 
     branchCode: "CS",
     "Branch Name": "COMPUTER scIENCE AND ENGINEERING",
@@ -5826,7 +5826,7 @@ const TableValues = [
     sNo: "372",
     region: "Chennai",
     collegeCode: "1226",
-    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Veliyur Post Chennai",
+    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology",
 
     branchCode: "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -5842,7 +5842,7 @@ const TableValues = [
     sNo: "373",
     region: "Chennai",
     collegeCode: "1226",
-    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Veliyur Post Chennai",
+    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology",
 
     branchCode: "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -5858,7 +5858,7 @@ const TableValues = [
     sNo: "374",
     region: "Chennai",
     collegeCode: "1226",
-    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Veliyur Post Chennai",
+    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology",
 
     branchCode: "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
@@ -5874,7 +5874,7 @@ const TableValues = [
     sNo: "375",
     region: "Chennai",
     collegeCode: "1226",
-    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Veliyur Post Chennai",
+    name: "P T Lee Chengalvaraya Naicker College of Engineering and Technology",
 
     branchCode: "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
@@ -6528,7 +6528,7 @@ const TableValues = [
   },
   {
     sNo: "416",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6544,7 +6544,7 @@ const TableValues = [
   },
   {
     sNo: "417",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6560,7 +6560,7 @@ const TableValues = [
   },
   {
     sNo: "418",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6576,7 +6576,7 @@ const TableValues = [
   },
   {
     sNo: "419",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6592,7 +6592,7 @@ const TableValues = [
   },
   {
     sNo: "420",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6608,7 +6608,7 @@ const TableValues = [
   },
   {
     sNo: "421",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6624,7 +6624,7 @@ const TableValues = [
   },
   {
     sNo: "422",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6640,7 +6640,7 @@ const TableValues = [
   },
   {
     sNo: "423",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6656,7 +6656,7 @@ const TableValues = [
   },
   {
     sNo: "424",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6672,7 +6672,7 @@ const TableValues = [
   },
   {
     sNo: "425",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1316",
     name: "Agni College of Technology OMR",
 
@@ -6881,7 +6881,7 @@ const TableValues = [
   },
   {
     sNo: "438",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6897,7 +6897,7 @@ const TableValues = [
   },
   {
     sNo: "439",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6913,7 +6913,7 @@ const TableValues = [
   },
   {
     sNo: "440",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6929,7 +6929,7 @@ const TableValues = [
   },
   {
     sNo: "441",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6945,7 +6945,7 @@ const TableValues = [
   },
   {
     sNo: "442",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6961,7 +6961,7 @@ const TableValues = [
   },
   {
     sNo: "443",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6977,7 +6977,7 @@ const TableValues = [
   },
   {
     sNo: "444",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -6993,7 +6993,7 @@ const TableValues = [
   },
   {
     sNo: "445",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -7009,7 +7009,7 @@ const TableValues = [
   },
   {
     sNo: "446",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 
@@ -7025,7 +7025,7 @@ const TableValues = [
   },
   {
     sNo: "447",
-    region: "Chengalpattu",
+    region: "Chennai",
     collegeCode: "1409",
     name: "Karpaga Vinayaga College of Engineering and Technology Maduranthagam",
 

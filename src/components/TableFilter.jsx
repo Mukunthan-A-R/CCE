@@ -129,7 +129,7 @@ const TableFilter = () => {
       setCurrentPage(currentPage - 1);
     }
   };
-
+   console.log(data.length)
   const totalPages = Math.ceil(data.length / pageSize);
   const paginationGroup = Math.ceil(currentPage / 3);
   const startPage = (paginationGroup - 1) * 3 + 1;

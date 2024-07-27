@@ -9,7 +9,7 @@ import { getAnalytics } from "firebase/analytics";
 const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
 
 const firebaseConfig = {
-  apiKey: apiKey,
+  apiKey:apiKey,
   authDomain: "tnea-9a87e.firebaseapp.com",
   projectId: "tnea-9a87e",
   storageBucket: "tnea-9a87e.appspot.com",
