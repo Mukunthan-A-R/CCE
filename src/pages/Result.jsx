@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useRecoilState, useRecoilValue } from 'recoil';
-import { resultArray as resultDataAtom, userData } from '../data/atoms';
-import { Link } from 'react-router-dom';
-import { IoIosPrint } from 'react-icons/io';
-import { FaDownload, FaHome } from 'react-icons/fa';
-import { MdDelete, MdDownloading } from 'react-icons/md';
-import AlertPopup from '../components/AlertPopup';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
+import React, { useState } from "react";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { resultArray as resultDataAtom, userData } from "../data/atoms";
+import { Link } from "react-router-dom";
+import { IoIosPrint } from "react-icons/io";
+import { FaDownload, FaHome } from "react-icons/fa";
+import { MdDelete, MdDownloading } from "react-icons/md";
+import AlertPopup from "../components/AlertPopup";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 const Result = () => {
   const User = useRecoilValue(userData);
@@ -25,10 +25,12 @@ const Result = () => {
   const confirmDelete = () => {
     if (holdData) {
       setResultData((prevResultData) => {
-        const filteredData = prevResultData.filter((item) => item.sNo !== holdData.sNo);
+        const filteredData = prevResultData.filter(
+          (item) => item.sNo !== holdData.sNo
+        );
         const modifiedData = filteredData.map((data, index) => ({
           ...data,
-          sNo: index + 1
+          sNo: index + 1,
         }));
         return modifiedData;
       });
@@ -43,29 +45,37 @@ const Result = () => {
   };
 
   const downloadPDF = () => {
-    const capture = document.querySelector('.receipt-table');
+    const capture = document.querySelector(".receipt-table");
     setLoader(true);
     html2canvas(capture).then((canvas) => {
-      const imgData = canvas.toDataURL('img/png');
-      const doc = new jsPDF('l', 'mm', 'a4');
+      const imgData = canvas.toDataURL("img/png");
+      const doc = new jsPDF("l", "mm", "a4");
       const componentWidth = doc.internal.pageSize.getWidth();
       const componentHeight = doc.internal.pageSize.getHeight();
-      doc.addImage(imgData, 'PNG', 0, 0, componentWidth, componentHeight);
+      doc.addImage(imgData, "PNG", 0, 0, componentWidth, componentHeight);
       setLoader(false);
-      doc.save('receipt.pdf');
+      doc.save("receipt.pdf");
     });
   };
 
   const selectedComumunityCutOff = (row) => {
     switch (User.community) {
-      case 'bc': return row.bc;
-      case 'sc': return row.sc;
-      case 'sca': return row.sca;
-      case 'mbc': return row.mbc;
-      case 'oc': return row.oc;
-      case 'bcm': return row.bcm;
-      case 'st': return row.st;
-      default: return '';
+      case "bc":
+        return row.bc;
+      case "sc":
+        return row.sc;
+      case "sca":
+        return row.sca;
+      case "mbc":
+        return row.mbc;
+      case "oc":
+        return row.oc;
+      case "bcm":
+        return row.bcm;
+      case "st":
+        return row.st;
+      default:
+        return "";
     }
   };
 
@@ -76,7 +86,7 @@ const Result = () => {
     reorderedResultData.splice(result.destination.index, 0, movedItem);
     const modifiedData = reorderedResultData.map((data, index) => ({
       ...data,
-      sNo: index + 1
+      sNo: index + 1,
     }));
     setResultData(modifiedData);
   };
@@ -84,10 +94,7 @@ const Result = () => {
   return (
     <div className="m-5 sm:m-10">
       {showPopup && (
-        <AlertPopup
-          onCancel={cancelDelete}
-          onAccept={confirmDelete}
-        />
+        <AlertPopup onCancel={cancelDelete} onAccept={confirmDelete} />
       )}
       <div className="flex items-center gap-10">
         <Link to="/home">
@@ -114,7 +121,7 @@ const Result = () => {
         </button> */}
       </div>
       <div className="text-center font-bold text-2xl my-5">
-        Welcome {User.name || 'User'}
+        Welcome {User.name || "User"}
       </div>
       <div className="receipt-table">
         {resultData.length === 0 ? (
@@ -148,9 +155,9 @@ const Result = () => {
                       <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                         Branch Name
                       </th>
-                      <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
+                      {/* <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                         {User.community}
-                      </th>
+                      </th> */}
                       <th className="px-3 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
                         Drop
                       </th>
@@ -158,23 +165,41 @@ const Result = () => {
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     {resultData.map((row, index) => (
-                      <Draggable key={row.sNo} draggableId={`${row.sNo}`} index={index}>
+                      <Draggable
+                        key={row.sNo}
+                        draggableId={`${row.sNo}`}
+                        index={index}
+                      >
                         {(provided, snapshot) => (
                           <tr
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
                             className={`${
-                              snapshot.isDragging ? 'bg-blue-200' : 'bg-white'
+                              snapshot.isDragging ? "bg-blue-200" : "bg-white"
                             } hover:bg-blue-200 focus:bg-red-500 active:bg-blue-500 transition-colors duration-100 ease-in-out cursor-pointer`}
                           >
-                            <td className="px-3 py-4 whitespace-nowrap">{row.sNo}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row.region}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row.collegeCode}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row.name}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row.branchCode}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{row["Branch Name"]}</td>
-                            <td className="px-3 py-4 whitespace-nowrap">{selectedComumunityCutOff(row)}</td>
+                            <td className="px-3 py-4 whitespace-nowrap">
+                              {row.sNo}
+                            </td>
+                            <td className="px-3 py-4 whitespace-nowrap">
+                              {row.region}
+                            </td>
+                            <td className="px-3 py-4 whitespace-nowrap">
+                              {row.collegeCode}
+                            </td>
+                            <td className="px-3 py-4 whitespace-nowrap">
+                              {row.name}
+                            </td>
+                            <td className="px-3 py-4 whitespace-nowrap">
+                              {row.branchCode}
+                            </td>
+                            <td className="px-3 py-4 whitespace-nowrap">
+                              {row["Branch Name"]}
+                            </td>
+                            {/* <td className="px-3 py-4 whitespace-nowrap">
+                              {selectedComumunityCutOff(row)}
+                            </td> */}
                             <td className="px-3 py-4 whitespace-nowrap">
                               <MdDelete
                                 onClick={() => handleDelete(row)}
