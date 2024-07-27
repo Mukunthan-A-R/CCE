@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { resultArray as resultDataAtom, userData } from "../data/atoms";
 import { Link } from "react-router-dom";
-import { IoIosPrint } from "react-icons/io";
+import { IoIosPrint, IoMdExit } from "react-icons/io";
 import { FaDownload, FaHome } from "react-icons/fa";
 import { MdDelete, MdDownloading } from "react-icons/md";
 import AlertPopup from "../components/AlertPopup";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import { FaTriangleExclamation } from "react-icons/fa6";
+import Disclaimer from "../components/Disclaimer";
 
 const Result = () => {
   const User = useRecoilValue(userData);
@@ -96,18 +98,25 @@ const Result = () => {
       {showPopup && (
         <AlertPopup onCancel={cancelDelete} onAccept={confirmDelete} />
       )}
-      <div className="flex items-center gap-10">
-        <Link to="/home">
-          <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2">
-            <FaHome />
-          </div>
-        </Link>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
-          onClick={() => window.print()}
-        >
-          <IoIosPrint />
-        </button>
+      <div className="flex items-center justify-between gap-10">
+        <div>
+          <Link to="/home">
+            <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
+              <FaHome />
+            </div>
+          </Link>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
+            onClick={() => window.print()}
+          >
+            <IoIosPrint />
+          </button>
+        </div>
+        <a href="https://tneachoicelist.com/">
+          <button className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
+            <IoMdExit size={18} />
+          </button>
+        </a>
         {/* <button
           className="receipt-modal-download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
           onClick={downloadPDF}
@@ -120,8 +129,15 @@ const Result = () => {
           )}
         </button> */}
       </div>
-      <div className="text-center font-bold text-2xl my-5">
+      <Disclaimer></Disclaimer>
+      <div className="text-center font-bold text-xl my-2">
         Welcome {User.name || "User"}
+      </div>
+      <div className="text-center font-bold text-base ">
+        CutOff: {User.cutOff || "No Data"}
+      </div>
+      <div className="text-center font-bold text-base ">
+        Community: {User.community || "User"}
       </div>
       <div className="receipt-table">
         {resultData.length === 0 ? (
