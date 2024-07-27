@@ -93,6 +93,21 @@ const Result = () => {
     setResultData(modifiedData);
   };
 
+  function capitalizeFirstLetter(str) {
+    if (str.length === 0) {
+      return str; // Return an empty string as is
+    }
+
+    // Convert the first letter to uppercase
+    let firstLetter = str.charAt(0).toUpperCase();
+
+    // Get the rest of the string
+    let restOfString = str.slice(1);
+
+    // Combine the uppercase first letter with the rest of the string
+    return firstLetter + restOfString;
+  }
+
   return (
     <div className="m-5 sm:m-10">
       {showPopup && (
@@ -131,13 +146,13 @@ const Result = () => {
       </div>
       <Disclaimer></Disclaimer>
       <div className="text-center font-bold text-xl my-2">
-        Welcome {User.name || "User"}
+        Welcome {capitalizeFirstLetter(User.name) || "User"}
       </div>
       <div className="text-center font-bold text-base ">
-        CutOff: {User.cutOff || "No Data"}
+        CutOff: {User.cutOff || "N/A"}
       </div>
       <div className="text-center font-bold text-base ">
-        Community: {User.community || "User"}
+        Community: {User.community.toUpperCase() || "User"}
       </div>
       <div className="receipt-table">
         {resultData.length === 0 ? (
