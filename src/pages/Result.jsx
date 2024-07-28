@@ -11,7 +11,7 @@ import jsPDF from "jspdf";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { FaTriangleExclamation } from "react-icons/fa6";
 import Disclaimer from "../components/Disclaimer";
-import ExitPopup from "../components/ExitPopup";
+
 
 
 const Result = () => {
@@ -123,7 +123,7 @@ const Result = () => {
       {showPopup && (
         <AlertPopup onCancel={cancelDelete} onAccept={confirmDelete} />
       )}
-      {
+      {/* {
         (
           Exit && (
             <ExitPopup 
@@ -131,7 +131,7 @@ const Result = () => {
             onCancel = {handleNotExit} onAccept={handleExit} />
           )
         )
-      }
+      } */}
       <div className="flex items-center justify-between gap-10">
         <div>
           <Link to="/home">
@@ -148,13 +148,15 @@ const Result = () => {
             <p className="pl-2">PRINT</p>
           </button>
         </div>
-        
-          <button 
+        <a href="https://tneachoicelist.com/">
+        <button 
           onClick={()=> SetExit(true)}
           className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
             <IoMdExit size={18} />
             <p className="pl-2">EXIT</p>
           </button>
+        </a>
+          
         
         {/* <button
           className="receipt-modal-download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
