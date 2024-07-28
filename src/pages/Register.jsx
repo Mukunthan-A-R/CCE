@@ -170,7 +170,7 @@ const Register = () => {
             <select
               {...register("expertPermission")}
               onClick={handleExpertSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${
+              className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
                 expertSelected ? "text-black" : "text-gray-400"
               }`}
             >
