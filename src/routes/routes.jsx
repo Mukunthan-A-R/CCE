@@ -7,10 +7,6 @@ const router = createBrowserRouter([
     element: <Register /> 
   },
   { 
-    path: "/staff-register", 
-    element: <StaffRegister /> 
-  },
-  { 
     path: "/home", 
     element: <Home /> 
   },
