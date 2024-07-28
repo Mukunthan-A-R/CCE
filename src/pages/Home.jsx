@@ -1,10 +1,12 @@
 import TableFilter from "../components/TableFilter";
 import HomeUi from "../components/HomeUi";
+import WorkingDir from "../components/WorkingDir";
 
 const Home = () => {
   return (
     <div className="m-0 sm:m-0">
       <HomeUi></HomeUi>
+      <WorkingDir></WorkingDir>
       <TableFilter></TableFilter>
       <div className="mt-20 text-red-600 flex items-center justify-center">
         <ul className="text-center mb-4">
