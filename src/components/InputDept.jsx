@@ -33,23 +33,22 @@ const InputDept = ({ label, styles, sendData }) => {
     { label: "Civil Engineering", value: "CE" },
     { label: "Mechanical and Automation Engineering", value: "MU" },
     { label: "Computer Science and Engineering (Cyber Security)", value: "SC" },
-<<<<<<< HEAD
+
     { label:"Self Supporting Courses (SS)",value:"SS"},
    
-=======
->>>>>>> 0b62c803fc071f4971f1f0f318a674b68c2277e5
+
   ];
 
   const [selected, setSelected] = useState([]);
 
   const handleChange = (selectedOptions) => {
     setSelected(selectedOptions);
-<<<<<<< HEAD
+
     sendData(selectedOptions.map((val)=> val.value)); // Call sendData with the selected options
     console.log(selected)
-=======
+
     sendData(selectedOptions.map((val) => val.value)); // Call sendData with the selected options
->>>>>>> 0b62c803fc071f4971f1f0f318a674b68c2277e5
+
   };
 
   return (
