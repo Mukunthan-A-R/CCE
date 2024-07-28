@@ -109,16 +109,16 @@ const Result = () => {
   }
 
   return (
-    <div className="m-5 sm:m-10">
+    <div className="m-5 sm:m-10 min-h-screen">
       {showPopup && (
         <AlertPopup onCancel={cancelDelete} onAccept={confirmDelete} />
-
       )}
       <div className="flex items-center justify-between gap-10">
         <div>
           <Link to="/home">
             <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
               <FaHome />
+              <p className="pl-2">BACK</p>
             </div>
           </Link>
           <button
@@ -126,13 +126,13 @@ const Result = () => {
             onClick={() => window.print()}
           >
             <IoIosPrint />
+            <p className="pl-2">PRINT</p>
           </button>
         </div>
         <a href="https://tneachoicelist.com/">
-          <button className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
-          
-          >
+          <button className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
             <IoMdExit size={18} />
+            <p className="pl-2">EXIT</p>
           </button>
         </a>
         {/* <button
@@ -147,7 +147,7 @@ const Result = () => {
           )}
         </button> */}
       </div>
-      <Disclaimer></Disclaimer>
+      {/* <Disclaimer></Disclaimer> */}
       <div className="text-center font-bold text-xl my-2">
         Welcome {capitalizeFirstLetter(User.name) || "User"}
       </div>
@@ -165,7 +165,7 @@ const Result = () => {
             <Droppable droppableId="droppable">
               {(provided) => (
                 <table
-                  className="min-w-full divide-y divide-gray-200 mx-2 sm:mx-5 m-10"
+                  className="min-w-full divide-y divide-gray-200 mx-2 sm:mx-5 m-10 border border-spacing-1 border-gray-300"
                   {...provided.droppableProps}
                   ref={provided.innerRef}
                 >
@@ -252,6 +252,7 @@ const Result = () => {
           </DragDropContext>
         )}
       </div>
+      <Disclaimer></Disclaimer>
     </div>
   );
 };
