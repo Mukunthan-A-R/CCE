@@ -112,6 +112,7 @@ const Result = () => {
     <div className="m-5 sm:m-10">
       {showPopup && (
         <AlertPopup onCancel={cancelDelete} onAccept={confirmDelete} />
+
       )}
       <div className="flex items-center justify-between gap-10">
         <div>
@@ -128,7 +129,9 @@ const Result = () => {
           </button>
         </div>
         <a href="https://tneachoicelist.com/">
-          <button className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
+          <button className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
+          
+          >
             <IoMdExit size={18} />
           </button>
         </a>

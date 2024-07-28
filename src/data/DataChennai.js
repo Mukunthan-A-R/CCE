@@ -254,8 +254,8 @@ const TableValues = [
     sca: "0",
     st: "134.5",
   },
-  {
-    sNo: "18",
+  /* {
+    sNo:"18",
     region: "Chengalpattu",
     collegeCode: "4",
     name: "University Departments of Anna University Chennai - MIT Campus Chrompet",
@@ -268,8 +268,8 @@ const TableValues = [
     sc: "184.545",
     sca: "159.5",
     st: "0",
-  },
-  {
+  }, */
+  /* {
     sNo: "19",
     region: "Chengalpattu",
     collegeCode: "4",
@@ -283,8 +283,8 @@ const TableValues = [
     sc: "188.5",
     sca: "187",
     st: "175.5",
-  },
-  {
+  }, */
+ /*  {
     sNo: "20",
     region: "Chengalpattu",
     collegeCode: "4",
@@ -313,8 +313,8 @@ const TableValues = [
     sc: "190",
     sca: "0",
     st: "175",
-  },
-  {
+  }, */
+ /*  {
     sNo: "22",
     region: "Chengalpattu",
     collegeCode: "4",
@@ -343,8 +343,8 @@ const TableValues = [
     sc: "190.5",
     sca: "178.5",
     st: "168.5",
-  },
-  {
+  }, */
+  /* {
     sNo: "24",
     region: "Chengalpattu",
     collegeCode: "4",
@@ -433,7 +433,7 @@ const TableValues = [
     sc: "152.5",
     sca: "140.5",
     st: "0",
-  },
+  }, */
   {
     sNo: "30",
     region: "Chennai",
