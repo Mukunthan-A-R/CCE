@@ -6,6 +6,7 @@ const InputDept = ({ label, styles, sendData }) => {
     { label: "Computer Science and Engineering", value: "CS" },
     { label: "Information Technology", value: "IT" },
     { label: "Artificial Intelligence and Data Science", value: "AD" },
+    { label: "Computer and Communication Engineering", value: "CO" },
     { label: "Electronics and Communication Engineering", value: "EC" },
     { label: "Computer Science and Engineering (Artificial Intelligence and Machine Learning)", value: "AM" },
     { label: "Computer Science and Business System", value: "CB" },
@@ -18,7 +19,8 @@ const InputDept = ({ label, styles, sendData }) => {
     { label: "Civil Engineering", value: "CE" },
     { label: "Mechanical and Automation Engineering", value: "MU" },
     { label: "Computer Science and Engineering (Cyber Security)", value: "SC" },
-    { label: "Computer and Communication Engineering", value: "CO" },
+    { label:"Self Supporting Courses (SS)",value:"SS"},
+   
   ];
 
   const [selected, setSelected] = useState([]);
@@ -26,6 +28,7 @@ const InputDept = ({ label, styles, sendData }) => {
   const handleChange = (selectedOptions) => {
     setSelected(selectedOptions);
     sendData(selectedOptions.map((val)=> val.value)); // Call sendData with the selected options
+    console.log(selected)
   };
 
   return (

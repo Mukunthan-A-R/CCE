@@ -113,9 +113,14 @@ const TableFilter = () => {
       );
     }
     if (filter.dept.length !== 0) {
-      filteredData = filteredData.filter((value) =>
-        filter.dept.includes(value.branchCode)
-      );
+      filteredData = filteredData.filter((value) => {
+        // Check if the department is Self Supporting
+        const isSSIncluded = filter.dept.includes("SS") && value["Branch Name"].toLowerCase().includes("(ss)");
+        // General department filter
+        const isDeptIncluded = filter.dept.includes(value.branchCode);
+  
+        return isDeptIncluded || isSSIncluded;
+      });
     }
     setData(filteredData);
     setCurrentPage(1); // Reset to the first page after filtering
