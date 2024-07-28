@@ -11,7 +11,8 @@ import jsPDF from "jspdf";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { FaTriangleExclamation } from "react-icons/fa6";
 import Disclaimer from "../components/Disclaimer";
-import ExitPopup from "./ExitPopup";
+import ExitPopup from "../components/ExitPopup";
+
 
 const Result = () => {
   const User = useRecoilValue(userData);
@@ -24,6 +25,7 @@ const Result = () => {
     setShowPopup(true);
     setHoldData(row);
   };
+  const {name} = User
   const [Exit,SetExit] = useState(false);
   const confirmDelete = () => {
     if (holdData) {
@@ -124,7 +126,9 @@ const Result = () => {
       {
         (
           Exit && (
-            <ExitPopup onCancel = {handleNotExit} onAccept={handleExit} />
+            <ExitPopup 
+            name={name}
+            onCancel = {handleNotExit} onAccept={handleExit} />
           )
         )
       }
