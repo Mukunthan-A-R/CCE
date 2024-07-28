@@ -38,6 +38,7 @@ const Register = () => {
       .required("* Cut off is required"),
     community: yup.string().required("* Community is required"),
     expertPermission: yup.string().required("* Expert Permission is required"),
+    expertId: yup.string()
   });
 
   const {
@@ -58,7 +59,7 @@ const Register = () => {
 
   const onSubmit = async (formData, e) => {
     setUserData(formData);
-    const { name, email, phoneNo, cutOff, community, expertPermission } =
+    const { name, email, phoneNo, cutOff, community, expertPermission, expertId } =
       formData;
     console.log(formData);
     e.preventDefault();
@@ -74,6 +75,7 @@ const Register = () => {
         cutOff,
         community,
         expertPermission,
+        expertId
       }),
     };
     const res = await fetch(
@@ -176,6 +178,15 @@ const Register = () => {
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
+
+            {errors.expertId && (
+              <p className="text-red-500">{errors.expertId.message}</p>
+            )}
+            <Input
+              {...register("expertId")}
+              type="text"
+              placeholder="Expert ID"
+            />
 
             <button
               type="submit"
