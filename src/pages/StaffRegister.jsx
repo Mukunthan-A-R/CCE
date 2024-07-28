@@ -1,7 +1,7 @@
 import { Input } from "../components";
 import { useForm } from "react-hook-form";
 // import { inputFields } from "../constant/constant";
-import registerImg from "../assets/register.png";
+import registerImg from "../assets/staff-register.png";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
@@ -9,9 +9,8 @@ import { useNavigate } from "react-router-dom";
 import { userData } from "../data/atoms";
 import { useSetRecoilState } from "recoil";
 
-const Register = () => {
+const StaffRegister = () => {
   const [selected, setSelected] = useState(false);
-  const [expertSelected, setExpertSelected] = useState(false);
   const navigate = useNavigate();
   const setUserData = useSetRecoilState(userData);
 
@@ -37,7 +36,7 @@ const Register = () => {
       .max(200, "* Cut off must be at most 200") // Updated message
       .required("* Cut off is required"),
     community: yup.string().required("* Community is required"),
-    expertPermission: yup.string().required("* Expert Permission is required"),
+    staffId: yup.string().required("Staff ID is required")
   });
 
   const {
@@ -52,13 +51,9 @@ const Register = () => {
     setSelected(true);
   };
 
-  const handleExpertSelect = () => {
-    setExpertSelected(true);
-  };
-
   const onSubmit = async (formData, e) => {
     setUserData(formData);
-    const { name, email, phoneNo, cutOff, community, expertPermission } =
+    const { name, email, phoneNo, cutOff, community, staffId } =
       formData;
     console.log(formData);
     e.preventDefault();
@@ -73,9 +68,10 @@ const Register = () => {
         phoneNo,
         cutOff,
         community,
-        expertPermission,
+        staffId
       }),
     };
+    // change firebase config for staff
     const res = await fetch(
       "https://tnea-9a87e-default-rtdb.firebaseio.com/UserData.json",
       options
@@ -97,7 +93,7 @@ const Register = () => {
             TNEA Choice List
           </h2>
           <h2 className="text-xl text-blue-100 font-semibold text-center">
-            Make Your Own Choice List for Building Your Future
+            Support Student Aspirations by Completing Their Choice Lists
           </h2>
           <div className="flex justify-center">
             <img src={registerImg} alt="" className="w-[400px] h-auto" />
@@ -116,12 +112,12 @@ const Register = () => {
             {errors.name && (
               <p className="text-red-500">{errors.name.message}</p>
             )}
-            <Input {...register("name")} type="text" placeholder="Name" />
+            <Input {...register("name")} type="text" placeholder="Student Name" />
 
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
             )}
-            <Input {...register("email")} type="email" placeholder="Email ID" />
+            <Input {...register("email")} type="email" placeholder="Student Email ID" />
 
             {errors.phoneNo && (
               <p className="text-red-500">{errors.phoneNo.message}</p>
@@ -129,7 +125,7 @@ const Register = () => {
             <Input
               {...register("phoneNo")}
               type="tel"
-              placeholder="Phone Number"
+              placeholder="Student Phone Number"
             />
 
             {errors.cutOff && (
@@ -139,7 +135,7 @@ const Register = () => {
               {...register("cutOff")}
               step="any"
               type="number"
-              placeholder="Cut-off Score"
+              placeholder="Student Cut-off Score"
             />
 
             {errors.community && (
@@ -152,7 +148,7 @@ const Register = () => {
                 selected ? "text-black" : "text-gray-400"
               }`}
             >
-              <option value="">Community</option>
+              <option value="">Student Community</option>
               <option value="oc">OC</option>
               <option value="bc">BC</option>
               <option value="bcm">BCM</option>
@@ -162,20 +158,15 @@ const Register = () => {
               <option value="st">ST</option>
             </select>
 
-            {errors.expertPermission && (
-              <p className="text-red-500">{errors.expertPermission.message}</p>
+            {errors.staffId && (
+              <p className="text-red-500">{errors.staffId.message}</p>
             )}
-            <select
-              {...register("expertPermission")}
-              onClick={handleExpertSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${
-                expertSelected ? "text-black" : "text-gray-400"
-              }`}
-            >
-              <option value="">Want to talk with Experts?</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+            <Input
+              {...register("staffId")}
+              step="any"
+              type="text"
+              placeholder="Staff ID"
+            />
 
             <button
               type="submit"
@@ -189,4 +180,4 @@ const Register = () => {
     </div>
   );
 };
-export default Register;
+export default StaffRegister;

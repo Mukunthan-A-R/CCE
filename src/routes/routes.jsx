@@ -1,10 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Register, Home, Result, Test, Analytics } from "../pages";
+import { Register, StaffRegister, Home, Result, Test, Analytics } from "../pages";
 
 const router = createBrowserRouter([
   { 
     path: "/", 
     element: <Register /> 
+  },
+  { 
+    path: "/staff-register", 
+    element: <StaffRegister /> 
   },
   { 
     path: "/home", 
