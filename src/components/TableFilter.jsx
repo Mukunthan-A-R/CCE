@@ -152,7 +152,7 @@ const TableFilter = () => {
   const endPage = Math.min(startPage + 2, totalPages);
 
   return (
-    <div className="my-0">
+    <div className="my-4">
       <div className="border border-gray-200 rounded-lg mx-10 shadow-lg">
         {/* <div className="md:flex">
           <InputComponent

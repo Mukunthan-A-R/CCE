@@ -1,7 +1,7 @@
 import { Input } from "../components";
 import { useForm } from "react-hook-form";
 // import { inputFields } from "../constant/constant";
-import registerImg from "../assets/register-img.png";
+import registerImg from "../assets/register.png";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
@@ -10,8 +10,6 @@ import { userData } from "../data/atoms";
 import { useSetRecoilState } from "recoil";
 
 const Register = () => {
-  const apiUrl = import.meta.env.VITE_API_URL;
-  console.log(apiUrl);
   const [selected, setSelected] = useState(false);
   const [expertSelected, setExpertSelected] = useState(false);
   const navigate = useNavigate();
@@ -40,6 +38,7 @@ const Register = () => {
       .required("* Cut off is required"),
     community: yup.string().required("* Community is required"),
     expertPermission: yup.string().required("* Expert Permission is required"),
+    expertId: yup.string()
   });
 
   const {
@@ -60,7 +59,7 @@ const Register = () => {
 
   const onSubmit = async (formData, e) => {
     setUserData(formData);
-    const { name, email, phoneNo, cutOff, community, expertPermission } =
+    const { name, email, phoneNo, cutOff, community, expertPermission, expertId } =
       formData;
     console.log(formData);
     e.preventDefault();
@@ -76,6 +75,7 @@ const Register = () => {
         cutOff,
         community,
         expertPermission,
+        expertId
       }),
     };
     const res = await fetch(
@@ -164,13 +164,13 @@ const Register = () => {
               <option value="st">ST</option>
             </select>
 
-            {errors.community && (
+            {errors.expertPermission && (
               <p className="text-red-500">{errors.expertPermission.message}</p>
             )}
             <select
               {...register("expertPermission")}
               onClick={handleExpertSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 rounded-md outline-none ${
+              className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
                 expertSelected ? "text-black" : "text-gray-400"
               }`}
             >
@@ -178,6 +178,15 @@ const Register = () => {
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
+
+            {errors.expertId && (
+              <p className="text-red-500">{errors.expertId.message}</p>
+            )}
+            <Input
+              {...register("expertId")}
+              type="text"
+              placeholder="Expert ID"
+            />
 
             <button
               type="submit"
