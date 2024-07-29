@@ -11,11 +11,8 @@ import jsPDF from "jspdf";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { FaTriangleExclamation } from "react-icons/fa6";
 import Disclaimer from "../components/Disclaimer";
-import { BiExport } from "react-icons/bi";
 import { CgImport } from "react-icons/cg";
-
-
-
+import DownloadJSON from "../components/DownloadJSON";
 
 const Result = () => {
   const User = useRecoilValue(userData);
@@ -24,6 +21,7 @@ const Result = () => {
   const [holdData, setHoldData] = useState(null);
   const [loader, setLoader] = useState(false);
   
+
   const handleDelete = (row) => {
     setShowPopup(true);
     setHoldData(row);
@@ -136,7 +134,7 @@ const Result = () => {
         )
       } */}
       <div className="flex items-center justify-between gap-10">
-        <div>
+        <div>    
           <Link to="/home">
             <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
               <FaHome />
@@ -149,15 +147,8 @@ const Result = () => {
           >
             <IoIosPrint />
             <p className="pl-2">PRINT</p>
-          </button>
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
-            // onClick={() => window.print()}
-          >
-            <BiExport />
-            <p className="pl-2"
-            > Export</p>
-          </button>
+          </button> 
+            <DownloadJSON style={"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"} data={{...User,result:resultData}} fileName="data.json" />
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
             // onClick={() => window.print()}
@@ -191,7 +182,7 @@ const Result = () => {
       </div>
       {/* <Disclaimer></Disclaimer> */}
       <div className="text-center font-bold text-xl my-2">
-        Welcome {capitalizeFirstLetter(User.name) || "User"}
+        {capitalizeFirstLetter(User.name) || "User"} Choice List
       </div>
       <div className="text-center font-bold text-base ">
         CutOff: {User.cutOff || "N/A"}
