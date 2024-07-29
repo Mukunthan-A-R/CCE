@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { resultArray as resultDataAtom, userData } from "../data/atoms";
 import { Link } from "react-router-dom";
@@ -9,11 +9,9 @@ import AlertPopup from "../components/AlertPopup";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import { FaTriangleExclamation } from "react-icons/fa6";
 import Disclaimer from "../components/Disclaimer";
 import { CgImport } from "react-icons/cg";
 import DownloadJSON from "../components/DownloadJSON";
-import FileReader from "../components/FileReader";
 import DemoFileReader from "../components/DemoFileReader";
 
 const Result = () => {
@@ -24,15 +22,18 @@ const Result = () => {
   const [loader, setLoader] = useState(false);
   
 
+  const [collegeList, setCollegeList] = useState(resultData);
+
   const handleDelete = (row) => {
     setShowPopup(true);
     setHoldData(row);
   };
-  const {name} = User
+
+  const {name} = User;
   const [Exit,SetExit] = useState(false);
   const confirmDelete = () => {
     if (holdData) {
-      setResultData((prevResultData) => {
+      setCollegeList((prevResultData) => {
         const filteredData = prevResultData.filter(
           (item) => item.sNo !== holdData.sNo
         );
@@ -65,12 +66,12 @@ const Result = () => {
       doc.save("receipt.pdf");
     });
   };
-  const handleExit = ()=>
-  {
+
+  const handleExit = () => {
     window.location.href = 'https://tneachoicelist.com/';
   }
-  const handleNotExit = ()=>
-  {
+
+  const handleNotExit = () => {
       SetExit(false);
   }
   const selectedComumunityCutOff = (row) => {
@@ -96,14 +97,14 @@ const Result = () => {
 
   const onDragEnd = (result) => {
     if (!result.destination) return;
-    const reorderedResultData = Array.from(resultData);
+    const reorderedResultData = Array.from(collegeList);
     const [movedItem] = reorderedResultData.splice(result.source.index, 1);
     reorderedResultData.splice(result.destination.index, 0, movedItem);
     const modifiedData = reorderedResultData.map((data, index) => ({
       ...data,
       sNo: index + 1,
     }));
-    setResultData(modifiedData);
+    setCollegeList(modifiedData);
   };
 
   function capitalizeFirstLetter(str) {
@@ -124,6 +125,10 @@ const Result = () => {
   const onSubmit = (data) => {
     console.log(data);
   }
+
+  useEffect(() => {
+    console.log(collegeList);
+  }, [collegeList]);
 
   return (
     <div className="m-5 sm:m-10 min-h-screen">
@@ -154,13 +159,13 @@ const Result = () => {
             <IoIosPrint />
             <p className="pl-2">PRINT</p>
           </button> 
-            <DownloadJSON style={"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"} data={{...User,result:resultData}} fileName="data.json" />
+            <DownloadJSON style={"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"} data={{...User,result:collegeList}} fileName="data.json" />
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
-            // onClick={() => window.print()}
+            onClick={() => {setCollegeList([])}}
           >
             <CgImport />
-            <DemoFileReader setResultData={setResultData}></DemoFileReader>
+            <DemoFileReader setCollegeList={setCollegeList}></DemoFileReader>
           </button>
         </div>
         <a href="https://tneachoicelist.com/">
@@ -196,7 +201,7 @@ const Result = () => {
         Community: {User.community.toUpperCase() || "User"}
       </div>
       <div className="receipt-table">
-        {resultData.length === 0 ? (
+        {collegeList.length === 0 ? (
           <span className="text-red-500">No Colleges selected</span>
         ) : (
           <DragDropContext onDragEnd={onDragEnd}>
@@ -236,7 +241,7 @@ const Result = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {resultData.map((row, index) => (
+                    {collegeList.map((row, index) => (
                       <Draggable
                         key={row.sNo}
                         draggableId={`${row.sNo}`}

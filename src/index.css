@@ -21,3 +21,16 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   font-weight: 600;
 }
+
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
