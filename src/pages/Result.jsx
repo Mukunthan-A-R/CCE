@@ -13,6 +13,8 @@ import { FaTriangleExclamation } from "react-icons/fa6";
 import Disclaimer from "../components/Disclaimer";
 import { CgImport } from "react-icons/cg";
 import DownloadJSON from "../components/DownloadJSON";
+import FileReader from "../components/FileReader";
+import DemoFileReader from "../components/DemoFileReader";
 
 const Result = () => {
   const User = useRecoilValue(userData);
@@ -119,6 +121,10 @@ const Result = () => {
     return firstLetter + restOfString;
   }
 
+  const onSubmit = (data) => {
+    console.log(data);
+  }
+
   return (
     <div className="m-5 sm:m-10 min-h-screen">
       {showPopup && (
@@ -154,8 +160,7 @@ const Result = () => {
             // onClick={() => window.print()}
           >
             <CgImport />
-            <p className="pl-2"
-            > Import</p>
+            <DemoFileReader setResultData={setResultData}></DemoFileReader>
           </button>
         </div>
         <a href="https://tneachoicelist.com/">
