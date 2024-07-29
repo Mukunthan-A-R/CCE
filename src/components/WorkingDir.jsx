@@ -95,11 +95,11 @@ const WorkingDir = () => {
         href={CollegePDF}
         download="CollegeList.pdf"
       >
-        College List Download
+        Download College List
       </a>
-      <button className="ml-10 " onClick={handleAdd}>
+      {/* <button className="ml-10 " onClick={handleAdd}>
         ADDER
-      </button>
+      </button> */}
     </div>
   );
 };

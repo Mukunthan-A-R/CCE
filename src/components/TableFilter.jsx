@@ -172,23 +172,23 @@ const TableFilter = () => {
             error={errors.cutOffEnd}
           ></InputComponent>
         </div> */}
-        <div className="md:flex">
+        <div className="flex w-full">
           <InputComponent
             sendData={handleDataCollegeCode}
             label="College Code"
             error={errors.collegeCode}
             type="number"
-            styles="w-full md:w-1/2 px-10 my-4"
+            styles="w-1/2 px-10 my-4"
           ></InputComponent>
           <InputRegion
             label="Region"
-            styles="w-full md:w-1/2 px-10 my-4"
+            styles="w-1/2 px-10 my-4"
             sendData={handleDataRegion}
           ></InputRegion>
         </div>
         <InputDept
           label="Department"
-          styles="w-full md:w-1/2 px-10 my-4"
+          styles="w-[500px] md:w-1/2 px-10 my-4"
           sendData={handleDataDept}
         />
       </div>
@@ -197,7 +197,7 @@ const TableFilter = () => {
           handleClick={handleSubmit}
           styles="mb-10 text-white bg-blue-700 px-5 py-2 mx-5 sm:mx-10 my-5 rounded-md flex justify-center"
         >
-          Submit
+          Apply Filter
         </ButtonComponent>
         <Link to="/result">
           <ButtonComponent

@@ -2,9 +2,9 @@ import { useState } from "react";
 import { resultArray as resultDataAtom, userData } from "../data/atoms";
 import { useRecoilState } from "recoil";
 
-const DemoFileReader = ({ setCollegeList}) => {
+const DemoFileReader = ({ setResultData }) => {
   const [jsonData, setJsonData] = useState(null);
-  // const [resultData, setCollegeList] = useRecoilState(resultDataAtom);
+  // const [resultData, setResultData ] = useRecoilState(resultDataAtom);
 
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
@@ -13,7 +13,7 @@ const DemoFileReader = ({ setCollegeList}) => {
         const jsonData = await readFileAsText(file);
         const parsedData = JSON.parse(jsonData);
         setJsonData(parsedData);
-        setCollegeList(parsedData.result);
+        setResultData (parsedData.result);
         console.log(parsedData);
         await handleSubmit();
       } catch (error) {

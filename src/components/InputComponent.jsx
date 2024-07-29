@@ -15,7 +15,7 @@ const InputComponent = ({ label, type = "text", styles, sendData,error}) => {
       <input
         onChange={handleChange}
         id={label}
-        className="w-full border bg-[#deebfa] border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
+        className="w-[500px] border bg-[#deebfa] border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
         type={type}
         
       />

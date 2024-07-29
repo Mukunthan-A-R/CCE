@@ -54,7 +54,7 @@ const InputDept = ({ label, styles, sendData }) => {
         <br />
       </label>
       <MultiSelect
-        className="multi-select"
+        className="multi-select w-[500px]"
         options={options}
         value={selected}
         onChange={handleChange}
