@@ -11,6 +11,9 @@ import jsPDF from "jspdf";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { FaTriangleExclamation } from "react-icons/fa6";
 import Disclaimer from "../components/Disclaimer";
+import { BiExport } from "react-icons/bi";
+import { CgImport } from "react-icons/cg";
+
 
 
 
@@ -146,6 +149,22 @@ const Result = () => {
           >
             <IoIosPrint />
             <p className="pl-2">PRINT</p>
+          </button>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
+            // onClick={() => window.print()}
+          >
+            <BiExport />
+            <p className="pl-2"
+            > Export</p>
+          </button>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
+            // onClick={() => window.print()}
+          >
+            <CgImport />
+            <p className="pl-2"
+            > Import</p>
           </button>
         </div>
         <a href="https://tneachoicelist.com/">
