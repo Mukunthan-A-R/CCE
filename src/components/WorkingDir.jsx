@@ -14,7 +14,7 @@ const WorkingDir = () => {
       collegeCode: "1",
       name: "University Departments of Anna University - CEG Campus",
       branchCode: "CS",
-      branchName: "COMPUTER SCIENCE AND ENGINEERING",
+      "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
       oc: 199.5,
       bc: 199,
       bcm: 198.5,
@@ -26,7 +26,7 @@ const WorkingDir = () => {
       collegeCode: "1",
       name: "University Departments of Anna University - CEG Campus",
       branchCode: "CE",
-      branchName: "CIVIL ENGINEERING",
+      "Branch Name": "CIVIL ENGINEERING",
       oc: 193,
       bc: 190,
       bcm: 192,
@@ -38,7 +38,7 @@ const WorkingDir = () => {
       collegeCode: "1",
       name: "University Departments of Anna University - CEG Campus",
       branchCode: "CM",
-      branchName: "COMPUTER SCIENCE AND ENGINEERING (SS)",
+      "Branch Name": "COMPUTER SCIENCE AND ENGINEERING (SS)",
       oc: 199.5,
       bc: 199,
       bcm: 198.5,
@@ -97,9 +97,9 @@ const WorkingDir = () => {
       >
         College List Download
       </a>
-      {/* <button className="ml-10 " onClick={handleAdd}>
+      <button className="ml-10 " onClick={handleAdd}>
         ADDER
-      </button> */}
+      </button>
     </div>
   );
 };
