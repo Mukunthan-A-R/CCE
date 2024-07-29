@@ -62,8 +62,8 @@ const TableFilter = () => {
       newErrors.collegeCode = "";
     } else if (isNaN(intValue)) {
       newErrors.collegeCode = "College Code must be a number";
-    } else if (intValue <= 0 || intValue > 3000) {
-      newErrors.collegeCode = "The college code should be between 1 and 3000";
+    } else if (intValue <= 0 || intValue > 5991) {
+      newErrors.collegeCode = "The college code should be between 1 and 5991";
     } else {
       setFilter((prevFilter) => ({
         ...prevFilter,
@@ -115,10 +115,12 @@ const TableFilter = () => {
     if (filter.dept.length !== 0) {
       filteredData = filteredData.filter((value) => {
         // Check if the department is Self Supporting
-        const isSSIncluded = filter.dept.includes("SS") && value["Branch Name"].toLowerCase().includes("(ss)");
+        const isSSIncluded =
+          filter.dept.includes("SS") &&
+          value["Branch Name"].toLowerCase().includes("(ss)");
         // General department filter
         const isDeptIncluded = filter.dept.includes(value.branchCode);
-  
+
         return isDeptIncluded || isSSIncluded;
       });
     }
