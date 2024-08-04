@@ -263,7 +263,7 @@ const TableWithSort = ({ data, community }) => {
               </th>
             ))}
 
-            <th className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer">
+            <th className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer`}>
               Add
             </th>
           </tr>
@@ -279,16 +279,14 @@ const TableWithSort = ({ data, community }) => {
                   key={cellIndex}
                   className={`px-auto py-4 whitespace-nowrap pl-2 border 
                   ${
-                    (communityColor === "oc" &&
-                      cellIndex == 6 &&
-                      row.oc > 179) ||
+                    (cellIndex == 6 && row.oc > 179) ||
                     (cellIndex == 7 && row.bc > 179) ||
                     (cellIndex == 8 && row.bcm > 179) ||
                     (cellIndex == 9 && row.sc > 179) ||
                     (cellIndex == 10 && row.sca > 179) ||
                     (cellIndex == 11 && row.st > 179) ||
                     (cellIndex == 12 && row.oc > 179)
-                      ? "bg-red-200"
+                      ? "bg-red-200" 
                       : " "
                   } 
                   ${
@@ -307,7 +305,17 @@ const TableWithSort = ({ data, community }) => {
                   {value}
                 </td>
               ))}
-              <td>
+              <td className={`  ${
+                    (userCutoff.community == "oc" && row.oc > 179) ||
+                    ( userCutoff.community == "bc" && row.bc > 179) ||
+                    ( userCutoff.community == "bcm" && row.bcm > 179) ||
+                    ( userCutoff.community == "sc" && row.sc > 179) ||
+                    ( userCutoff.community == "sca" && row.sca > 179) ||
+                    ( userCutoff.community == "st" && row.st > 179) ||
+                    ( userCutoff.community == "oc" && row.oc > 179)
+                      ? "bg-blue-200 hidden"
+                      : " "
+                  }  `}>
                 <ButtonComponent
                   styles=" p-2 rounded-lg text-white  /* transition-colors duration-100 ease-in-out */ cursor-pointer"
                   handleClick={() => {
