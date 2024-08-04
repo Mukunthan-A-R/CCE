@@ -277,7 +277,21 @@ const TableWithSort = ({ data, community }) => {
               {Object.entries(row).map(([key, value], cellIndex) => (
                 <td
                   key={cellIndex}
-                  className={`px-auto py-4 whitespace-nowrap pl-2  ${
+                  className={`px-auto py-4 whitespace-nowrap pl-2 border 
+                  ${
+                    (communityColor === "oc" &&
+                      cellIndex == 6 &&
+                      row.oc > 179) ||
+                    (cellIndex == 7 && row.bc > 179) ||
+                    (cellIndex == 8 && row.bcm > 179) ||
+                    (cellIndex == 9 && row.sc > 179) ||
+                    (cellIndex == 10 && row.sca > 179) ||
+                    (cellIndex == 11 && row.st > 179) ||
+                    (cellIndex == 12 && row.oc > 179)
+                      ? "bg-red-200"
+                      : " "
+                  } 
+                  ${
                     (communityColor === "oc" && cellIndex == 6) ||
                     (communityColor === "bc" && cellIndex == 7) ||
                     (communityColor === "bcm" && cellIndex == 8) ||
@@ -285,9 +299,10 @@ const TableWithSort = ({ data, community }) => {
                     (communityColor === "sc" && cellIndex == 10) ||
                     (communityColor === "sca" && cellIndex == 11) ||
                     (communityColor === "st" && cellIndex == 12)
-                      ? "bg-green-200"
+                      ? "bg-green-300"
                       : " "
-                  }`}
+                  }  
+                  `}
                 >
                   {value}
                 </td>
