@@ -112,12 +112,12 @@ const WorkingDir = () => {
             onChange={() => setIsRoundTwo(!isRoundTwo)}
           />
           <div
-            className={`block w-14 h-8 rounded-full ${
+            className={`block w-12 h-7 rounded-full ${
               isRoundTwo ? "bg-blue-500" : "bg-gray-400"
             }`}
           >
             <div
-              className={`absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform ${
+              className={`absolute left-1 top-1 bg-white w-5 h-5 rounded-full transition-transform ${
                 isRoundTwo ? "transform translate-x-full" : ""
               }`}
             ></div>
