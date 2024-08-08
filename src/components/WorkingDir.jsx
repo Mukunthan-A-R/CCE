@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CollegePDF from "../assets/CollegeList.pdf";
 import { sno } from "../data/atoms";
 import { useRecoilState } from "recoil";
@@ -7,6 +7,8 @@ import { resultArray } from "../data/atoms";
 const WorkingDir = () => {
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   const [resultData, setResultData] = useRecoilState(resultArray);
+  const [isRoundTwo, setIsRoundTwo] = useState(false); // State for the toggle
+
   const data = [
     {
       sNo: 1,
@@ -88,8 +90,9 @@ const WorkingDir = () => {
       console.log(resultData);
     });
   };
+
   return (
-    <div>
+    <div className="flex items-center">
       <a
         className="sm:px-10 text-blue-900 font-medium"
         href={CollegePDF}
@@ -97,9 +100,30 @@ const WorkingDir = () => {
       >
         Download College List
       </a>
-      {/* <button className="ml-10 " onClick={handleAdd}>
-        ADDER
-      </button> */}
+      {/* Toggle Button */}
+      <label className="flex items-center ml-5 cursor-pointer">
+        <span className="mr-2 text-gray-700">Updated Data for Round 2</span>
+        <div className="relative">
+          <input
+            type="checkbox"
+            id="roundTwoToggle"
+            className="sr-only"
+            checked={isRoundTwo}
+            onChange={() => setIsRoundTwo(!isRoundTwo)}
+          />
+          <div
+            className={`block w-14 h-8 rounded-full ${
+              isRoundTwo ? "bg-blue-500" : "bg-gray-400"
+            }`}
+          >
+            <div
+              className={`absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform ${
+                isRoundTwo ? "transform translate-x-full" : ""
+              }`}
+            ></div>
+          </div>
+        </div>
+      </label>
     </div>
   );
 };
