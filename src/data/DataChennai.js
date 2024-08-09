@@ -216,7 +216,7 @@ const TableValues = [
     name: "University Departments of Anna University Chennai - CEG Campus",
     branchCode: "PT",
     "Branch Name": "PRINTING AND PACKING TECHNOLOGY",
-    oc: "181.9", 
+    oc: "181.9",
     bc: "170.5",
     bcm: "173",
     mbc: "171.5",
