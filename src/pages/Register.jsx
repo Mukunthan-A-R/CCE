@@ -8,11 +8,11 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { userData } from "../data/atoms";
 import { useSetRecoilState } from "recoil";
-import SignUpPopup from "../components/SignUpPopup";
+// import SignUpPopup from "../components/SignUpPopup";
 
 const Register = () => {
   const [selected, setSelected] = useState(false);
-  const [expert,setExpert] = useState(false);
+  // const [expert,setExpert] = useState(false);
   const [expertSelected, setExpertSelected] = useState(false);
   const navigate = useNavigate();
   const setUserData = useSetRecoilState(userData);
@@ -95,10 +95,10 @@ const Register = () => {
 
   return (
     <>
-    {
+    {/* {
       expert === true &&
       <SignUpPopup setExpert={setExpert}></SignUpPopup> 
-    }
+    } */}
     <div className={`w-full h-screen flex z-0 + ${expert === true ? "blur-md" : ""}`}>
       <div className="bg-blue-500 w-1/2 flex justify-center items-center">
         <div>
@@ -201,14 +201,14 @@ const Register = () => {
             >
               Submit
             </button>
-
+          {/*  
             <span
               type="button"
               onClick={() => setExpert(true)}
               className="block bg-blue-400 hover:bg-blue-700 text-center text-white font-semibold py-2 mt-3 rounded-md"
             >
               Log in as Experet
-            </span>
+            </span> */}
           </form>
         </div>
       </div>
