@@ -101,7 +101,7 @@ const WorkingDir = ({setIsRoundTwo, isRoundTwo}) => {
       </a>
       {/* Toggle Button */}
       <label className="flex items-center ml-5 cursor-pointer">
-        <span className="mr-2 text-gray-700 font-medium">Filter avaliable Colleges</span>
+        <span className="mr-2 text-gray-700 font-medium">Filter available Colleges</span>
         <div className="relative">
           <input
             type="checkbox"

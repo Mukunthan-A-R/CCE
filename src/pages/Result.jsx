@@ -195,7 +195,7 @@ const Result = () => {
         CutOff: {User.cutOff || "N/A"}
       </div>
       <div className="text-center font-bold text-base ">
-        Community: {User.community.toUpperCase() || "User"}
+        Community: {User.community.toUpperCase() || "N/A"}
       </div>
       <div className="receipt-table">
         {resultData.length === 0 ? (

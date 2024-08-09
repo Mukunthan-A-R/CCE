@@ -38,7 +38,7 @@ const HomeUi = () => {
       <div className="relative">
         <img src={Banner} className="w-full mb-10 object-cover" />
         <h2 className="absolute inset-0 top-1/6 flex items-center justify-center text-white font-bold text-3xl">
-          Welcome {capitalizeFirstLetter(name) ? "" : "Expert"}
+          Welcome {capitalizeFirstLetter(name) ? capitalizeFirstLetter(name) : "Expert"}
         </h2>
         <h2 className="absolute inset-0 top-1/4 flex items-center justify-center text-white font-semibold text-2xl">
           Comunity: {community ? community.toUpperCase() : "N/A"}
