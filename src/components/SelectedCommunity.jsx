@@ -262,7 +262,9 @@ const SelectedCommunity = ({data,community}) => {
     .map((row, rowIndex) => {
       // Filter community columns that have values < 179
       const filteredCommunities = Object.entries(row)
-        .filter(([key, value]) => userCommunity.includes(key) && value < 179);
+        .filter(([key, value]) => userCommunity.includes(key)
+        //  && value < 179
+        );
 
       return (
         <tr
