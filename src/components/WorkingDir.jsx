@@ -4,10 +4,9 @@ import { sno } from "../data/atoms";
 import { useRecoilState } from "recoil";
 import { resultArray } from "../data/atoms";
 
-const WorkingDir = () => {
+const WorkingDir = ({setIsRoundTwo, isRoundTwo}) => {
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
   const [resultData, setResultData] = useRecoilState(resultArray);
-  const [isRoundTwo, setIsRoundTwo] = useState(false); // State for the toggle
 
   const data = [
     {
@@ -102,7 +101,7 @@ const WorkingDir = () => {
       </a>
       {/* Toggle Button */}
       <label className="flex items-center ml-5 cursor-pointer">
-        <span className="mr-2 text-gray-700">Updated Data for Round 2</span>
+        <span className="mr-2 text-gray-700 font-medium">Filter avaliable Colleges</span>
         <div className="relative">
           <input
             type="checkbox"
