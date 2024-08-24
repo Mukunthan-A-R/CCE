@@ -26,8 +26,8 @@ const Result = () => {
     setHoldData(row);
   };
 
-  const {name} = User;
-  const [Exit,SetExit] = useState(false);
+  const { name } = User;
+  const [Exit, SetExit] = useState(false);
   const confirmDelete = () => {
     if (holdData) {
       setResultData((prevResultData) => {
@@ -65,12 +65,12 @@ const Result = () => {
   };
 
   const handleExit = () => {
-    window.location.href = 'https://tneachoicelist.com/';
-  }
+    window.location.href = "https://tneachoicelist.com/";
+  };
 
   const handleNotExit = () => {
-      SetExit(false);
-  }
+    SetExit(false);
+  };
   const selectedComumunityCutOff = (row) => {
     switch (User.community) {
       case "bc":
@@ -121,14 +121,14 @@ const Result = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-  }
+  };
 
   useEffect(() => {
     console.log(resultData);
   }, [resultData]);
 
   return (
-    <div className="m-5 sm:m-10 min-h-screen">
+    <div className="m-5 sm:m-10 min-h-screen relative">
       {showPopup && (
         <AlertPopup onCancel={cancelDelete} onAccept={confirmDelete} />
       )}
@@ -142,7 +142,7 @@ const Result = () => {
         )
       } */}
       <div className="flex items-center justify-between gap-10">
-        <div>    
+        <div>
           <Link to="/home">
             <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
               <FaHome />
@@ -155,26 +155,34 @@ const Result = () => {
           >
             <IoIosPrint />
             <p className="pl-2">PRINT</p>
-          </button> 
-            <DownloadJSON style={"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"} data={{...User,result:resultData}} fileName="data.json" />
+          </button>
+          <DownloadJSON
+            style={
+              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
+            }
+            data={{ ...User, result: resultData }}
+            fileName="data.json"
+          />
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
-            onClick={() => {setResultData([])}}
+            onClick={() => {
+              setResultData([]);
+            }}
           >
             <CgImport />
             <DemoFileReader setResultData={setResultData}></DemoFileReader>
           </button>
         </div>
         <a href="https://tneachoicelist.com/">
-        <button 
-          onClick={()=> SetExit(true)}
-          className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6">
+          <button
+            onClick={() => SetExit(true)}
+            className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2 mx-6"
+          >
             <IoMdExit size={18} />
             <p className="pl-2">EXIT</p>
           </button>
         </a>
-          
-        
+
         {/* <button
           className="receipt-modal-download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
           onClick={downloadPDF}
@@ -197,7 +205,7 @@ const Result = () => {
       <div className="text-center font-bold text-base ">
         Community: {User.community.toUpperCase() || "User"}
       </div>
-      <div className="receipt-table">
+      <div className="receipt-table pb-32">
         {resultData.length === 0 ? (
           <span className="text-red-500">No Colleges selected</span>
         ) : (
@@ -292,7 +300,10 @@ const Result = () => {
           </DragDropContext>
         )}
       </div>
-      <Disclaimer></Disclaimer>
+      {/* Discliamer banner */}
+      <div className="absolute bottom-10  left-1/2 transform -translate-x-1/2">
+        <Disclaimer></Disclaimer>
+      </div>
     </div>
   );
 };
