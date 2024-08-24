@@ -12,7 +12,7 @@ export const userData = atom({
     email: "",
     phoneNo: "",
     cutOff: "",
-    community: "sc",
+    community: "oc",
     expertPermission: "",
   },
 });
