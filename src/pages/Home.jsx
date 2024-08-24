@@ -9,8 +9,14 @@ const Home = () => {
   return (
     <div className="m-0 sm:m-0">
       <HomeUi></HomeUi>
-      <WorkingDir setIsRoundTwo={setIsRoundTwo} isRoundTwo={isRoundTwo}></WorkingDir>
-      <TableFilter setIsRoundTwo={setIsRoundTwo} isRoundTwo={isRoundTwo}></TableFilter>
+      <WorkingDir
+        setIsRoundTwo={setIsRoundTwo}
+        isRoundTwo={isRoundTwo}
+      ></WorkingDir>
+      <TableFilter
+        setIsRoundTwo={setIsRoundTwo}
+        isRoundTwo={isRoundTwo}
+      ></TableFilter>
       <div className="mt-20 text-red-600 flex items-center justify-center">
         <ul className="text-center mb-4">
           <li>* For reference purpose only</li>

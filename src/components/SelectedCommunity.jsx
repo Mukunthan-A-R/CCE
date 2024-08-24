@@ -10,7 +10,10 @@ const SelectedCommunity = ({ data, community }) => {
   const displayedCommunities = ["oc", "bc", "bcm", "mbc", "sc", "sca", "st"];
   const communityColor = community;
   let userCommunity = ["oc"];
-  if (displayedCommunities.includes(communityColor) && communityColor !== "oc") {
+  if (
+    displayedCommunities.includes(communityColor) &&
+    communityColor !== "oc"
+  ) {
     userCommunity.push(communityColor);
   }
 
@@ -100,8 +103,10 @@ const SelectedCommunity = ({ data, community }) => {
   }, [showPopup]);
 
   // Filter and pagination logic
-  const filteredData = sortedData.filter(row =>
-    Object.entries(row).some(([key, value]) => userCommunity.includes(key) && value < 179)
+  const filteredData = sortedData.filter((row) =>
+    Object.entries(row).some(
+      ([key, value]) => userCommunity.includes(key) && value <= 200
+    )
   );
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const displayedData = filteredData.slice(
@@ -258,12 +263,24 @@ const SelectedCommunity = ({ data, community }) => {
               key={row.sNo}
               className="text-xs hover:bg-blue-200 focus:bg-red-500 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
             >
-              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.sNo}</td>
-              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.region}</td>
-              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.collegeCode}</td>
-              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.name}</td>
-              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.branchCode}</td>
-              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row["Branch Name"]}</td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
+                {row.sNo}
+              </td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
+                {row.region}
+              </td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
+                {row.collegeCode}
+              </td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
+                {row.name}
+              </td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
+                {row.branchCode}
+              </td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
+                {row["Branch Name"]}
+              </td>
 
               {userCommunity.map((community) => (
                 <td

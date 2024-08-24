@@ -12,12 +12,12 @@ export const userData = atom({
     email: "",
     phoneNo: "",
     cutOff: "",
-    community: "oc",
-    expertPermission: ""
+    community: "sc",
+    expertPermission: "",
   },
 });
 
 export const sno = atom({
-  key:'SNO',
+  key: "SNO",
   default: 1,
-})
+});

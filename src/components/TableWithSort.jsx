@@ -282,7 +282,7 @@ const TableWithSort = ({ data, community }) => {
                   key={cellIndex}
                   className={`px-auto py-4 whitespace-nowrap pl-2 border 
                   ${
-                    (cellIndex == 6 && row.oc > parseInt(cutOffFilterValue)) ||
+                    (cellIndex == 6 && row.oc > cutOffFilterValue) ||
                     (cellIndex == 7 && row.bc > cutOffFilterValue) ||
                     (cellIndex == 8 && row.bcm > cutOffFilterValue) ||
                     (cellIndex == 9 && row.sc > cutOffFilterValue) ||
