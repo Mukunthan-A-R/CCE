@@ -8,8 +8,9 @@ import InputRegion from "./InputRegion";
 import InputDept from "./InputDept";
 import { useRecoilValue } from "recoil";
 import { Link } from "react-router-dom";
+import SelectedCommunity from "./SelectedCommunity";
 
-const TableFilter = () => {
+const TableFilter = ({setIsRoundTwo,isRoundTwo}) => {
   const { community } = useRecoilValue(userData);
   const [data, setData] = useState([...TableValues]);
   const [TableValuesCopy, setTableValuesCopy] = useState([...TableValues]);
@@ -208,11 +209,18 @@ const TableFilter = () => {
           </ButtonComponent>
         </Link>
       </div>
+      {
+        isRoundTwo ?
+      <SelectedCommunity
+      tableWithSort
+      data={paginatedData}
+      community={community}></SelectedCommunity> :
       <TableWithSort
         tableWithSort
         data={paginatedData}
         community={community}
       ></TableWithSort>
+      }
       <div className="flex justify-center my-4">
         <button
           onClick={handlePrevPage}

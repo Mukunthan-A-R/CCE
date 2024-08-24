@@ -1,41 +1,31 @@
 import React, { useState, useEffect } from "react";
-import ButtonComponent from "./ButtonComponent";
 import { useRecoilState } from "recoil";
-import { resultArray } from "../data/atoms";
-import { FaArrowCircleUp } from "react-icons/fa";
-import { FaArrowCircleDown } from "react-icons/fa";
+import { sno, userData, resultArray } from "../data/atoms";
+import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 import SuccessfullyAdded from "./SuccessfullyAdded";
 import { MdDelete } from "react-icons/md";
-import { sno } from "../data/atoms";
-import { userData } from "../data/atoms";
+import ButtonComponent from "./ButtonComponent";
 
-const TableWithSort = ({ data, community }) => {
-  // console.log("😂", JSON.stringify(data[0]));
-  let displayedCommunities = ["oc", "bc", "bcm", "mbc", "sc", "sca", "st"];
-
+const SelectedCommunity = ({ data, community }) => {
+  const displayedCommunities = ["oc", "bc", "bcm", "mbc", "sc", "sca", "st"];
   const communityColor = community;
+  let userCommunity = ["oc"];
+  if (displayedCommunities.includes(communityColor) && communityColor !== "oc") {
+    userCommunity.push(communityColor);
+  }
+
   const [sortedData, setSortedData] = useState(data);
   const [sortConfig, setSortConfig] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
   const [remove, Setremove] = useState(false);
   const [InitialNo, SetInitialNo] = useRecoilState(sno);
-  // Atoms data
   const [userCutoff, setUserCutoff] = useRecoilState(userData);
   const [resultData, setResultData] = useRecoilState(resultArray);
   const [content, SetContent] = useState("");
 
-  let check;
-  const requestSort = (key) => {
-    let direction = "ascending";
-    if (
-      sortConfig &&
-      sortConfig.key === key &&
-      sortConfig.direction === "ascending"
-    ) {
-      direction = "descending";
-    }
-    setSortConfig({ key, direction });
-  };
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 50; // Ensure 50 items per page
 
   const sortedDataByKey = () => {
     if (sortConfig !== null) {
@@ -65,12 +55,8 @@ const TableWithSort = ({ data, community }) => {
     }
   };
 
-  // Add data to the ResultPage
   const handleResult = (row) => {
-    // Setting new serial number for selected data
     const modifyRow = { ...row, sNo: InitialNo, id: row.sNo };
-    // atom data
-    console.log("modifyRow", modifyRow);
     let flag = 0;
     setResultData((prev) => {
       const list = [...prev];
@@ -82,7 +68,6 @@ const TableWithSort = ({ data, community }) => {
         list.splice(find, 1);
         flag = 0;
       }
-      console.log(list);
       const modified = list.map((data, index) => ({
         ...data,
         sNo: index + 1,
@@ -90,57 +75,59 @@ const TableWithSort = ({ data, community }) => {
       return modified;
     });
 
-    /* setResultData([...resultData, modifyRow]);
-    console.log([...resultData,modifyRow]) */
     if (flag === 1) {
       SetInitialNo((prev) => prev + 1);
     } else {
       SetInitialNo((prev) => prev + 1);
     }
-    console.log("Atom Data");
-    console.log(resultData.length);
-    /* console.log([...resultData,row])
-    console.log([...resultData, row]); */
-    console.log(resultData);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     sortedDataByKey();
   }, [sortConfig, data]);
 
-  // Function to handle closing the popup
-  const handleCommunity = () => {
-    const usersCommunity = community.community;
-  };
   const handleClosePopup = () => {
-    // Set showPopup to false to hide the popup
     setShowPopup(false);
   };
 
   useEffect(() => {
-    // Close the popup after 3 seconds
     const timeoutId = setTimeout(() => {
       handleClosePopup();
     }, 1000);
-
-    // Cleanup the timeout when component unmounts or when showPopup changes
     return () => {
       clearTimeout(timeoutId);
     };
   }, [showPopup]);
 
+  // Filter and pagination logic
+  const filteredData = sortedData.filter(row =>
+    Object.entries(row).some(([key, value]) => userCommunity.includes(key) && value < 179)
+  );
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+  const displayedData = filteredData.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const handlePageChange = (newPage) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+    }
+  };
+
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col items-center">
       {showPopup && (
         <SuccessfullyAdded
           handleClick={handleClosePopup}
           content={content}
           remove={remove}
-        ></SuccessfullyAdded>
+        />
       )}
-      <table className="min-w-full  divide-y divide-gray-200  mx-2">
+      <table className="min-w-full divide-y divide-gray-200 mx-2">
         <thead className="bg-blue-100">
           <tr>
+            {/* Table headers */}
             <th
               className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("sNo")}
@@ -176,7 +163,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("collegeCode")}
             >
               Clg Code
@@ -208,7 +195,7 @@ const TableWithSort = ({ data, community }) => {
               </div>
             </th>
             <th
-              className=" px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer "
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("branchCode")}
             >
               <div className="flex items-center">
@@ -218,14 +205,14 @@ const TableWithSort = ({ data, community }) => {
                     {sortConfig.direction === "ascending" ? (
                       <FaArrowCircleUp size={15} />
                     ) : (
-                      <FaArrowCircleUp size={15} />
+                      <FaArrowCircleDown size={15} />
                     )}
                   </span>
                 )}
               </div>
             </th>
             <th
-              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer flex items-center"
+              className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer"
               onClick={() => requestSort("Branch Name")}
             >
               Branch Name
@@ -239,14 +226,12 @@ const TableWithSort = ({ data, community }) => {
                 </span>
               )}
             </th>
-            {/* display only the req communities */}
-            {displayedCommunities.map((community) => (
+            {userCommunity.map((community) => (
               <th
                 key={community}
                 className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
                   communityColor === community ? "bg-green-200" : ""
                 }`}
-                // onClick={() => requestSort(community)}
               >
                 <div className="flex items-center">
                   {community.toUpperCase()}
@@ -262,115 +247,108 @@ const TableWithSort = ({ data, community }) => {
                 </div>
               </th>
             ))}
-
-            <th className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer`}>
-              Add
+            <th className="px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+              Action
             </th>
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200">
-          {sortedData.map((row, rowIndex) => (
+          {displayedData.map((row) => (
             <tr
-              key={rowIndex}
+              key={row.sNo}
               className="text-xs hover:bg-blue-200 focus:bg-red-500 active:bg-green-500 transition-colors duration-100 ease-in-out cursor-pointer"
             >
-              {Object.entries(row).map(([key, value], cellIndex) => (
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.sNo}</td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.region}</td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.collegeCode}</td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.name}</td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row.branchCode}</td>
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">{row["Branch Name"]}</td>
+
+              {userCommunity.map((community) => (
                 <td
-                  key={cellIndex}
-                  className={`px-auto py-4 whitespace-nowrap pl-2 border 
-                  ${
-                    (cellIndex == 6 && row.oc > 142) ||
-                    (cellIndex == 7 && row.bc > 142) ||
-                    (cellIndex == 8 && row.bcm > 142) ||
-                    (cellIndex == 9 && row.sc > 142) ||
-                    (cellIndex == 10 && row.sca > 142) ||
-                    (cellIndex == 11 && row.st > 142) ||
-                    (cellIndex == 12 && row.oc > 142)
-                      ? "bg-red-200" 
-                      : " "
-                  } 
-                  ${
-                    (communityColor === "oc" && cellIndex == 6) ||
-                    (communityColor === "bc" && cellIndex == 7) ||
-                    (communityColor === "bcm" && cellIndex == 8) ||
-                    (communityColor === "mbc" && cellIndex == 9) ||
-                    (communityColor === "sc" && cellIndex == 10) ||
-                    (communityColor === "sca" && cellIndex == 11) ||
-                    (communityColor === "st" && cellIndex == 12)
-                      ? "bg-green-300"
-                      : " "
-                  }  
-                  `}
+                  key={`${row.sNo}-${community}`}
+                  className={`px-auto py-4 whitespace-nowrap pl-2 border ${
+                    communityColor === community ? "bg-green-200" : ""
+                  }`}
                 >
-                  {value}
+                  {row[community]}
                 </td>
               ))}
-              <td className={`  ${
-                    (userCutoff.community == "oc" && row.oc > 142) ||
-                    ( userCutoff.community == "bc" && row.bc > 142) ||
-                    ( userCutoff.community == "bcm" && row.bcm > 142) ||
-                    ( userCutoff.community == "sc" && row.sc > 142) ||
-                    ( userCutoff.community == "sca" && row.sca > 142) ||
-                    ( userCutoff.community == "st" && row.st > 142) ||
-                    ( userCutoff.community == "oc" && row.oc > 142)
-                      ? "bg-blue-200 hidden"
-                      : " "
-                  }  `}>
+
+              <td className="px-auto py-4 whitespace-nowrap pl-2 border">
                 <ButtonComponent
-                  styles=" p-2 rounded-lg text-white  /* transition-colors duration-100 ease-in-out */ cursor-pointer"
-                  handleClick={() => {
-                    handleResult(row);
-                  }}
+                  styles="p-2 rounded-lg text-white cursor-pointer"
+                  handleClick={() => handleResult(row)}
                 >
-                  {
-                    (check = resultData.find((val) => val.id === row.sNo) ? (
-                      <button
-                        style={{
-                          color: "red",
-                          marginLeft: "4px",
-                          fontSize: "20px",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          padding: "0px",
-                        }}
-                        onClick={() => {
-                          setShowPopup(true);
-                          SetContent(
-                            " The selected item has been removed to the list successsfully"
-                          );
-                          Setremove(true);
-                        }}
-                      >
-                        <MdDelete />
-                      </button>
-                    ) : (
-                      <button
-                        style={{
-                          backgroundColor: "#1E88E5",
-                          padding: "7px",
-                          borderRadius: "3px",
-                        }}
-                        onClick={() => {
-                          setShowPopup(true);
-                          SetContent(
-                            " The selected item has been added to the list successsfully"
-                          );
-                          Setremove(false);
-                        }}
-                      >
-                        Add
-                      </button>
-                    ))
-                  }
+                  {resultData.find((val) => val.id === row.sNo) ? (
+                    <button
+                      style={{
+                        color: "red",
+                        marginLeft: "4px",
+                        fontSize: "20px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "0px",
+                      }}
+                      onClick={() => {
+                        setShowPopup(true);
+                        SetContent(
+                          "The selected item has been removed from the list successfully"
+                        );
+                        Setremove(true);
+                      }}
+                    >
+                      <MdDelete />
+                    </button>
+                  ) : (
+                    <button
+                      style={{
+                        backgroundColor: "#1E88E5",
+                        padding: "7px",
+                        borderRadius: "3px",
+                      }}
+                      onClick={() => {
+                        setShowPopup(true);
+                        SetContent(
+                          "The selected item has been added to the list successfully"
+                        );
+                        Setremove(false);
+                      }}
+                    >
+                      Add
+                    </button>
+                  )}
                 </ButtonComponent>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="flex justify-center items-center mt-4">
+          <div className="flex items-center">
+            <button
+              className="mx-2 px-4 py-2 border rounded-md bg-blue-500 text-white"
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              Previous
+            </button>
+            <button
+              className="mx-2 px-4 py-2 border rounded-md bg-blue-500 text-white"
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default TableWithSort;
+export default SelectedCommunity;
