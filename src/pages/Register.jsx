@@ -12,7 +12,7 @@ import SignUpPopup from "../components/SignUpPopup";
 
 const Register = () => {
   const [selected, setSelected] = useState(false);
-  const [expert,setExpert] = useState(false);
+  const [expert, setExpert] = useState(false);
   const [expertSelected, setExpertSelected] = useState(false);
   const navigate = useNavigate();
   const setUserData = useSetRecoilState(userData);
@@ -40,7 +40,7 @@ const Register = () => {
       .required("* Cut off is required"),
     community: yup.string().required("* Community is required"),
     expertPermission: yup.string().required("* Expert Permission is required"),
-    expertId: yup.string()
+    expertId: yup.string(),
   });
 
   const {
@@ -61,8 +61,15 @@ const Register = () => {
 
   const onSubmit = async (formData, e) => {
     setUserData(formData);
-    const { name, email, phoneNo, cutOff, community, expertPermission, expertId } =
-      formData;
+    const {
+      name,
+      email,
+      phoneNo,
+      cutOff,
+      community,
+      expertPermission,
+      expertId,
+    } = formData;
     console.log(formData);
     e.preventDefault();
     const options = {
@@ -77,12 +84,12 @@ const Register = () => {
         cutOff,
         community,
         expertPermission,
-        expertId
+        expertId,
       }),
     };
     const res = await fetch(
       "https://tnea-9a87e-default-rtdb.firebaseio.com/UserData.json",
-      options
+      options,
     );
     console.log(res);
     if (res) {
@@ -95,124 +102,131 @@ const Register = () => {
 
   return (
     <>
-    {
-      expert === true &&
-      <SignUpPopup setExpert={setExpert}></SignUpPopup> 
-    }
-    <div className={`w-full h-screen flex z-0 + ${expert === true ? "blur-md" : ""}`}>
-      <div className="bg-blue-500 w-1/2 flex justify-center items-center">
-        <div>
-          <h2 className="text-2xl text-blue-50 font-bold text-center py-2">
-            TNEA Choice List
-          </h2>
-          <h2 className="text-xl text-blue-100 font-semibold text-center">
-            Make Your Own Choice List for Building Your Future
-          </h2>
-          <div className="flex justify-center">
-            <img src={registerImg} alt="" className="w-[400px] h-auto" />
+      {expert === true && <SignUpPopup setExpert={setExpert}></SignUpPopup>}
+      <div
+        className={`w-full h-screen flex z-0 + ${
+          expert === true ? "blur-md" : ""
+        }`}
+      >
+        <div className="bg-blue-500 w-1/2 flex justify-center items-center">
+          <div>
+            <h2 className="text-2xl text-blue-50 font-bold text-center py-2">
+              TNEA Choice List
+            </h2>
+            <h2 className="text-xl text-blue-100 font-semibold text-center">
+              Make Your Own Choice List for Building Your Future
+            </h2>
+            <div className="flex justify-center">
+              <img src={registerImg} alt="" className="w-[400px] h-auto" />
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-center items-center">
+          <div className="w-full">
+            <h1 className="text-blue-400 text-2xl font-bold text-center">
+              Enter Your Details
+            </h1>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="flex flex-col max-w-96 mx-auto pt-7"
+            >
+              {errors.name && (
+                <p className="text-red-500">{errors.name.message}</p>
+              )}
+              <Input {...register("name")} type="text" placeholder="Name" />
+
+              {errors.email && (
+                <p className="text-red-500">{errors.email.message}</p>
+              )}
+              <Input
+                {...register("email")}
+                type="email"
+                placeholder="Email ID"
+              />
+
+              {errors.phoneNo && (
+                <p className="text-red-500">{errors.phoneNo.message}</p>
+              )}
+              <Input
+                {...register("phoneNo")}
+                type="tel"
+                placeholder="Phone Number"
+              />
+
+              {errors.cutOff && (
+                <p className="text-red-500">{errors.cutOff.message}</p>
+              )}
+              <Input
+                {...register("cutOff")}
+                step="any"
+                type="number"
+                placeholder="Cut-off Score"
+              />
+
+              {errors.community && (
+                <p className="text-red-500">{errors.community.message}</p>
+              )}
+              <select
+                {...register("community")}
+                onClick={handleSelect}
+                className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
+                  selected ? "text-black" : "text-gray-400"
+                }`}
+              >
+                <option value="">Community</option>
+                <option value="oc">OC</option>
+                <option value="bc">BC</option>
+                <option value="bcm">BCM</option>
+                <option value="mbc">MBC</option>
+                <option value="sc">SC</option>
+                <option value="sca">SCA</option>
+                <option value="st">ST</option>
+              </select>
+
+              {errors.expertPermission && (
+                <p className="text-red-500">
+                  {errors.expertPermission.message}
+                </p>
+              )}
+              <select
+                {...register("expertPermission")}
+                onClick={handleExpertSelect}
+                className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
+                  expertSelected ? "text-black" : "text-gray-400"
+                }`}
+              >
+                <option value="">Want to talk with Experts?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+
+              {errors.expertId && (
+                <p className="text-red-500">{errors.expertId.message}</p>
+              )}
+              <Input
+                {...register("expertId")}
+                type="text"
+                placeholder="Expert ID"
+              />
+
+              <button
+                type="submit"
+                className="block bg-blue-400 text-white font-semibold py-2 mt-3 rounded-md"
+              >
+                Submit
+              </button>
+
+              <span
+                type="button"
+                onClick={() => setExpert(true)}
+                className="block bg-blue-400 hover:bg-blue-700 text-center text-white font-semibold py-2 mt-3 rounded-md"
+              >
+                Log in as Expert
+              </span>
+            </form>
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex justify-center items-center">
-        <div className="w-full">
-          <h1 className="text-blue-400 text-2xl font-bold text-center">
-            Enter Your Details
-          </h1>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col max-w-96 mx-auto pt-7"
-          >
-            {errors.name && (
-              <p className="text-red-500">{errors.name.message}</p>
-            )}
-            <Input {...register("name")} type="text" placeholder="Name" />
-
-            {errors.email && (
-              <p className="text-red-500">{errors.email.message}</p>
-            )}
-            <Input {...register("email")} type="email" placeholder="Email ID" />
-
-            {errors.phoneNo && (
-              <p className="text-red-500">{errors.phoneNo.message}</p>
-            )}
-            <Input
-              {...register("phoneNo")}
-              type="tel"
-              placeholder="Phone Number"
-            />
-
-            {errors.cutOff && (
-              <p className="text-red-500">{errors.cutOff.message}</p>
-            )}
-            <Input
-              {...register("cutOff")}
-              step="any"
-              type="number"
-              placeholder="Cut-off Score"
-            />
-
-            {errors.community && (
-              <p className="text-red-500">{errors.community.message}</p>
-            )}
-            <select
-              {...register("community")}
-              onClick={handleSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
-                selected ? "text-black" : "text-gray-400"
-              }`}
-            >
-              <option value="">Community</option>
-              <option value="oc">OC</option>
-              <option value="bc">BC</option>
-              <option value="bcm">BCM</option>
-              <option value="mbc">MBC</option>
-              <option value="sc">SC</option>
-              <option value="sca">SCA</option>
-              <option value="st">ST</option>
-            </select>
-
-            {errors.expertPermission && (
-              <p className="text-red-500">{errors.expertPermission.message}</p>
-            )}
-            <select
-              {...register("expertPermission")}
-              onClick={handleExpertSelect}
-              className={`bg-blue-100 font-semibold px-2 py-1.5 mb-2 rounded-md outline-none ${
-                expertSelected ? "text-black" : "text-gray-400"
-              }`}
-            >
-              <option value="">Want to talk with Experts?</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-
-            {errors.expertId && (
-              <p className="text-red-500">{errors.expertId.message}</p>
-            )}
-            <Input
-              {...register("expertId")}
-              type="text"
-              placeholder="Expert ID"
-            />
-
-            <button
-              type="submit"
-              className="block bg-blue-400 text-white font-semibold py-2 mt-3 rounded-md"
-            >
-              Submit
-            </button>
-
-            <span
-              type="button"
-              onClick={() => setExpert(true)}
-              className="block bg-blue-400 hover:bg-blue-700 text-center text-white font-semibold py-2 mt-3 rounded-md"
-            >
-              Log in as Experet
-            </span>
-          </form>
-        </div>
-      </div>
-    </div>
     </>
   );
 };
