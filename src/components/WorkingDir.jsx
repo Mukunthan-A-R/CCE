@@ -112,7 +112,7 @@ const WorkingDir = ({setIsRoundTwo, isRoundTwo}) => {
           />
           <div
             className={`block w-12 h-7 rounded-full ${
-              isRoundTwo ? "bg-blue-500" : "bg-gray-400"
+              isRoundTwo ? "bg-green-500" : "bg-red-400"
             }`}
           >
             <div
