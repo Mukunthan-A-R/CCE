@@ -10,7 +10,7 @@ import { sno } from "../data/atoms";
 import { userData } from "../data/atoms";
 
 const TableWithSort = ({ data, community }) => {
-  const cutOffFilterValue = 142;
+  const cutOffFilterValue = 201;
   // console.log("😂", JSON.stringify(data[0]));
   let displayedCommunities = ["oc", "bc", "bcm", "mbc", "sc", "sca", "st"];
 
@@ -310,13 +310,13 @@ const TableWithSort = ({ data, community }) => {
               ))}
               <td
                 className={`  ${
-                  (userCutoff.community == "oc" && row.oc > 142) ||
-                  (userCutoff.community == "bc" && row.bc > 142) ||
-                  (userCutoff.community == "bcm" && row.bcm > 142) ||
-                  (userCutoff.community == "sc" && row.sc > 142) ||
-                  (userCutoff.community == "sca" && row.sca > 142) ||
-                  (userCutoff.community == "st" && row.st > 142) ||
-                  (userCutoff.community == "oc" && row.oc > 142)
+                  (userCutoff.community == "oc" && row.oc > 201) ||
+                  (userCutoff.community == "bc" && row.bc > 201) ||
+                  (userCutoff.community == "bcm" && row.bcm > 201) ||
+                  (userCutoff.community == "sc" && row.sc > 201) ||
+                  (userCutoff.community == "sca" && row.sca > 201) ||
+                  (userCutoff.community == "st" && row.st > 201) ||
+                  (userCutoff.community == "oc" && row.oc > 201)
                     ? "bg-blue-200 hidden"
                     : " "
                 }  `}

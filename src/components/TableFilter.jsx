@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TableValues from "../data/DataChennai";
+import TableValues from "../data/dataChennai2";
 import InputComponent from "./InputComponent";
 import ButtonComponent from "./ButtonComponent";
 import { userData } from "../data/atoms";
