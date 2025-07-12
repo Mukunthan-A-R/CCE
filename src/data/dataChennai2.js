@@ -915,21 +915,8 @@ const TableValues = [
     sca: "0.0",
     st: "0.0"
   },
-  {
-    sNo: "62",
-    region: "Chennai",
-    collegeCode: "1419",
-    name: "Sri Sai Ram Engineering College (Autonomous)",
-    branchCode: "EI",
-   "Branch Name": "ELECTRONICS AND INSTRUMENTATION ENGINEERING",
-    oc: "167.5",
-    bc: "163.0",
-    bcm: "160.0",
-    mbc: "156.5",
-    sc: "130.0",
-    sca: "0.0",
-    st: "0.0"
-  },
+ 
+
   {
     sNo: "63",
     region: "Chennai",
@@ -975,21 +962,7 @@ const TableValues = [
     sca: "0.0",
     st: "0.0"
   },
-  {
-    sNo: "66",
-    region: "Chennai",
-    collegeCode: "1419",
-    name: "Sri Sai Ram Engineering College (Autonomous)",
-    branchCode: "MU",
-   "Branch Name": "MECHANICAL AND AUTOMATION ENGINEERING",
-    oc: "155.0",
-    bc: "144.5",
-    bcm: "137.5",
-    mbc: "136.5",
-    sc: "119.0",
-    sca: "0.0",
-    st: "0.0"
-  },
+
   {
     sNo: "67",
     region: "Chennai",
