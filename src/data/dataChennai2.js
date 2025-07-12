@@ -846,14 +846,14 @@ const TableValues = [
     collegeCode: "1419",
     name: "Sri Sai Ram Engineering College (Autonomous)",
     branchCode: "CO",
-   "Branch Name": "COMPUTER AND COMMUNICATION ENGINEERING",
-    oc: "New",
-    bc: "New",
-    bcm: "New",
-    mbc: "New",
-    sc: "New",
-    sca: "New",
-    st: "New"
+   "Branch Name": "COMPUTER AND COMMUNICATION ENGINEERING (New Branch)",
+    oc: "0.0",
+    bc: "0.0",
+    bcm: "0.0",
+    mbc: "0.0",
+    sc: "0.0",
+    sca: "0.0",
+    st: "0.0"
   },
   {
     sNo: "58",
@@ -1011,14 +1011,14 @@ const TableValues = [
     collegeCode: "1419",
     name: "Sri Sai Ram Engineering College (Autonomous)",
     branchCode: "MZ",
-   "Branch Name": "Mechatronics",
-    oc: "New",
-    bc: "New",
-    bcm: "New",
-    mbc: "New",
-    sc: "New",
-    sca: "New",
-    st: "New"
+   "Branch Name": "Mechatronics (New Branch)",
+    oc: "0.0",
+    bc: "0.0",
+    bcm: "0.0",
+    mbc: "0.0",
+    sc: "0.0",
+    sca: "0.0",
+    st: "0.0"
   },
   
   {
