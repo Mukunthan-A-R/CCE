@@ -13,6 +13,10 @@ import SelectedCommunity from "./SelectedCommunity";
 const TableFilter = ({ setIsRoundTwo, isRoundTwo }) => {
   const { community } = useRecoilValue(userData);
   const [data, setData] = useState([...TableValues]);
+  for (let i = 0; i < TableValues.length; i++) {
+  TableValues[i].sNo = (i + 1).toString().padStart(3, '0');
+}
+
   const [TableValuesCopy, setTableValuesCopy] = useState([...TableValues]);
   const [filter, setFilter] = useState({
     cutOffStart: 200,

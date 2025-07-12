@@ -764,21 +764,7 @@ const TableValues = [
     sca: "0.0",
     st: "130.0"
   },
-  {
-    sNo: "52",
-    region: "Chennai",
-    collegeCode: "1419",
-    name: "Sri Sai Ram Engineering College (Autonomous)",
-    branchCode: "CO",
-   "Branch Name": "COMPUTER AND COMMUNICATION ENGINEERING",
-    oc: "171.0",
-    bc: "167.5",
-    bcm: "167.5",
-    mbc: "163.0",
-    sc: "134.0",
-    sca: "0.0",
-    st: "0.0"
-  },
+  
   {
     sNo: "53",
     region: "Chennai",
@@ -851,6 +837,21 @@ const TableValues = [
     bcm: "166.0",
     mbc: "168.5",
     sc: "140.5",
+    sca: "0.0",
+    st: "0.0"
+  },
+  {
+    sNo: "52",
+    region: "Chennai",
+    collegeCode: "1419",
+    name: "Sri Sai Ram Engineering College (Autonomous)",
+    branchCode: "CO",
+   "Branch Name": "COMPUTER AND COMMUNICATION ENGINEERING",
+    oc: "0.0",
+    bc: "0.0",
+    bcm: "0.0",
+    mbc: "0.0",
+    sc: "0.0",
     sca: "0.0",
     st: "0.0"
   },
@@ -1002,6 +1003,21 @@ const TableValues = [
     mbc: "175.0",
     sc: "154.5",
     sca: "113.0",
+    st: "0.0"
+  },
+  {
+    sNo: "64",
+    region: "Chennai",
+    collegeCode: "1419",
+    name: "Sri Sai Ram Engineering College (Autonomous)",
+    branchCode: "MZ",
+   "Branch Name": "Mechatronics",
+    oc: "0.0",
+    bc: "0.0",
+    bcm: "0.0",
+    mbc: "0.0",
+    sc: "0.0",
+    sca: "0.0",
     st: "0.0"
   },
   {
