@@ -24,6 +24,7 @@ const TableFilter = ({ setIsRoundTwo, isRoundTwo }) => {
     cutOffEnd: 0,
     collegeCode: 0,
     region: "",
+    community:"",
     dept: [],
   });
 
