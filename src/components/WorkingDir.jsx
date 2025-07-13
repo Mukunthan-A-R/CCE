@@ -94,8 +94,9 @@ const WorkingDir = ({setIsRoundTwo, isRoundTwo}) => {
     <div className="flex items-center">
       <a
         className="sm:px-10 text-blue-900 font-medium"
-        href={CollegePDF}
-        download="CollegeList.pdf"
+        href={"https://static.tneaonline.org/docs/TNEA_2025_Information_abt_colleges.pdf?t=1752391478230"}
+        target="blank"
+        /* download="CollegeList.pdf" */
       >
         Download College List
       </a>
