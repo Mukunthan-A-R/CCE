@@ -937,13 +937,13 @@ const TableValues = [
     region: "Chennai",
     collegeCode: "1419",
     name: "Sri Sai Ram Engineering College (Autonomous)",
-    branchCode: "IX",
-   "Branch Name": "Electronic Instrumentation and Control Engineering",
-    oc: "165.5",
-    bc: "160.0",
-    bcm: "151.5",
-    mbc: "154.5",
-    sc: "122.5",
+    branchCode: "EI",
+   "Branch Name": "Electronics and Instrumentation Engineering",
+    oc: "167.5",
+    bc: "163.0",
+    bcm: "160",
+    mbc: "156.5",
+    sc: "130",
     sca: "0.0",
     st: "0.0"
   },
@@ -1160,7 +1160,7 @@ const TableValues = [
     st: "0.0"
   },
   {
-    sNO:"65",
+    sNo: "65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1175,7 +1175,7 @@ const TableValues = [
     st:"140"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1190,7 +1190,7 @@ const TableValues = [
     st:"142.5"
   },
    {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1205,7 +1205,7 @@ const TableValues = [
     st:"0.0"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1220,7 +1220,7 @@ const TableValues = [
     st:"138.5"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1235,7 +1235,7 @@ const TableValues = [
     st:"0.0"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1250,7 +1250,7 @@ const TableValues = [
     st:"140"
   },
     {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1265,7 +1265,7 @@ const TableValues = [
     st:"0.0"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1280,7 +1280,7 @@ const TableValues = [
     st:"143.5"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1295,7 +1295,7 @@ const TableValues = [
     st:"124"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1310,7 +1310,7 @@ const TableValues = [
     st:"0.0"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1325,7 +1325,7 @@ const TableValues = [
     st:"128"
   },
   {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1340,7 +1340,7 @@ const TableValues = [
     st:"123.5"
   },
     {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -1355,7 +1355,7 @@ const TableValues = [
     st:"0.0"
   },
     {
-     sNO:"65",
+     sNo:"65",
     region:"Chennai",
     collegeCode:"1399",
     name: "Chennai Institute of Technology (Autonomous) - Chennai 600069",
@@ -10384,141 +10384,7 @@ const TableValues = [
     sca: "127.0",
     st: "146.0"
   },
-  {
-    sNo: "680",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "AD",
-   "Branch Name": "Artificial Intelligence and Data Science",
-    oc: "174.5",
-    bc: "171.0",
-    bcm: "165.0",
-    mbc: "168.0",
-    sc: "150.5",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "681",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "AM",
-   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING (AI AND MACHINE LEARNING)",
-    oc: "174.0",
-    bc: "169.0",
-    bcm: "170.5",
-    mbc: "166.5",
-    sc: "142.0",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "682",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "CI",
-   "Branch Name": "Computer Science and Engineering (Internet of Things)",
-    oc: "171.5",
-    bc: "168.0",
-    bcm: "170.0",
-    mbc: "163.5",
-    sc: "134.5",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "683",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "CS",
-   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
-    oc: "178.5",
-    bc: "175.0",
-    bcm: "169.0",
-    mbc: "170.5",
-    sc: "142.5",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "684",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "EC",
-   "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
-    oc: "176.5",
-    bc: "172.5",
-    bcm: "166.0",
-    mbc: "171.0",
-    sc: "133.5",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "685",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "EE",
-   "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
-    oc: "165.0",
-    bc: "163.5",
-    bcm: "161.0",
-    mbc: "157.0",
-    sc: "130.5",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "686",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "IT",
-   "Branch Name": "INFORMATION TECHNOLOGY",
-    oc: "174.5",
-    bc: "171.0",
-    bcm: "169.5",
-    mbc: "168.0",
-    sc: "142.5",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "687",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "ME",
-   "Branch Name": "MECHANICAL ENGINEERING",
-    oc: "149.5",
-    bc: "143.0",
-    bcm: "138.5",
-    mbc: "136.5",
-    sc: "120.0",
-    sca: "0.0",
-    st: "0.0"
-  },
-  {
-    sNo: "688",
-    region: "Chennai",
-    collegeCode: "1324",
-    name: "Sri Sai Ram Institute of Technology (Autonomous)",
-    branchCode: "sc",
-   "Branch Name": "Computer Science and Engineering (Cyber Security)",
-    oc: "174.5",
-    bc: "171.5",
-    bcm: "169.5",
-    mbc: "165.5",
-    sc: "141.5",
-    sca: "0.0",
-    st: "0.0"
-  },
+  
   {
     sNo: "689",
     region: "Chennai",
