@@ -240,13 +240,10 @@ const TableWithSort = ({ data, community }) => {
                 </span>
               )}
             </th>
-            {/* display only the req communities */}
-            {displayedCommunities.map((community) => (
+            {/* display only the req communities */}            {displayedCommunities.map((community) => (
               <th
                 key={community}
-                className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer ${
-                  communityColor === community ? "bg-green-200" : ""
-                }`}
+                className={`px-1 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider cursor-pointer`}
                 // onClick={() => requestSort(community)}
               >
                 <div className="flex items-center">
@@ -279,8 +276,7 @@ const TableWithSort = ({ data, community }) => {
             >
               {Object.entries(row).map(([key, value], cellIndex) => (
                 <td
-                  key={cellIndex}
-                  className={`px-auto py-4 whitespace-nowrap pl-2 border 
+                  key={cellIndex}                  className={`px-auto py-4 whitespace-nowrap pl-2 border 
                   ${
                     (cellIndex == 6 && row.oc > cutOffFilterValue) ||
                     (cellIndex == 7 && row.bc > cutOffFilterValue) ||
@@ -292,17 +288,6 @@ const TableWithSort = ({ data, community }) => {
                       ? "bg-red-200"
                       : " "
                   } 
-                  ${
-                    (communityColor === "oc" && cellIndex == 6) ||
-                    (communityColor === "bc" && cellIndex == 7) ||
-                    (communityColor === "bcm" && cellIndex == 8) ||
-                    (communityColor === "mbc" && cellIndex == 9) ||
-                    (communityColor === "sc" && cellIndex == 10) ||
-                    (communityColor === "sca" && cellIndex == 11) ||
-                    (communityColor === "st" && cellIndex == 12)
-                      ? "bg-green-300"
-                      : " "
-                  }  
                   `}
                 >
                   {value}
